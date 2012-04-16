@@ -77,7 +77,6 @@ body {
     background-color: #FFFFFF;
     /*background-image: none;*/
     color: #FF3030;
-    font-family: verdana,helvetica,arial,sans-serif;
     font-size: 16px;
 
     background-attachment: scroll;
@@ -854,61 +853,76 @@ input:focus, textarea:focus {
   
 
 input.login {
-       display: inline-block;
-       -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-       border-radius: 4px;
+   display: inline-block;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
 
        width:auto;
        color:#fff;
        font-size:12px;
 
-   white-space: nowrap;
+  white-space: nowrap;
    line-height:1em;
    position:relative;
    outline: none;
    overflow: visible; 
    cursor: pointer;
    border: 1px solid #999;
-    border: rgba(0, 0, 0, .2) 1px solid;
+   border: rgba(0, 0, 0, .2) 1px solid;
    border-bottom:rgba(0, 0, 0, .4) 1px solid;
    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   
    box-shadow: 0 1px 2px rgba(0,0,0,.2);
    background: -moz-linear-gradient(
       center top,
-      rgba(255, 255, 255, .1) 0%,
+      rgba(255, 255, 255, .5) 0%,
       rgba(0, 0, 0, .1) 100%
    );
    background: -webkit-gradient(
       linear,
       center bottom,
       center top,
-      from(rgba(0, 0, 0, .1)),
+      from(rgba(0, 0, 0, .5)),
       to(rgba(255, 255, 255, .1))
    );
    -moz-user-select: none;
    -webkit-user-select:none;
    -khtml-user-select: none;
    user-select: none;
+   
    margin-bottom:10px;
+
+   /*font-weight:bold;*/
+   text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+   /*border-top: rgba(255, 255, 255, .2) 1px solid;*/
+   padding:0.4em 1.3em;
+   line-height:1em;
+   text-align:center;
+   white-space: nowrap;
+   top:-1px;
+   font-family: helvetica, arial, sans-serif;
+   font-weight:bold;
+   
 
 }
 
-input.login:hover, .button:hover{
+.login:hover{
 
    background: -moz-linear-gradient(
       center top,
-      rgba(230, 39, 9, .9) 0%,
-      rgba(230, 39, 9, .8) 100%
+      rgba(255, 255, 255, .2) 0%,
+      rgba(255, 255, 255, .1) 100%
    );
    background: -webkit-gradient(
       linear,
       center bottom,
       center top,
-      from(rgba(230, 39, 9, .1)),
-      to(rgba(230, 39, 9, .2))
+      from(rgba(255, 255, 255, .1)),
+      to(rgba(255, 255, 255, .2))
    );
+   
 }
 
 /***********************boton css3**********************************************************/
@@ -935,14 +949,14 @@ input.login:hover, .button:hover{
    box-shadow: 0 1px 2px rgba(0,0,0,.2);
    background: -moz-linear-gradient(
       center top,
-      rgba(255, 255, 255, .1) 0%,
+      rgba(255, 255, 255, .5) 0%,
       rgba(0, 0, 0, .1) 100%
    );
    background: -webkit-gradient(
       linear,
       center bottom,
       center top,
-      from(rgba(0, 0, 0, .1)),
+      from(rgba(0, 0, 0, .5)),
       to(rgba(255, 255, 255, .1))
    );
    -moz-user-select: none;
