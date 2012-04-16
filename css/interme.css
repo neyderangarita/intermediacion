@@ -1,0 +1,1260 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-font-feature-settings: inherit;
+    -moz-font-language-override: inherit;
+    -x-system-font: none;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: -moz-use-text-color;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: none;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 0;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: none;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 0;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, q:before, blockquote:after, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, nav, section, body {
+    display: block;
+}
+/**************************cuerpo*******************************************************/
+body { 
+    background-color: #FFFFFF;
+    /*background-image: none;*/
+    color: #FF3030;
+    font-family: verdana,helvetica,arial,sans-serif;
+    font-size: 16px;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*background-color: #98BF4B;*/
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: auto auto;
+    font-family: helvetica,arial,verdana,sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+
+footer .prueba ul li a:hover {
+text-decoration: underline;
+}
+
+footer .prueba ul li a {
+text-decoration: none;
+}
+
+a:visited {
+color: #5F5F5F;
+}
+
+a 
+{
+color: #FF3030;
+}
+
+
+#especi a:visited {
+color: #000;
+text-decoration: none;
+}
+
+#especi a:hover {
+color: #fff;
+text-decoration: none;
+}
+ 
+#navi {  
+    list-style:none;
+}
+
+.ingreso
+{
+    width: 250px;
+    height:134;
+    margin: 5px;
+}
+
+
+
+.egresado, .empresario{
+    float: left;
+    margin: 5px 110px 1px;
+    width: 50px;
+    height: 100%;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 1.5;
+    border: 1px;  
+}
+
+
+#ex5 img {
+    opacity: 1;
+    /*Transition*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+}
+
+#ex5 img:hover {  
+    border: 1px solid #eee;
+    opacity: 0.85;
+   /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+
+/*************************************************************************************/
+
+.formularios{
+    background: none repeat scroll 0 0 ;  
+    font-weight: bold;
+    color: #FF3030;
+    min-width: 960px;
+    height:160px;
+    float: right;
+    margin: 30px 1px 1px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    border: 1px;
+    padding-top: 7px;
+}
+
+.busqueda
+{  
+    font-weight: bold;
+    color: #FF3030;
+    min-width: 960px;
+    float: right;
+    margin: px 1px 1px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    border: 1px;
+    padding-top: 20px;
+
+
+}
+
+.ofertas{
+    height: 50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -15px;
+    height: 800px;
+    margin-top: 0;
+} 
+
+.informacion{
+    color: #000000;   
+    font-weight: bold; 
+    text-shadow: 5px 5px 10px rgba(0,0,0,0);   
+    font: normal 11px/100% Verdana, Tahoma, sans-serif;
+
+}
+
+#titulo{
+    padding: 25px 0 0;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
+}
+#titulo2{
+    padding: 0 0 0 15px;
+    color: #FF3030;    
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+/***************** organizar Articulos de la seccion formularios**********************/
+article {
+    float: left;
+    text-align:justify;
+    /*margin: 5px 110px 1px;*/
+    /*width: 200px;*/
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 1.5;
+    border: 1px;
+}
+
+.abajo
+{
+    background: none repeat scroll 0 0 ;  
+    font-weight: bold;
+    color: #FF3030;
+    float: center;
+    line-height: 1.5;
+    border: 1px;
+    padding-top: 1px;
+}
+
+
+/**************************************************************************/
+#contenedor
+{
+    background:white;
+    /*border-radius: 0.5em;*/
+    /*margin: 1em auto;*/
+    /*padding: 1em 0;*/
+    vertical-align: top;
+    width: auto;  
+}
+
+#contenedor article
+{
+    display: inline-block;
+    margin: 0  0.2%;
+    min-height: auto;
+    padding: 2px;
+    overflow:hidden;
+    /*text-shadow: 2px 2px 5px rgba(0,0,0,0.7);*/
+    vertical-align: top;
+    width: 32%;
+}
+
+/*******************************************************************************************/
+
+
+
+#Dcedula
+{
+      /*display: inline-block;
+      background:red;
+      /*padding-right: 160px;*/
+      width:5%;
+      float:left;   
+}
+
+#Ncedula
+{
+      float:left;
+      padding-left: 3px;      
+}
+
+#dos_titulos{
+    width: 50%;
+    background:green;
+ 
+}
+
+#bajar
+{
+    float:left;
+    clear:both; 
+}
+#derecha
+{
+    float:right;  
+    margin-top: 0px; margin-bottom: 0px;
+}
+
+
+
+#tres_titulos
+{
+    float:left;
+    padding-left: 280px;  
+}
+
+
+/********************************************/
+
+/********************titulos*********************************/
+
+.titulos{
+    color: #FF3030;   
+    font-weight: bold; 
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.2);  
+}
+
+
+
+.titulos2
+{
+    color: #666666;
+    font-size:0.7em;
+}
+
+#b1
+{
+    color: #666666;
+    font-size:0.7em; 
+
+}
+
+.titulo3
+{
+
+    color: #000000;
+    font-weight:bold;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.3); 
+}
+
+.titulos4
+{
+    color: #000000;   
+    /*font-weight: bold; */
+    /*text-shadow: 5px 5px 10px rgba(0,0,0,0.7);*/
+}
+
+.titulos5{
+    color: #FF3030;   
+    font-weight: bold; 
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.3);  
+    padding: 20px;
+}
+
+.titulos6
+{
+    color: #FF3030;   
+    font-weight: bold; 
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5); 
+    font-size: 1.5em;
+}
+
+
+
+/************************************************************/
+
+.hoja_vida{
+    float: left;
+    margin: 5px 110px 1px auto;
+    width: 960px;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 1.5;
+    border: 1px; 
+    margin-right: 0; 
+    height:100%; 
+}
+
+#hojaVida{
+    background:#fff;
+    border-radius: 0.5em;
+    color: black;
+    display: block;
+    /*margin: 1em auto;*/
+    width: 95%;
+    padding: 1em;
+    /*position:relative;*/
+    /*float:left;*/
+    height:100%;
+    /*width:50px;*/
+    margin:2em 10px 4em;
+    margin-bottom: 0px;
+
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.1);   
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#login{
+    background:#fff;
+    border-radius: 0.5em;
+    color: black;
+    display: block;
+    /*margin: 1em auto;*/
+    width: 95%;
+    padding: 1em;
+    /*position:relative;*/
+    /*float:left;*/
+    height:15em;
+    /*width:50px;*/
+    margin:2em 10px 4em;
+    width: 450px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.1);   
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+#loginbusqueda
+{    
+    background: #FF4040;
+    /*background: black;*/
+    display: inline-block;
+    color: white;
+    margin: 0;
+    min-height: 35px;
+    padding: 0;
+    vertical-align: top;
+    width: 28em;
+    height: 20px;
+}
+
+#especi
+{
+    background: #FF4040;
+    /*background: black;*/
+    display: inline-block;
+    color: white;
+    margin: 0;
+    min-height: 35px;
+    padding: 0;
+    vertical-align: top;
+    width: 28em;
+    height: 20px; 
+    text-align: right;
+
+}
+
+#tituloacad 
+{
+    color: #66ACCF;
+    text-decoration:none;
+    /*background-color: rgb(10,50,255);*/
+}
+
+.porque 
+{
+    color: #A9ABA9;
+    /*background-color: rgb(10,50,255);*/
+}
+
+#tencabezado 
+{
+        color: #FF4040;
+    text-decoration:none;
+    font-weight: bold; 
+
+
+}
+
+
+.relleno {
+    margin-top: 0.5em; 
+    margin-right: 0.5em; 
+    margin-bottom: 0.5em; 
+    margin-left: 0.5em;
+}
+
+.lista_oferta{
+    /*height: 700px;*/
+    /*margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: absolute;*/
+}
+
+.lista_oferta1{
+    /*height: 700px;*/
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 700px;
+    height: absolute;
+}
+
+
+
+.lista_ofertas{
+    background: none repeat scroll 0 0 ;  
+    font-weight: bold;
+    min-width: 940px;
+    float: right;
+    line-height: 1.5;
+    border: 1px;
+    padding-top: 1px;
+}
+
+
+
+.margen {
+    margin-top: 1em; 
+    margin-right: 1em; 
+    margin-bottom: 1em; 
+    margin-left: 1em;
+    min-width: 500px;
+    height: 100%;
+    border-color: #E1E1E1;
+    font-size: 1em;
+    border-style: solid;
+    border-width: 3px 1px;
+}  
+
+.noticias{
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 240px;
+    padding-right: 0px;
+}
+
+
+/*//////////////////////////////////////*/
+.prueba {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.25em;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    min-width: 960px;
+    /*overflow-x: hidden;*/
+    text-align: center;
+    width: 940px;
+    height: auto;
+}
+
+/**************************************************************************************/
+#estilo {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #E1E1E1;
+    font-size: 1em;
+    border-style: solid;
+    border-width: 1px 1px;
+
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -45px;
+    position: relative;
+    text-align: left;
+    width: 960px;
+}
+/******************************* MENU *****************************************/
+#header nav {
+    letter-spacing: -1px;
+    position: absolute;
+    z-index: 2;
+}
+
+#header nav li {
+    float: left;
+}
+
+#subnav {
+    font-size: 1.15em;
+    right: 15px;
+    top: 114px;
+}
+
+#header nav ul:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+ul, menu, dir {
+    display: block;
+    padding-left-ltr-source: logical;
+    padding-right-rtl-source: logical;
+    padding-start-value: 40px;
+}
+
+nav ul, nav ol {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+li {
+    display: list-item;
+}
+
+#subnav {
+    font-size: 1.15em;
+    right: 10px;
+    top: 205px;
+}
+
+
+#subnav a {
+    color: #C91231;
+    display: block;
+    height: 35px;
+    line-height: 30px;
+    padding-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0;
+}
+
+#subnav a:focus, #subnav a:hover {
+    background-color: #FF4040;
+    color: #FFFFFF;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: 0;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+
+#subnav li.rss a:after {
+    background-position: -131px -185px;
+    content: " ";
+    display: block;
+    float: right;
+    height: 24px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 5px;
+    width: 24px;
+}
+
+#mensaje{
+        height: 50px;
+        width: 450px;
+        display: block;
+        float: left;
+        padding-bottom: 35px;
+        padding-left: 20em;
+        padding-right: 5px;
+        padding-top: 5px
+}
+
+
+
+
+
+
+/*********************************************************************/
+/***bordes redondeados buscar**********************************************/
+
+.drop-shadow {
+    position:relative;
+    float:left;
+    width: 95%;   /*tamaño de ancho*/
+    padding:1em;   /*ancho general maxizar*/
+    margin:-10px 8px 0;  /*1.margen arriga hacia abajo  2.margen iquierda a derecha
+    3.espacio que se deja haca abajo  */ 
+    background:#FF4040;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+ 
+.drop-shadow:before,
+.drop-shadow:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+}
+ 
+.drop-shadow p {
+    font-size:16px;
+    font-weight:bold;
+}
+ 
+
+.lifted {
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+ 
+.lifted:before,
+.lifted:after {
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);  
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);   
+    -moz-transform:rotate(-3deg);  
+    -ms-transform:rotate(-3deg);  
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+}
+
+.lifted:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:rotate(3deg);  
+    -moz-transform:rotate(3deg); 
+    -ms-transform:rotate(3deg); 
+    -o-transform:rotate(3deg);
+    transform:rotate(3deg);
+}
+/***************************************************************************************/
+/*botones*/
+
+button.punch {
+  background: #4162a8;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 2px 0px #1f3053, 0 2px 4px 1px #111;
+  color: #fff;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px  5px 5px;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px #1e2d4d;
+  width: 120px;
+  -webkit-background-clip: padding-box;
+}
+ 
+button.punch:hover {
+  -moz-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111;
+  -webkit-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 3px 4px 1px #111;
+  box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 3px 4px 1px #111;
+  cursor: pointer;
+}
+ 
+button.punch:active {
+  -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111;
+  margin-top: 8px; /*Modify this for the press effect*/
+}
+
+
+
+
+/******************formularios *******************************************************************/
+
+input, textarea, select {  
+    padding: 8px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 11px/100% Verdana, Tahoma, sans-serif;  
+    width: 200px;  
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    }  
+  
+textarea {  
+    width: 850px;  
+    max-width: 770px;  
+    height: 150px;  
+    line-height: 300%;  
+    }  
+  
+input:hover, textarea:hover,  
+input:focus, textarea:focus {  
+    border-color: #C9C9C9;  
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 150px ;  
+
+    /*cursor: pointer;*/
+    } 
+
+
+  
+.form label {  
+    margin-left: 9px;  
+    font: normal 14px/100% Verdana, Tahoma, sans-serif;
+    color: #000000;  
+    }  
+  
+
+input.login {
+       display: inline-block;
+       -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+       border-radius: 4px;
+
+       width:auto;
+       color:#fff;
+       font-size:12px;
+
+   white-space: nowrap;
+   line-height:1em;
+   position:relative;
+   outline: none;
+   overflow: visible; 
+   cursor: pointer;
+   border: 1px solid #999;
+    border: rgba(0, 0, 0, .2) 1px solid;
+   border-bottom:rgba(0, 0, 0, .4) 1px solid;
+   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   background: -moz-linear-gradient(
+      center top,
+      rgba(255, 255, 255, .1) 0%,
+      rgba(0, 0, 0, .1) 100%
+   );
+   background: -webkit-gradient(
+      linear,
+      center bottom,
+      center top,
+      from(rgba(0, 0, 0, .1)),
+      to(rgba(255, 255, 255, .1))
+   );
+   -moz-user-select: none;
+   -webkit-user-select:none;
+   -khtml-user-select: none;
+   user-select: none;
+   margin-bottom:10px;
+
+}
+
+input.login:hover, .button:hover{
+
+   background: -moz-linear-gradient(
+      center top,
+      rgba(230, 39, 9, .9) 0%,
+      rgba(230, 39, 9, .8) 100%
+   );
+   background: -webkit-gradient(
+      linear,
+      center bottom,
+      center top,
+      from(rgba(230, 39, 9, .1)),
+      to(rgba(230, 39, 9, .2))
+   );
+}
+
+/***********************boton css3**********************************************************/
+
+.button, .button span {
+   display: inline-block;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+}
+
+.button {
+   white-space: nowrap;
+   line-height:1em;
+   position:relative;
+   outline: none;
+   overflow: visible; 
+   cursor: pointer;
+   border: 1px solid #999;
+    border: rgba(0, 0, 0, .2) 1px solid;
+   border-bottom:rgba(0, 0, 0, .4) 1px solid;
+   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   background: -moz-linear-gradient(
+      center top,
+      rgba(255, 255, 255, .1) 0%,
+      rgba(0, 0, 0, .1) 100%
+   );
+   background: -webkit-gradient(
+      linear,
+      center bottom,
+      center top,
+      from(rgba(0, 0, 0, .1)),
+      to(rgba(255, 255, 255, .1))
+   );
+   -moz-user-select: none;
+   -webkit-user-select:none;
+   -khtml-user-select: none;
+   user-select: none;
+   margin-bottom:10px;
+}
+
+.button.full, .button.full span {
+   display: block;
+}
+
+
+.button:hover, .button.hover {
+   background: -moz-linear-gradient(
+      center top,
+      rgba(255, 255, 255, .2) 0%,
+      rgba(255, 255, 255, .1) 100%
+   );
+   background: -webkit-gradient(
+      linear,
+      center bottom,
+      center top,
+      from(rgba(255, 255, 255, .1)),
+      to(rgba(255, 255, 255, .2))
+   );
+}
+
+
+.button:active, .button.active {
+   top:1px;
+}
+
+.button span {
+   position: relative;
+   font-weight:bold;
+   text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+   border-top: rgba(255, 255, 255, .2) 1px solid;
+   padding:0.6em 1.3em;
+   line-height:1em;
+   text-align:center;
+   white-space: nowrap;
+}
+
+
+/************************ estilos para los tamaños*************************/
+
+.button.pequeno span {
+   font-size:12px;
+}
+
+.button.mediano span {
+   font-size:16px;
+}
+.button.grande span {
+   font-size:22px;
+}
+
+   
+/*************************** color etiqueta boton******************************/
+
+.button.etiqueta_blanco span {
+  color:#fff;
+}
+
+.button.etiqueta_azul span {
+  color:#4162a8;
+}
+.button.etiqueta_rojo span {
+
+}
+
+
+
+/*************************     3 colores  *******************************/
+
+.button.rojo {
+   background-color: #e62727;
+}
+.button.naranja {
+   background-color: #ff5c00;
+}
+
+.button.azul {
+   background-color: #00ADEE;
+}
+
+.button.gris {
+   background-color: #e9eff2;
+}
+
+
+/*******************botones submit*************************************************/
+
+.login.rojo{
+    background-color: #e62727;
+    font-size:12px;
+    font-weight: bold;
+}
+
+.login.gris{
+    background-color: #e9eff2;
+    font-size:12px;
+    font-weight: bold;
+      color:#4162a8;
+}
+
+
+
+/**************************boton css3********************************************************/
+
+/******************fromulario ubicacion clase******************************************/
+
+.ubicacion{
+        height: 45px;
+        width: 250px;
+        display: block;
+        float: left;
+        padding-bottom: 35px;
+        padding-left: 7em;
+        padding-right: 0;
+        padding-top: 0; 
+        /*border-color: 1px;
+        /*border: solid;
+        /*border-width: 1px;    */
+
+}
+
+.juntar{
+        height: 15px;
+        width: 900px;
+        display: block;
+        float: left;
+        padding-bottom: 15px;
+        padding-left: 140px;
+        padding-right: 0;
+        padding-top: 0;
+
+}
+
+
+.ubicacion1{
+        height: 50px;
+        width: 230px;
+        display: block;
+        float: left;
+        padding-bottom: 35px;
+        padding-left: 3em;
+        padding-right: 5px;
+        padding-top: 5px
+
+}
+
+.ubicacion2{
+        height: 100%;
+        width: 100%;
+        display: block;
+        float: left;
+        padding-bottom: 35px;
+        padding-left: 3em;
+        padding-right: 5px;
+        padding-top: 5px
+}
+
+.radioButtonListHorizontal{
+    float: left;
+    height: 100px;
+    /*height: 20px;*/
+    width: 100px;
+    padding-left: 4em;
+    padding-right: 2em;
+    text-align:height;
+}
+
+div.centrado{
+    padding-left: 150px;
+    padding-right: 0;
+    width: 700px;
+}
+
+.color_blanco{
+    color: #fff;
+
+}
+
+#radio
+{    
+    color: #aaa;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding-left: 0.5em;
+}
+
+
+
+
+
+
+/********** MENU HOJA DE VIDA USUARIO ***********************************/
+
+#menuhoriz {
+    font-size: 1em;
+    right: 10px;
+    top: 900px;
+
+}
+
+
+#menuhoriz a {
+    color: #C91231;
+    display: block;
+    height: 35px;
+    line-height: 30px;
+    padding-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0;
+    text-align:center;
+}
+
+#menuhoriz a:focus, #menuhoriz a:hover {
+    background-color: #FF4040;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #FFFFFF;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: 0;
+}
+
+#menuhoriz li.rss  a:after {
+    background-position: -131px -185px;
+    content: " ";
+    display: block;
+    float: right;
+    height: 24px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 5px;
+    width: 24px;
+
+}
+
+#menuhoriz ul li {
+        background-color:white; /* Color de fondo */
+        color: #C91231;
+        text-align:center;
+        display: inline;
+        float: left;
+        margin: 1px; /* Separar los botones */
+        padding: 2px 7px; /*Separar el texto*/
+        position: center;
+}
+
+/*******************************************************************************/
+
+.body{
+    background:#fff;
+    border-radius: 0.5em;
+    color: black;
+    display: inline-block;
+    width: 95%;
+    padding: 1em;
+    margin:2em 10px 4em;
+    margin-top: 10px;
+    margin-bottom: absolute;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.1);   
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+div[class="body"]
+{
+margin-top: 3px; margin-bottom: 3px;
+    -moz- box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+.link{
+    text-decoration: none;
+    color: #66ACCF;
+}
+
+
+.bloque{
+    float: left;
+    text-align:justify;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 1.5;
+    border: 1px; 
+    padding: 10px; 
+    width: 47%;    
+}
+
+
+.ancho-130px {
+    width: 250px;
+}
+
+.fotoperfil{
+    width: 95px;
+    height: 105px;
+    
+}
+
+.f-l {
+    float: left;
+}
+
