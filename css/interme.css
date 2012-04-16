@@ -827,6 +827,10 @@ input, textarea, select {
     -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     }  
+
+input.radio{
+    width: auto; 
+}    
   
 textarea {  
     width: 850px;  
@@ -1088,13 +1092,14 @@ input.login {
 
 .juntar{
         height: 15px;
-        width: 900px;
+        width: 600px;
         display: block;
         float: left;
         padding-bottom: 15px;
-        padding-left: 140px;
+        padding-left: 300px;
         padding-right: 0;
         padding-top: 0;
+        text-align:left;
 
 }
 
