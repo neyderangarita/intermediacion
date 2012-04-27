@@ -1,0 +1,485 @@
+/* ===== Primary Styles ========================================================
+   Author: Neyder Angarita Osorio
+   ========================================================================== */
+
+body{
+	color: #FF3030; 
+    font-family: 'open sans',Arial,Sans-serif;
+    font-size: 16px
+}
+
+article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, nav, section, body {
+    display: block;
+}
+
+header {
+    height: 100%;
+    position: relative;
+    background: #FFFFFF;
+    background-image: url("../img/articulos-top3-bg.png");
+    z-index: 1
+}
+
+header div {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-origin: padding-box;
+    background-position: 680px top;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border-top-color: #FFFFFF;
+    border-top-style: solid;
+    border-top-width: 0px;
+    display: block;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 1170px
+}
+
+
+
+a {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: #000	
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold
+}
+
+/*************************************************************
+*                                                            *
+*               borede del contenedor                        *
+*                                                            *
+**************************************************************/
+.container{
+
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #E1E1E1;
+    border-style: solid;
+    border-top-width: 0;
+    border-width: 1px 1px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+#sin_bordes{
+    border-color: #FFFFFF;
+    border-style: none;
+    border-width: 0px 0px;
+    margin-bottom: 0;
+}
+
+/*************************************************************
+*                                                            *
+*                        MENU                                *
+*                                                            *
+**************************************************************/
+
+.subnav
+{
+
+    margin: 0;
+    padding: 0
+}
+
+.subnav li {
+    float: left;
+    list-style: none;
+}
+
+
+.subnav li a
+{
+    display: block;
+    /*border-right: 1px solid white;*/
+    white-space: nowrap
+    text-decoration: none;
+    background: #fff;
+
+    color: #C91231;
+    height: 35px;
+    line-height: 30px;
+    padding-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0;
+    /*font: 500 1.2em ubuntu,helvetica,arial,sans-serif;*/
+    font-weight: bold;
+    /*bordes redondeados*/
+    outline-color: text-color;
+    outline-style: none;
+    outline-width: 0;
+    border-radius: 7px
+}
+/*#subnav a:focus,*/
+
+.subnav li a:hover {
+    
+    background-color: #FF4040;
+    color: #FFFFFF;
+
+    outline-color: text-color;
+    outline-style: none;
+    outline-width: 0;
+    border-radius: 7px
+}
+    .subnav li ul li
+    {   
+        float: none;
+        display: inline
+    }
+
+    .subnav li ul li a
+    {   
+        width: auto;
+        background: #eee;
+        outline-color: text-color;
+        outline-style: none;
+        outline-width: 0;
+        border-radius: 0px;
+        /*color: #24313C*/
+    }
+
+    .subnav li ul li a:hover
+    {   
+        background: #ffa0a0
+    }
+
+    .subnav li ul
+    {
+        margin: 0 0 0 0
+
+    }
+
+/*************************************************************
+*                                                            *
+*                        imagenes egresados                  *
+*                                                            *
+**************************************************************/
+
+
+.egresado{
+    float: left;
+    margin-top: 10px;
+    margin-left: 170px; 
+}
+
+
+
+.tam-imagen
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*************************************************************
+*                                                            *
+*                   efecto reflejo imagenes                  *
+*                                                            *
+**************************************************************/
+#ex5 img {
+    opacity: 1;
+
+    /*Transition*/
+  
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    /*Reflection*/ 
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+    border:transparent;
+}
+
+#ex5 img:hover {  
+    border: 1px solid #eee;
+    opacity: 0.85;
+   /*Reflection*/
+   border:transparent;
+
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+   /*Glow*/
+  
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+/*************************************************************
+*                                                            *
+*                   no se                  *
+*                                                            *
+**************************************************************/
+
+.busqueda
+{  
+    font-weight: bold;
+    color: #FFFFFF;
+    /*min-width: 500px;*/
+    width:100%;
+    float: right;
+}
+/*********************************************************************/
+/***bordes redondeados buscar**********************************************/
+.drop-shadow {
+    position:relative;
+    float:left;
+    padding-top: 10px;
+    width: 97%;   /*tamaño de ancho*/
+    /*padding:0.6em;   /*ancho general maxizar*/
+    margin:-10px 8px 0;  /*1.margen arriga hacia abajo  2.margen iquierda a derecha
+    3.espacio que se deja haca abajo  */ 
+    background:#FF4040;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.drop-shadow:before,
+.drop-shadow:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+}
+.drop-shadow p {
+    font-size:16px;
+    font-weight:bold;
+}
+.lifted {
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+.lifted:before,
+.lifted:after {
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);  
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);   
+    -moz-transform:rotate(-3deg);  
+    -ms-transform:rotate(-3deg);  
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+}
+.lifted:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:rotate(3deg);  
+    -moz-transform:rotate(3deg); 
+    -ms-transform:rotate(3deg); 
+    -o-transform:rotate(3deg);
+    transform:rotate(3deg);
+}
+/***************************************************************************************/
+
+.body{
+    background:#fff;
+    border-radius: 0.5em;
+    color: black;
+    display: inline-block;
+    width: 98%;
+    height:auto;
+    padding: 1em;
+    margin:2em 10px 4em;
+    margin-top: 10px;
+    margin-left: 3px; 
+    margin-right: 3px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 1em;
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.08)
+}
+
+div[class="body"]{
+    width:98.5%;
+    margin-top: 3px;
+    margin-bottom: 0.005em
+}
+
+.pading{
+    margin-left: 150px;
+}
+
+/*****************************************************************************************/
+
+div.aviso 
+{
+width: 100%;
+background-position: top;
+background-position-x: 50%;
+background-position-y: 0%;
+padding: 10px 10px 3px 10px;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 3px;
+padding-left: 10px;
+position: relative;
+border-bottom: 1px solid #CCC;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #CCC;
+}
+
+div.aviso a 
+{
+    color: #444444 !important;
+    text-decoration: none;
+}
+
+div.aviso a:hover{
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.aviso span {
+    display: block;
+    line-height: 17px;
+}
+
+
+
+.destacado {
+
+background: white url(../imgs/listado/bk-destacado.jpg) repeat-x;
+background-image: url(http://static.zonajobs.com.co/imgs/listado/bk-destacado.jpg);
+background-repeat-x: repeat;
+background-repeat-y: no-repeat;
+
+background-color: white;
+border: 1px solid #de99a1;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-color: #de99a1;
+border-right-color: #de99a1;
+border-bottom-color: #de99a1;
+border-left-color: #de99a1;
+margin-bottom: 6px;}
+}
+
+.destacado {
+min-height: 81px;
+}
+
+.destacado strong {
+    color: #FF3030;   
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.destacado .date {
+    border-top-color: #9DC1C0;
+    border-top-style: dotted;
+    border-top-width: 1px;
+}
+
+.destacado .bk-bottom {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../imgs/listado/b-bk-destacado.jpg");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+}
+
+.aviso .date em {
+    color: #008599;
+    float: right;
+    font-style: normal;
+}
+
+/***********************************ELEMENTOS DEL FOOTER*****************************************/
+
+.prueba {
+    padding-top: 0.25em;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    min-width: 50px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+
+#navi {  
+    list-style:none;
+}
+
+a:visited {
+color: #5F5F5F;  /****gis****/
+}
+
+a 
+{
+color: #FF3030;  /****rojo****/
+}
+
+/************************************titulos****************************************/
+
+.titulo
+{
+    color: #FF3030; 
+    font-size: 1.3em;
+    font-weight: bold; 
+    margin-left: 27px;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.2)
+}
+
+.titulos{
+    color: #FF3030;   
+    font-weight: bold; 
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.2);  
+}
+
+.titulos2
+{
+    color: #666666;
+    font-size:0.7em;
+}
+
+.titulo3
+{
+
+    color: #000000;
+    font-weight:bold;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.3); 
+}
+
+/***********************************************************************************/
+
+.listado li
+{
+    padding-bottom: 5px;
+    margin: 0 0 6px 9px;
+    padding: 0;    
+    list-style:none;
+
+}
+.body ul{
+    padding-top:30px;
+}
+
+
