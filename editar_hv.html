@@ -27,7 +27,6 @@
           e.preventDefault();
           $(this).tab('show');
 
-
         })
       </script>
 
@@ -35,18 +34,23 @@
 
   
 </head>
-<body>
+<body class="single single-post postid-518 single-format-standard">
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-    <header>
-      <div>
-        <h1>
-          <a title="Ingermediacion Laboral" href="/">
-          <img alt="Ingermediacion Laboral" src="img/principal/logo.png">
-          </a>
-        </h1>
-      </div>
-    </header>
+  <div id="section-header" class="super-container full-width">
+    <div class="container">
+      <header>
+        <div>
+          <h1>
+            <a title="Ingermediacion Laboral" href="/">
+            <img alt="Ingermediacion Laboral" src="img/principal/logo.png">
+            </a>
+          </h1>
+        </div>
+      </header>
+    </div>
+  </div>
+
 
      <div class="container"> <!-- /container -->
 
@@ -150,8 +154,8 @@
               </div>
             </div>
 
-            <form class="">
-              <fieldset>
+        <form class="">
+          <fieldset>
 
 
             <div class="body"> <!--body1 -->
@@ -484,7 +488,7 @@
 
                   <div class="pading"><!--pading -->
 
-                  <div class="span4"> <!--divisor span 4 -->
+                    <div class="span4"> <!--divisor span 4 -->
 
 
 
@@ -552,295 +556,166 @@
 
 
 
-                          <div class="control-group">
-                            <label class="control-label" for="email"><spam class="titulos">*Correo Electrónico: </span></label>
-                            <div class="controls">
-                              <input type="text" class="input" name="email" id="email" size="25" required placeholder="Correo Electrónico"/>
-                            </div>
-                              <p class="help-block" for="email" style="display:none"> help text</p>
-                          </div>
-
-
                           <div class="control-group">      
-                            <label class="control-label"  for="genero"><spam class="titulos">*Sexo:</span></label>
+                            <label class="control-label"  for="ano_expe"><spam class="titulos">*Años de experiencia:</span></label>
                             <div class="controls">
-                            <select id="genero" name="genero" required>
+                            <select id="ano_expe"  name="ano_expe" required>
                               <option value="">Por favor seleccione</option>
-                              <option value="Male">Masculino</option>
-                              <option value="Female">Femenino</option>
+                              <option value="0">Menos de un año</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                              <option value="32">32</option>
+                              <option value="33">33</option>
+                              <option value="34">34</option>
+                              <option value="35">35</option>
+                              <option value="36">Más de 35 años de experiencia</option>
                             </select>
                             </div>
-                            <p class="help-block" for="identificacion" style="display:none">help text</p>
-                          </div>
-
-
-                          <div class="control-group">      
-                            <label class="control-label"  for="pais_nacionalidad"><spam class="titulos">*País de nacionalidad:</span></label>
-                            <div class="controls">
-                            <select id="pais_nacionalidad" name="pais_nacionalidad" required>
-                              <option value="">Por favor seleccione</option>
-                              <option value="12">Colombia</option>
-                              <option value="17">Alemania</option>
-                              <option value="2">Argentina</option>
-                              <option value="101184083">Aruba</option>
-                              <option value="3">Australia</option>
-                              <option value="4">Austria</option>
-                              <option value="5">Bélgica</option>
-                              <option value="6">Bolivia</option>
-                              <option value="7">Brasil</option>
-                              <option value="9">Canadá</option>
-                              <option value="10">Chile</option>
-                              <option value="11">China</option>
-                              <option value="14">Corea del Sur</option>
-                              <option value="13">Costa Rica</option>
-                              <option value="15">Cuba</option>
-                              <option value="16">Curacao</option>
-                              <option value="101123022">Dinamarca</option>
-                              <option value="19">Ecuador</option>
-                              <option value="46">El Salvador</option>
-                              <option value="101124026">Escocia</option>
-                              <option value="101231130">Eslovenia</option>
-                              <option value="20">España</option>
-                              <option value="53">Estados Unidos</option>
-                              <option value="21">Francia</option>
-                              <option value="24">Guatemala</option>
-                              <option value="23">Guinea-Ecuatorial</option>
-                              <option value="28">Haití</option>
-                              <option value="27">Holanda</option>
-                              <option value="26">Honduras</option>
-                              <option value="25">Hong Kong</option>
-                              <option value="29">Hungría</option>
-                              <option value="31">India</option>
-                              <option value="22">Inglaterra</option>
-                              <option value="32">Irlanda</option>
-                              <option value="30">Islas Comores</option>
-                              <option value="33">Israel</option>
-                              <option value="34">Italia</option>
-                              <option value="35">Jamaica</option>
-                              <option value="36">Japón</option>
-                              <option value="101231131">Lituania</option>
-                              <option value="37">México</option>
-                              <option value="38">Nicaragua</option>
-                              <option value="39">Noruega</option>
-                              <option value="101124024">Nueva Zelanda</option>
-                              <option value="40">Panamá</option>
-                              <option value="45">Paraguay</option>
-                              <option value="41">Perú</option>
-                              <option value="42">Polonia</option>
-                              <option value="44">Portugal</option>
-                              <option value="43">Puerto Rico</option>
-                              <option value="18">República Dominicana</option>
-                              <option value="101124025">Rusia</option>
-                              <option value="47">Suecia</option>
-                              <option value="48">Suiza</option>
-                              <option value="49">Trinidad y Tobago</option>
-                              <option value="50">Turquía</option>
-                              <option value="51">Ucrania</option>
-                              <option value="52">Uruguay</option>
-                              <option value="54">Venezuela</option>
-                            </select>
-                            </div>
-                            <p class="help-block" for="pais_nacionalidad" style="display:none">help text</p>
-                          </div>
-
-
-                          <div class="control-group">      
-                            <label class="control-label"  for="departamento"><spam class="titulos">*Departamento de residencia:</span></label>
-                            <div class="controls">
-                            <select id="departamento" name="departamento" required>
-                              <option value="">Por favor seleccione</option>
-                              <option value="12">Meta</option>
-                              <option value="17">Cundinamarca</option>
-                              <option value="2">Antioquia</option>
-                            </select>
-                            </div>
-                            <p class="help-block" for="departamento" style="display:none">help text</p>
-                          </div>
-
-
-                          <div class="control-group">
-                            <label class="control-label" for="direccion"><spam class="titulos">*Dirección de residencia:  </span></label>
-                            <div class="controls">
-                              <input type="text" class="input" name="direccion" id="direccion" size="25" required placeholder="Direccion Residencia"/>
-                            </div>
-                              <p class="help-block" for="direccion" style="display:none"> help text</p>
-                          </div>
-
-                          <div class="control-group">
-                            <label class="control-label" for="telefono2">Teléfono oficina: </label>
-                            <div class="controls">
-                              <input type="text" class="input" name="telefono2" id="telefono2" size="25" required placeholder="Teléfono oficina"/>
-                            </div>
-                              <p class="help-block" for="telefono2" style="display:none"> help text</p>
-                          </div>
-
-                  </div>  <!--divisor span 4 -->
-
-                  <div class="span3"> <!--divisor span 3 -->
-
-                          <div class="control-group">
-                            <label class="control-label" for="apellido">Apellidos:</label>
-                            <div class="controls">
-                            <input type="text" class="input" name="apell" value="angarita osorio" id="apellido" size="25" required placeholder="Apellido" disabled/>
-                            </div> 
-                            <p class="help-block" for="apellido" style="display:none">Supporting help text</p>
-                          </div>
-
-
-                          <div class="control-group">
-                            <label class="control-label" for="num_document"><spam class="titulos">*Documento de identificación:</span> </label> 
-                            <div class="controls">              
-                            <input type="text" class="input" name="num_document" value="01101000 01101001 " id="num_document" size="25" required placeholder="Identificación" disabled/>
-                            </div> 
-                            <p class="help-block" for="num_document" style="display:none">Supporting help text</p> 
-                          </div>
-
-
-                          <div class="control-group">
-                            <label class="control-label" for="email2">Correo alterno:</label>
-                            <div class="controls">
-                              <div class="input-prepend">
-                              <span class="add-on" style="margin-right: -5px;">
-                                <i class="icon-envelope"></i>
-                              </span>
-                              <input type="text" class="input" name="email2" id="email2" style="margin-bottom: 0px; width: 186px;" size="25" required placeholder="Correo Alterno"/>
-                              </div>
-
-                              <p class="help-block" for="email2" style="display:none"> help text</p>
-                            </div>
-                          </div>
-
-
-                          <div class="control-group">      
-                            <label class="control-label"  for="genero"><spam class="titulos">*Estado civil: </span></label>
-                            <div class="controls">
-                            <select id="estado" name="estado" required>
-                              <option value="">Por favor seleccione</option>
-                              <option value="2">Casado(a)</option>
-                              <option value="3">Soltero(a)</option>
-                              <option value="4">Unión libre</option>
-                              <option value="5">Divorciado(a)</option>
-                              <option value="6">Viudo(a)</option>
-                            </select>
-                            </div>
-                            <p class="help-block" for="identificacion" style="display:none">help text</p>
+                            <p class="help-block" for="ano_expe" style="display:none">help text</p>
                           </div> 
 
 
-                          <div class="control-group">      
-                            <label class="control-label"  for="pais_nacionalidad"><spam class="titulos">*País de residencia: </span></label>
+                          <div class="control-group">
+                            <label class="control-label" for="actual_trabaja">¿Trabaja actualmente? </label>
                             <div class="controls">
-                              <select id="pais_nacionalidad"  name="pais_nacionalidad" required>
-                                <option value="">Por favor seleccione</option>
-                                <option value="12">Colombia</option>
-                                <option value="17">Alemania</option>
-                                <option value="2">Argentina</option>
-                                <option value="101184083">Aruba</option>
-                                <option value="3">Australia</option>
-                                <option value="4">Austria</option>
-                                <option value="5">Bélgica</option>
-                                <option value="6">Bolivia</option>
-                                <option value="7">Brasil</option>
-                                <option value="9">Canadá</option>
-                                <option value="10">Chile</option>
-                                <option value="11">China</option>
-                                <option value="14">Corea del Sur</option>
-                                <option value="13">Costa Rica</option>
-                                <option value="15">Cuba</option>
-                                <option value="16">Curacao</option>
-                                <option value="101123022">Dinamarca</option>
-                                <option value="19">Ecuador</option>
-                                <option value="46">El Salvador</option>
-                                <option value="101124026">Escocia</option>
-                                <option value="101231130">Eslovenia</option>
-                                <option value="20">España</option>
-                                <option value="53">Estados Unidos</option>
-                                <option value="21">Francia</option>
-                                <option value="24">Guatemala</option>
-                                <option value="23">Guinea-Ecuatorial</option>
-                                <option value="28">Haití</option>
-                                <option value="27">Holanda</option>
-                                <option value="26">Honduras</option>
-                                <option value="25">Hong Kong</option>
-                                <option value="29">Hungría</option>
-                                <option value="31">India</option>
-                                <option value="22">Inglaterra</option>
-                                <option value="32">Irlanda</option>
-                                <option value="30">Islas Comores</option>
-                                <option value="33">Israel</option>
-                                <option value="34">Italia</option>
-                                <option value="35">Jamaica</option>
-                                <option value="36">Japón</option>
-                                <option value="101231131">Lituania</option>
-                                <option value="37">México</option>
-                                <option value="38">Nicaragua</option>
-                                <option value="39">Noruega</option>
-                                <option value="101124024">Nueva Zelanda</option>
-                                <option value="40">Panamá</option>
-                                <option value="45">Paraguay</option>
-                                <option value="41">Perú</option>
-                                <option value="42">Polonia</option>
-                                <option value="44">Portugal</option>
-                                <option value="43">Puerto Rico</option>
-                                <option value="18">República Dominicana</option>
-                                <option value="101124025">Rusia</option>
-                                <option value="47">Suecia</option>
-                                <option value="48">Suiza</option>
-                                <option value="49">Trinidad y Tobago</option>
-                                <option value="50">Turquía</option>
-                                <option value="51">Ucrania</option>
-                                <option value="52">Uruguay</option>
-                                <option value="54">Venezuela</option>
-                              </select>
-                            </div>
-                            <p class="help-block" for="identificacion" style="display:none">help text</p>
-                          </div> 
+                              <label class="radio inline">Si
+                              <input type="radio" name="actual_trabaja" id="actual_trabaja1"  value="si" checked=""  />
+                              
+                              </label>
+                              <label class="radio inline">No
+                              <input type="radio" name="actual_trabaja" id="actual_trabaja2"  value="no" checked=""  />
+                              </label>
+                            </div> 
+                            <p class="help-block" for="actual_trabaja" style="display:none">Supporting help text</p>
+                          </div>
+
+
+                          <div class="control-group">
+                            <label class="control-label" for="trasladarse">Posibilidad de trasladarse:  </label>
+                            <div class="controls">
+                              <label class="radio inline">Si
+                              <input type="radio" name="trasladarse" id="trasladarse1"  value="si" checked=""  />
+                              
+                              </label>
+                              <label class="radio inline">No
+                              <input type="radio" name="trasladarse" id="trasladarse2"  value="no" checked=""  />
+                              </label>
+                            </div> 
+                            <p class="help-block" for="trasladarse" style="display:none">Supporting help text</p>
+                          </div>
+
+
+                          <div class="control-group">
+                            <label class="control-label" for="viajar">Posibilidad de viajar: </label>
+                            <div class="controls">
+                              <label class="radio inline">Si
+                              <input type="radio" name="viajar" id="viajar1"  value="si" checked=""  />
+                              
+                              </label>
+                              <label class="radio inline">No
+                              <input type="radio" name="viajar" id="viajar2"  value="no" checked=""  />
+                              </label>
+                            </div> 
+                            <p class="help-block" for="viajar" style="display:none">Supporting help text</p>
+                          </div>
+
+
+                    </div>  <!--divisor span 4 -->
+
+                    <div class="span3"> <!--divisor span 3 -->
+
+                          <div class="control-group">
+                            <label class="control-label" for="foto_hv">Subir foto a la hoja de vida:</label>
+                            <div class="controls">
+                            <input  class="input-file" name="foto_hv" id="foto_hv"  type="file" />
+                            </div> 
+                            <p class="help-block" for="foto_hv" style="display:none">Supporting help text</p>
+                          </div>
+
+
 
                           <div class="control-group">      
-                            <label class="control-label"  for="ciudad"><spam class="titulos">*Ciudad de residencia:</span></label>
+                            <label class="control-label"  for="Aspiración"><spam class="titulos">*Aspiración salarial (mensual): </span></label>
                             <div class="controls">
-                            <select id="ciudad" name="ciudad" required>
+                            <select id="Aspiración" name="Aspiración" required>
                               <option value="">Por favor seleccione</option>
-                              <option value="12">Villavicencio</option>
-                              <option value="17">Medellin</option>
+                              <option value="1">Menos de $550.000</option>
+                              <option value="2">$ 550.001 - $ 1.000.000</option>
+                              <option value="3">$ 1.000.001 - $ 1.500.000</option>
+                              <option value="4">$ 1.500.001 - $ 2.000.000</option>
+                              <option value="5">$ 2.000.001 - $ 2.500.000</option>
+                              <option value="6">$ 2.500.001 - $ 3.000.000</option>
+                              <option value="7">$ 3.000.001 - $ 3.500.000</option>
+                              <option value="8">$ 3.500.001 - $ 4.000.000</option>
+                              <option value="9">$ 4.000.001 - $ 4.500.000</option>
+                              <option value="10">$ 4.500.001 - $ 5.500.000</option>
+                              <option value="23">$ 5.500.001 - $ 6.000.000</option>
+                              <option value="27">$ 6.000.001 - $ 8.000.000</option>
+                              <option value="28">$ 8.000.001 - $ 10.000.000</option>
+                              <option value="29">$ 10.000.001 - $ 12.500.000</option>
+                              <option value="30">$ 12.500.000 - $ 15.000.000</option>
+                              <option value="31">$ 15.000.001 - $ 18.000.000</option>
+                              <option value="32">$ 18.000.001 - $ 21.000.000</option>
+                              <option value="33">Mas de $ 21.000.000</option>
                             </select>
                             </div>
-                            <p class="help-block" for="ciudad" style="display:none">help text</p>
-                          </div>  
-
-
-
-                          <div class="control-group">
-                            <label class="control-label" for="telefono"><spam class="titulos">*Teléfono residencia:  </span></label>
-                            <div class="controls">
-                              <input type="text" class="input" name="telefono" id="telefono" size="25" required placeholder="Teléfono residencia"/>
-                            </div>
-                              <p class="help-block" for="telefono" style="display:none"> help text</p>
+                            <p class="help-block" for="Aspiración" style="display:none">help text</p>
                           </div>
 
-
-                          <div class="control-group">
-                            <label class="control-label" for="celular"><spam class="titulos">*Teléfono celular:    </span></label>
-                            <div class="controls">
-                              <input type="text" class="input" name="celular" id="celular" size="25" required placeholder="Teléfono celular"/>
-                            </div>
-                              <p class="help-block" for="celular" style="display:none"> help text</p>
-                          </div>
-                      </div> <!--divisor span 3 -->
-                    </div>  <!--pading -->
-                  </div> <!--row-fluid 2 -->
-                </div> <!--container-fluid 2 -->
-              </div>  <!--body 2 -->
+                          <br><br><br><br><br><br><br>
 
 
+                          <button class="btn btn-danger" type="submit">
+                            <i class=" icon-ok-circle icon-white"></i>
+                            GUARDAR
+                          </button>
 
 
-              </fieldset>
-            </form>
+                          <!--
+                          <a href="" class="twitter"></a>
+                          <a href="" class="facebook"></a>
+                        -->
 
 
 
-          </div>  <!--Información personal -->
+                    </div> <!--divisor span 3 -->
+                  </div>  <!--pading -->
+                </div> <!--row-fluid 2 -->
+              </div> <!--container-fluid 2 -->
+            </div>  <!--body 2 -->
+          </fieldset>
+        </form>
+
+      </div>  <!--Información personal -->
 
           <div class="tab-pane" id="tab1-2">
             <p>I'm in Section 1.2.</p>

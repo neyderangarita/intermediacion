@@ -13,11 +13,15 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
 }
 
 header {
+
+    /*
     height: 100%;
     position: relative;
     background: #FFFFFF;
     background-image: url("../img/articulos-top3-bg.png");
     z-index: 1
+
+    */
 }
 
 header div {
@@ -60,7 +64,7 @@ h1 {
 *               borede del contenedor                        *
 *                                                            *
 **************************************************************/
-.container{
+.container-fluid{
 
     background: none repeat scroll 0 0 #FFFFFF;
     border-color: #E1E1E1;
@@ -71,6 +75,22 @@ h1 {
     margin-left: auto;
     margin-right: auto
 }
+
+
+.container{
+    /*
+    background: none repeat scroll 0 0 transparent;
+    border-color: #E1E1E1;
+    border-style: solid;
+    border-top-width: 0;
+    border-width: 0.005px 0.05px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto
+
+    */
+}
+
 
 
 #sin_bordes{
@@ -170,9 +190,10 @@ h1 {
 
 
 .egresado{
-    float: left;
+    float: left; 
     margin-top: 10px;
-    margin-left: 170px; 
+    margin-left: 100px; 
+    display: block;
 }
 
 
@@ -468,6 +489,25 @@ color: #FF3030;  /****rojo****/
     text-shadow: 5px 5px 10px rgba(0,0,0,0.3); 
 }
 
+.titulo_blanco
+{
+    font-weight: bold;
+    color: #FFF;
+}
+
+.titulo_grande
+{
+
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-family: helvetica;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #31A9D0;
+}
+
 /***********************************************************************************/
 
 .listado li
@@ -480,6 +520,31 @@ color: #FF3030;  /****rojo****/
 }
 .body ul{
     padding-top:30px;
+}
+
+
+.twitter
+{
+display: inline-block;
+background: url("../img/png/glyphicons_391_twitter_t.png") no-repeat;
+width: 24px;
+height: 24px;
+text-indent: -500em;
+overflow: hidden;
+text-indent: -500em;
+overflow: hidden;
+}
+
+.facebook
+{
+   display: inline-block;
+    background: url("../img/png/glyphicons_390_facebook.png") no-repeat;
+    width: 24px;
+    height: 24px;
+    text-indent: -500em;
+    overflow: hidden;
+    text-indent: -500em;
+    overflow: hidden; 
 }
 
 
