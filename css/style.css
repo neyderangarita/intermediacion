@@ -56,8 +56,17 @@ a {
 h1 {
     display: block;
     font-size: 2em;
-    font-weight: bold
+    font-weight: bold; 
 }
+
+.fuente{
+        font-family: 'Tangerine', serif;
+        font-size: 70px;
+        padding-top: 50px;
+        color: #000;
+        text-align:center;
+}
+
 
 /*************************************************************
 *                                                            *
@@ -373,7 +382,7 @@ div.aviso a:hover{
 
 .destacado {
 
-background: white url(../imgs/listado/bk-destacado.jpg) repeat-x;
+/*background: white url(../imgs/listado/bk-destacado.jpg) repeat-x;  */
 background-image: url(http://static.zonajobs.com.co/imgs/listado/bk-destacado.jpg);
 background-repeat-x: repeat;
 background-repeat-y: no-repeat;
@@ -413,14 +422,15 @@ min-height: 81px;
 }
 
 .destacado .bk-bottom {
+    /*
     background-attachment: scroll;
     background-clip: border-box;
     background-color: transparent;
-    background-image: url("../imgs/listado/b-bk-destacado.jpg");
-    background-origin: padding-box;
+    /*background-image: url("../imgs/listado/b-bk-destacado.jpg"); */
+    /*background-origin: padding-box;
     background-position: 0 0;
     background-repeat: repeat-x;
-    background-size: auto auto;
+    background-size: auto auto;*/
 }
 
 .aviso .date em {
