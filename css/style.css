@@ -509,6 +509,7 @@ color: #FF3030;  /****rojo****/
 {
     font-weight: bold;
     color: #FFF;
+    text-align:right;
 }
 
 .titulo_grande
@@ -522,6 +523,17 @@ color: #FF3030;  /****rojo****/
     font-weight: 500;
     line-height: normal;
     color: #31A9D0;
+}
+
+.derecha
+{
+    display: inline-block;
+    font-weight: bold;
+    color: #FFF;
+    text-align:right;
+    position: relative;
+    right: -300px;
+
 }
 
 /***********************************************************************************/
