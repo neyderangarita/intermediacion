@@ -375,8 +375,10 @@ div.aviso a:hover{
 }
 
 .aviso span {
+
     display: block;
-    line-height: 17px;
+    line-height: 0px;
+    font: 11px/14px Tahoma, Arial, sans-serif;
 }
 
 
@@ -434,12 +436,45 @@ min-height: 81px;
     background-size: auto auto;*/
 }
 
+
+.content {
+text-align: left;
+}
+
 .aviso .date em {
+    
     color: #008599;
     float: right;
     font-style: normal;
 
+    padding: 2px 0 17px 0;
+    margin: 5px 0 0 0px;
+
+
+
 }
+
+.aviso .date {
+
+padding: 2px 0 17px 0;
+margin: 5px 0 0 0px;
+}
+
+
+.aviso span {
+display: block;
+line-height: 17px;
+}
+
+.location em
+{
+   /* font: 11px/14px Tahoma, Arial, sans-serif;*/
+font-size: 12px;
+color: #666;
+font-style: normal;
+}
+
+
 
 /***********************************ELEMENTOS DEL FOOTER*****************************************/
 
