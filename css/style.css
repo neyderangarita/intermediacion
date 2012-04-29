@@ -361,7 +361,19 @@ border-bottom: 1px solid #CCC;
 border-bottom-width: 1px;
 border-bottom-style: solid;
 border-bottom-color: #CCC;
+
+border: 1px solid rgb(230, 239, 239); 
+background-position: 50% 0%; 
 }
+
+div.aviso:hover{
+
+border: 1px solid rgb(157, 193, 192);
+background-position: 50% 100%;
+
+}
+
+
 
 div.aviso a 
 {
@@ -406,6 +418,8 @@ border-bottom-color: #de99a1;
 border-left-color: #de99a1;
 margin-bottom: 6px;}
 }
+
+
 
 .destacado {
 min-height: 81px;
