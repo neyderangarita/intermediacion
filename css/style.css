@@ -65,6 +65,7 @@ h1 {
         padding-top: 50px;
         color: #000;
         text-align:center;
+        text-shadow: 4px 4px 4px #aaa;
 }
 
 
@@ -437,6 +438,7 @@ min-height: 81px;
     color: #008599;
     float: right;
     font-style: normal;
+
 }
 
 /***********************************ELEMENTOS DEL FOOTER*****************************************/
