@@ -560,7 +560,7 @@ color: #FF3030;  /****rojo****/
 .titulos{
     color: #FF3030;   
     font-weight: bold; 
-    font-size: 1.5em;
+    font-size: 1em;
     padding-bottom: 1em;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.2)  
 }
