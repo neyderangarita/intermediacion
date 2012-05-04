@@ -2484,6 +2484,8 @@ input[type="submit"].btn.btn-mini {
 .alert-block p + p {
   margin-top: 5px;
 }
+
+
 .nav {
   margin-left: 0;
   margin-bottom: 18px;
@@ -2496,6 +2498,8 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
   background-color: #eeeeee;
 }
+
+
 .nav .nav-header {
   display: block;
   padding: 3px 15px;
@@ -2514,6 +2518,8 @@ input[type="submit"].btn.btn-mini {
   padding-right: 15px;
   margin-bottom: 0;
 }
+
+
 .nav-list > li > a,
 .nav-list .nav-header {
   margin-left: -15px;
@@ -2622,6 +2628,9 @@ input[type="submit"].btn.btn-mini {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+
+
+
 .nav-tabs.nav-stacked > li:first-child > a {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
@@ -2792,6 +2801,8 @@ input[type="submit"].btn.btn-mini {
   overflow: visible;
   margin-bottom: 18px;
 }
+
+
 .navbar-inner {
   padding-left: 20px;
   padding-right: 20px;
@@ -2803,14 +2814,17 @@ input[type="submit"].btn.btn-mini {
   background-image: -o-linear-gradient(top, #fff, #fff);
   background-image: linear-gradient(top, #fff, #fff);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=0);
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#000', GradientType=0);*/
+  filtro: PROGID: DXImageTransform.Microsoft.gradient (startColorstr = '#cccccc', endColorstr =' # 000000 ');
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+
 }
+
 .navbar .container {
   width: auto;
 }
@@ -2862,6 +2876,9 @@ input[type="submit"].btn.btn-mini {
 .btn-navbar .icon-bar + .icon-bar {
   margin-top: 3px;
 }
+
+
+
 .nav-collapse.collapse {
   height: auto;
 }
@@ -3114,6 +3131,10 @@ input[type="submit"].btn.btn-mini {
   left: auto;
   right: 13px;
 }
+
+
+**********************************************************************************/
+
 .breadcrumb {
   padding: 7px 14px;
   margin: 0 0 18px;
@@ -4695,6 +4716,9 @@ section {
       padding: 0;
       margin: 0;
       font-size: 24px; } }
+
+
+
 
 
 

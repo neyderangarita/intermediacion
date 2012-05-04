@@ -1959,6 +1959,7 @@ table .span24 {
   filter: alpha(opacity=40);
   cursor: pointer;
 }
+
 .btn {
   display: inline-block;
   *display: inline;
@@ -1996,6 +1997,7 @@ table .span24 {
   cursor: pointer;
   *margin-left: .3em;
 }
+
 .btn:hover,
 .btn:active,
 .btn.active,

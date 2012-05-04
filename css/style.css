@@ -213,6 +213,18 @@ h1 {
     height: 100%;
 }
 
+
+.imagen img { 
+    border: 0;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+
+    /* float: left; 
+    margin-top: 10px;
+    margin-left: 100px; */
+    }
+
 /*************************************************************
 *                                                            *
 *                   efecto reflejo imagenes                  *
