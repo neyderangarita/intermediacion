@@ -6,7 +6,6 @@
  * Copyright (c) 2012  Neyder Angarita Osorio
  * GPL (GPL-LICENSE.txt) licenses.
  */
-
 body{
 	color: #FF3030; 
     font-family: 'open sans',Arial,Sans-serif;
@@ -15,7 +14,6 @@ body{
 article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, nav, section, body {
     display: block;
 }
-
 .fuente{
         font-family: 'Tangerine', serif;
         font-size: 70px;
@@ -24,67 +22,10 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
         text-align:center;
         text-shadow: 4px 4px 4px #aaa
 }
-
-
-/**  borede del contenedor */  
-
-        
-.container-fluid{
-
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-color: #E1E1E1;
-    border-top-width: 0;
-    border-width: 1px 1px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto
-}
-
-
-/*************************************************************
-*                                                            *
-*                        imagenes egresados                  *
-*                                                            *
-**************************************************************/
-
-
-.egresado{
-    float: left; 
-    margin-top: 10px;
-    margin-left: 100px; 
-    display: block;
-}
-
-
-
-.tam-imagen
-{
-    width: 100%;
-    height: 100%;
-}
-
-
-.imagen img { 
-    border: 0;
-    width: 100%;
-    display: block;
-    max-width: 100%;
-
-    /* float: left; 
-    margin-top: 10px;
-    margin-left: 100px; */
-    }
-
-/*************************************************************
-*                                                            *
-*                   efecto reflejo imagenes                  *
-*                                                            *
-**************************************************************/
+/**                   efecto reflejo imagenes                  */
 #ex5 img {
     opacity: 1;
-
-    /*Transition*/
-  
+    /*Transition*/ 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -92,7 +33,6 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
     -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
     border:transparent;
 }
-
 #ex5 img:hover {  
     border: 1px solid #eee;
     opacity: 0.85;
@@ -100,83 +40,12 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
    border:transparent;
 
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
-   /*Glow*/
-  
+   /*Glow*/  
   -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
   -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
   box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
 }
-
-/*************************************************************
-*                                                            *
-*                   no se                  *
-*                                                            *
-**************************************************************/
-
-.busqueda
-{  
-    font-weight: bold;
-    color: #FFFFFF;
-    /*min-width: 500px;*/
-    width:100%;
-    float: right;
-}
-/*********************************************************************/
-/***bordes redondeados buscar**********************************************/
-.drop-shadow {
-    position:relative;
-    float:left;
-    padding-top: 10px;
-    width: 97%;   /*tamaño de ancho*/
-    /*padding:0.6em;   /*ancho general maxizar*/
-    margin:-10px 8px 0;  /*1.margen arriga hacia abajo  2.margen iquierda a derecha
-    3.espacio que se deja haca abajo  */ 
-    background:#FF4040;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-.drop-shadow:before,
-.drop-shadow:after {
-    content:"";
-    position:absolute;
-    z-index:-2;
-}
-.drop-shadow p {
-    font-size:16px;
-    font-weight:bold;
-}
-.lifted {
-    -moz-border-radius:4px;
-    border-radius:4px;
-}
-.lifted:before,
-.lifted:after {
-    bottom:15px;
-    left:10px;
-    width:50%;
-    height:20%;
-    max-width:300px;
-    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);  
-    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-    -webkit-transform:rotate(-3deg);   
-    -moz-transform:rotate(-3deg);  
-    -ms-transform:rotate(-3deg);  
-    -o-transform:rotate(-3deg);
-    transform:rotate(-3deg);
-}
-.lifted:after {
-    right:10px;
-    left:auto;
-    -webkit-transform:rotate(3deg);  
-    -moz-transform:rotate(3deg); 
-    -ms-transform:rotate(3deg); 
-    -o-transform:rotate(3deg);
-    transform:rotate(3deg);
-}
 /***************************************************************************************/
-
 .body{
     background:#fff;
     border-radius: 0.5em;
@@ -194,19 +63,15 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
     margin-bottom: 1em;
     box-shadow:0 15px 10px rgba(0, 0, 0, 0.08)
 }
-
 div[class="body"]{
     width:98.5%;
     margin-top: 3px;
     margin-bottom: 0.005em
 }
-
 .pading{
     margin-left: 150px;
 }
-
 /*****************************************************************************************/
-
 div.aviso 
 {
 width: 100%;
@@ -223,47 +88,31 @@ border-bottom: 1px solid #CCC;
 border-bottom-width: 1px;
 border-bottom-style: solid;
 border-bottom-color: #CCC;
-
 border: 1px solid rgb(230, 239, 239); 
-background-position: 50% 0%; 
+background-position: 50% 0%
 }
-
 div.aviso:hover{
-
 border: 1px solid rgb(157, 193, 192);
 background-position: 50% 100%;
-
 }
-
-
-
 div.aviso a 
 {
     color: #444444 !important;
-    text-decoration: none;
+    text-decoration: none
 }
-
 div.aviso a:hover{
     cursor: pointer;
-    text-decoration:none;
+    text-decoration:none
 }
-
 .aviso span {
-
     display: block;
     line-height: 0px;
-    font: 11px/14px Tahoma, Arial, sans-serif;
+    font: 11px/14px Tahoma, Arial, sans-serif
 }
-
-
-
 .destacado {
-
-/*background: white url(../imgs/listado/bk-destacado.jpg) repeat-x;  */
 background-image: url(http://static.zonajobs.com.co/imgs/listado/bk-destacado.jpg);
 background-repeat-x: repeat;
 background-repeat-y: no-repeat;
-
 background-color: white;
 border: 1px solid #de99a1;
 border-top-width: 1px;
@@ -278,28 +127,22 @@ border-top-color: #de99a1;
 border-right-color: #de99a1;
 border-bottom-color: #de99a1;
 border-left-color: #de99a1;
-margin-bottom: 6px;}
+margin-bottom: 6px
 }
-
-
-
 .destacado {
 min-height: 81px;
 }
-
 .destacado strong {
     color: #FF3030;   
     font-family: Arial,Helvetica,sans-serif;
     font-size: 14px;
     line-height: 19px;
 }
-
 .destacado .date {
     border-top-color: #9DC1C0;
     border-top-style: dotted;
     border-top-width: 1px;
 }
-
 .destacado .bk-bottom {
     /*
     background-attachment: scroll;
@@ -311,37 +154,24 @@ min-height: 81px;
     background-repeat: repeat-x;
     background-size: auto auto;*/
 }
-
-
 .content {
 text-align: left;
 }
-
-.aviso .date em {
-    
+.aviso .date em {   
     color: #008599;
     float: right;
     font-style: normal;
-
     padding: 2px 0 17px 0;
     margin: 5px 0 0 0px;
-
-
-
 }
-
 .aviso .date {
-
 padding: 2px 0 17px 0;
 margin: 5px 0 0 0px;
 }
-
-
 .aviso span {
 display: block;
 line-height: 17px;
 }
-
 .location em
 {
    /* font: 11px/14px Tahoma, Arial, sans-serif;*/
@@ -350,39 +180,15 @@ color: #666;
 font-style: normal;
 }
 
-
-
 /***********************************ELEMENTOS DEL FOOTER*****************************************/
-
-.prueba {
-    padding-top: 0.25em;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    min-width: 50px;
-    text-align: center;
-    width: auto;
-    height: auto;
-}
-
-
-
-#navi {  
-    list-style:none;
-}
-
 a:visited {
 color: #5F5F5F;  /****gis****/
 }
-
 a 
 {
 color: #FF3030;  /****rojo****/
 }
-
 /************************************titulos****************************************/
-
 .titulo
 {
     color: #FF3030; 
@@ -392,7 +198,6 @@ color: #FF3030;  /****rojo****/
     padding-bottom: 1em;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.2)
 }
-
 .titulo6
 {
     color: #FF3030; 
@@ -402,11 +207,7 @@ color: #FF3030;  /****rojo****/
     padding-bottom: 1em;
     padding-left: 10px;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.2)
-
 }
-
-
-
 .titulos{
     color: #FF3030;   
     font-weight: bold; 
@@ -414,31 +215,25 @@ color: #FF3030;  /****rojo****/
     padding-bottom: 1em;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.2)  
 }
-
 .titulos2
 {
     color: #666666;
     font-size:0.7em
 }
-
 .titulo3
 {
-
     color: #000000;
     font-weight:bold;
-    text-shadow: 5px 5px 10px rgba(0,0,0,0.3); 
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.3) 
 }
-
 .titulo_blanco
 {
     font-weight: bold;
     color: #FFF;
-    text-align:right;
+    text-align:right
 }
-
 .titulo_grande
 {
-
     font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     font-family: helvetica;
     font-size: 30px;
@@ -446,57 +241,25 @@ color: #FF3030;  /****rojo****/
     font-variant: normal;
     font-weight: 500;
     line-height: normal;
-    color: #31A9D0;
+    color: #31A9D0
 }
-
 .derecha
 {
-    display: inline-block;
     font-weight: bold;
     color: #FFF;
     text-align:right;
-    position: relative;
-    right: -300px;
-
+    margin-top: 10px;
+    margin-right:10px
 }
 
-/***********************************************************************************/
-
+/**********************************************************************************/
 .listado li
 {
     padding-bottom: 5px;
     margin: 0 0 6px 9px;
     padding: 0;    
-    list-style:none;
-
+    list-style:none
 }
 .body ul{
     padding-top:5px;
 }
-
-
-.twitter
-{
-display: inline-block;
-background: url("../img/png/glyphicons_391_twitter_t.png") no-repeat;
-width: 24px;
-height: 24px;
-text-indent: -500em;
-overflow: hidden;
-text-indent: -500em;
-overflow: hidden;
-}
-
-.facebook
-{
-   display: inline-block;
-    background: url("../img/png/glyphicons_390_facebook.png") no-repeat;
-    width: 24px;
-    height: 24px;
-    text-indent: -500em;
-    overflow: hidden;
-    text-indent: -500em;
-    overflow: hidden; 
-}
-
-
