@@ -1,62 +1,19 @@
-/* ===== Primary Styles ========================================================
-   Author: Neyder Angarita Osorio
-   ========================================================================== */
+/**
+ * Estiolos Intermediación
+ *
+ * http://
+ *
+ * Copyright (c) 2012  Neyder Angarita Osorio
+ * GPL (GPL-LICENSE.txt) licenses.
+ */
 
 body{
 	color: #FF3030; 
     font-family: 'open sans',Arial,Sans-serif;
     font-size: 16px
 }
-
 article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, nav, section, body {
     display: block;
-}
-
-header {
-
-    /*
-    height: 100%;
-    position: relative;
-    background: #FFFFFF;
-    background-image: url("../img/articulos-top3-bg.png");
-    z-index: 1
-
-    */
-}
-
-header div {
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: transparent;
-    background-origin: padding-box;
-    background-position: 680px top;
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    border-top-color: #FFFFFF;
-    border-top-style: solid;
-    border-top-width: 0px;
-    display: block;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    width: 1170px
-}
-
-
-
-a {
-    -moz-text-blink: none;
-    -moz-text-decoration-color: -moz-use-text-color;
-    -moz-text-decoration-line: none;
-    -moz-text-decoration-style: solid;
-    color: #000	
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    font-weight: bold; 
 }
 
 .fuente{
@@ -65,15 +22,13 @@ h1 {
         padding-top: 50px;
         color: #000;
         text-align:center;
-        text-shadow: 4px 4px 4px #aaa;
+        text-shadow: 4px 4px 4px #aaa
 }
 
 
-/*************************************************************
-*                                                            *
-*               borede del contenedor                        *
-*                                                            *
-**************************************************************/
+/**  borede del contenedor */  
+
+        
 .container-fluid{
 
     background: none repeat scroll 0 0 #FFFFFF;
@@ -85,111 +40,6 @@ h1 {
     margin-right: auto
 }
 
-
-.container{
-    /*
-    background: none repeat scroll 0 0 transparent;
-    border-color: #E1E1E1;
-    border-style: solid;
-    border-top-width: 0;
-    border-width: 0.005px 0.05px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto
-
-    */
-}
-
-
-
-#sin_bordes{
-    border-color: #FFFFFF;
-    border-style: none;
-    border-width: 0px 0px;
-    margin-bottom: 0;
-}
-
-/*************************************************************
-*                                                            *
-*                        MENU                                *
-*                                                            *
-**************************************************************/
-
-.subnav
-{
-
-    margin: 0;
-    padding: 0
-}
-
-.subnav li {
-    float: left;
-    list-style: none;
-}
-
-
-.subnav li a
-{
-    display: block;
-    /*border-right: 1px solid white;*/
-    white-space: nowrap
-    text-decoration: none;
-    background: #fff;
-
-    color: #C91231;
-    height: 35px;
-    line-height: 30px;
-    padding-bottom: 0;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 0;
-    /*font: 500 1.2em ubuntu,helvetica,arial,sans-serif;*/
-    font-weight: bold;
-    /*bordes redondeados*/
-    outline-color: text-color;
-    outline-style: none;
-    outline-width: 0;
-    border-radius: 7px
-}
-/*#subnav a:focus,*/
-
-.subnav li a:hover {
-    
-    background-color: #FF4040;
-    color: #FFFFFF;
-
-    outline-color: text-color;
-    outline-style: none;
-    outline-width: 0;
-    border-radius: 7px
-}
-    .subnav li ul li
-    {   
-        float: none;
-        display: inline
-    }
-
-    .subnav li ul li a
-    {   
-        width: auto;
-        background: #eee;
-        outline-color: text-color;
-        outline-style: none;
-        outline-width: 0;
-        border-radius: 0px;
-        /*color: #24313C*/
-    }
-
-    .subnav li ul li a:hover
-    {   
-        background: #ffa0a0
-    }
-
-    .subnav li ul
-    {
-        margin: 0 0 0 0
-
-    }
 
 /*************************************************************
 *                                                            *
