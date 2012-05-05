@@ -18,7 +18,6 @@
 -->
   <link rel="stylesheet" href="css/ca7368fa967d.css">
   <link rel="stylesheet" href="css/style.css">
-
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 <!--  
   <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
@@ -31,9 +30,14 @@
   </script>
 
 <script>
-  $(function () {
-    $('#myTab a:last').tab('show');
-  })
+
+$(document).ready(function(){
+   $("#mostrar").click(function(event){
+
+      alert("hola mundo");
+    /*$("#capaefectos").css("display","block");*/
+   });
+
 </script>
 
 </head>
@@ -188,16 +192,18 @@
                           <div class="row-fluid">
                           <div class="span12">
                             <legend><spam class="titulos">Información personal</spam></legend>
-                              <form class="form-horizontal">
+                              <div class="centrar">
+                              <form class="">
                                 <fieldset>
                             <div class="row-fluid">
 
                                 <div class="span6"><!--abre span6-->
+
                                       <div class="control-group">
-                                      <label class="control-label" for="user"><spam class="titulos">*Nombres:</span></label>
-                                      <div class="controls">
-                                        <input value="neyder" type="text" class="input" name="nombres"  id="user" size="25" required placeholder="Nombres" disabled/>
-                                      </div>
+                                        <label class="control-label" for="user"><spam class="titulos">*Nombres:</span></label>
+                                        <div class="controls">
+                                          <input value="neyder" type="text" class="input" name="nombres"  id="user" size="25" required placeholder="Nombres" disabled/>
+                                        </div>
                                         <p class="help-block" for="user" style="display:none"> help text</p>
                                       </div>
 
@@ -712,6 +718,7 @@
 
                               </fieldset>
                             </form>
+                            </div>
 
                           </div><!--cierra span12-->
                           </div><!--cierra row-fluid-->
@@ -739,25 +746,254 @@
                           <div class="span12">
 
                             <legend><spam class="titulos">Información Laboral</spam></legend>
-                              <form class="form-horizontal">
+<!--...............................................TABLA DATOS.........................................................-->
+
+                                <table class="table table-striped table-bordered table-condensed">
+                                  <thead>
+
+                                    <tr>
+                                      <th><a id="" href="">Empresa</a></th>
+                                      <th><a id="" href="">Cargo</a></th>
+                                      <th><a id="" href="">Ingreso</a></th>
+                                      <th><a id="" href="">Finalización</a></th>
+                                      <th><a id="" href="">Ciudad</a></th>
+                                      <th><a id="" href="">Acciones</a></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Cooperativa del meta</td>
+                                      <td>Contador</td>
+                                      <td>03/2006</td>
+                                      <td>01/2012</td>
+                                      <td>Villavicencio</td>
+                                      <td>
+                                        <div class="centrar">
+                                          <a class="btn btn-mini btn-danger" href="#" title="Editar">
+                                            <i class="icon-pencil icon-white"></i>
+                                          </a>
+                                          <a class="btn btn-mini btn-danger" title="Eliminar">
+                                            <i class="icon-remove icon-white"></i>
+                                          </a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Cooperativa del meta</td>
+                                      <td>Contador</td>
+                                      <td>03/2006</td>
+                                      <td>01/2012</td>
+                                      <td>Villavicencio</td>
+                                      <td>
+                                        <div class="centrar">
+                                          <a class="btn btn-mini btn-danger" href="#" title="Editar">
+                                            <i class="icon-pencil icon-white"></i>
+                                          </a>
+                                          <a class="btn btn-mini btn-danger" href="#" title="Eliminar">
+                                            <i class="icon-remove icon-white"></i>
+                                          </a>
+                                        </div>
+                                      </td>
+
+                                    </tr> 
+                                  </tbody>
+                                </table>   
+                      <a id="prueba" class="btn " title=".. ">
+                        Agregar experiencia
+                      </a>                                                       
+<!--......................................................................................................................-->
+
+
+                              <div id="formulariomayores" class="centrar"  style="display:none">
+
+                              <form class="">
                                 <fieldset>
                             <div class="row-fluid">
-
-                                <div class="span6"><!--abre span6-->
-
+                                <div class="span6" ><!--abre span6-->
 
 
+                                    <div class="control-group">
+                                      <label class="control-label" for="empresa"><spam class="titulos">*Empresa: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="empresa" id="empresa" size="25" required placeholder="Empresa"/>
+                                      </div> 
+                                      <p class="help-block" for="empresa" style="display:none">Supporting help text</p> 
+                                    </div>
 
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="sector"><spam class="titulos">*Sector de la Empresa: </span></label>
+                                      <div class="controls">
+                                      <select id="sector" name="sector" required>
+
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="sector" style="display:none">help text</p>
+                                    </div>
+
+
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="cargo"><spam class="titulos">*Cargo: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="cargo" id="cargo" size="25" required placeholder="Cargo"/>
+                                      </div> 
+                                      <p class="help-block" for="cargo" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="cargo_equivalente"><spam class="titulos">*Cargo Equivalente: </span></label>
+                                      <div class="controls">
+                                      <select id="cargo_equivalente" name="cargo_equivalente" required>
+
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="cargo_equivalente" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="Ingreso"><spam class="titulos">*Ingreso: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="Ingreso" id="Ingreso" size="25" required placeholder="Ingreso"/>
+                                      </div> 
+                                      <p class="help-block" for="Ingreso" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="jefe">Jefe inmediato:</label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="jefe" id="jefe" size="25" required placeholder="Jefe inmediato"/>
+                                      </div> 
+                                      <p class="help-block" for="jefe" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Pais"><spam class="titulos"> *Pais:</span></label>
+                                      <div class="controls">
+                                      <select id="Pais" name="Pais" required>
+
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Pais" style="display:none">help text</p>
+                                    </div>
+
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Departamento"><spam class="titulos"> *Departamento:</span></label>
+                                      <div class="controls">
+                                      <select id="Ciudad" name="Departamento" required>
+
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Departamento" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Ciudad"><spam class="titulos"> *Ciudad:</span></label>
+                                      <div class="controls">
+                                      <select id="Ciudad" name="Ciudad" required>
+
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Ciudad" style="display:none">help text</p>
+                                    </div>
 
 
                                 </div>  <!--cierra span6-->
 
                                 <div class="span6">  <!--abre span6-->
 
+                                    <div class="control-group">
+                                      <label class="control-label" for="tel_empresa"><spam class="titulos">*Teléfono de la empresa: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="tel_empresa" id="tel_empresa" size="25" required placeholder="Teléfono Empresa"/>
+                                      </div> 
+                                      <p class="help-block" for="tel_empresa" style="display:none">Supporting help text</p> 
+                                    </div>
+
+                                   
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Subsector"><spam class="titulos"> *Subsector de la empresa: </span></label>
+                                      <div class="controls">
+                                      <select id="Subsector" name="Subsector" required>
 
 
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Subsector" style="display:none">help text</p>
+                                    </div>
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Nivel_cargo"><spam class="titulos"> *Nivel del cargo:    </span></label>
+                                      <div class="controls">
+                                      <select id="Nivel_cargo" name="Nivel_cargo" required>
 
 
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Nivel_cargo" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Area_cargo"><spam class="titulos"> *Área o departamento del cargo: </span></label>
+                                      <div class="controls">
+                                      <select id="Area_cargo" name="Area_cargo" required>
+
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Area_cargo" style="display:none">help text</p>
+                                    </div>
+
+                                    <div class="control-group" style="display:none">
+                                      <label class="control-label" for="tel_empresa"><spam class="titulos">*Teléfono de la empresa: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="tel_empresa" id="tel_empresa" size="25" required placeholder="Teléfono Empresa"/>
+                                      </div> 
+                                      <p class="help-block" for="tel_empresa" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="Finalización"><spam class="titulos">*Finalización: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="Finalización" id="Finalización" size="25" required placeholder="Finalización"/>
+                                      </div> 
+                                      <p class="help-block" for="Finalización" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+                                    <div class="control-group">
+                                      <label class="control-label"  for="Funciones"><spam class="titulos">*Funciones y logros alcanzados:</span></label>
+                                      <div class="controls">
+                                        <textarea id="textarea" class="input" rows="7"></textarea>
+                                      </div>
+                                    </div>
+
+                                    <div class="form-actions">
+                                      <button class="btn btn-danger" type="submit">
+                                        <i class="icon-ok-circle icon-white"></i>
+                                        Agregar
+                                      </button>
+                                      <button class="btn">
+                                        <i class="icon-remove-sign "></i> 
+                                        Cancelar
+                                      </button>
+                                    </div>
 
 
                                 </div> <!--cierra span6--> 
@@ -766,6 +1002,7 @@
 
                               </fieldset>
                             </form>
+                            </div>
 
                           </div><!--cierra span12-->
                           </div><!--cierra row-fluid-->
@@ -800,214 +1037,15 @@
 
                                 <div class="span6"><!--abre span6-->
 
-                                  <div class="control-group">      
-                                    <label class="control-label"  for="profesion"><spam class="titulos">*Profesión:</span></label>
-                                    <div class="controls">
-                                    <select id="profesion" name="profesion" required>
-                                        <option value="" selected="selected">Por favor seleccione</option>
-                                        <option value="3">ingeniero agoindustrial</option>
-                                        <option value="5">médico veterinario y zootecnista</option>
-                                        <option value="6">ingeniero agrónomo</option>
-                                        <option value="7">ingeniero agroindustrial</option>
-                                        <option value="9">biólogo (a)</option>
-                                        <option value="9">ingeniero de sistemas</option>
-                                        <option value="10">ingeniero electrónico</option>
-                                        <option value="11">licenciado en matemáticas y física</option>
-                                        <option value="12">licenciado en producción agropecuaria</option>
-                                        <option value="13">licenciado en educación física y deportes</option>
-                                        <option value="14">licenciado pedagogía Infantil</option>
-                                        <option value="15">economista</option>
-                                        <option value="16">contador público</option>
-                                        <option value="17">administrador de empresas</option>
-                                        <option value="18">profesional en mercadeo</option>
-                                        <option value="19">enfermero(a)</option>
-                                        <option value="20">tecnologo en regencia de farmacia</option>
-                                        <option value="20">(Otro)</option>
-                                        <option value="20">Administrador</option>
-                                        <option value="20">Analista</option>
-                                        <option value="20">Asesor</option>
-                                        <option value="20">Asistente</option>
-                                        <option value="20">Asistente de investigación</option>
-                                        <option value="20">Auditor</option>
-                                        <option value="20">Auxiliar</option>
-                                        <option value="20">Consultor</option>
-                                        <option value="20">Contralor</option>
-                                        <option value="20">Coordinador</option>
-                                        <option value="20">Director</option>
-                                        <option value="20">Diseñador</option>
-                                        <option value="20">Docente o profesor</option>
-                                        <option value="20">Ejecutivo</option>
-                                        <option value="20">Enfermero (a)</option>
-                                        <option value="20">Entrenador/capacitador</option>
-                                        <option value="20">Gerente</option>
-                                        <option value="20">Gerente general</option>
-                                        <option value="20">Hostess</option>
-                                        <option value="20">Inspector</option>
-                                        <option value="20">Interventor</option>
-                                        <option value="20">Jefe</option>
-                                        <option value="20">Programador</option>
-                                        <option value="20">Representante de ventas</option>
-                                        <option value="20">Revisor fiscal</option>
-                                        <option value="20">Secretaria</option>
-                                        <option value="20">Subdirector</option>
-                                        <option value="20">Subgerente</option>
-                                        <option value="20">Supernumerario</option>
-                                        <option value="20">Supervisor</option>
-                                        <option value="20">Trader</option>
-                                        <option value="20">Vendedor</option>
-                                        <option value="20">Vicepresidente</option>
-                                        <option value="20">Webmaster</option>
-                                    </select>
-                                    </div>
-                                    <p class="help-block" for="profesion" style="display:none">help text</p>
-                                  </div> 
-
-
-
-                                  <div class="control-group">      
-                                    <label class="control-label"  for="ano_expe"><spam class="titulos">*Años de experiencia:</span></label>
-                                    <div class="controls">
-                                    <select id="ano_expe"  name="ano_expe" required>
-                                      <option value="">Por favor seleccione</option>
-                                      <option value="0">Menos de un año</option>
-                                      <option value="1">1</option>
-                                      <option value="2">2</option>
-                                      <option value="3">3</option>
-                                      <option value="4">4</option>
-                                      <option value="5">5</option>
-                                      <option value="6">6</option>
-                                      <option value="7">7</option>
-                                      <option value="8">8</option>
-                                      <option value="9">9</option>
-                                      <option value="10">10</option>
-                                      <option value="11">11</option>
-                                      <option value="12">12</option>
-                                      <option value="13">13</option>
-                                      <option value="14">14</option>
-                                      <option value="15">15</option>
-                                      <option value="16">16</option>
-                                      <option value="17">17</option>
-                                      <option value="18">18</option>
-                                      <option value="19">19</option>
-                                      <option value="20">20</option>
-                                      <option value="21">21</option>
-                                      <option value="22">22</option>
-                                      <option value="23">23</option>
-                                      <option value="24">24</option>
-                                      <option value="25">25</option>
-                                      <option value="26">26</option>
-                                      <option value="27">27</option>
-                                      <option value="28">28</option>
-                                      <option value="29">29</option>
-                                      <option value="30">30</option>
-                                      <option value="31">31</option>
-                                      <option value="32">32</option>
-                                      <option value="33">33</option>
-                                      <option value="34">34</option>
-                                      <option value="35">35</option>
-                                      <option value="36">Más de 35 años de experiencia</option>
-                                    </select>
-                                    </div>
-                                    <p class="help-block" for="ano_expe" style="display:none">help text</p>
-                                  </div> 
-
-
-                                  <div class="control-group">
-                                    <label class="control-label" for="actual_trabaja">¿Trabaja actualmente? </label>
-                                    <div class="controls">
-                                      <label class="radio inline">Si
-                                      <input type="radio" name="actual_trabaja" id="actual_trabaja1"  value="si" checked=""  />
-                                      
-                                      </label>
-                                      <label class="radio inline">No
-                                      <input type="radio" name="actual_trabaja" id="actual_trabaja2"  value="no" checked=""  />
-                                      </label>
-                                    </div> 
-                                    <p class="help-block" for="actual_trabaja" style="display:none">Supporting help text</p>
-                                  </div>
-
-
-                                  <div class="control-group">
-                                    <label class="control-label" for="trasladarse">Posibilidad de trasladarse:  </label>
-                                    <div class="controls">
-                                      <label class="radio inline">Si
-                                      <input type="radio" name="trasladarse" id="trasladarse1"  value="si" checked=""  />
-                                      
-                                      </label>
-                                      <label class="radio inline">No
-                                      <input type="radio" name="trasladarse" id="trasladarse2"  value="no" checked=""  />
-                                      </label>
-                                    </div> 
-                                    <p class="help-block" for="trasladarse" style="display:none">Supporting help text</p>
-                                  </div>
-
-
-                                  <div class="control-group">
-                                    <label class="control-label" for="viajar">Posibilidad de viajar: </label>
-                                    <div class="controls">
-                                      <label class="radio inline">Si
-                                      <input type="radio" name="viajar" id="viajar1"  value="si" checked=""  />
-                                      
-                                      </label>
-                                      <label class="radio inline">No
-                                      <input type="radio" name="viajar" id="viajar2"  value="no" checked=""  />
-                                      </label>
-                                    </div> 
-                                    <p class="help-block" for="viajar" style="display:none">Supporting help text</p>
-                                  </div>
-
+                            
 
                                 </div>  <!--cierra span6-->
 
                                 <div class="span6">  <!--abre span6-->
 
-                                    <div class="control-group">
-                                      <label class="control-label" for="foto_hv">Subir foto a la hoja de vida:</label>
-                                      <div class="controls">
-                                      <input  class="input-file" name="foto_hv" id="foto_hv"  type="file" />
-                                      </div> 
-                                      <p class="help-block" for="foto_hv" style="display:none">Supporting help text</p>
-                                    </div>
 
 
-                                    <div class="control-group">      
-                                      <label class="control-label"  for="Aspiración"><spam class="titulos">*Aspiración salarial (mensual): </span></label>
-                                      <div class="controls">
-                                      <select id="Aspiración" name="Aspiración" required>
-                                        <option value="">Por favor seleccione</option>
-                                        <option value="1">Menos de $550.000</option>
-                                        <option value="2">$ 550.001 - $ 1.000.000</option>
-                                        <option value="3">$ 1.000.001 - $ 1.500.000</option>
-                                        <option value="4">$ 1.500.001 - $ 2.000.000</option>
-                                        <option value="5">$ 2.000.001 - $ 2.500.000</option>
-                                        <option value="6">$ 2.500.001 - $ 3.000.000</option>
-                                        <option value="7">$ 3.000.001 - $ 3.500.000</option>
-                                        <option value="8">$ 3.500.001 - $ 4.000.000</option>
-                                        <option value="9">$ 4.000.001 - $ 4.500.000</option>
-                                        <option value="10">$ 4.500.001 - $ 5.500.000</option>
-                                        <option value="23">$ 5.500.001 - $ 6.000.000</option>
-                                        <option value="27">$ 6.000.001 - $ 8.000.000</option>
-                                        <option value="28">$ 8.000.001 - $ 10.000.000</option>
-                                        <option value="29">$ 10.000.001 - $ 12.500.000</option>
-                                        <option value="30">$ 12.500.000 - $ 15.000.000</option>
-                                        <option value="31">$ 15.000.001 - $ 18.000.000</option>
-                                        <option value="32">$ 18.000.001 - $ 21.000.000</option>
-                                        <option value="33">Mas de $ 21.000.000</option>
-                                      </select>
-                                      </div>
-                                      <p class="help-block" for="Aspiración" style="display:none">help text</p>
-                                    </div>
 
-                                    <div class="form-actions">
-                                      <button class="btn btn-danger" type="submit">
-                                        <i class="icon-ok-circle icon-white"></i>
-                                        Guardar
-                                      </button>
-                                      <button class="btn">
-                                        <i class="icon-remove-sign "></i> 
-                                        Cancelar
-                                      </button>
-                                    </div>
 
                                 </div> <!--cierra span6--> 
 
@@ -1129,10 +1167,10 @@
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
+
 <script src="js/libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
-
 
 <script src="js/libs/bootstrap/tab.js"></script>
 <!--
