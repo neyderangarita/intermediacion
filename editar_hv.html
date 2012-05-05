@@ -825,8 +825,40 @@ $(document).ready(function(){
                                       <label class="control-label"  for="sector"><spam class="titulos">*Sector de la Empresa: </span></label>
                                       <div class="controls">
                                       <select id="sector" name="sector" required>
-
-
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="101">Agropecuario</option>
+                                          <option value="102">Alimentos</option>
+                                          <option value="103">Asegurador</option>
+                                          <option value="104">Bebidas y tabaco</option>
+                                          <option value="105">Comercio al por menor - retail</option>
+                                          <option value="106">Construcción</option>
+                                          <option value="107">Consultorías / Asesorías</option>
+                                          <option value="130">Consumo masivo</option>
+                                          <option value="108">Cuero y calzado</option>
+                                          <option value="109">Editorial e impresión</option>
+                                          <option value="110">Educativo</option>
+                                          <option value="111">Energético</option>
+                                          <option value="112">Entretenimiento</option>
+                                          <option value="113">Estatal y relacionados</option>
+                                          <option value="114">Financiero</option>
+                                          <option value="115">Manufactura</option>
+                                          <option value="116">Medios</option>
+                                          <option value="117">Minería, hierro, acero y otros materiales</option>
+                                          <option value="131">Naval</option>
+                                          <option value="132">Organizaciones No Gubernamentales</option>
+                                          <option value="134">Otros</option>
+                                          <option value="118">Plástico y caucho</option>
+                                          <option value="119">Productos de vidrio</option>
+                                          <option value="120">Publicidad y mercadeo</option>
+                                          <option value="121">Pulpa, papel y cartón</option>
+                                          <option value="122">Químicos</option>
+                                          <option value="123">Salud</option>
+                                          <option value="124">Servicios</option>
+                                          <option value="125">Tecnología</option>
+                                          <option value="126">Telecomunicaciones</option>
+                                          <option value="127">Textiles, prendas de vestir y calzado</option>
+                                          <option value="128">Transporte</option>
+                                          <option value="129">Vehículos y partes</option>
                                       </select>
                                       </div>
                                       <p class="help-block" for="sector" style="display:none">help text</p>
@@ -985,7 +1017,7 @@ $(document).ready(function(){
                                     </div>
 
                                     <div class="form-actions">
-                                      <button class="btn btn-danger" type="submit">
+                                      <button id="guardardatos" class="btn btn-danger" type="submit">
                                         <i class="icon-ok-circle icon-white"></i>
                                         Agregar
                                       </button>
