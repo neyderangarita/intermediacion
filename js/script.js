@@ -1,10 +1,20 @@
-/* Author:
-		alert("Has pulsado el enlace...nAhora serás enviado a DesarrolloWeb.com");
+/* Author: Neyder Angarita Osorio.
+		alert("Has pulsado el enlace");
 */
 $(document).ready(function(){
-   $("#prueba").click(function(evento){
+   $("#prueba,#prueba1").click(function(evento){
 		var elem =$("#formulariomayores");
 		/*elem.css("display", "block");*/
 		elem.show(3000);
    });
 });
+
+
+$(document).ready(function(){
+   $("#ocultar").click(function(evento){
+		var elem =$("#formulariomayores");
+		/*elem.css("display", "block");*/
+		elem.hide(3000);
+   });
+});
+
