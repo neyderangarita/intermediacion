@@ -936,8 +936,8 @@ select:focus:required:invalid:focus {
   padding: 17px 20px 18px;
   margin-top: 18px;
   margin-bottom: 18px;
-  background-color: #eeeeee;
-  border-top: 1px solid #ddd;
+  background-color: #fefefe;
+  border-top: 1px solid #fefefe;
   *zoom: 1;
 }
 .form-actions:before,
@@ -1985,7 +1985,7 @@ table .span24 {
   margin-bottom: 0;
   font-size: 13px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
