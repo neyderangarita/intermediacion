@@ -12,34 +12,16 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
--->
+  <!--prefix free quitar los prefijos de css -->
+  <section type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></section>
+
   <link rel="stylesheet" href="css/ca7368fa967d.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="js/sexy-tooltips/coda.css" type="text/css" media="all" id="theme"/>
 <!--  
   <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 -->  
-  <script>
-      var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
-      for(var i = 0; i < e.length; i++) {
-        document.createElement(e[i]);
-      }
-  </script>
-
-<script>
-
-$(document).ready(function(){
-   $("#mostrar").click(function(event){
-
-      alert("hola mundo");
-    /*$("#capaefectos").css("display","block");*/
-   });
-
-</script>
-
 </head>
 
 
@@ -463,11 +445,11 @@ $(document).ready(function(){
                                       <label class="control-label" for="actual_trabaja">¿Trabaja actualmente? </label>
                                       <div class="controls">
                                         <label class="radio inline">Si
-                                        <input type="radio" name="actual_trabaja" id="actual_trabaja1"  value="si" checked=""  />
+                                        <input type="radio" name="actual_trabaja" id="actual_trabaja"  value="si" checked=""  />
                                         
                                         </label>
                                         <label class="radio inline">No
-                                        <input type="radio" name="actual_trabaja" id="actual_trabaja2"  value="no" checked=""  />
+                                        <input type="radio" name="actual_trabaja" id="actual_trabaja"  value="no" checked=""  />
                                         </label>
                                       </div> 
                                       <p class="help-block" for="actual_trabaja" style="display:none">Supporting help text</p>
@@ -822,7 +804,8 @@ $(document).ready(function(){
 
 
                                     <div class="control-group">      
-                                      <label class="control-label"  for="sector"><spam class="titulos">*Sector de la Empresa: </span></label>
+                                      <label id="a1" class="control-label"  for="sector"><spam class="titulos">*Sector de la Empresa: </span></label>
+
                                       <div class="controls">
                                       <select id="sector" name="sector" required>
                                           <option value="">Por favor seleccione</option>
@@ -880,6 +863,59 @@ $(document).ready(function(){
                                       <div class="controls">
                                       <select id="cargo_equivalente" name="cargo_equivalente" required>
 
+                                         <option value="" selected="selected">Por favor seleccione</option>
+                                          <option value="3">ingeniero agoindustrial</option>
+                                          <option value="5">médico veterinario y zootecnista</option>
+                                          <option value="6">ingeniero agrónomo</option>
+                                          <option value="7">ingeniero agroindustrial</option>
+                                          <option value="9">biólogo (a)</option>
+                                          <option value="9">ingeniero de sistemas</option>
+                                          <option value="10">ingeniero electrónico</option>
+                                          <option value="11">licenciado en matemáticas y física</option>
+                                          <option value="12">licenciado en producción agropecuaria</option>
+                                          <option value="13">licenciado en educación física y deportes</option>
+                                          <option value="14">licenciado pedagogía Infantil</option>
+                                          <option value="15">economista</option>
+                                          <option value="16">contador público</option>
+                                          <option value="17">administrador de empresas</option>
+                                          <option value="18">profesional en mercadeo</option>
+                                          <option value="19">enfermero(a)</option>
+                                          <option value="20">tecnologo en regencia de farmacia</option>
+                                          <option value="20">(Otro)</option>
+                                          <option value="20">Administrador</option>
+                                          <option value="20">Analista</option>
+                                          <option value="20">Asesor</option>
+                                          <option value="20">Asistente</option>
+                                          <option value="20">Asistente de investigación</option>
+                                          <option value="20">Auditor</option>
+                                          <option value="20">Auxiliar</option>
+                                          <option value="20">Consultor</option>
+                                          <option value="20">Contralor</option>
+                                          <option value="20">Coordinador</option>
+                                          <option value="20">Director</option>
+                                          <option value="20">Diseñador</option>
+                                          <option value="20">Docente o profesor</option>
+                                          <option value="20">Ejecutivo</option>
+                                          <option value="20">Enfermero (a)</option>
+                                          <option value="20">Entrenador/capacitador</option>
+                                          <option value="20">Gerente</option>
+                                          <option value="20">Gerente general</option>
+                                          <option value="20">Hostess</option>
+                                          <option value="20">Inspector</option>
+                                          <option value="20">Interventor</option>
+                                          <option value="20">Jefe</option>
+                                          <option value="20">Programador</option>
+                                          <option value="20">Representante de ventas</option>
+                                          <option value="20">Revisor fiscal</option>
+                                          <option value="20">Secretaria</option>
+                                          <option value="20">Subdirector</option>
+                                          <option value="20">Subgerente</option>
+                                          <option value="20">Supernumerario</option>
+                                          <option value="20">Supervisor</option>
+                                          <option value="20">Trader</option>
+                                          <option value="20">Vendedor</option>
+                                          <option value="20">Vicepresidente</option>
+                                          <option value="20">Webmaster</option>
 
                                       </select>
                                       </div>
@@ -912,6 +948,65 @@ $(document).ready(function(){
                                       <div class="controls">
                                       <select id="Pais" name="Pais" required>
 
+                                          <option value="12">Colombia</option>
+                                          <option value="17">Alemania</option>
+                                          <option value="2">Argentina</option>
+                                          <option value="101184083">Aruba</option>
+                                          <option value="3">Australia</option>
+                                          <option value="4">Austria</option>
+                                          <option value="5">Bélgica</option>
+                                          <option value="6">Bolivia</option>
+                                          <option value="7">Brasil</option>
+                                          <option value="9">Canadá</option>
+                                          <option value="10">Chile</option>
+                                          <option value="11">China</option>
+                                          <option value="14">Corea del Sur</option>
+                                          <option value="13">Costa Rica</option>
+                                          <option value="15">Cuba</option>
+                                          <option value="16">Curacao</option>
+                                          <option value="101123022">Dinamarca</option>
+                                          <option value="19">Ecuador</option>
+                                          <option value="46">El Salvador</option>
+                                          <option value="101124026">Escocia</option>
+                                          <option value="101231130">Eslovenia</option>
+                                          <option value="20">España</option>
+                                          <option value="53">Estados Unidos</option>
+                                          <option value="21">Francia</option>
+                                          <option value="24">Guatemala</option>
+                                          <option value="23">Guinea-Ecuatorial</option>
+                                          <option value="28">Haití</option>
+                                          <option value="27">Holanda</option>
+                                          <option value="26">Honduras</option>
+                                          <option value="25">Hong Kong</option>
+                                          <option value="29">Hungría</option>
+                                          <option value="31">India</option>
+                                          <option value="22">Inglaterra</option>
+                                          <option value="32">Irlanda</option>
+                                          <option value="30">Islas Comores</option>
+                                          <option value="33">Israel</option>
+                                          <option value="34">Italia</option>
+                                          <option value="35">Jamaica</option>
+                                          <option value="36">Japón</option>
+                                          <option value="101231131">Lituania</option>
+                                          <option value="37">México</option>
+                                          <option value="38">Nicaragua</option>
+                                          <option value="39">Noruega</option>
+                                          <option value="101124024">Nueva Zelanda</option>
+                                          <option value="40">Panamá</option>
+                                          <option value="45">Paraguay</option>
+                                          <option value="41">Perú</option>
+                                          <option value="42">Polonia</option>
+                                          <option value="44">Portugal</option>
+                                          <option value="43">Puerto Rico</option>
+                                          <option value="18">República Dominicana</option>
+                                          <option value="101124025">Rusia</option>
+                                          <option value="47">Suecia</option>
+                                          <option value="48">Suiza</option>
+                                          <option value="49">Trinidad y Tobago</option>
+                                          <option value="50">Turquía</option>
+                                          <option value="51">Ucrania</option>
+                                          <option value="52">Uruguay</option>
+                                          <option value="54">Venezuela</option>
 
                                       </select>
                                       </div>
@@ -925,6 +1020,9 @@ $(document).ready(function(){
                                       <div class="controls">
                                       <select id="Ciudad" name="Departamento" required>
 
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" ></option>
+                                        <option value="2"></option> 
 
                                       </select>
                                       </div>
@@ -937,6 +1035,9 @@ $(document).ready(function(){
                                       <div class="controls">
                                       <select id="Ciudad" name="Ciudad" required>
 
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" ></option>
+                                        <option value="2"></option> 
 
                                       </select>
                                       </div>
@@ -958,10 +1059,13 @@ $(document).ready(function(){
 
                                    
                                     <div class="control-group">      
-                                      <label class="control-label"  for="Subsector"><spam class="titulos"> *Subsector de la empresa: </span></label>
+                                      <label id="a10" class="control-label"  for="Subsector"><spam class="titulos"> *Subsector de la empresa: </span></label>
                                       <div class="controls">
                                       <select id="Subsector" name="Subsector" required>
 
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" ></option>
+                                        <option value="2"></option> 
 
                                       </select>
                                       </div>
@@ -973,6 +1077,16 @@ $(document).ready(function(){
                                       <div class="controls">
                                       <select id="Nivel_cargo" name="Nivel_cargo" required>
 
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="1">Presidente</option>
+                                          <option value="2">Vicepresidente</option>
+                                          <option value="3">Gerente Senior</option>
+                                          <option value="4">Gerente</option>
+                                          <option value="5">Coordinador supervisor o especialista</option>
+                                          <option value="6">Profesional Senior</option>
+                                          <option value="7">Profesional</option>
+                                          <option value="8">Profesional Junior</option>
+                                          <option value="9">Auxiliar, asistencial y otros</option>
 
                                       </select>
                                       </div>
@@ -984,6 +1098,36 @@ $(document).ready(function(){
                                       <label class="control-label"  for="Area_cargo"><spam class="titulos"> *Área o departamento del cargo: </span></label>
                                       <div class="controls">
                                       <select id="Area_cargo" name="Area_cargo" required>
+
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="2">Administrativa y Financiera</option>
+                                          <option value="48">Archivo y Documentación</option>
+                                          <option value="4">Auditoría, Contraloría e Interventoría</option>
+                                          <option value="45">Calidad (aseguramiento, gestión y afines)</option>
+                                          <option value="5">Comercial, Ventas y Telemercadeo</option>
+                                          <option value="6">Comercio Exterior</option>
+                                          <option value="53">Compras e Inventarios</option>
+                                          <option value="7">Construcción y Obra</option>
+                                          <option value="10">Docencia</option>
+                                          <option value="12">Gerencia General (cargos corporativos)</option>
+                                          <option value="27">Instalación y Reparaciones Técnicas</option>
+                                          <option value="46">Investigación</option>
+                                          <option value="41">Jurídica</option>
+                                          <option value="42">Logística y Distribución</option>
+                                          <option value="13">Mantenimiento</option>
+                                          <option value="19">Mercadeo y Publicidad</option>
+                                          <option value="30">Operaciones y Procesos</option>
+                                          <option value="18">Producción</option>
+                                          <option value="17">Proyectos (análisis, desarrollo, gestión y afines)</option>
+                                          <option value="20">Recepción</option>
+                                          <option value="21">Recursos Humanos y Admón. de Personal</option>
+                                          <option value="43">Redacción y Generación de Contenido</option>
+                                          <option value="22">Salud</option>
+                                          <option value="23">Secretariado</option>
+                                          <option value="24">Seguridad Industrial, Ambiental y Ocupacional</option>
+                                          <option value="25">Servicio al Cliente</option>
+                                          <option value="51">Servicios Generales, Aseo y Vigilancia</option>
+                                          <option value="47">Sistemas y Tecnología</option>
 
 
                                       </select>
@@ -1197,14 +1341,22 @@ $(document).ready(function(){
         </section>   
 </article> <!-- /container -->
 </div>
+  <script>
+      var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
+      for(var i = 0; i < e.length; i++) {
+        document.createElement(e[i]);
+      }
+  </script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
 
 <script src="js/libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
-
 <script src="js/libs/bootstrap/tab.js"></script>
+
+<script src="js/sexy-tooltips.v1.1.jquery.min.js" type="text/javascript"></script>
 <!--
 <script>
   var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
