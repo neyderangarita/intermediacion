@@ -2,48 +2,98 @@
 		alert("Has pulsado el enlace");
 */
 $(document).ready(function(){
+
+/************mostrar*****************************/
    $("#prueba,#prueba1").click(function(evento){
-		var elem =$("#formulariomayores");
-		var elem1 =$("#prueba");
-		/*elem.css("display", "block");*/
-		elem.show(1000);
-		elem1.hide(1000);
+   		var formularioexperiencia =$("#formulariomayores");
+		var botonmodificarexperiencia =$("#prueba");
+		formularioexperiencia.show(1000);
+		botonmodificarexperiencia.hide(1000);
    });
 });
-
+/*************************************************/
+/*******************ocultar************************/
 $(document).ready(function(){
    $("#ocultar,#guardardatos").click(function(evento){
-		var elem =$("#formulariomayores");
-		var elem1 =$("#prueba");
-		/*elem.css("display", "block");*/
-		elem.hide(1000);
-		elem1.show(1000);
+		var formularioexperiencia =$("#formulariomayores");
+		var botonmodificarexperiencia =$("#prueba");
+		formularioexperiencia.hide(1000);
+		botonmodificarexperiencia.show(1000);
    });
 });
+/*************************************************/
 
-/*****************EDUCACIÓN FORMAL*********************************/
+/*****************EDUCACIÓN FORMAL********************/
 
 $(document).ready(function(){
    $("#estudioformal,#modificar_estudio").click(function(evento){
-		var elem =$("#formularioformal");
-		var elem1 =$("#estudioformal");
-		elem.show(1000);
-		elem1.hide(1000);
+
+		var formularioformal =$("#formularioformal");
+		var botonmodificarformal =$("#estudioformal");
+		formularioformal.show(1000);
+		botonmodificarformal.hide(1000);
    });
 });
 
-
+/*******************ocultar************************/
 $(document).ready(function(){
    $("#Cancelar_fomal,#guardar_formal").click(function(evento){
-		var elem =$("#formularioformal");
-		var elem1 =$("#estudioformal");
-		elem.hide(1000);
-		elem1.show(1000);
+		var formularioformal =$("#formularioformal");
+		var botonmodificarformal =$("#estudioformal");
+		formularioformal.hide(1000);
+		botonmodificarformal.show(1000);
    });
 });
 
-/*****************FORMAL*********************************/
+/*****************************************************/
 
+
+
+/*****************IDIOMA********************/
+
+$(document).ready(function(){
+   $("#agregar_idioma,#modificar_idioma").click(function(evento){
+
+		var formularioidioma =$("#formularioidioma");
+		var botonmodificaridioma =$("#agregar_idioma");
+		formularioidioma.show(1000);
+		botonmodificaridioma.hide(1000);
+   });
+});
+
+/*******************ocultar************************/
+$(document).ready(function(){
+   $("#Cancelar_fomal,#guardar_formal").click(function(evento){
+		var formularioidioma =$("#formularioidioma");
+		var botonmodificaridioma =$("#agregar_idioma");
+		formularioidioma.hide(1000);
+		botonmodificaridioma.show(1000);
+   });
+});
+
+/*****************************************************/
+
+/*****************EDUCACION NO FORMAL********************/
+$(document).ready(function(){
+   $("#agregar_noformal,#modificar_noformal").click(function(evento){
+
+		var formularionoformal =$("#formularionoformal");
+		var botonmodificarnoformal =$("#agregar_noformal");
+		formularionoformal.show(1000);
+		botonmodificarnoformal.hide(1000);
+   });
+});
+/*******************ocultar************************/
+$(document).ready(function(){
+   $("#Cancelar_infomal,#guardar_informal").click(function(evento){
+		var formularionoformal =$("#formularionoformal");
+		var botonmodificarnoformal =$("#agregar_noformal");
+		formularionoformal.hide(1000);
+		botonmodificarnoformal.show(1000);
+   });
+});
+
+/*****************************************************/
 
 
 $(document).ready(function(){
@@ -52,6 +102,7 @@ $(document).ready(function(){
 	$('#mensaje_cargo').tooltip ('<p id="b1">En este campo se de elegir el nombre del cargo que mas se ajuste a laso estandares del mercado. Ej: Gerente de talento humano por Gerente(cargo Equivalente). </p>', { width: 200 });
 	$('#mensaje_funciones').tooltip ('<p id="b1">Es un campo de mucha importancia, permite a las empresas conocer que labores y proyectos se desarrollaron y que metas se cumplieron en cada cargo para dar una idea de su potencial</p>', { width: 200 });
 	$('#mensaje_estado_estudios').tooltip ('<p id="b1">Seleccione el estado en el que se encuentran sus estudios. Puede seleccionar entre Culminado, En curso, Abandonado o Aplazado</p>', { width: 200 });
+	$('#mensaje_dominio_idioma').tooltip ('<p id="b1">Para cada idioma, debe especificar el porcentaje de dominio (De 10 a 100%) Sea lo más honesto posible, porque las compañías realizan pruebas para comprobar el dominio de otras lenguas.</p>', { width: 200 });
 
 
 	$('#a5').tooltip ('<p id="b1">Registre una Descripcion detallada de las capacidades las capacidades que debe cumplir el aspirante para aplicar al la vacante ofrecida</p>', { width: 200 });
