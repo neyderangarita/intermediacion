@@ -4,8 +4,10 @@
 $(document).ready(function(){
    $("#prueba,#prueba1").click(function(evento){
 		var elem =$("#formulariomayores");
+		var elem1 =$("#prueba");
 		/*elem.css("display", "block");*/
 		elem.show(1000);
+		elem1.hide(1000);
    });
 });
 
@@ -13,17 +15,19 @@ $(document).ready(function(){
 $(document).ready(function(){
    $("#ocultar,#guardardatos").click(function(evento){
 		var elem =$("#formulariomayores");
+		var elem1 =$("#prueba");
 		/*elem.css("display", "block");*/
 		elem.hide(1000);
+		elem1.show(1000);
    });
 });
 
 
 $(document).ready(function(){
-	$('#a1').tooltip ('<p id="b1">Elija el sector y subsecor que mas se aproxime al que pertenece la compañia</p>', { width: 200});
-	$('#a2').tooltip ('<p id="b1">Describa de forma breve el nombre del cargo vacante e incluya palabras claves que le permitan a los candidatos conocer de qué se trata la oferta. Entre más claro sea el titulo, más ajustados serán los perfiles de los aspirantes que apliquen a la oferta</p>', { width: 200 });
-	$('#a3').tooltip ('<p id="b1">Seleccione el Cargo que sera otorgado al profesional contratado, y que cumple con los requisistos necesarios para la oferta</p>', { width: 200 });
-	$('#a4').tooltip ('<p id="b1">Es un elemento a tener en cuenta como politica de seleccion y una clasificancion jerárquica de los cargos</p>', { width: 200 });
+	$('#a1').tooltip ('<p id="b1">Elija el sector y subsecor que mas se aproxime al que pertenece la empresa</p>', { width: 200});
+	$('#a2').tooltip ('<p id="b1">Seleccione el nivel del cargo que mas se ajuste a su nivel profesional</p>', { width: 200 });
+	$('#a3').tooltip ('<p id="b1">En este campo se de elegir el nombre del cargo que mas se ajuste a laso estandares del mercado. Ej: Gerente de talento humano por Gerente(cargo Equivalente). </p>', { width: 200 });
+	$('#a4').tooltip ('<p id="b1">Es un campo de mucha importancia, permite a las empresas conocer que labores y proyectos se desarrollaron y que metas se cumplieron en cada cargo para dar una idea de su potencial</p>', { width: 200 });
 	$('#a5').tooltip ('<p id="b1">Registre una Descripcion detallada de las capacidades las capacidades que debe cumplir el aspirante para aplicar al la vacante ofrecida</p>', { width: 200 });
 	$('#a6').tooltip ('<p id="b1">Experiencias o habilidades en un determinado tema o trabajo desempeñado</p>', { width: 200 });
 	$('#a7').tooltip ('<p id="b1">Los Sectores son la división de la actividad económica que realiza la empresa dependiendo del proceso productivo que realiza.</p>', { width: 200 });
