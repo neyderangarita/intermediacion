@@ -5,7 +5,7 @@
 
 $(document).ready(function(){
 
-   $("#boton_expandir").click(function(evento){	
+   $(".boton_expandir").click(function(evento){	
 		var formularioexperiencia = $("#formularioexperiencia");
 
 

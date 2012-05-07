@@ -4030,7 +4030,11 @@ a.thumbnail:hover {
 
 
 html {
-  background: #f1f1f1 url('/static/img/base-noise.jpg?b4b2d616107c'); }
+/*
+  background: #f1f1f1 url('/static/img/base-noise.jpg?b4b2d616107c');
+*/
+background: #f1f1f1;
+  }
 
 body {
   background-color: transparent;
