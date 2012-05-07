@@ -11,22 +11,20 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!--prefix free quitar los prefijos de css -->
-  <section type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></section>
+  <section type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js">
+  </section>
 
   <link rel="stylesheet" href="css/ca7368fa967d.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
   <link rel="stylesheet" href="js/sexy-tooltips/coda.css" type="text/css" media="all" id="theme"/>
-<!--  
-  <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
--->  
+<!--<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>-->  
 </head>
 
-
 <body class="home" data-twttr-rendered="true">
-
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 
 <nav class="navbar">
@@ -751,9 +749,8 @@
                                       <td>Villavicencio</td>
                                       <td>
                                         <div class="centrar">
-                                          <a id="prueba1" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
@@ -768,11 +765,11 @@
                                       <td>Villavicencio</td>
                                       <td>
                                         <div class="centrar">
-                                          <a id="prueba1" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
+
                                           </a>
                                         </div>
                                       </td>
@@ -1170,16 +1167,9 @@
                                     </div>
 
                                     <div class="form-actions">
-                                      <button id="guardardatos" class="btn btn-danger" type="submit">
-                                        <i class="icon-ok-circle icon-white"></i>
-                                        Agregar
-                                      </button>
-                                      <button id="ocultar" class="btn">
-                                        <i class="icon-remove-sign "></i> 
-                                        Cancelar
-                                      </button>
+                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
+                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
                                     </div>
-
 
                                 </div> <!--cierra span6--> 
 
@@ -1239,9 +1229,8 @@
                                       <td>universidad de los llanos</td>
                                       <td>
                                         <div class="centrar">
-                                          <a id="modificar_estudio" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
@@ -1256,9 +1245,8 @@
                                       <td>universidad de los llanos</td>
                                       <td>
                                         <div class="centrar">
-                                          <a id="modificar_estudio" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
@@ -1272,7 +1260,7 @@
 <!--......................................................................................................................-->
 
 
-                              <div id="formularioexperiencia" class="centrar"  style="display:none">
+                              <div id="formularioformal" class="centrar"  style="display:none">
 
                               <form class="">
                                 <fieldset>
@@ -1572,14 +1560,8 @@
                                     </div>
 
                                     <div class="form-actions">
-                                      <button id="guardar_formal" class="btn btn-danger" type="submit">
-                                        <i class="icon-ok-circle icon-white"></i>
-                                        Agregar
-                                      </button>
-                                      <button id="Cancelar_fomal" class="btn">
-                                        <i class="icon-remove-sign "></i> 
-                                        Cancelar
-                                      </button>
+                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
+                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
                                     </div>
 
 
@@ -1634,9 +1616,8 @@
                                       <td>50</td>
                                       <td>
                                         <div class="centrar">
-                                          <a id="modificar_idioma" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
@@ -1649,9 +1630,8 @@
                                       <td>10</td>
                                       <td>
                                         <div class="centrar">
-                                          <a id="modificar_idioma" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
@@ -1661,7 +1641,7 @@
                                   </tbody>
                                 </table>  
 
-                      <a class="btn " title=".. ">Agregar otro idioma</a>                                                       
+                      <a class="btn boton_expandir" title=".. ">Agregar otro idioma</a>                                                       
 <!--......................................................................................................................-->
 
 
@@ -1968,14 +1948,8 @@
                                     </div>
 
                                     <div class="form-actions">
-                                      <button id="guardar_formal" class="btn btn-danger" type="submit">
-                                        <i class="icon-ok-circle icon-white"></i>
-                                        Agregar
-                                      </button>
-                                      <button id="Cancelar_fomal" class="btn">
-                                        <i class="icon-remove-sign "></i> 
-                                        Cancelar
-                                      </button>
+                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
+                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
                                     </div>
 
 
@@ -1996,7 +1970,7 @@
 
 
 
-<!---------------educacion no formalll-------------->
+<!---------------educacion no formal-------------->
  
 
                       <div class="body">
@@ -2032,9 +2006,8 @@
                                       <td>uniminuto</td>                                                                        
                                       <td>
                                         <div class="centrar">
-                                          <a id="modificar_noformal" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
@@ -2044,9 +2017,7 @@
                                   </tbody>
                                 </table>  
 
-                      <a id="agregar_noformal" class="btn " title=".. ">
-                        Agregar Educación no formal
-                      </a>   
+                      <a class="btn boton_expandir" title=".. ">Agregar Educacion no formal</a>   
 
 <!--......................................................................................................................-->
 
@@ -2274,14 +2245,8 @@
 
 
                                     <div class="form-actions">
-                                      <button id="guardar_informal" class="btn btn-danger" type="submit">
-                                        <i class="icon-ok-circle icon-white"></i>
-                                        Agregar
-                                      </button>
-                                      <button id="Cancelar_infomal" class="btn">
-                                        <i class="icon-remove-sign "></i> 
-                                        Cancelar
-                                      </button>
+                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
+                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
                                     </div>
 
                                 </div> <!--cierra span6--> 
@@ -2309,7 +2274,7 @@
 
 
 
-                     <div class="body">
+                      <div class="body">
                         <div class="container-fluid">
                           <div class="row-fluid">
                           Ingresar tu hoja de vida te permitirá postularte a todas las búsquedas de empleos que se publiquen en el sitio y, si así lo deseas, las empresas que accedan a nuestra base de datos en busca de candidatos podrán consultarlo. El proceso de ingreso de la hoja de vida está dividido en pasos. Al finalizar la carga de tus datos presioná el botón "guardar" al final de la página antes de ir al paso siguiente. Los ítems destacados en <spam class="titulos">rojo</spam> son obligatorios.
@@ -2339,9 +2304,8 @@
                                       <td>dsfsdf sd sdf dsf sd sdfs  dsfsd dsfsdf</td>
                                       <td>
                                         <div class="centrar">
-                                          <a id="modificar_idioma" class="btn btn-mini btn-danger" title="Editar">
-                                            <i class="icon-pencil icon-white"></i>
-                                          </a>
+                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+
                                           <a class="btn btn-mini btn-danger" title="Eliminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
@@ -2352,18 +2316,14 @@
                                   </tbody>
                                 </table>  
 
-                      <a id="agregar_idioma" class="btn " title=".. ">
-                        Agregar otro
-                      </a>                                                       
-<!--......................................................................................................................-->
+                      <a class="btn boton_expandir" title=".. ">Agregar Publicacion</a>                                                       
+<!--............................................................................................................-->
 
-
-                            <div id="formularioidioma" class="centrar"  style="display:block">
+                            <div id="formulariopublicacion" class="centrar"  style="display:none">
 
                               <form class="">
                                 <fieldset>
                             <div class="row-fluid">
-
 
 
                                 <div class="span6" ><!--abre span6-->
@@ -2390,14 +2350,8 @@
 
 
                                     <div class="form-actions">
-                                      <button id="guardar_formal" class="btn btn-danger" type="submit">
-                                        <i class="icon-ok-circle icon-white"></i>
-                                        Agregar
-                                      </button>
-                                      <button id="Cancelar_fomal" class="btn">
-                                        <i class="icon-remove-sign "></i> 
-                                        Cancelar
-                                      </button>
+                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
+                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
                                     </div>
 
 
@@ -2417,9 +2371,6 @@
                       </div><!--cierra body-->
 
 
-
-
-
                   </div>
 
 <!-- ..................................................................................................... -->
@@ -2433,7 +2384,7 @@
     </section>  <!--section-body -->  
 
 
-<!------------------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------------------- -->
 
       <hr>
         <section>
@@ -2494,6 +2445,7 @@
         </section>   
 </article> <!-- /container -->
 </div>
+
   <script>
       var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
       for(var i = 0; i < e.length; i++) {
@@ -2503,12 +2455,10 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
-
 <script src="js/libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
 <script src="js/libs/bootstrap/tab.js"></script>
-
 <script src="js/sexy-tooltips.v1.1.jquery.min.js" type="text/javascript"></script>
 <!--
 <script>

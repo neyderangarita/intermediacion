@@ -2,145 +2,60 @@
 		alert("Has pulsado el enlace");
 */
 /************mostrar*****************************/
-
 $(document).ready(function(){
-
-   $(".boton_expandir").click(function(evento){	
+   $(".boton_expandir,.ocultar,.agregar").click(function(evento){	
 		var formularioexperiencia = $("#formularioexperiencia");
-
-
+		var formularioformal = $("#formularioformal");
+		var formularioidioma = $("#formularioidioma");
+		var formularionoformal = $("#formularionoformal");
+		var formulariopublicacion = $("#formulariopublicacion");
 		var text = $(this).text();
-		
-		alert(text);
-		/*
-		if (text == 'Agregar experiencia'){
 
+		if (text == 'Agregar experiencia'){
 			formularioexperiencia.show(1000);
-			botonmodificarexperiencia.hide(1000);
+			$(".boton_expandir").hide(1000);
 		}
 
 		if (text == 'Agregar otro estudio'){
-			formularioexperiencia.show(1000);
-			botonmodificarexperiencia.hide(1000);
+			formularioformal.show(1000);
+			$(".boton_expandir").hide(1000);
 		}
-*/
+		if (text == 'Agregar otro idioma'){
+			formularioidioma.show(1000);
+			$(".boton_expandir").hide(1000);
+		}			
+		if (text == 'Agregar Educacion no formal'){
+			formularionoformal.show(1000);
+			$(".boton_expandir").hide(1000);
+		}		
+		if (text == 'Agregar Publicacion'){
+			formulariopublicacion.show(1000);
+			$(".boton_expandir").hide(1000);	
+		}
 
+		if (text == 'Cancelar'){
+			formularioexperiencia.hide(1000);
+			formularioformal.hide(1000);
+			formularioidioma.hide(1000);
+			formularionoformal.hide(1000);
+			formulariopublicacion.hide(1000);
+			$(".boton_expandir").show(1000);
+		}
 
-	/*
-		formularioexperiencia.show(1000);
-		botonmodificarexperiencia.hide(1000);*/
+		if (text == 'Agregar'){
+			formularioexperiencia.hide(1000);
+			formularioformal.hide(1000);
+			formularioidioma.hide(1000);
+			formularionoformal.hide(1000);
+			formulariopublicacion.hide(1000);
+			$(".boton_expandir").show(1000);
+		}
+
    });
 });
 
-
-/*
-$(document).ready(function(){
-
-/************mostrar*****************************/
-/*
-   $("#prueba,#prueba1").click(function(evento){
-   		var formularioexperiencia =$("#formulariomayores");
-		var botonmodificarexperiencia =$("#prueba");
-		formularioexperiencia.show(1000);
-		botonmodificarexperiencia.hide(1000);
-   });
-});
-*/
-/*************************************************/
-/*******************ocultar************************/
-/*
-$(document).ready(function(){
-   $("#ocultar,#guardardatos").click(function(evento){
-		var formularioexperiencia =$("#formulariomayores");
-		var botonmodificarexperiencia =$("#prueba");
-		formularioexperiencia.hide(1000);
-		botonmodificarexperiencia.show(1000);
-   });
-});
-
-*/
-/*************************************************/
-
-/*****************EDUCACIÓN FORMAL********************/
-/*
-$(document).ready(function(){
-   $("#estudioformal,#modificar_estudio").click(function(evento){
-
-		var formularioformal =$("#formularioformal");
-		var botonmodificarformal =$("#estudioformal");
-		formularioformal.show(1000);
-		botonmodificarformal.hide(1000);
-   });
-});
-
-
-/*******************ocultar************************/
-
-/*
-$(document).ready(function(){
-   $("#Cancelar_fomal,#guardar_formal").click(function(evento){
-		var formularioformal =$("#formularioformal");
-		var botonmodificarformal =$("#estudioformal");
-		formularioformal.hide(1000);
-		botonmodificarformal.show(1000);
-   });
-});
 
 /*****************************************************/
-
-
-
-/*****************IDIOMA********************/
-/*
-$(document).ready(function(){
-   $("#agregar_idioma,#modificar_idioma").click(function(evento){
-
-		var formularioidioma =$("#formularioidioma");
-		var botonmodificaridioma =$("#agregar_idioma");
-		formularioidioma.show(1000);
-		botonmodificaridioma.hide(1000);
-   });
-});
-
-/*******************ocultar************************/
-/*
-$(document).ready(function(){
-   $("#Cancelar_fomal,#guardar_formal").click(function(evento){
-		var formularioidioma =$("#formularioidioma");
-		var botonmodificaridioma =$("#agregar_idioma");
-		formularioidioma.hide(1000);
-		botonmodificaridioma.show(1000);
-   });
-});
-
-/*****************************************************/
-
-/*****************EDUCACION NO FORMAL********************/
-
-/*
-$(document).ready(function(){
-   $("#agregar_noformal,#modificar_noformal").click(function(evento){
-
-		var formularionoformal =$("#formularionoformal");
-		var botonmodificarnoformal =$("#agregar_noformal");
-		formularionoformal.show(1000);
-		botonmodificarnoformal.hide(1000);
-   });
-});
-/*******************ocultar************************/
-/*
-$(document).ready(function(){
-   $("#Cancelar_infomal,#guardar_informal").click(function(evento){
-		var formularionoformal =$("#formularionoformal");
-		var botonmodificarnoformal =$("#agregar_noformal");
-		formularionoformal.hide(1000);
-		botonmodificarnoformal.show(1000);
-   });
-});
-
-/*****************************************************/
-
-
 $(document).ready(function(){
 	$('#mensaje_sector').tooltip ('<p id="b1">Elija el sector y subsecor que mas se aproxime al que pertenece la empresa</p>', { width: 200});
 	$('#mensaje_nivel').tooltip ('<p id="b1">Seleccione el nivel del cargo que mas se ajuste a su nivel profesional</p>', { width: 200 });
