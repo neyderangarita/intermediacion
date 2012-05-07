@@ -6,19 +6,19 @@
 $(document).ready(function(){
 
    $("#boton_expandir").click(function(evento){	
+		var formularioexperiencia = $("#formularioexperiencia");
+
 
 		var text = $(this).text();
 		
-
 		alert(text);
 		/*
 		if (text == 'Agregar experiencia'){
-			var formularioexperiencia = $("#formularioexperiencia");
-			var botonmodificarexperiencia =$("#boton_expandir");
 
 			formularioexperiencia.show(1000);
 			botonmodificarexperiencia.hide(1000);
 		}
+
 		if (text == 'Agregar otro estudio'){
 			formularioexperiencia.show(1000);
 			botonmodificarexperiencia.hide(1000);
