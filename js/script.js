@@ -1,9 +1,43 @@
 /* Author: Neyder Angarita Osorio.
 		alert("Has pulsado el enlace");
 */
+/************mostrar*****************************/
+
+$(document).ready(function(){
+
+   $("#boton_expandir").click(function(evento){	
+
+		var text = $(this).text();
+		
+
+		alert(text);
+		/*
+		if (text == 'Agregar experiencia'){
+			var formularioexperiencia = $("#formularioexperiencia");
+			var botonmodificarexperiencia =$("#boton_expandir");
+
+			formularioexperiencia.show(1000);
+			botonmodificarexperiencia.hide(1000);
+		}
+		if (text == 'Agregar otro estudio'){
+			formularioexperiencia.show(1000);
+			botonmodificarexperiencia.hide(1000);
+		}
+*/
+
+
+	/*
+		formularioexperiencia.show(1000);
+		botonmodificarexperiencia.hide(1000);*/
+   });
+});
+
+
+/*
 $(document).ready(function(){
 
 /************mostrar*****************************/
+/*
    $("#prueba,#prueba1").click(function(evento){
    		var formularioexperiencia =$("#formulariomayores");
 		var botonmodificarexperiencia =$("#prueba");
@@ -11,8 +45,10 @@ $(document).ready(function(){
 		botonmodificarexperiencia.hide(1000);
    });
 });
+*/
 /*************************************************/
 /*******************ocultar************************/
+/*
 $(document).ready(function(){
    $("#ocultar,#guardardatos").click(function(evento){
 		var formularioexperiencia =$("#formulariomayores");
@@ -21,10 +57,12 @@ $(document).ready(function(){
 		botonmodificarexperiencia.show(1000);
    });
 });
+
+*/
 /*************************************************/
 
 /*****************EDUCACIÓN FORMAL********************/
-
+/*
 $(document).ready(function(){
    $("#estudioformal,#modificar_estudio").click(function(evento){
 
@@ -35,7 +73,10 @@ $(document).ready(function(){
    });
 });
 
+
 /*******************ocultar************************/
+
+/*
 $(document).ready(function(){
    $("#Cancelar_fomal,#guardar_formal").click(function(evento){
 		var formularioformal =$("#formularioformal");
@@ -50,7 +91,7 @@ $(document).ready(function(){
 
 
 /*****************IDIOMA********************/
-
+/*
 $(document).ready(function(){
    $("#agregar_idioma,#modificar_idioma").click(function(evento){
 
@@ -62,6 +103,7 @@ $(document).ready(function(){
 });
 
 /*******************ocultar************************/
+/*
 $(document).ready(function(){
    $("#Cancelar_fomal,#guardar_formal").click(function(evento){
 		var formularioidioma =$("#formularioidioma");
@@ -74,6 +116,8 @@ $(document).ready(function(){
 /*****************************************************/
 
 /*****************EDUCACION NO FORMAL********************/
+
+/*
 $(document).ready(function(){
    $("#agregar_noformal,#modificar_noformal").click(function(evento){
 
@@ -84,6 +128,7 @@ $(document).ready(function(){
    });
 });
 /*******************ocultar************************/
+/*
 $(document).ready(function(){
    $("#Cancelar_infomal,#guardar_informal").click(function(evento){
 		var formularionoformal =$("#formularionoformal");
