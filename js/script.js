@@ -54,6 +54,15 @@ $(document).ready(function(){
    });
 });
 
+$(document).ready(function(){
+   $("#inicializar").click(function(evento){	
+		$('#myModal').modal('show');
+});
+
+});
+
+
+
 
 /*****************************************************/
 $(document).ready(function(){

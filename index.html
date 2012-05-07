@@ -19,7 +19,15 @@
   <link rel="stylesheet" href="css/ca7368fa967d.css">
 	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-<!--<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>-->  
+<!--<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>-->
+
+  <script>
+      var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
+      for(var i = 0; i < e.length; i++) {
+        document.createElement(e[i]);
+      }
+  </script>
+
 </head>
 
 
@@ -40,19 +48,16 @@
       <div class="nav-collapse">
         <ul class="nav actions">
           <li>
-            <a href="/login/">Entrar</a>
-          </li>
-          <li>
-            <a href="/signup/">Salir</a>
+            <a href="../intermediacion/index.html" style="display:none">Salir</a>
           </li>
         </ul>
 
         <ul class="nav">
           <li>
-            <a href="/about/">INICIO</a>
+            <a href="../intermediacion/index.html">INICIO</a>
           </li>
           <li>
-            <a href="/about/">BUSCAR EMPLEO</a>
+            <a href="../intermediacion/index.html">BUSCAR EMPLEO</a>
           </li>
           <li>
             <a target="_blank" href="http://blog.kippt.com/">CONTACTO</a>
@@ -80,16 +85,59 @@
   </header>
 -->
 
-<br><br><br><br><br><br><br><br>
-    <div class="fuente">Intermediación Laboral</div>
+<br><br><br><br><br><br>
+  <div class="fuente">Intermediación Laboral</div>
 
   <section class="row screenshots"> 
+
+
         <div class="span6">
           <div id="ex5">  
-            <a href="www.facebook.com/neyderangarita">
+            <a  id="inicializar"  data-toggle="modal" href="#myModal" >
               <img class="imagen"  src="img/principal/sesion.png">
             </a>  
           </div>
+          <section id="modal ">
+            <div id="myModal" class="modal show"  style="display: none;"  >
+              <div class="modal-header">
+              <button class="close" data-dismiss="modal">×</button>
+              <h3>Iniciar Sesión en Intemediacion Laboral</h3>
+
+                <form class="form-horizontal">
+                  <fieldset>
+                  <legend></legend>
+
+                  <div class="control-group">
+
+                    <label class="control-label" for="usuario">Usuario:</label>
+                    <div class="controls">
+                    <input type="text" class="input-xlarge" id="usuario" placeholder="Usuario">
+                    <p class="help-block"></p>
+                    </div>
+                    <label class="control-label" for="Contraseña">Contraseña:</label>
+                    <div class="controls">
+                    <input type="text" class="input-xlarge" id="Contraseña" placeholder="Contraseña">
+                    <p class="help-block"></p>
+                    </div>
+                  </div> 
+                  </fieldset>
+                </form>
+                <form class="form-inline">
+                      <input class="btn btn-large btn-danger" type="submit" data-dismiss="modal" value="Iniciar Sesión">
+                      <label class="checkbox">
+                        <input type="checkbox" value="recuerdo_datos" name="optionsCheckboxList1">Recuerda mis datos
+                      </label>
+                  </form>
+
+
+              </div>
+              <div class="modal-footer">
+                ¿Necesitas ayuda? <a href="">olvidaste tu contraseña</a>
+
+              </div>
+
+            </div>
+          </section>
         </div>
 
         <div class="span6">
@@ -123,7 +171,7 @@
                     </div>
                   </form>
   </section>
-<hr>
+
 
 <!--
 <section class="row testimonials">
@@ -158,6 +206,8 @@ ection class="row beawesome">
   <a class="btn btn-green btn-large" href="/signup">Sign up, it's free</a>
 </section>
 --> 
+
+
         <section class="body">
           <div class="container-fluid">
             <div class="row-fluid">
@@ -384,12 +434,9 @@ ection class="row beawesome">
 <script src="js/libs/bootstrap/tab.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
-  <script>
-      var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
-      for(var i = 0; i < e.length; i++) {
-        document.createElement(e[i]);
-      }
-  </script>
+<script src="js/libs/bootstrap/modal.js"></script>
+
+
 <!--
 <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
