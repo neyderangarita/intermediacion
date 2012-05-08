@@ -55,11 +55,27 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-   $("#inicializar").click(function(evento){	
+   $(".inicializar").click(function(evento){	
 		$('#myModal').modal('show');
 });
 
 });
+
+$(document).ready(function(){
+   $(".inicializar2").click(function(evento){	
+		$('#myModal1').modal('show');
+});
+
+});
+
+
+
+$(document).ready(function(){
+   $("#oferta").click(function(evento){	
+		$('#oferta_empleo').load('formulario_oferta.html');
+	});
+});
+
 
 
 
@@ -72,6 +88,9 @@ $(document).ready(function(){
 	$('#mensaje_funciones').tooltip ('<p id="b1">Es un campo de mucha importancia, permite a las empresas conocer que labores y proyectos se desarrollaron y que metas se cumplieron en cada cargo para dar una idea de su potencial</p>', { width: 200 });
 	$('#mensaje_estado_estudios').tooltip ('<p id="b1">Seleccione el estado en el que se encuentran sus estudios. Puede seleccionar entre Culminado, En curso, Abandonado o Aplazado</p>', { width: 200 });
 	$('#mensaje_dominio_idioma').tooltip ('<p id="b1">Para cada idioma, debe especificar el porcentaje de dominio (De 10 a 100%) Sea lo más honesto posible, porque las compañías realizan pruebas para comprobar el dominio de otras lenguas.</p>', { width: 200 });
+	$('#mensaje_titulo_oferta').tooltip ('<p id="b1">Nota: Describa de forma breve el nombre del cargo vacante e incluya palabras claves que le permitan a los candidatos conocer de qu&eacute; se trata la oferta. Entre m&aacute;s claro sea el titulo, m&aacute;s ajustados ser&aacute;n los perfiles de los aspirantes que apliquen a la oferta</p>', { width: 200 });
+
+
 
 
 	$('#a5').tooltip ('<p id="b1">Registre una Descripcion detallada de las capacidades las capacidades que debe cumplir el aspirante para aplicar al la vacante ofrecida</p>', { width: 200 });
@@ -79,7 +98,7 @@ $(document).ready(function(){
 	$('#a7').tooltip ('<p id="b1">Los Sectores son la división de la actividad económica que realiza la empresa dependiendo del proceso productivo que realiza.</p>', { width: 200 });
 	$('#a8').tooltip ('<p id="b1">Ingrese su correo electronico que sera utilizado como usario para el inicio de sesión </p>', { width: 200 });
 	$('#a9').tooltip ('<p id="b1">Ingrese su contraseña para el inicio de sesion su cuenta podra utilizarla para ingresar cuando se verifique su cuenta </p>', { width: 200 });
-	$('#a10').tooltip ('<p id="b1">Es una clasificacion mas especifica del sector en el que se desempeña la empresa</p>', { width: 200 });
+	$('#a10').tooltip ('<p id="b1">Es una clasificacion mas especifica del sector en el que se desempena la empresa</p>', { width: 200 });
 	$('#a11').tooltip ('<p id="b1">Realize una descripcion de las actividades realizadas en la empresa y sus caracteristicas principales.</p>', { width: 200 });
 	$('#a12').tooltip ('<p id="b1">Recuerde que el nombre de un programa no es necesariamente igual al título obtenido. Ej.: Ingeniería Industrial (programa)/Ingeniero Industrial (título) o Comercio exterior/profesional en Comercio exterior.</p>', { width: 200 });
 });
