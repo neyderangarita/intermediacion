@@ -72,11 +72,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
    $("#oferta").click(function(evento){	
-		$('#oferta_empleo').load('formulario_oferta.html');
+		$('#contenedor').load('formulario_oferta.html');
 	});
 });
 
 
+$(document).ready(function(){
+   $("#ofertas_empresa").click(function(evento){	
+		$('#contenedor').load('ofertas_empleo.html');
+	});
+});
 
 
 
