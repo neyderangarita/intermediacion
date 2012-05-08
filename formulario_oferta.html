@@ -1,0 +1,673 @@
+
+      <div class="container-fluid"> <!--container-fluid -->      
+        <div class="row-fluid">  <!--row-fluid -->
+          <div class="tabbable span12"> <!--tabbable -->      
+
+
+                      <div class="body">
+                        <div class="container-fluid">
+                          <div class="row-fluid">
+                           Nota: Al finalizar la carga de tus datos presioná el botón "guardar". Los ítems destacados en <spam class="titulos">rojo</spam> son obligatorios.
+                          </div>
+                        </div>
+                      </div> 
+
+
+
+                      <div class="body">
+                        <div class="container-fluid">
+                          <div class="row-fluid">
+
+
+                          <div class="span12">
+
+                            <legend><spam class="titulos">Publicar oferta de Empleo</spam></legend>
+                            <div class="centrar">
+                              <form class="">
+                                <fieldset>
+                            <div class="row-fluid"> <!--row-fluid-->
+
+                                <div class="span6"><!--abre span6-->
+
+                                      <div class="control-group">
+                                        <label class="control-label" for="titulo_oferta">
+                                          <spam class="titulos">*Titulo de la Oferta:</span>
+                                          <i id="mensaje_titulo_oferta" class="icon-question-sign"></i>   
+                                        </label>
+                                        <div class="controls">
+                                          <input value="neyder" type="text" class="input" name="titulo_oferta"  id="titulo_oferta" size="25" required placeholder="Ingeniero agronomo-producción agropecuaria-especializacion bovina"/>
+                                        </div>
+                                        <p class="help-block" for="titulo_oferta" style="display:none"> help text</p>
+                                      </div>
+
+
+<!-- Este es el mismo cargo que se agrega en la experiencia laboral-->
+                                    <div class="control-group">    
+
+                                      <label class="control-label"  for="cargo_equivalente">
+                                        <spam class="titulos">* Cargo Equivalente: </span>
+                                        <i id="mensaje_cargo" class="icon-question-sign"></i> 
+                                      </label>
+                                      <div class="controls">
+                                      <select id="cargo_equivalente" name="cargo_equivalente" required>
+
+                                          <option value="" selected="selected">Por favor seleccione</option>
+                                          <option value="3">ingeniero agoindustrial</option>
+                                          <option value="5">médico veterinario y zootecnista</option>
+                                          <option value="6">ingeniero agrónomo</option>
+                                          <option value="7">ingeniero agroindustrial</option>
+                                          <option value="9">biólogo (a)</option>
+                                          <option value="9">ingeniero de sistemas</option>
+                                          <option value="10">ingeniero electrónico</option>
+                                          <option value="11">licenciado en matemáticas y física</option>
+                                          <option value="12">licenciado en producción agropecuaria</option>
+                                          <option value="13">licenciado en educación física y deportes</option>
+                                          <option value="14">licenciado pedagogía Infantil</option>
+                                          <option value="15">economista</option>
+                                          <option value="16">contador público</option>
+                                          <option value="17">administrador de empresas</option>
+                                          <option value="18">profesional en mercadeo</option>
+                                          <option value="19">enfermero(a)</option>
+                                          <option value="20">tecnologo en regencia de farmacia</option>
+                                          <option value="20">(Otro)</option>
+                                          <option value="20">Administrador</option>
+                                          <option value="20">Analista</option>
+                                          <option value="20">Asesor</option>
+                                          <option value="20">Asistente</option>
+                                          <option value="20">Asistente de investigación</option>
+                                          <option value="20">Auditor</option>
+                                          <option value="20">Auxiliar</option>
+                                          <option value="20">Consultor</option>
+                                          <option value="20">Contralor</option>
+                                          <option value="20">Coordinador</option>
+                                          <option value="20">Director</option>
+                                          <option value="20">Diseñador</option>
+                                          <option value="20">Docente o profesor</option>
+                                          <option value="20">Ejecutivo</option>
+                                          <option value="20">Enfermero (a)</option>
+                                          <option value="20">Entrenador/capacitador</option>
+                                          <option value="20">Gerente</option>
+                                          <option value="20">Gerente general</option>
+                                          <option value="20">Hostess</option>
+                                          <option value="20">Inspector</option>
+                                          <option value="20">Interventor</option>
+                                          <option value="20">Jefe</option>
+                                          <option value="20">Programador</option>
+                                          <option value="20">Representante de ventas</option>
+                                          <option value="20">Revisor fiscal</option>
+                                          <option value="20">Secretaria</option>
+                                          <option value="20">Subdirector</option>
+                                          <option value="20">Subgerente</option>
+                                          <option value="20">Supernumerario</option>
+                                          <option value="20">Supervisor</option>
+                                          <option value="20">Trader</option>
+                                          <option value="20">Vendedor</option>
+                                          <option value="20">Vicepresidente</option>
+                                          <option value="20">Webmaster</option>
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="cargo_equivalente" style="display:none">help text</p>
+                                    </div>
+
+
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="publicar_nombre">¿Publicar nombre de la Empresa? </label>
+                                      <div class="controls">
+                                        <label class="radio inline">Si
+                                        <input type="radio" name="publicar_nombre" id="publicar_nombre"  value="si" checked=""  />
+                                        
+                                        </label>
+                                        <label class="radio inline">No
+                                        <input type="radio" name="publicar_nombre" id="publicar_nombre"  value="no" checked=""  />
+                                        </label>
+                                      </div> 
+                                      <p class="help-block" for="publicar_nombre" style="display:none">Supporting help text</p>
+                                    </div>
+
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Pais"><spam class="titulos"> *Pais:</span></label>
+                                      <div class="controls">
+                                      <select id="Pais" name="Pais" required>
+
+                                          <option value="12">Colombia</option>
+                                          <option value="17">Alemania</option>
+                                          <option value="2">Argentina</option>
+                                          <option value="101184083">Aruba</option>
+                                          <option value="3">Australia</option>
+                                          <option value="4">Austria</option>
+                                          <option value="5">Bélgica</option>
+                                          <option value="6">Bolivia</option>
+                                          <option value="7">Brasil</option>
+                                          <option value="9">Canadá</option>
+                                          <option value="10">Chile</option>
+                                          <option value="11">China</option>
+                                          <option value="14">Corea del Sur</option>
+                                          <option value="13">Costa Rica</option>
+                                          <option value="15">Cuba</option>
+                                          <option value="16">Curacao</option>
+                                          <option value="101123022">Dinamarca</option>
+                                          <option value="19">Ecuador</option>
+                                          <option value="46">El Salvador</option>
+                                          <option value="101124026">Escocia</option>
+                                          <option value="101231130">Eslovenia</option>
+                                          <option value="20">España</option>
+                                          <option value="53">Estados Unidos</option>
+                                          <option value="21">Francia</option>
+                                          <option value="24">Guatemala</option>
+                                          <option value="23">Guinea-Ecuatorial</option>
+                                          <option value="28">Haití</option>
+                                          <option value="27">Holanda</option>
+                                          <option value="26">Honduras</option>
+                                          <option value="25">Hong Kong</option>
+                                          <option value="29">Hungría</option>
+                                          <option value="31">India</option>
+                                          <option value="22">Inglaterra</option>
+                                          <option value="32">Irlanda</option>
+                                          <option value="30">Islas Comores</option>
+                                          <option value="33">Israel</option>
+                                          <option value="34">Italia</option>
+                                          <option value="35">Jamaica</option>
+                                          <option value="36">Japón</option>
+                                          <option value="101231131">Lituania</option>
+                                          <option value="37">México</option>
+                                          <option value="38">Nicaragua</option>
+                                          <option value="39">Noruega</option>
+                                          <option value="101124024">Nueva Zelanda</option>
+                                          <option value="40">Panamá</option>
+                                          <option value="45">Paraguay</option>
+                                          <option value="41">Perú</option>
+                                          <option value="42">Polonia</option>
+                                          <option value="44">Portugal</option>
+                                          <option value="43">Puerto Rico</option>
+                                          <option value="18">República Dominicana</option>
+                                          <option value="101124025">Rusia</option>
+                                          <option value="47">Suecia</option>
+                                          <option value="48">Suiza</option>
+                                          <option value="49">Trinidad y Tobago</option>
+                                          <option value="50">Turquía</option>
+                                          <option value="51">Ucrania</option>
+                                          <option value="52">Uruguay</option>
+                                          <option value="54">Venezuela</option>
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Pais" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Departamento"><spam class="titulos"> *Departamento:</span></label>
+                                      <div class="controls">
+                                      <select id="Departamento" name="Departamento" required>
+
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" ></option>
+                                        <option value="2"></option> 
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Departamento" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="ano_expe">Experiencia requerida en el cargo:</label>
+                                      <div class="controls">
+                                      <select id="ano_expe"  name="ano_expe" required>
+                                        <option value="">Por favor seleccione</option>
+                                        <option value="0">Menos de un año</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">Más de 15 años de experiencia</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="ano_expe" style="display:none">help text</p>
+                                    </div> 
+
+
+                                      <div class="control-group">
+                                        <label class="control-label" for="vacantes">
+                                          <spam class="titulos">*Cantidad de vacantes:</span>
+                                        </label>
+                                        <div class="controls">
+                                          <input type="text" class="input" name="vacantes"  id="vacantes" size="25" required placeholder="vacantes"/>
+                                        </div>
+                                        <p class="help-block" for="vacantes" style="display:none"> help text</p>
+                                      </div>
+
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Idioma">Idioma Requerido:</label>
+                                      <div class="controls">
+                                      <select id="Idioma" name="Idioma">
+
+                                      <option value="" selected="selected">Por favor seleccione un item</option>
+                                      <option value="12">(Otro)</option>
+                                      <option value="8">Alemán</option>
+                                      <option value="10">Chino</option>
+                                      <option value="2">Español</option>
+                                      <option value="3">Francés</option>
+                                      <option value="11">Holandés</option>
+                                      <option value="4">Inglés</option>
+                                      <option value="5">Italiano</option>
+                                      <option value="6">Japonés</option>
+                                      <option value="9">Mandarín</option>
+                                      <option value="7">Portugués</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Idioma" style="display:none">help text</p>
+                                    </div>
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="tipoContrato"> Tipo de contrato:</label>
+                                      <div class="controls">
+                                      <select name="tipoContrato">
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1">Definido</option>
+                                        <option value="2">Indefinido</option>               
+                                        <option value="3">Prestacion de Servicios</option>                
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="tipoContrato" style="display:none">help text</p>
+                                    </div>
+
+
+                                                                        <div class="control-group">      
+                                      <label  class="control-label"  for="sector">
+                                        <spam class="titulos">*Sector de la Empresa: </span>
+                                        <i id="mensaje_sector" class="icon-question-sign"></i>  
+                                      </label>
+
+
+
+                                      <div class="controls">
+                                      <select id="sector" name="sector" required>
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="101">Agropecuario</option>
+                                          <option value="102">Alimentos</option>
+                                          <option value="103">Asegurador</option>
+                                          <option value="104">Bebidas y tabaco</option>
+                                          <option value="105">Comercio al por menor - retail</option>
+                                          <option value="106">Construcción</option>
+                                          <option value="107">Consultorías / Asesorías</option>
+                                          <option value="130">Consumo masivo</option>
+                                          <option value="108">Cuero y calzado</option>
+                                          <option value="109">Editorial e impresión</option>
+                                          <option value="110">Educativo</option>
+                                          <option value="111">Energético</option>
+                                          <option value="112">Entretenimiento</option>
+                                          <option value="113">Estatal y relacionados</option>
+                                          <option value="114">Financiero</option>
+                                          <option value="115">Manufactura</option>
+                                          <option value="116">Medios</option>
+                                          <option value="117">Minería, hierro, acero y otros materiales</option>
+                                          <option value="131">Naval</option>
+                                          <option value="132">Organizaciones No Gubernamentales</option>
+                                          <option value="134">Otros</option>
+                                          <option value="118">Plástico y caucho</option>
+                                          <option value="119">Productos de vidrio</option>
+                                          <option value="120">Publicidad y mercadeo</option>
+                                          <option value="121">Pulpa, papel y cartón</option>
+                                          <option value="122">Químicos</option>
+                                          <option value="123">Salud</option>
+                                          <option value="124">Servicios</option>
+                                          <option value="125">Tecnología</option>
+                                          <option value="126">Telecomunicaciones</option>
+                                          <option value="127">Textiles, prendas de vestir y calzado</option>
+                                          <option value="128">Transporte</option>
+                                          <option value="129">Vehículos y partes</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="sector" style="display:none">help text</p>
+                                    </div>
+
+
+
+                                    <div class="control-group">      
+                                      <label  class="control-label"  for="nivel_estudios">
+                                        <spam class="titulos">*Minimo Nivel de Estudios: </span>
+                                      </label>
+
+                                      <div class="controls">
+                                        <select id="nivel_estudios" class="nivel_estudios" name="nivel_estudios" required>
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="2">Ph D.</option>
+                                          <option value="3">Especialización</option>
+                                          <option value="4">Maestría</option>
+                                          <option value="6">Profesional</option>
+                                          <option value="7">Técnico</option>
+                                          <option value="9">Bachillerato</option>
+                                          <option value="10">Tecnológico</option>
+                                        </select>
+                                      </div>
+                                      <p class="help-block" for="nivel_estudios" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label id="a10" class="control-label"  for="vigencia"><spam class="titulos">*Vigencia Oferta : </span></label>
+                                      <div class="controls">
+                                      <select id="vigencia" name="vigencia" required>
+
+                                        <option value="6">3 dias</option>
+                                        <option value="7">5 dias</option>
+                                        <option value="8">8 dias</option>
+                                        <option value="5">15 dias</option>
+                                        <option value="1" selected="selected">Un mes</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="vigencia" style="display:none">help text</p>
+                                    </div>
+
+
+
+                                </div>  <!--cierra span6-->
+
+                                <div class="span6">  <!--abre span6-->
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Area_cargo"><spam class="titulos"> *Área o departamento del cargo: </span></label>
+                                      <div class="controls">
+                                      <select id="Area_cargo" name="Area_cargo" required>
+
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="2">Administrativa y Financiera</option>
+                                          <option value="48">Archivo y Documentación</option>
+                                          <option value="4">Auditoría, Contraloría e Interventoría</option>
+                                          <option value="45">Calidad (aseguramiento, gestión y afines)</option>
+                                          <option value="5">Comercial, Ventas y Telemercadeo</option>
+                                          <option value="6">Comercio Exterior</option>
+                                          <option value="53">Compras e Inventarios</option>
+                                          <option value="7">Construcción y Obra</option>
+                                          <option value="10">Docencia</option>
+                                          <option value="12">Gerencia General (cargos corporativos)</option>
+                                          <option value="27">Instalación y Reparaciones Técnicas</option>
+                                          <option value="46">Investigación</option>
+                                          <option value="41">Jurídica</option>
+                                          <option value="42">Logística y Distribución</option>
+                                          <option value="13">Mantenimiento</option>
+                                          <option value="19">Mercadeo y Publicidad</option>
+                                          <option value="30">Operaciones y Procesos</option>
+                                          <option value="18">Producción</option>
+                                          <option value="17">Proyectos (análisis, desarrollo, gestión y afines)</option>
+                                          <option value="20">Recepción</option>
+                                          <option value="21">Recursos Humanos y Admón. de Personal</option>
+                                          <option value="43">Redacción y Generación de Contenido</option>
+                                          <option value="22">Salud</option>
+                                          <option value="23">Secretariado</option>
+                                          <option value="24">Seguridad Industrial, Ambiental y Ocupacional</option>
+                                          <option value="25">Servicio al Cliente</option>
+                                          <option value="51">Servicios Generales, Aseo y Vigilancia</option>
+                                          <option value="47">Sistemas y Tecnología</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Area_cargo" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Nivel_cargo">
+                                        <spam class="titulos"> *Nivel del cargo:    </span>
+                                        <i id="mensaje_nivel" class="icon-question-sign"></i> 
+                                      </label>
+                                      <div class="controls">
+                                      <select id="Nivel_cargo" name="Nivel_cargo" required>
+
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="1">Presidente</option>
+                                          <option value="2">Vicepresidente</option>
+                                          <option value="3">Gerente Senior</option>
+                                          <option value="4">Gerente</option>
+                                          <option value="5">Coordinador supervisor o especialista</option>
+                                          <option value="6">Profesional Senior</option>
+                                          <option value="7">Profesional</option>
+                                          <option value="8">Profesional Junior</option>
+                                          <option value="9">Auxiliar, asistencial y otros</option>
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Nivel_cargo" style="display:none">help text</p>
+                                    </div>
+
+
+
+                                    <div class="control-group">
+                                      <label class="control-label"  for="descripcion"><spam class="titulos">*Descripoción de la Oferta y Tareas</span></label>
+                                      <div class="controls">
+                                        <textarea id="textarea" class="input" rows="3"></textarea>
+                                      </div>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="Ciudad"><spam class="titulos"> *Ciudad:</span></label>
+                                      <div class="controls">
+                                      <select id="Ciudad" name="Ciudad" required disabled>
+
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" ></option>
+                                        <option value="2"></option> 
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Ciudad" style="display:none">help text</p>
+                                    </div>
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="rangSala"><spam class="titulos"> *Rango del salario: </span></label>
+                                      <div class="controls">
+                                      <select name="rangSala" required>
+                                        <option value="">Por favor seleccione</option>
+                                        <option value="1">Menos de $550.000</option>
+                                        <option value="2">$ 550.001 - $ 1.000.000</option>
+                                        <option value="3">$ 1.000.001 - $ 1.500.000</option>
+                                        <option value="4">$ 1.500.001 - $ 2.000.000</option>
+                                        <option value="5">$ 2.000.001 - $ 2.500.000</option>
+                                        <option value="6">$ 2.500.001 - $ 3.000.000</option>
+                                        <option value="7">$ 3.000.001 - $ 3.500.000</option>
+                                        <option value="8">$ 3.500.001 - $ 4.000.000</option>
+                                        <option value="9">$ 4.000.001 - $ 4.500.000</option>
+                                        <option value="10">$ 4.500.001 - $ 5.500.000</option>
+                                        <option value="23">$ 5.500.001 - $ 6.000.000</option>
+                                        <option value="27">$ 6.000.001 - $ 8.000.000</option>
+                                        <option value="28">$ 8.000.001 - $ 10.000.000</option>
+                                        <option value="29">$ 10.000.001 - $ 12.500.000</option>
+                                        <option value="30">$ 12.500.000 - $ 15.000.000</option>
+                                        <option value="31">$ 15.000.001 - $ 18.000.000</option>
+                                        <option value="32">$ 18.000.001 - $ 21.000.000</option>
+                                        <option value="33">Mas de $ 21.000.000</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="experiencia" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group" style="height: 60px;">
+                                      <label class="control-label" for="publicar_salario">¿Publicar Salario? </label>
+                                      <div class="controls">
+                                        <label class="radio inline">Si
+                                        <input type="radio" name="publicar_salario" id="publicar_salario"  value="si" checked=""  />
+                                        
+                                        </label>
+                                        <label class="radio inline">No
+                                        <input type="radio" name="publicar_salario" id="publicar_salario"  value="no" checked=""  />
+                                        </label>
+                                      </div> 
+                                      <p class="help-block" for="publicar_salario" style="display:none">Supporting help text</p>
+                                    </div>
+
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="dominio">Dominio del idioma:</label>
+                                      <div class="controls">
+                                      <select name="dominio" disabled>
+                                        <option value="2" selected="selected">10</option>
+                                        <option value="3">20</option>
+                                        <option value="4">30</option>
+                                        <option value="5">40</option>
+                                        <option value="6">50</option>
+                                        <option value="7">60</option>
+                                        <option value="8">65</option>
+                                        <option value="9">70</option>
+                                        <option value="10">80</option>
+                                        <option value="11">90</option>
+                                        <option value="12">100</option>               
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="dominio" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="sexo"> sexo:</label>
+                                      <div class="controls">
+
+                                      <select name="sexo">
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" >Masculino</option>
+                                        <option value="2">Femenino</option>   
+                                        <option value="2">Indiferente</option>             
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="sexo" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label id="a10" class="control-label"  for="Subsector"><spam class="titulos"> *Subsector de la empresa: </span></label>
+                                      <div class="controls">
+                                      <select id="Subsector" name="Subsector" required disabled>
+
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" ></option>
+                                        <option value="2"></option> 
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Subsector" style="display:none">help text</p>
+                                    </div>
+
+
+<!-- este campo es la misma profesion del aspirante-->
+                                    <div class="control-group">      
+                                      <label class="control-label"  for="profesion"><spam class="titulos">*Profesión:</span></label>
+                                      <div class="controls">
+                                      <select id="profesion" name="profesion" required>
+                                          <option value="" selected="selected">Por favor seleccione</option>
+                                          <option value="3">ingeniero agoindustrial</option>
+                                          <option value="5">médico veterinario y zootecnista</option>
+                                          <option value="6">ingeniero agrónomo</option>
+                                          <option value="7">ingeniero agroindustrial</option>
+                                          <option value="9">biólogo (a)</option>
+                                          <option value="9">ingeniero de sistemas</option>
+                                          <option value="10">ingeniero electrónico</option>
+                                          <option value="11">licenciado en matemáticas y física</option>
+                                          <option value="12">licenciado en producción agropecuaria</option>
+                                          <option value="13">licenciado en educación física y deportes</option>
+                                          <option value="14">licenciado pedagogía Infantil</option>
+                                          <option value="15">economista</option>
+                                          <option value="16">contador público</option>
+                                          <option value="17">administrador de empresas</option>
+                                          <option value="18">profesional en mercadeo</option>
+                                          <option value="19">enfermero(a)</option>
+                                          <option value="20">tecnologo en regencia de farmacia</option>
+                                          <option value="20">(Otro)</option>
+                                          <option value="20">Administrador</option>
+                                          <option value="20">Analista</option>
+                                          <option value="20">Asesor</option>
+                                          <option value="20">Asistente</option>
+                                          <option value="20">Asistente de investigación</option>
+                                          <option value="20">Auditor</option>
+                                          <option value="20">Auxiliar</option>
+                                          <option value="20">Consultor</option>
+                                          <option value="20">Contralor</option>
+                                          <option value="20">Coordinador</option>
+                                          <option value="20">Director</option>
+                                          <option value="20">Diseñador</option>
+                                          <option value="20">Docente o profesor</option>
+                                          <option value="20">Ejecutivo</option>
+                                          <option value="20">Enfermero (a)</option>
+                                          <option value="20">Entrenador/capacitador</option>
+                                          <option value="20">Gerente</option>
+                                          <option value="20">Gerente general</option>
+                                          <option value="20">Hostess</option>
+                                          <option value="20">Inspector</option>
+                                          <option value="20">Interventor</option>
+                                          <option value="20">Jefe</option>
+                                          <option value="20">Programador</option>
+                                          <option value="20">Representante de ventas</option>
+                                          <option value="20">Revisor fiscal</option>
+                                          <option value="20">Secretaria</option>
+                                          <option value="20">Subdirector</option>
+                                          <option value="20">Subgerente</option>
+                                          <option value="20">Supernumerario</option>
+                                          <option value="20">Supervisor</option>
+                                          <option value="20">Trader</option>
+                                          <option value="20">Vendedor</option>
+                                          <option value="20">Vicepresidente</option>
+                                          <option value="20">Webmaster</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="profesion" style="display:none">help text</p>
+                                    </div> 
+
+
+
+                                    <div class="form-actions">
+                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Guardar</button>
+                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
+                                    </div>
+
+                                </div> <!--cierra span6--> 
+
+
+
+
+
+                            </div><!--cierra row-fluid-->
+
+                            </fieldset>  <!--cierra-fieldset-->
+                            </form>   <!--cierra-formulario-->
+                            </div>  <!--cierra centrar-->
+
+                          </div><!--cierra span12-->
+
+                          </div><!--cierra row-fluid-->
+                        </div><!--cierra container-fluid-->
+                      </div><!--cierra body-->
+                    
+
+                      <div class="body">
+                        <div class="container-fluid">
+                          <div class="row-fluid">
+                              Nota: Su oferta se publicará por el período seleccionado.
+                              Puede visualizar las hojas de vidas de los aspirantes por medio del Administrador de Postulaciones.
+
+                              Tambien le seran envias al correo que nos fue suministrado al momento de su registro en nuestro sistema.
+                          </div>
+                        </div>
+                      </div> 
+
+
+          </div> <!--tabbable -->      
+        </div>   <!--row-fluid -->
+      </div> <!--container-fluid -->
