@@ -71,18 +71,25 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-   $("#oferta").click(function(evento){	
+   $(".oferta").click(function(evento){	
 		$('#contenedor').load('formulario_oferta.html');
 	});
 });
 
 
 $(document).ready(function(){
-   $("#ofertas_empresa").click(function(evento){	
+   $(".ofertas_empresa").click(function(evento){	
 		$('#contenedor').load('ofertas_empleo.html');
 	});
 });
 
+
+/*
+$(document).ready(function(){
+   $(".oferta").click(function(evento){	
+				alert("hola mundo");
+	});
+});*/
 
 
 /*****************************************************/
