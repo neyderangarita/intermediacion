@@ -73,6 +73,7 @@ $(document).ready(function(){
 $(document).ready(function(){
    $(".oferta").click(function(evento){	
 		$('#contenedor').load('formulario_oferta.html');
+		
 	});
 });
 
@@ -84,12 +85,12 @@ $(document).ready(function(){
 });
 
 
-/*
+
 $(document).ready(function(){
-   $(".oferta").click(function(evento){	
-				alert("hola mundo");
+   $(".formulario_oferta").click(function(evento){	
+		alert("hola mundo");
 	});
-});*/
+});
 
 
 /*****************************************************/

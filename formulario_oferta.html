@@ -1,3 +1,10 @@
+<script>
+$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
+  $(".formulario_oferta").click(function(){
+        $('#contenedor').load('vista_oferta.html');
+  });
+});
+</script>
 
       <div class="container-fluid"> <!--container-fluid -->      
         <div class="row-fluid">  <!--row-fluid -->
@@ -39,7 +46,6 @@
                                         </div>
                                         <p class="help-block" for="titulo_oferta" style="display:none"> help text</p>
                                       </div>
-
 
 <!-- Este es el mismo cargo que se agrega en la experiencia laboral-->
                                     <div class="control-group">    
@@ -633,7 +639,7 @@
 
 
                                     <div class="form-actions">
-                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Guardar</button>
+                                      <button class="btn btn-danger formulario_oferta" type="submit"><i class="icon-ok-circle icon-white"></i>Aceptar</button>
                                       <a class="btn" href="../intermediacion/empleador.html"><i class="icon-remove-sign"></i>Cancelar</a>
                                     </div>
 
