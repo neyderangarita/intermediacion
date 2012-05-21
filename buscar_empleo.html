@@ -79,7 +79,7 @@
 <div class="container">
 <article class="container">
 <br><br><br><br><br><br><br>
-      <div class="fuente">Hoja de Vida</div>
+      <div class="fuente">Buscar Empleo</div>
   <header>
     <section>
 
@@ -123,7 +123,6 @@
                                 <li>
                                 <a href="#" >Empresas</a>
                                 </li>
-
                                 <li>
                                 <a href="#" >Nivel del Cargo</a>
                                 </li>
@@ -146,144 +145,64 @@
           </ul>
     </section>
   </header>
-
   <hr>
-  
+
   <section class="body">
+
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span12">
 
-          <spam class="titulo">REGISTRO DE HOJA DE VIDA</spam>
-          <div class="body">
-            <div class="container-fluid">
-              <div class="row-fluid">
-                    <div class="span3" >
-                    <img class="fotoperfil"  src="img/principal/no-photo.png">
-                    <div class="titulos2"> Aún no ha cargado su foto</div>
-                    </div>
-                    <div class="span8">
-                    <spam class="titulo3">neyder angarita osorio</spam>
-                    <div class="titulos2">tipo y número de documento</div>  
-                    <div class="titulos2" id="Dcedula" >Cédula:</div>
-                    <div class="titulo3" id="Ncedula">1121836677</div>
-                    <div class="titulos2" id="">Fecha de nacimiento:</div>
-                    <spam class="titulo3" id="">11/09/1987</spam>
-                    </div>
-              </div>
-            </div>
-          </div>
+          <spam class="titulo">Buscador de ofertas laborales</spam>
 
           <div class="body">
             <div class="container-fluid">
               <div class="row-fluid">
-                <div class="span3">
-                      <spam class="titulos" id="cedula">INFORMACIÓN DE CONTACTO</spam>
-                      <div class="titulos2" id="bajar">Estado civil</div>
-                      <spam class="titulo3" id="bajar">Soltero(a)</spam>    
-                      <div class="titulos2" id="bajar">Ciudad</div> 
-                      <spam class="titulo3" id="bajar">Villavicencio</spam>
-                      <div class="titulos2" id="bajar">Dirección</div>
-                      <spam class="titulo3" id="bajar">calle 31</spam>
-                      <div class="titulos2" id="bajar">Teléfono</div>
-                      <spam class="titulo3" id="bajar">66631110</spam>
-                      <div class="titulos2" id="bajar">Teléfono celular</div>
-                      <spam class="titulo3" id="bajar">3115896966</spam>  
-                </div>
+                <div class="span6">
 
-                <div class="span8">
-                      <spam class="titulos" id="cedula">PERFIL</spam>
-                      <div class="titulos2" id="bajar">Profesión</div>  
-                      <spam class="titulo3" id="bajar" >Ingeniería de sistemas</spam>
-                      <div class="titulos2" id="bajar">Años de experiencia</div>
-                      <spam class="titulo3" id="bajar" >Menos de un año</spam>
-                      <spam class="titulos" id="cedula"></spam><BR>
-                      <div class="titulos2" id="bajar">Trabaja actualmente</div>
-                      <spam class="titulo3" id="bajar" >No</spam>
+                      <div class="control-group">
+                          <label class="control-label" for="busqueda_empleo">
+                          <spam class="titulos">*Palabras clave:</span>
+                          <i id="mensaje_titulo_oferta" class="icon-question-sign"></i>   
+                          </label>
+                          <div class="controls">
+                          <input type="text" class="input" name="busqueda_empleo"  id="busqueda_empleo" size="25" required placeholder="¿Que empleo buscas?"/>
+                          </div>
+                           <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                      </div>
 
-                      <div class="titulos2" id="bajar">Perfil profesional</div>
-                      <br>
-                      <div class="titulos4">joven profesional de ingenieria de sitemas 
-                      con alto interes en aprender del area de su profesion csoc csos csdosd codscsd cs dcdscsdc csjdcosdc csdchdscds chsocd csdcsdc chsdod sccsdccscs cdscsdcd cscd vdfdsfsd dfsdf sfdsf sdfwrdf casa no se si deberia hacer esto o deberia hacer lo otro 
-                       </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                </div>  
 
-          <div class="body">
-            <div class="container-fluid">
-              <div class="row-fluid">
+                <div class="span6">
 
-                <div class="span12">
+                      <div class="control-group">      
+                          <label class="control-label"  for="Ciudad_empleo">
+                                        <spam class="titulos"> *Ciudad:</span>
+                                      </label>
+                                      <div class="controls">
+                                        <select id="Ciudad_empleo" name="Ciudad_empleo" >
 
-                <spam class="titulos" id="cedula">EXPERIENCIA LABORAL</spam> 
-                <br><br>
-                <div class="titulos4">Postobon - ASESOR - De 06/2004 A 08/2005 - JEFE INMEDIATO: emilio puerta rincon - 3115896987 
-                </div>
+                                          <option value="" selected="selected" placeholder="¿Que empleo buscas?" >Por favor seleccione</option>
+                                          <option value="1" ></option>
+                                          <option value="2"></option> 
 
-                </div>
+                                        </select>
+                                      </div>
+                          <p class="help-block" for="Ciudad_empleo" style="display:none">help text</p>
+                      </div>
 
-              </div>
-            </div>
-          </div>
 
-          <div class="body">
-            <div class="container-fluid">
-              <div class="row-fluid">
-                <div class="span12">
-
-                <spam class="titulos" id="cedula">EDUCACIÓN FORMAL</spam> 
-                <br><br>
-                <div class="titulos4">ingeniero de sistemas - universidad de los llanos - De 08/2006 A Actualmente </div>
-                <div class="titulos4">bachiller tecnico - antonia santos casd - De 11/1995 A 12/1995</div>
-
-                </div>
+                </div> 
 
               </div>
             </div>
           </div>
 
 
-          <div class="body">
-            <div class="container-fluid">
-              <div class="row-fluid">
-
-                <div class="span12">
-
-                <spam class="titulos" id="cedula">IDIOMAS</spam> <br><br>
-
-                <div class="titulos2" id="bajar">Idioma nativo</div>
-                <div class="titulos4">español </div>
-                <div class="titulos2" id="bajar">Otros idiomas</div>
-                <div class="titulos4">Chino - 10 - hong kong </div>
-                <br><br>
-                <spam class="titulos" id="cedula">EDUCACIÓN INFORMAL</spam> 
-                <br><br>
-                <div class="titulos4">seminaro de la verdad - la voragine - De 06/1998 A 06/2009 </div>
-                </div>                
-              </div>
-            </div>
-          </div>
-
-          <div class="body">
-            <div class="container-fluid">
-              <div class="row-fluid">
-
-                <div class="span12">
-                <spam class="titulos" id="cedula">PUBLICACIONES Y ACTIVIDADES ACADÉMICAS, DE INVESTIGACIÓN, PROYECCIÓN SOCIAL</spam> 
-                <br><br>
-                <div class="titulos4">BLOG DE COCINA - http://www.CO CINEMOS.com  dsfsdf dssdfdsf sdfs</div>              
-                </div>
-              </div>
-            </div>
-          </div>
-        <div class="derecha">  
-          <a class="btn" href="../intermediacion/editar_hv.html">Actualizar Hoja Vida</a>
-        </div>
         </div>
       </div>
     </div>
+
   </section>
 
       <hr>
