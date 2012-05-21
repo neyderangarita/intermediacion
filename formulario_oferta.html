@@ -1,10 +1,17 @@
 <script>
 $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
+
+
   $(".formulario_oferta").click(function(){
         $('#contenedor').load('vista_oferta.html');
   });
+ 
+  $('#mensaje_titulo_oferta').tooltip ('<p id="b1">Nota: Describa de forma breve el nombre del cargo vacante e incluya palabras claves que le permitan a los candidatos conocer de qu&eacute; se trata la oferta. Entre m&aacute;s claro sea el titulo, m&aacute;s ajustados ser&aacute;n los perfiles de los aspirantes que apliquen a la oferta</p>', { width: 200 });
 });
+
 </script>
+  <script src="js/sexy-tooltips.v1.1.jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="js/sexy-tooltips/coda.css" type="text/css" media="all" id="theme"/>
 
       <div class="container-fluid"> <!--container-fluid -->      
         <div class="row-fluid">  <!--row-fluid -->
@@ -18,7 +25,6 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                           </div>
                         </div>
                       </div> 
-
 
 
                       <div class="body">
@@ -135,7 +141,7 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
 
 
                                     <div class="control-group">      
-                                      <label class="control-label"  for="Pais"><spam class="titulos"> *Pais:</span></label>
+                                      <label class="control-label"  for="Pais"><spam class="titulos"> *País:</span></label>
                                       <div class="controls">
                                       <select id="Pais" name="Pais" required>
 
@@ -296,7 +302,7 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                                     </div>
 
 
-                                                                        <div class="control-group">      
+                                    <div class="control-group">      
                                       <label  class="control-label"  for="sector">
                                         <spam class="titulos">*Sector de la Empresa: </span>
                                         <i id="mensaje_sector" class="icon-question-sign"></i>  

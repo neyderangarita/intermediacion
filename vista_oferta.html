@@ -1,3 +1,19 @@
+<script>
+$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
+  $(".formulario_oferta").click(function(){
+        $('#contenedor').load('formulario_oferta.html');
+  });
+  $('#mensaje_titulo_oferta').tooltip ('<p id="b1">Nota: Describa de forma breve el nombre del cargo vacante e incluya palabras claves que le permitan a los candidatos conocer de qu&eacute; se trata la oferta. Entre m&aacute;s claro sea el titulo, m&aacute;s ajustados ser&aacute;n los perfiles de los aspirantes que apliquen a la oferta</p>', { width: 200 });
+});
+</script>
+<script>
+$.getScript("js/libs/bootstrap/modal.js", function() {
+   $(".alert_confirmar_publicar").click(function(evento){  
+    $('#myModal2').modal('show');
+});
+</script>
+
+
   <div class="container-fluid"> <!--container-fluid -->      
     <div class="row-fluid">  <!--row-fluid -->
       <div class="tabbable span12"> <!--tabbable -->      
@@ -5,134 +21,154 @@
         <div class="body">
          <div class="container-fluid">
             <div class="row-fluid">
-              <spam class="titulos">Nota:</spam> En el siguiente cuadro puede ver la vista preliminar como la verán los usuarios y también puede editarla. 
+              <spam class="titulos">Nota: </spam> En el siguiente cuadro puede ver la vista preliminar como la verán los usuarios y también puede editarla. 
               <spam class="titulos">Nota:</spam> Para que la oferta de empleo comience a ser consultada debe hacer clic sobre el botón "Siguiente" que está al final de la página
             </div>
           </div>
         </div> 
 
+        <legend><spam class="titulos">TITULO DE LA OFERTA "capturado"</spam></legend>
         <div class="body">
+
           <div class="container-fluid">
             <div class="row-fluid">
+              <i class="icon-chevron-right"></i><spam class="titulos"> Informacion de la empresa</spam>
+              <hr>
 
+              <div class="span12">
+                  <spam class="titulos" id="nombre_comercial">Nombre comercial:</spam>
+                  <spam id="nombre_comercial">Coltempora S.A</spam>
+              </div> 
 
-                <legend><spam class="titulos">TITULO DE LA OFERTA "capturado"</spam></legend>
-                  <div class="row-fluid"> <!--row-fluid-->
+              <div class="span12">
+                  <br>
+                  <spam class="titulos" id="sector">Sector: </spam>
+                  <spam id="sector">Consultorías / Asesorías</spam>
+              </div>
 
-                        
-                        <div class="body">
-                          <div class="container-fluid">
-                            <div class="row-fluid">
-                              <div class="span12">
-                                <i class="icon-chevron-right"></i><spam class="titulos"> Informacion de la empresa</spam>
-                                <hr>
-                              </div>  
+              <div class="span12">
+                  <br>
+                  <spam class="titulos" id="Subsector">Subsector de la empresa: </spam>
+                  <spam id="Subsector">.......</spam>
+              </div>
+ 
 
-                              <div class="span12"><spam class="titulos">Nombre comercial:</spam>Coltempora S.A</div>
+              <div class="span12">
+                  <br>
+                  <spam class="titulos" id="perfil">Perfil de la empresa:</spam>
+                  <spam id="perfil">Outsoursing comercial y administrativa, que presta servicios a terceros de telemercadeo y venta directa de productos financieros.</spam>
 
-                               <div class="span12"><spam class="titulos">Sector:</spam>Consultorías / Asesorías</div> 
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                               <div class="span12"><spam class="titulos">Perfil de la empresa:</spam>Outsoursing comercial y administrativa, que presta servicios a terceros de telemercadeo y venta directa de productos financieros.</div>  
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+              </div>
 
+            </div>
+          </div>
 
-                    <div class="body">
-                      <div class="bloque">
-                        <spam class="titulos" id="bajar">Cargo equivalente:</spam>
-                          <div>
-                             &nbsp;Asesor
-                          </div>  
-                        <spam class="titulos" id="bajar">Área del cargo:</spam>
-                          <div>
-                             &nbsp;Comercial, Ventas y Telemercadeo
-                          </div>
-                        <spam class="titulos" id="bajar">Subnivel de cargo:</spam>
-                          <div>
-                             &nbsp;Auxiliar, asistencial y otros
-                          </div>
-                        <spam class="titulos" id="bajar">Años de experiencia:</spam>
-                          <div>
-                             &nbsp;Sin experiencia
-                          </div>
-                        <spam class="titulos" id="bajar">Ciudad:</spam>
-                          <div>
-                             &nbsp;Bogotá, D.C. - Bogotá
-                          </div>
-                        <spam class="titulos" id="bajar">Salario:</spam>
-                          <div>
-                             &nbsp;$ 550.001 - $ 1.000.000
-                          </div>
-                        <spam class="titulos" id="bajar">Profesión:</spam>
-                          <div>
-                             &nbsp;Administración de empresas, Otra, Administración pública
-                          </div>
-                        <spam class="titulos" id="bajar">Nivel de estudio:</spam>
-                          <div>
-                             &nbsp;Profesional, Sin Definir
-                          </div>                
-                        <spam class="titulos" id="bajar">Idioma:</spam>
-                          <div>
-                             &nbsp;Español (10)
-                          </div>                
-                        <spam class="titulos" id="bajar">Cantidad de vacantes:</spam>
-                          <div>
-                             &nbsp;10
-                          </div>                
-                        <spam class="titulos" id="bajar">Tipo de contrato:</spam>
-                          <div>
-                             &nbsp;Indefinido
-                          </div>                              
-                        <spam class="titulos" id="bajar">Fecha de publicación:</spam>
-                          <div>
-                             &nbsp;25/03/2012
-                          </div>                
-                        <spam class="titulos" id="bajar">Fecha de Vencimiento:</spam>
-                          <div>
-                             &nbsp;25/04/2012
-                          </div>                
-                      </div>
+          <div class="container-fluid">
+            <div class="row-fluid">
+              <br>
+              <i class="icon-chevron-right"></i><spam class="titulos"> Informacion de la Oferta</spam>
+              <hr>
 
-                      <div class="bloque">
-                        <spam class="titulos" id="bajar">Descripción:</spam>
-                        <br>
-                          <div>
-                            Importante empresa del sector financiero requiere Asesores Comerciales con minimo 6 meses de experiencia via Call Center en area de ventas, Horarios de Lunes a Viernes de 7:30am hasta las 5:30pm y los sábados de 8:00 am hasta la 12:00 pm. No se trabaja Domingos, ni Festivos. Salario: 566700 + prestaciones de ley + comosiones. Contrato directo con la compañía. La labor se desempeña en Fontibon Por favor aplicar únicamente si tiene la experiencia y está interesado en la oferta laboral.
-                          </div>  
-                          <hr>
-                        <spam class="titulos" id="bajar">Requisitos para aplicar:</spam>
-                        <br>
-                          <div>
-                            EXPERIENCIA EN VENTAS VÍA CALL CENTER DE MÍNIMO 6 MESES VIA CALL CENTER
-                          </div>
-                        <hr>
-                        <spam class="titulos" id="bajar">Sector:</spam>
-                        <br>
-                          <div>
-                             &nbsp;financiero
-                          </div>
-                      </div>
+              <div class="span12">
+                  <spam class="titulos" id="nombre_comercial">Descripoción de la Oferta:</spam>
+                  <spam id="nombre_comercial">Importante compañía de consultoría informática solicita Estudiante de Ingenieria , Tecnologo o Ingeniero de sistemas con conocimientos y experiencia minima de 1 año en Desarrollo aplicaciones Web usandoASP .Net, C#, Ajax, MVCDiseño basado en UML Base de Datos SQL Server, MySQL, Oracle. excelente presentación personal y don de trabajo en equipo, se ofrece estabilidad laboral, posibilidades de crecimiento profesional, contrato directamente con la compañía a termino indefinido, asignación salarial a convenir Entre 1.500.000 a 2.500.000 según perfil </spam>
+              </div> 
 
+            </div>
+          </div>
 
+          <div class="container-fluid">
+              <div class="row-fluid">
+                <br>
 
+                <div class="span6">
+   
+                      <br>
+                      <spam class="titulos" id="Nivel_cargo">Nivel de cargo</spam>
+                      <div id="Nivel_cargo">Asistencial</div>
+                      <hr>
+                      <spam class="titulos" id="cargo_equivalente">Cargo equivalente:</spam>
+                      <div id="cargo_equivalente">Asistencial</div>
+                      <hr>
+                      <spam class="titulos" id="Area_cargo">Área del cargo:</spam>
+                      <div id="Area_cargo">Sistemas y Tecnología</div>
+                      <hr>
+                      <spam class="titulos" id="rangSala">Salario:</spam>
+                      <div id="rangSala">$ 550.001 - $ 1.000.000</div>
+                      <hr>
+                      <spam class="titulos" id="ano_expe">Años de experiencia:</spam>
+                      <div id="ano_expe">1</div>
+                      <hr>
+                      <spam class="titulos" id="ciudad">Ciudad:</spam>
+                      <div id="ciudad">Villavicencio</div>
 
+                </div>
 
+                <div class="span5">
 
-            </div><!--cierra row-fluid-->
-          </div><!--cierra container-fluid-->
-        </div><!--cierra body-->
-                    
+                      <br>
+                      <spam class="titulos" id="profesion">Profesión:</spam>
+                      <div id="profesion">ingeniero de sistemas</div>
+                      <hr>
+                      <spam class="titulos" id="nivel_estudios">Nivel de Estudios: </spam>
+                      <div id="nivel_estudios">Profesional</div>
+                      <hr>
+                      <spam class="titulos" id="Idioma">Idioma:</spam>
+                      <div id="Idioma">Inglés</div>
+                      <hr>
+                      <spam class="titulos" id="">Fecha de publicación:</spam>
+                      <div id="">20/05/2012</div>
+                      <hr>
+                      <spam class="titulos" id="rangSala">Fecha de Vencimiento:</spam>
+                      <div id="rangSala">04/06/2012</div>
+                      <hr>
+                      <spam class="titulos" id="Pais">País:</spam>
+                      <div id="Pais">Colombia</div>
+                </div>
+
+              </div>
+          </div>
+               
+
+      </div> <!--tabbable -->      
+    </div>   <!--row-fluid -->
+  </div> <!--container-fluid -->
 
         <div class="body">
           <div class="container-fluid">
             <div class="row-fluid">
               Su oferta de empleo será publicada en nuestra página por el periodo seleccionado a partir de la fecha. Usted podrá ingresar en cualquier momento a la página para revisar los candidatos que han aplicado a través del menú "oferta de empleo de la empresa" "consultar resultados"
+              <div class="form-actions">
+                <a class="btn formulario_oferta"><i class="icon-pencil "></i>Editar
+                </a>  
+
+                <a class="btn btn-danger alert_confirmar_publicar" data-toggle="modal" href="#myModal2" ><i class=" icon-ok-circle icon-white "></i>Publicar
+                </a>
+              </div>
             </div>
           </div>
         </div> 
 
-      </div> <!--tabbable -->      
-    </div>   <!--row-fluid -->
-  </div> <!--container-fluid -->
+          <section id="modal">
+            <div id="myModal2" class="modal show"  style="display: none;"  >
+              <div class="modal-header">
+              <button class="close" data-dismiss="modal">×</button>
+                <form class="form-horizontal">
+                  <fieldset>
+                  <legend>¿Desea publicar la oferta de empleo? </legend>
+                  <div class="control-group centrar">
+                            Si acepta la vacante empezará a salir en nuestro portal de empleo.
+                  </div> 
+                  </fieldset>
+                </form>
+                <form class="form-inline centrar">
+
+                       <a class="btn btn-large btn-danger" data-dismiss="modal" href="#"><i class="icon-remove icon-white"></i>  No</a>
+                       <a class="btn btn-large btn-danger" data-toggle="modal" href=""  ><i class="icon-ok-circle icon-white"></i>  Si</a>
+
+                </form>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </section>
