@@ -1741,7 +1741,6 @@
                                   <thead>
                                     <tr>
                                       <th><a id="" href="">Título</a></th>
-                                      <th><a id="" href="">Ingreso</a></th>
                                       <th><a id="" href="">Finalización</a></th>
                                       <th><a id="" href="">ciudad</a></th>
                                       <th><a id="" href="">institucion</a></th>    
@@ -1781,6 +1780,7 @@
 
                                 <div class="span6" ><!--abre span6-->
 
+<!--
                                     <div class="control-group">      
                                       <label  class="control-label"  for="tipo_estudios">
                                         <spam class="titulos">*Tipo de estudios: </span>
@@ -1797,7 +1797,7 @@
                                       </div>
                                       <p class="help-block" for="tipo_estudios" style="display:none">help text</p>
                                     </div>
-
+-->
 <!--
                                     <div class="control-group">
                                       <label class="control-label" for="Ingreso"><spam class="titulos">*Fecha Ingreso: </span> </label> 
@@ -1809,92 +1809,17 @@
 -->
 
                                     <div class="control-group">
-                                      <label class="control-label" for="titulo_estudio"><spam class="titulos">*Título del estudio:  </span> </label> 
+                                      <label class="control-label" for="titulo_estudio_informal"><spam class="titulos">*Título del estudio:  </span> </label> 
                                       <div class="controls">              
-                                      <input type="text" class="input" name="titulo_estudio" id="titulo_estudio" size="25" required placeholder="Ingreso"/>
+                                      <input type="text" class="input" name="titulo_estudio_informal" id="titulo_estudio_informal" size="25" required placeholder="Ingreso"/>
                                       </div> 
-                                      <p class="help-block" for="titulo_estudio" style="display:none">Supporting help text</p> 
+                                      <p class="help-block" for="titulo_estudio_informal" style="display:none">Supporting help text</p> 
                                     </div>
 
-
-
-
                                     <div class="control-group">      
-                                      <label class="control-label"  for="Pais"><spam class="titulos"> *Pais:</span></label>
+                                      <label class="control-label"  for="Ciudad_estudio_informal"><spam class="titulos"> *Ciudad:</span></label>
                                       <div class="controls">
-                                      <select id="Pais" name="Pais" required>
-
-                                          <option value="12">Colombia</option>
-                                          <option value="17">Alemania</option>
-                                          <option value="2">Argentina</option>
-                                          <option value="101184083">Aruba</option>
-                                          <option value="3">Australia</option>
-                                          <option value="4">Austria</option>
-                                          <option value="5">Bélgica</option>
-                                          <option value="6">Bolivia</option>
-                                          <option value="7">Brasil</option>
-                                          <option value="9">Canadá</option>
-                                          <option value="10">Chile</option>
-                                          <option value="11">China</option>
-                                          <option value="14">Corea del Sur</option>
-                                          <option value="13">Costa Rica</option>
-                                          <option value="15">Cuba</option>
-                                          <option value="16">Curacao</option>
-                                          <option value="101123022">Dinamarca</option>
-                                          <option value="19">Ecuador</option>
-                                          <option value="46">El Salvador</option>
-                                          <option value="101124026">Escocia</option>
-                                          <option value="101231130">Eslovenia</option>
-                                          <option value="20">España</option>
-                                          <option value="53">Estados Unidos</option>
-                                          <option value="21">Francia</option>
-                                          <option value="24">Guatemala</option>
-                                          <option value="23">Guinea-Ecuatorial</option>
-                                          <option value="28">Haití</option>
-                                          <option value="27">Holanda</option>
-                                          <option value="26">Honduras</option>
-                                          <option value="25">Hong Kong</option>
-                                          <option value="29">Hungría</option>
-                                          <option value="31">India</option>
-                                          <option value="22">Inglaterra</option>
-                                          <option value="32">Irlanda</option>
-                                          <option value="30">Islas Comores</option>
-                                          <option value="33">Israel</option>
-                                          <option value="34">Italia</option>
-                                          <option value="35">Jamaica</option>
-                                          <option value="36">Japón</option>
-                                          <option value="101231131">Lituania</option>
-                                          <option value="37">México</option>
-                                          <option value="38">Nicaragua</option>
-                                          <option value="39">Noruega</option>
-                                          <option value="101124024">Nueva Zelanda</option>
-                                          <option value="40">Panamá</option>
-                                          <option value="45">Paraguay</option>
-                                          <option value="41">Perú</option>
-                                          <option value="42">Polonia</option>
-                                          <option value="44">Portugal</option>
-                                          <option value="43">Puerto Rico</option>
-                                          <option value="18">República Dominicana</option>
-                                          <option value="101124025">Rusia</option>
-                                          <option value="47">Suecia</option>
-                                          <option value="48">Suiza</option>
-                                          <option value="49">Trinidad y Tobago</option>
-                                          <option value="50">Turquía</option>
-                                          <option value="51">Ucrania</option>
-                                          <option value="52">Uruguay</option>
-                                          <option value="54">Venezuela</option>
-
-                                      </select>
-                                      </div>
-                                      <p class="help-block" for="Pais" style="display:none">help text</p>
-                                    </div>
-
-
-
-                                    <div class="control-group">      
-                                      <label class="control-label"  for="Ciudad"><spam class="titulos"> *Ciudad:</span></label>
-                                      <div class="controls">
-                                      <select id="Ciudad" name="Ciudad" required>
+                                      <select id="Ciudad_estudio_informal" name="Ciudad_estudio_informal" required>
 
                                         <option value="" selected="selected">Por favor seleccione</option>
                                         <option value="1" ></option>
@@ -1902,105 +1827,36 @@
 
                                       </select>
                                       </div>
-                                      <p class="help-block" for="Ciudad" style="display:none">help text</p>
+                                      <p class="help-block" for="Ciudad_estudio_informal" style="display:none">help text</p>
                                     </div>
 
-
                                 </div>  <!--cierra span6-->
+
 
                                 <div class="span6">  <!--abre span6-->
 
 
-
-                                    <div class="control-group">      
-                                      <label class="control-label"  for="area_curso">
-                                        <spam class="titulos">*Área de curso: </span>
-                                      </label>
-                                      <div class="controls">
-                                        <select id="area_curso" class="area_curso" name="area_curso" required>
-                                          <option value="">Por favor seleccione</option>
-                                          <option value="2">Administración y negocios</option>
-                                          <option value="3">Agricultura y agronomía</option>
-                                          <option value="33">Alimentos y Bebidas</option>
-                                          <option value="36">Alta gerencia y Liderazgo</option>
-                                          <option value="4">Arquitectura</option>
-                                          <option value="6">Artes, Cine y Televisión</option>
-                                          <option value="7">Banca y finanzas</option>
-                                          <option value="35">Calidad y Servicio al cliente</option>
-                                          <option value="8">Ciencias biológicas</option>
-                                          <option value="9">Ciencias de la educación y pedagogía</option>
-                                          <option value="10">Ciencias de la salud</option>
-                                          <option value="11">Ciencias sociales</option>
-                                          <option value="12">Comercial y Ventas</option>
-                                          <option value="14">Computación y Nuevas Tecnologías</option>
-                                          <option value="13">Comunicación y periodismo</option>
-                                          <option value="15">Contaduría y contabilidad</option>
-                                          <option value="17">Derecho y ciencias políticas</option>
-                                          <option value="30">Desarrollo Sostenible</option>
-                                          <option value="16">Diseño</option>
-                                          <option value="18">Ecología y medio ambiente</option>
-                                          <option value="19">Economía</option>
-                                          <option value="31">Educacion</option>
-                                          <option value="5">Gestión humana y Sicología</option>
-                                          <option value="32">Hoteleria y Turismo</option>
-                                          <option value="20">Humanidades, filosofía y teología</option>
-                                          <option value="21">Idiomas</option>
-                                          <option value="22">Ingenierías</option>
-                                          <option value="37">Logística e Inventarios</option>
-                                          <option value="24">Manualidades y decoración</option>
-                                          <option value="23">Matemáticas y estadística</option>
-                                          <option value="29">Mejoramiento Personal</option>
-                                          <option value="25">Mercadeo y publicidad</option>
-                                          <option value="38">Negociación</option>
-                                          <option value="34">Produccion y Operaciones </option>
-                                          <option value="26">Relaciones internacionales</option>
-                                          <option value="39">Seguridad y Protección</option>
-                                          <option value="27">Telecomunicaciones</option>
-                                          <option value="28">Veterinaria y zootecnia</option>
-                                        </select>
-                                      </div>
-                                      <p class="help-block" for="area_curso" style="display:none">help text</p>
+                                    <div class="control-group">
+                                      <label class="control-label" for="Finalización_estudio_informal"><spam class="titulos">*Fecha Finalización: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="Finalización_estudio_informal" id="Finalización_estudio_informal" size="25" required placeholder="Finalización"/>
+                                      </div> 
+                                      <p class="help-block" for="Finalización_estudio_informal" style="display:none">Supporting help text</p> 
                                     </div>
 
 
                                     <div class="control-group">
-                                      <label class="control-label" for="Finalización"><spam class="titulos">*Fecha Finalización: </span> </label> 
+                                      <label class="control-label" for="intitucion_estudio_informal"><spam class="titulos">*Institución:</span> </label> 
                                       <div class="controls">              
-                                      <input type="text" class="input" name="Finalización" id="Finalización" size="25" required placeholder="Finalización"/>
+                                      <input type="text" class="input" name="intitucion_estudio_informal" id="intitucion_estudio_informal" size="25" required placeholder="Ingreso"/>
                                       </div> 
-                                      <p class="help-block" for="Finalización" style="display:none">Supporting help text</p> 
+                                      <p class="help-block" for="intitucion_estudio_informal" style="display:none">Supporting help text</p> 
                                     </div>
-
-
-                                    <div class="control-group">
-                                      <label class="control-label" for="intitucion"><spam class="titulos">*Institución:</span> </label> 
-                                      <div class="controls">              
-                                      <input type="text" class="input" name="intitucion" id="intitucion" size="25" required placeholder="Ingreso"/>
-                                      </div> 
-                                      <p class="help-block" for="intitucion" style="display:none">Supporting help text</p> 
-                                    </div>
-
-
-                                    <div class="control-group">      
-                                      <label class="control-label"  for="Departamento"><spam class="titulos"> *Departamento:</span></label>
-                                      <div class="controls">
-                                      <select id="Departamento" name="Departamento" required>
-
-                                        <option value="" selected="selected">Por favor seleccione</option>
-                                        <option value="1" ></option>
-                                        <option value="2"></option> 
-
-                                      </select>
-                                      </div>
-                                      <p class="help-block" for="Departamento" style="display:none">help text</p>
-                                    </div>
-
 
                                     <div class="form-actions">
                                       <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
                                       <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
                                     </div>
-
                                 </div> <!--cierra span6--> 
 
                             </div><!--cierra row-fluid-->
