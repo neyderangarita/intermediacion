@@ -18,7 +18,9 @@
   <link rel="stylesheet" href="css/ca7368fa967d.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-  <link rel="stylesheet" href="js/sexy-tooltips/coda.css" type="text/css" media="all" id="theme"/>
+
+  <!--
+  <link rel="stylesheet" href="js/sexy-tooltips/coda.css" type="text/css" media="all" id="theme"/>-->
 <!--<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>-->  
   <script>
       var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
@@ -793,7 +795,8 @@
                                     <div class="control-group">      
                                       <label  class="control-label"  for="sector">
                                         <spam class="titulos">*Sector de la Empresa: </span>
-                                        <i id="mensaje_sector" class="icon-question-sign"></i>  
+                                        <a href="#" id="example" rel="tooltip" title="Elija el sector y subsecor que mas se aproxime al que pertenece la empresa">
+                                        <i id="" class="icon-question-sign"></i>  </a>
                                       </label>
 
                                       <div class="controls">
@@ -1067,7 +1070,8 @@
                                     <div class="control-group">      
                                       <label class="control-label"  for="Nivel_cargo">
                                         <spam class="titulos"> *Nivel del cargo:    </span>
-                                        <i id="mensaje_nivel" class="icon-question-sign"></i> 
+                                        <a href="#" class="descripcion" rel="tooltip" title="Seleccione el nivel del cargo que mas se ajuste a su nivel profesional">
+                                        <i id="mensaje_nivel" class="icon-question-sign"></i></a>
                                       </label>
                                       <div class="controls">
                                       <select id="Nivel_cargo" name="Nivel_cargo" required>
@@ -2057,8 +2061,13 @@
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
 <script src="js/libs/bootstrap/tab.js"></script>
+<script src="js/libs/bootstrap/tooltip.js"></script>
 
+
+<!--
 <script src="js/sexy-tooltips.v1.1.jquery.min.js" type="text/javascript"></script>
+-->
+
 <!--
 <script>
   var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

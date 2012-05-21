@@ -3,6 +3,9 @@
 */
 /************mostrar*****************************/
 $(document).ready(function(){
+
+
+	
    $(".boton_expandir,.ocultar,.agregar").click(function(evento){	
 		var formularioexperiencia = $("#formularioexperiencia");
 		var formularioformal = $("#formularioformal");
@@ -34,7 +37,7 @@ $(document).ready(function(){
 			$(".boton_expandir").hide(1000);	
 		}
 
-		if (text == 'Cancelar'){
+		if (text == 'Cancelar' && formularioexperiencia ){
 			formularioexperiencia.hide(1000);
 			formularioformal.hide(1000);
 			formularioidioma.hide(1000);
@@ -91,6 +94,21 @@ $(document).ready(function(){
 		alert("hola mundo");
 	});
 });
+
+/*
+$(document).ready(function(){
+
+$('  a.descripcion').each(function() {
+    //alert(index + ': ' + $(this).text());
+    .tooltip('show')
+	});
+});
+
+
+*/
+
+
+
 
 
 /*****************************************************/
