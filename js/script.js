@@ -97,19 +97,29 @@ $(document).ready(function(){
 
 /*
 $(document).ready(function(){
-
 $('  a.descripcion').each(function() {
     //alert(index + ': ' + $(this).text());
     .tooltip('show')
 	});
 });
-
-
 */
 
 
+ $(document).ready(function() {
+    $("input#autocomplete").typeahead({
 
+   	source: ["ingeniero agoindustrial", "médico veterinario y zootecnista", "ingeniero agrónomo","ingeniero agroindustrial", "biólogo", "ingeniero de sistemas", "ingeniero electrónico"
+   	          , "licenciado en matemáticas y física", "licenciado en producción agropecuaria","economista", "contador público", "administrador de empresas" , "profesional en mercadeo"
+   	          , "enfermero" ,"tecnologo en regencia de farmacia", "Administrador", "Analista", "Asesor", "Asistente", "Asistente de investigación" , "Auditor", "Auxiliar","Consultor" 
+   	          ,"Coordinador", "Contralor", "Director", "Diseñador", "Docente o profesor", "Ejecutivo", "enfermera", "Entrenador", "Gerente", "Interventor", "Programador", "Representante de ventas"
+   	          , "Jefe", "Revisor fiscal", "Secretaria", "Subdirector", "Subgerente", "Supernumerario", "Supervisor", "Vendedor", "Webmaster", "Trader" ],
+    
+    items: 8
 
+    });
+});
+                 
+                   
 
 /*****************************************************/
 $(document).ready(function(){

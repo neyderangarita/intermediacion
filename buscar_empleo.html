@@ -162,11 +162,13 @@
 
                       <div class="control-group">
                           <label class="control-label" for="busqueda_empleo">
-                          <spam class="titulos">*Palabras clave:</span>
+                          <spam class="titulos">Palabras clave</span>
                           <i id="mensaje_titulo_oferta" class="icon-question-sign"></i>   
                           </label>
                           <div class="controls">
-                          <input type="text" class="input" name="busqueda_empleo"  id="busqueda_empleo" size="25" required placeholder="¿Que empleo buscas?"/>
+
+                          <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
+
                           </div>
                            <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
                       </div>
@@ -175,22 +177,17 @@
 
                 <div class="span6">
 
-                      <div class="control-group">      
-                          <label class="control-label"  for="Ciudad_empleo">
-                                        <spam class="titulos"> *Ciudad:</span>
-                                      </label>
-                                      <div class="controls">
-                                        <select id="Ciudad_empleo" name="Ciudad_empleo" >
+                      <div class="control-group">
+                          <label class="control-label" for="busqueda_empleo">
+                          <spam class="titulos">Ubicación</span>
+                          <i id="mensaje_titulo_oferta" class="icon-question-sign"></i>   
+                          </label>
+                          <div class="controls">
+                          <input type="text" class="input" name="busqueda_empleo"  id="busqueda_empleo" size="25" required placeholder="¿Dónde lo buscas?" data-provide="typeahead" />
 
-                                          <option value="" selected="selected" placeholder="¿Que empleo buscas?" >Por favor seleccione</option>
-                                          <option value="1" ></option>
-                                          <option value="2"></option> 
-
-                                        </select>
-                                      </div>
-                          <p class="help-block" for="Ciudad_empleo" style="display:none">help text</p>
+                          </div>
+                           <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
                       </div>
-
 
                 </div> 
 
@@ -270,6 +267,7 @@
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
 <script src="js/libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/libs/bootstrap/tab.js"></script>
+<script src="js/libs/bootstrap/typeahead.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
 
