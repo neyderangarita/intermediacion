@@ -156,6 +156,7 @@ min-height: 81px;
 .content {
 text-align: left;
 }
+
 .aviso .date em {   
     color: #008599;
     float: right;
@@ -267,6 +268,10 @@ color: #FF3030;  /****rojo****/
 .centrar{
 
     text-align:center;
+}
+
+.alinear_80px{
+    padding-left: 80px;
 }
 
 /***********************************************************************************************/
