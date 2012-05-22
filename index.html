@@ -93,6 +93,7 @@
 
 
         <div class="span6">
+
           <div id="ex5">  
             <a  class="inicializar"  data-toggle="modal" href="#myModal" >
               <img class="imagen"  src="img/principal/sesion.png">
@@ -105,31 +106,44 @@
               <button class="close" data-dismiss="modal">×</button>
               <h3>Iniciar Sesión en Intemediacion Laboral</h3>
 
-                <form class="form-horizontal">
+                <form class="form-horizontal" action="../intermediacion/index.html" method="post">
                   <fieldset>
                   <legend></legend>
 
                   <div class="control-group">
-
                     <label class="control-label" for="usuario">Usuario:</label>
                     <div class="controls">
-                    <input type="text" class="input-xlarge" id="usuario" placeholder="Usuario">
+                    <input type="text" class="input-xlarge" id="usuario" placeholder="Usuario" required>
                     <p class="help-block "> </p>
                     </div>
                     <label class="control-label" for="Contraseña">Contraseña:</label>
                     <div class="controls">
-                    <input type="text" class="input-xlarge" id="Contraseña" placeholder="Contraseña">
+                    <input type="text" class="input-xlarge" id="clave" placeholder="Contraseña" required>
                     <p class="help-block"> </p>
                     </div>
+                    <label class="control-label" for="tipo_usuario">Tipo de Usuario:</label>
+                    <div class="controls">
+                    <select id="tipo_usuario" required name="tipo_usuario" >
+                      <option>Seleccione una opción</option>
+                      <option>Egresado</option>
+                      <option>Empresa</option>
+                    </select>
+                    <p class="help-block"> </p>
+                    </div>
+
+                      <input class="btn btn-large btn-danger" type="submit"  value="Iniciar Sesión"/> 
+                      <input class="btn btn-large " type="submit" data-dismiss="modal" value="Cancelar"/> 
+
+                      <div class="controls">
+                      <label class="checkbox">
+                        <input type="checkbox" value="recuerdo_datos" id="optionsCheckboxList1" name="optionsCheckboxList1">
+                        <div class="content">Recuerda mis datos</div>
+                      </label>
+                      </div>
+
                   </div> 
                   </fieldset>
-                </form>
 
-                <form class="form-inline">
-                      <input class="btn btn-large btn-danger" type="submit" data-dismiss="modal" value="Iniciar Sesión"> 
-                      <label class="checkbox">
-                        <input type="checkbox" value="recuerdo_datos" name="optionsCheckboxList1">Recuerda mis datos
-                      </label>
                 </form>
 
               </div>
@@ -143,48 +157,55 @@
 
 
 
-        <div class="span6">
+      <div class="span6">
          <div id="ex5" >    
             <a  class="inicializar2"  data-toggle="modal" href="#myModal" >
               <img class="imagen"  src="img/principal/empresa.png">
             </a>  
-        </div>
+          </div>
 
           <section id="modal">
 
             <div id="myModal1" class="modal show"  style="display: none;"  >
               <div class="modal-header">
               <button class="close" data-dismiss="modal">×</button>
-              <h3>Iniciar Sesión en Intemediacion Laboral</h3>
+              <h3>REGISTRO DE EMPRESA</h3>
 
-                <form class="form-horizontal">
+                <form class="form-horizontal"  action="../intermediacion/registro_empresa.html" method="post">
                   <fieldset>
                   <legend></legend>
 
                   <div class="control-group">
 
-                    <label class="control-label" for="usuario">Usuario:</label>
+                    <div class="titulos content">*Titulo de la Oferta:</div>
+
+                    <label class="control-label" for="usuario_empresa">*Usuario (correo electrónico):</label>
                     <div class="controls">
-                    <input type="text" class="input-xlarge" id="usuario" placeholder="Usuario">
+                    <input type="text" class="input-xlarge" required id="usuario_empresa" placeholder="Usuario">
                     <p class="help-block"></p>
                     </div>
-                    <label class="control-label" for="Contraseña">Contraseña:</label>
+<hr>
+                    <label class="control-label" for="clave_empresa">*Clave (mínimo 6 caracteres):</label>
                     <div class="controls">
-                    <input type="text" class="input-xlarge" id="Contraseña" placeholder="Contraseña">
+                    <input type="text" class="input-xlarge" required id="clave_empresa" placeholder="Contraseña">
                     <p class="help-block"></p>
                     </div>
+
+<hr>
+                    <label class="control-label" for="confirmacion_clave">*Confirmacion Clave:</label>
+                    <div class="controls">
+                    <input type="text" class="input-xlarge" required id="confirmacion_clave" placeholder="Contraseña">
+                    <p class="help-block"></p>
+                    </div>
+
                   </div> 
-                  </fieldset>
-                </form>
+                
 
-                <form class="form-inline">
-                      <input class="btn btn-large btn-danger" type="submit" data-dismiss="modal" value="Iniciar Sesión"> 
-                      <label class="checkbox">
-                        <input type="checkbox" value="recuerdo_datos" name="optionsCheckboxList1">Recuerda mis datos
-                      </label>
+                    <div class="form-inline">
+                      <input class="btn btn-large btn-danger" type="submit"  value="Registro Empresa">
+                      <input class="btn btn-large " type="submit" data-dismiss="modal" value="Cancelar"/>  
+                    </div>
                 </form>
-
-                <h3><a href="../intermediacion/hv.html"></dd>¿Eres nuevo en Nuestro Sitio? Regístrate</a></h3>
 
               </div>
               <div class="modal-footer">
@@ -193,6 +214,7 @@
 
             </div>
           </section>
+
         </div>
 
   </section>
