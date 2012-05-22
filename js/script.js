@@ -151,11 +151,17 @@ $('  a.descripcion').each(function() {
 
     items: 8
     });
-/*
+
+
+    $("input#empresas_listado").typeahead({
+
+   	source: ["Electrificadora del Meta", "Llano gas S.A", "Procearroz Ltda","Cereales del Llano S.A", "Constructora Convesa Ltda", "Fondo Ganadero del Meta S.A", "R. y R Ltda"
+   	          , "Agroindustrias del Ariari Ltda", "Procesadora de arroz Montecarlo Ltda" , "Romarco Ltda." ],
+    items: 8
+    });
 
 
 
-  */
 });
        
 

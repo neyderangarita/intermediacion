@@ -141,7 +141,7 @@
       <div class="row-fluid">
         <div class="span12">
 
-          <spam class="titulo">Busqueda Avanzada de ofertas laborales </spam>
+          <spam class="titulo">Buscador de ofertas laborales por Empresas </spam>
 
           <div class="body">
             <div class="container-fluid">
@@ -149,105 +149,13 @@
                 <div class="span12">
 
 
-                <form action="../intermediacion/listado_busqueda.html" method="post">
+                  <form class="orm-inline"   action="../intermediacion/listado_busqueda.html" method="post">
 
-                  <div class="centrar">
-
-                    <div class="span5">
-                      <div class="control-group">
-                          <label class="control-label" for="busqueda_empleo">
-                          <spam class="titulos">Palabras clave</span>
-                          </label>
-                          <div class="controls">
-                          <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
-                          </div>
-                           <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
-                      </div>
-                      <div class="control-group">
-                          <label class="control-label" for="busqueda_empleo">
-                          <spam class="titulos">Ubicación</span>
-                          </label>
-                          <div class="controls">
-                          <input id="ubicacion_empleo" type="text" data-provide="typeahead" placeholder="¿Dónde lo buscas?"/>
-                          </div>
-                          <p class="help-block" for="ubicacion_empleo" style="display:none"> help text</p>
-                      </div>
-
-
-                                    <button type="submit" class="btn btn-danger">Buscar</button>
-                    </div>
-
-
-                    <div class="span5">  
-
-                                    <div class="control-group">      
-                                      <label class="control-label"  for="Area_cargo"><spam class="titulos"> *Área o departamento del cargo: </span></label>
-                                      <div class="controls">
-                                      <select id="Area_cargo" name="Area_cargo" required>
-
-                                          <option value="">Por favor seleccione</option>
-                                          <option value="2">Administrativa y Financiera</option>
-                                          <option value="48">Archivo y Documentación</option>
-                                          <option value="4">Auditoría, Contraloría e Interventoría</option>
-                                          <option value="45">Calidad (aseguramiento, gestión y afines)</option>
-                                          <option value="5">Comercial, Ventas y Telemercadeo</option>
-                                          <option value="6">Comercio Exterior</option>
-                                          <option value="53">Compras e Inventarios</option>
-                                          <option value="7">Construcción y Obra</option>
-                                          <option value="10">Docencia</option>
-                                          <option value="12">Gerencia General (cargos corporativos)</option>
-                                          <option value="27">Instalación y Reparaciones Técnicas</option>
-                                          <option value="46">Investigación</option>
-                                          <option value="41">Jurídica</option>
-                                          <option value="42">Logística y Distribución</option>
-                                          <option value="13">Mantenimiento</option>
-                                          <option value="19">Mercadeo y Publicidad</option>
-                                          <option value="30">Operaciones y Procesos</option>
-                                          <option value="18">Producción</option>
-                                          <option value="17">Proyectos (análisis, desarrollo, gestión y afines)</option>
-                                          <option value="20">Recepción</option>
-                                          <option value="21">Recursos Humanos y Admón. de Personal</option>
-                                          <option value="43">Redacción y Generación de Contenido</option>
-                                          <option value="22">Salud</option>
-                                          <option value="23">Secretariado</option>
-                                          <option value="24">Seguridad Industrial, Ambiental y Ocupacional</option>
-                                          <option value="25">Servicio al Cliente</option>
-                                          <option value="51">Servicios Generales, Aseo y Vigilancia</option>
-                                          <option value="47">Sistemas y Tecnología</option>
-                                      </select>
-                                      </div>
-                                      <p class="help-block" for="Area_cargo" style="display:none">help text</p>
-                                    </div>
-
-                                    <div class="control-group">      
-                                      <label class="control-label"  for="Nivel_cargo">
-                                        <spam class="titulos"> *Nivel del cargo:    </span>
-                                        <!--<i id="mensaje_nivel" class="icon-question-sign"></i>  -->
-                                      </label>
-                                      <div class="controls">
-                                      <select id="Nivel_cargo" name="Nivel_cargo" required>
-                                          <option value="">Por favor seleccione</option>
-                                          <option value="1">Presidente</option>
-                                          <option value="2">Vicepresidente</option>
-                                          <option value="3">Gerente Senior</option>
-                                          <option value="4">Gerente</option>
-                                          <option value="5">Coordinador supervisor o especialista</option>
-                                          <option value="6">Profesional Senior</option>
-                                          <option value="7">Profesional</option>
-                                          <option value="8">Profesional Junior</option>
-                                          <option value="9">Auxiliar, asistencial y otros</option>
-                                      </select>
-                                      </div>
-                                      <p class="help-block" for="Nivel_cargo" style="display:none">help text</p>
-                                    </div>
-
-     
-                  </div>
-
-                  </div>
-
-
-                </form>
+                    <spam class="titulos"> Nombre comercial: </span>
+                    <input id="empresas_listado" type="text" class="input" placeholder="¿Qué empleo buscas?" data-provide="typeahead">
+                    <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                    <button type="submit" class="btn btn-danger">Buscar</button>
+                  </form>
 
                 </div>
               </div>
