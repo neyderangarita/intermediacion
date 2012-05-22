@@ -115,7 +115,7 @@
                                 <a href="../intermediacion/buscar_empleo.html" >Buscar</a>
                                 </li>
                                 <li>
-                                <a href="../intermediacion/busqueda_avanzada.html" >Busqueda Avanzadaa</a>
+                                <a href="../intermediacion/busqueda_avanzada.html" >Busqueda Avanzada</a>
                                 </li>
                                 <li>
                                 <a href="#" >Empresas</a>
@@ -150,40 +150,42 @@
           <div class="body">
             <div class="container-fluid">
               <div class="row-fluid">
-                <div class="span4">
+                  <form action="../intermediacion/listado_busqueda.html" method="post">
 
-                      <div class="control-group">
-                          <label class="control-label" for="busqueda_empleo">
-                          <spam class="titulos">Palabras clave</span>
-                          <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
-                          </label>
-                          <div class="controls">
-                          <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
-                          </div>
-                           <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+
+                      <div class="span4">
+                            <div class="control-group">
+                                <label class="control-label" for="busqueda_empleo">
+                                <spam class="titulos">Palabras clave</span>
+                                <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                                </label>
+                                <div class="controls">
+                                <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
+                                </div>
+                                 <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                            </div>
+                      </div>  
+                      <div class="span4">
+                            <div class="control-group">
+                                <label class="control-label" for="busqueda_empleo">
+                                <spam class="titulos">Ubicación</span>
+                                <!--<i id="mensaje_titulo_oferta" class="icon-question-sign"></i>  -->  
+                                </label>
+
+                                <div class="controls">
+                                <input id="ubicacion_empleo" type="text" data-provide="typeahead" placeholder="¿Dónde lo buscas?"/>
+                                </div>
+                                <p class="help-block" for="ubicacion_empleo" style="display:none"> help text</p>
+                            </div>
                       </div>
-                </div>  
 
-                <div class="span4">
-                      <div class="control-group">
-                          <label class="control-label" for="busqueda_empleo">
-                          <spam class="titulos">Ubicación</span>
-                          <!--<i id="mensaje_titulo_oferta" class="icon-question-sign"></i>  -->  
-                          </label>
-
-                          <div class="controls">
-                          <input id="ubicacion_empleo" type="text" data-provide="typeahead" placeholder="¿Dónde lo buscas?"/>
-                          </div>
-                          <p class="help-block" for="ubicacion_empleo" style="display:none"> help text</p>
+                      <div class="span4">  
+                        <spam class="titulos"></span>
+                          <br>
+                        <button type="submit" class="btn btn-danger">Buscar</button>
                       </div>
-                </div>
 
-                <div class="span4">  
-                  <spam class="titulos"></span>
-                    <br>
-                  <button type="submit" class="btn btn-danger">Buscar</button>
-                </div>
-                
+                 </form>    
               </div>
             </div>
           </div>
