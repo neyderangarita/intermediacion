@@ -113,12 +113,54 @@ $('  a.descripcion').each(function() {
    	          , "enfermero" ,"tecnologo en regencia de farmacia", "Administrador", "Analista", "Asesor", "Asistente", "Asistente de investigación" , "Auditor", "Auxiliar","Consultor" 
    	          ,"Coordinador", "Contralor", "Director", "Diseñador", "Docente o profesor", "Ejecutivo", "enfermera", "Entrenador", "Gerente", "Interventor", "Programador", "Representante de ventas"
    	          , "Jefe", "Revisor fiscal", "Secretaria", "Subdirector", "Subgerente", "Supernumerario", "Supervisor", "Vendedor", "Webmaster", "Trader" ],
-    
     items: 8
-
     });
+
+
+    $("input#ubicacion_empleo").typeahead({
+
+   	source: ["Colombia", "Alemania", "Argentina", "Aruba", "Australia", "Austria", "Bélgica" , "Bolivia", "Brasil", "Canadá", "Chile", "China", "Amazonas",	"Antioquia", "Arauca", "Atlántico",	
+"Bolívar",	
+"Boyacá",	
+"Caldas",	
+"Caquetá",	
+"Casanare",
+"Cauca",	
+"Cesar",	
+"Chocó",	
+"Córdoba",	
+"Cundinamarca",	
+"Guainía",	
+"Guaviare",	
+"Huila",	
+"La Guajira",	
+"Magdalena",	
+"Meta",	
+"Nariño",	
+"Norte de Santander",	
+"Putumayo",	
+"Quindío",	
+"Risaralda",	
+"San Andrés y Providencia",	
+"Santander",	
+"Sucre",	
+"Tolima",	
+"Valle del Cauca",	
+"Vaupés",	
+"Vichada"  ],
+
+    items: 8
+    });
+/*
+
+
+
+  */
 });
-                 
+       
+
+
+
                    
 
 /*****************************************************/
