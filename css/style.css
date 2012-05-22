@@ -40,9 +40,7 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
    border:transparent;
 
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
-   /*Glow*/  
-  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+   /*Glow*/ 
   box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
 }
 /***************************************************************************************/
