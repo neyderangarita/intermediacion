@@ -233,6 +233,15 @@ color: #FF3030;  /****rojo****/
     color: #FFF;
     text-align:right
 }
+
+.titulo_blanco_05em
+{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #FFF;
+    text-align:right
+}
+
 .titulo_grande
 {
     font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
