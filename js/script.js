@@ -4,6 +4,8 @@
 /************mostrar*****************************/
 $(document).ready(function(){
 
+    
+
    $(".boton_expandir,.ocultar,.agregar").click(function(evento){	
 		var formularioexperiencia = $("#formularioexperiencia");
 		var formularioformal = $("#formularioformal");
@@ -55,56 +57,33 @@ $(document).ready(function(){
 
    });
 
-});
 
-$(document).ready(function(){
+
    $(".inicializar").click(function(evento){	
 		$('#myModal').modal('show');
 	});
 
-});
 
-$(document).ready(function(){
    $(".inicializar2").click(function(evento){	
 		$('#myModal1').modal('show');
-});
-
-});
+	});
 
 
-
-$(document).ready(function(){
    $(".oferta").click(function(evento){	
 		$('#contenedor').load('formulario_oferta.html');	
 	});
-});
 
 
-$(document).ready(function(){
    $(".ofertas_empresa").click(function(evento){	
 		$('#contenedor').load('ofertas_empleo.html');
 	});
-});
 
 
-
-$(document).ready(function(){
    $(".formulario_oferta").click(function(evento){	
 		alert("hola mundo");
 	});
-});
 
 
-/*
-$(document).ready(function(){
-$('  a.descripcion').each(function() {
-    //alert(index + ': ' + $(this).text());
-    .tooltip('show')
-	});
-});
-*/
-
-$(document).ready(function(){
 
 	$('#primer_tool').tooltip({
 
@@ -113,21 +92,10 @@ $(document).ready(function(){
 		title: 'click para administrar su cuenta',
 		trigger: 'hover',
 		delay: { show: 300, hide: 100 }
-
 	});
 
 
- //   $("#primer_tool").click(function(evento){	
-	// 	alert("hola mundo");
-	// });
 
-	//$("#primer_tool").tooltip('show');
-});
-
-
-
-
- $(document).ready(function() {
     $("input#autocomplete").typeahead({
 
    	source: ["ingeniero agoindustrial", "médico veterinario y zootecnista", "ingeniero agrónomo","ingeniero agroindustrial", "biólogo", "ingeniero de sistemas", "ingeniero electrónico"
@@ -142,34 +110,34 @@ $(document).ready(function(){
     $("input#ubicacion_empleo").typeahead({
 
    	source: ["Colombia", "Alemania", "Argentina", "Aruba", "Australia", "Austria", "Bélgica" , "Bolivia", "Brasil", "Canadá", "Chile", "China", "Amazonas",	"Antioquia", "Arauca", "Atlántico",	
-"Bolívar",	
-"Boyacá",	
-"Caldas",	
-"Caquetá",	
-"Casanare",
-"Cauca",	
-"Cesar",	
-"Chocó",	
-"Córdoba",	
-"Cundinamarca",	
-"Guainía",	
-"Guaviare",	
-"Huila",	
-"La Guajira",	
-"Magdalena",	
-"Meta",	
-"Nariño",	
-"Norte de Santander",	
-"Putumayo",	
-"Quindío",	
-"Risaralda",	
-"San Andrés y Providencia",	
-"Santander",	
-"Sucre",	
-"Tolima",	
-"Valle del Cauca",	
-"Vaupés",	
-"Vichada"  ],
+	"Bolívar",	
+	"Boyacá",	
+	"Caldas",	
+	"Caquetá",	
+	"Casanare",
+	"Cauca",	
+	"Cesar",	
+	"Chocó",	
+	"Córdoba",	
+	"Cundinamarca",	
+	"Guainía",	
+	"Guaviare",	
+	"Huila",	
+	"La Guajira",	
+	"Magdalena",	
+	"Meta",	
+	"Nariño",	
+	"Norte de Santander",	
+	"Putumayo",	
+	"Quindío",	
+	"Risaralda",	
+	"San Andrés y Providencia",	
+	"Santander",	
+	"Sucre",	
+	"Tolima",	
+	"Valle del Cauca",	
+	"Vaupés",	
+	"Vichada"  ],
 
     items: 8
     });
@@ -177,12 +145,11 @@ $(document).ready(function(){
 
     $("input#empresas_listado").typeahead({
 
-   	source: ["Electrificadora del Meta", "Llano gas S.A", "Procearroz Ltda","Cereales del Llano S.A", "Constructora Convesa Ltda", "Fondo Ganadero del Meta S.A", "R. y R Ltda"
+   	source: ["Electrificadora del Meta", "Llano gas S.A", "Procearroz Ltda","Cereales del Llano S.A", 
+   			"Constructora Convesa Ltda", "Fondo Ganadero del Meta S.A", "R. y R Ltda"
    	          , "Agroindustrias del Ariari Ltda", "Procesadora de arroz Montecarlo Ltda" , "Romarco Ltda." ],
     items: 8
     });
 
 
-
 });
-       
