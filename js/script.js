@@ -58,14 +58,8 @@ $(document).ready(function(){
    });
 
 
-
    $(".inicializar").click(function(evento){	
 		$('#myModal').modal('show');
-	});
-
-
-   $(".inicializar2").click(function(evento){	
-		$('#myModal1').modal('show');
 	});
 
 
@@ -73,13 +67,12 @@ $(document).ready(function(){
 		$('#contenedor').load('formulario_oferta.html');	
 	});
 
-
    $(".ofertas_empresa").click(function(evento){	
 		$('#contenedor').load('ofertas_empleo.html');
 	});
 
-/*
 
+/*
    $(".formulario_oferta").click(function(evento){	
 		alert("hola mundo");
 	});
@@ -91,6 +84,7 @@ $(document).ready(function(){
 		$(".contenedor_postulaciones").css("display","inline");
 		//formularioformal.show(1000);
 	});
+
 
 
 
@@ -160,6 +154,14 @@ $(document).ready(function(){
     items: 8
     });
 
+
+    $("input#empresas_listado").typeahead({
+
+   	source: ["Electrificadora del Meta", "Llano gas S.A", "Procearroz Ltda","Cereales del Llano S.A", 
+   			"Constructora Convesa Ltda", "Fondo Ganadero del Meta S.A", "R. y R Ltda"
+   	          , "Agroindustrias del Ariari Ltda", "Procesadora de arroz Montecarlo Ltda" , "Romarco Ltda." ],
+    items: 8
+    });
 
 
 
