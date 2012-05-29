@@ -85,6 +85,14 @@ $(document).ready(function(){
 		//formularioformal.show(1000);
 	});
 
+	$(".ocultar_postulacion").click(function(evento){	
+    	//alert("hola mundo");
+		$(".contenedor_postulaciones").css("display","none");
+		//formularioformal.show(1000);
+	});
+
+	
+
 
 
 
