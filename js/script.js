@@ -78,9 +78,18 @@ $(document).ready(function(){
 		$('#contenedor').load('ofertas_empleo.html');
 	});
 
+/*
 
    $(".formulario_oferta").click(function(evento){	
 		alert("hola mundo");
+	});
+
+*/
+
+    $(".mostrar_postulacion").click(function(evento){	
+    	//alert("hola mundo");
+		$(".contenedor_postulaciones").css("display","inline");
+		//formularioformal.show(1000);
 	});
 
 
@@ -150,6 +159,8 @@ $(document).ready(function(){
    	          , "Agroindustrias del Ariari Ltda", "Procesadora de arroz Montecarlo Ltda" , "Romarco Ltda." ],
     items: 8
     });
+
+
 
 
 });

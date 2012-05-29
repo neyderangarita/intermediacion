@@ -3,6 +3,12 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
   $(".formulario_oferta").click(function(){
         $('#contenedor').load('vista_oferta.html');
   });
+
+
+  $(".oferta").click(function(evento){ 
+    $('#contenedor').load('formulario_oferta.html');  
+  });
+
 });
 </script>
 
@@ -44,17 +50,17 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                                       <td><a href="">asistente general</a></td>
                                       <td>03/2006</td>
                                       <td>01/2012</td>
-                                      <td>5</td>
+                                      <td><a href="">5</a></td>
                                       <td>
                                         <div class="centrar">
-                                          <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
+                                          <a class="btn btn-mini btn-danger oferta" title="Editar"><i class="icon-pencil icon-white"></i></a>
 
-                                          <a class="btn btn-mini btn-danger" title="Eliminar">
+                                          <a class="btn btn-mini btn-danger" title="Culminar">
                                             <i class="icon-remove icon-white"></i>
                                           </a>
 
-                                          <a class="btn btn-mini btn-danger" title="Eliminar">
-                                            <i class="icon-remove icon-white"></i>
+                                          <a class="btn btn-mini btn-danger" title="Ver postulaciones">
+                                            <i class="icon-eye-open icon-white"></i>
                                           </a>
                                         </div>
                                       </td>
