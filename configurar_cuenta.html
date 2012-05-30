@@ -1,0 +1,146 @@
+<script>
+$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
+
+
+  $(".mostrar_cuenta").click(function(evento){  
+     // alert("hola mundo");
+    $(".mostrar_deactivar").show(1000);
+    //formularioformal.show(1000);
+  });
+
+  $(".mostrar_contrasena").click(function(evento){  
+      //alert("hola mundo");
+    $(".mostrar_cambiar_contrasena").show(1000);
+    //formularioformal.show(1000);
+  });
+ 
+
+});
+</script>
+
+      <div class="container-fluid"> <!--container-fluid -->      
+        <div class="row-fluid">  <!--row-fluid -->
+          <div class="span12"> <!--tabbable -->      
+
+
+
+
+          <div class="body">
+            <div class="container-fluid">
+              <div class="row-fluid">
+                    <div class="span6">
+                             <ul class="nav nav-tabs nav-stacked">
+                              <li >
+                                <a class="mostrar_cuenta">Cuenta</a>
+                              </li>
+                              <li>
+                                <a class="mostrar_contrasena">Contraseña</a>
+                              </li>
+                            </ul>
+                    </div>
+                    <div class="span6" >
+                      <br>
+                      <div class="well modificado mostrar_deactivar" style="display:none">
+                        <span class="titulos">Cuenta</span>
+                        <br><br>       
+                        cambiar configuracion de tu cuenta
+                        <hr>
+                        <a data-toggle="modal" href="#myModal4" title="Desactivar">Desactivar mi cuenta</a>
+                      </div>
+
+                      <div class="well container-fluid modificado mostrar_cambiar_contrasena" style="display:none">
+                        <div class="container-fluid">
+                          <div class="row-fluid">  
+                            <div class="span12"> <!--tabbable --> 
+                              <form class="form-horizontal" action="../intermediacion/empleador.html" method="post">
+                                  <fieldset>
+                                  <span class="titulos">Contraseña</span>
+                                  <br><br>       
+                                  Cambia tu contraseña, o recupera la actual.
+                                  <hr>
+                                  <div class="control-group">
+                                    <label class="control-label" for="Contraseña">Contraseña actual</label>
+                                    <div class="controls">
+                                      <input type="text" class="span2" id="clave" placeholder="Contraseña">
+                                      <p class="help-block"> </p>
+                                      <a href="">¿Olvidaste tu contraseña?</a>
+                                    </div>
+
+                                    <label class="control-label">Nueva contraseña</label>
+                                    <div class="controls">
+                                      <input type="text" class="span2" id="nueva_clave" placeholder="Nueva contraseña" >
+                                      <p class="help-block"> </p>
+                                    </div>
+
+                                    <label class="control-label" for="Contraseña">Verificar contraseña</label>
+                                    <div class="controls">
+                                      <input type="text" class="span2" id="verificar_clave" placeholder="Verificar contraseña">
+                                      <p class="help-block"> </p>
+                                    </div>
+
+                                  </div>   
+                                  <hr>
+                                  <input class="btn btn-large btn-danger" type="submit"  value="Guardar cambios"/> 
+                                  </fieldset>
+                              </form>
+                            </div>
+                          </div>
+                        </div>           
+                      </div>
+
+
+
+
+                
+                  
+            
+
+                  
+
+
+     
+
+
+
+             
+
+
+
+
+
+
+                    </div>
+              </div>
+            </div>
+          </div>
+
+                                        <section id="modal">
+                                          <div id="myModal4" class="modal show"  style="display: none;"  >
+                                            <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">×</button>
+                                              <form class="form-horizontal">
+                                                <fieldset>
+                                                <legend class="titulo centrar">¿Estás seguro de que no quieres reconsiderarlo? </legend>
+                                                <div class="control-group centrar
+                                                ">
+                                                En cualquier momento puedes volver a activar tu cuenta.
+                                                  
+
+                                                </div> 
+                                                </fieldset>
+                                              </form>
+                                              <form class="form-inline centrar">
+                                                     <a class="btn btn-large btn-danger" data-dismiss="modal" href="#"><i class="icon-remove icon-white"></i> Cancelar</a>
+                                                     <a class="btn btn-large btn-danger"  href=" "  ><i class="icon-ok-circle icon-white"></i>Desactivar</a>
+                                              </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                          </div>
+                                        </section>
+
+ 
+
+          </div> <!--tabbable -->      
+        </div>   <!--row-fluid -->
+      </div> <!--container-fluid -->
