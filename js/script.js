@@ -67,11 +67,12 @@ $(document).ready(function(){
 		$('#contenedor').load('formulario_oferta.html');	
 	});
 
+/*
    $(".ofertas_empresa").click(function(evento){	
 		$('#contenedor').load('ofertas_empleo.html');
 	});
 
-
+*/
 /*
    $(".formulario_oferta").click(function(evento){	
 		alert("hola mundo");
