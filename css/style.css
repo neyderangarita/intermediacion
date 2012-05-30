@@ -376,3 +376,9 @@ color: #FF3030;  /****rojo****/
     color: white;
     border-radius:3px;
 }
+
+.modificado{
+
+    background: whiteSmoke;
+    box-shadow: 0 0px 1px;
+}

@@ -67,6 +67,12 @@ $(document).ready(function(){
 		$('#contenedor').load('formulario_oferta.html');	
 	});
 
+      $(".configurar_cuenta").click(function(evento){	
+		$('#contenedor').load('configurar_cuenta.html');	
+	});
+
+
+
 /*
    $(".ofertas_empresa").click(function(evento){	
 		$('#contenedor').load('ofertas_empleo.html');
@@ -92,7 +98,6 @@ $(document).ready(function(){
 		//formularioformal.show(1000);
 	});
 
-	
 
 
 
