@@ -37,6 +37,7 @@ $(document).ready(function(){
 			$(".boton_expandir").hide(1000);	
 		}
 
+/*
 		if (text == 'Cancelar' && formularioexperiencia ){
 			formularioexperiencia.hide(1000);
 			formularioformal.hide(1000);
@@ -54,7 +55,7 @@ $(document).ready(function(){
 			formulariopublicacion.hide(1000);
 			$(".boton_expandir").show(1000);
 		}
-
+*/
    });
 
 
@@ -70,8 +71,6 @@ $(document).ready(function(){
       $(".configurar_cuenta").click(function(evento){	
 		$('#contenedor').load('configurar_cuenta.html');	
 	});
-
-
 
 /*
    $(".ofertas_empresa").click(function(evento){	
@@ -99,9 +98,6 @@ $(document).ready(function(){
 	});
 
 
-
-
-
 	$('#primer_tool').tooltip({
 
 		animation: true,
@@ -110,7 +106,6 @@ $(document).ready(function(){
 		trigger: 'hover',
 		delay: { show: 300, hide: 100 }
 	});
-
 
 
     $("input#autocomplete").typeahead({
@@ -176,6 +171,11 @@ $(document).ready(function(){
    	          , "Agroindustrias del Ariari Ltda", "Procesadora de arroz Montecarlo Ltda" , "Romarco Ltda." ],
     items: 8
     });
+
+
+
+
+
 
 
 
