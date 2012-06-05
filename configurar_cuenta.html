@@ -1,26 +1,55 @@
 <script>
 $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
-
-
   $(".mostrar_cuenta").click(function(evento){  
      // alert("hola mundo");
     $(".mostrar_deactivar").show(1000);
     //formularioformal.show(1000);
   });
-
   $(".mostrar_contrasena").click(function(evento){  
       //alert("hola mundo");
     $(".mostrar_cambiar_contrasena").show(1000);
     //formularioformal.show(1000);
   });
-
   $(".inicializar3").click(function(evento){  
     $('#myModal2').modal('show');
   });
- 
 
 });
 </script>
+
+<script>
+$.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
+    $(".mostrar_cuenta").click(function(evento){  
+     // alert("hola mundo");
+    $(".mostrar_deactivar").show(1000);
+    //formularioformal.show(1000);
+    });
+    $(".mostrar_contrasena").click(function(evento){  
+        //alert("hola mundo");
+      $(".mostrar_cambiar_contrasena").show(1000);
+      //formularioformal.show(1000);
+    });
+
+    $(".inicializar3").click(function(evento){  
+      $('#myModal2').modal('show');
+    });
+
+    $(".ocultar_cuenta").click(function(evento){  
+     // alert("hola mundo");
+    $(".mostrar_deactivar").hide(1000);
+    //formularioformal.show(1000);
+    });
+
+    $(".ocultar_contrasena").click(function(evento){  
+        //alert("hola mundo");
+      $(".mostrar_cambiar_contrasena").hide(1000);
+      //formularioformal.show(1000);
+    });
+
+
+});
+</script>
+
 
       <div class="container-fluid"> <!--container-fluid -->      
         <div class="row-fluid">  <!--row-fluid -->
@@ -32,10 +61,22 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                     <div class="span6">
                              <ul class="nav nav-tabs nav-stacked">
                               <li >
-                                <a class="mostrar_cuenta">Cuenta</a>
+                                
+                                <a class="mostrar_cuenta">
+                                  <div class="btn">
+                                  <i class="icon-cog "></i>
+                                  </div>
+                                  Cuenta
+                                </a>
                               </li>
                               <li>
-                                <a class="mostrar_contrasena">Contraseña</a>
+
+                                <a class="mostrar_contrasena">
+                                <div class="btn">
+                                  <i class="icon-cog "></i>
+                                </div>
+                                  Contraseña
+                                </a>
                               </li>
                             </ul>
                       </div>
@@ -48,7 +89,13 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                           cambiar configuracion de tu cuenta
                           <hr>
                           <a class="inicializar3" data-toggle="modal" href="#myModal2" title="Desactivar">Desactivar mi cuenta</a>
+                          <div class="derecha">
+                          <a class="btn btn-mini  ocultar_cuenta" title="Volver">
+                              <i class="icon-share-alt"></i>
+                          </a>
+                          </div>
                         </div>
+
 
                         <div class="well container-fluid modificado mostrar_cambiar_contrasena" style="display:none">
                           <div class="container-fluid">
@@ -83,6 +130,11 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                                     </div>   
                                     <hr>
                                     <input class="btn btn-large btn-danger" type="submit"  value="Guardar cambios"/> 
+                                    <div class="derecha">
+                                      <a class="btn btn-mini ocultar_contrasena" title="Volver">
+                                          <i class="icon-share-alt"></i>
+                                      </a>
+                                    </div>
                                     </fieldset>
                                 </form>
                               </div>

@@ -85,20 +85,30 @@
                                 <b class="caret"></b>
                               </a>
                                 <ul class="dropdown-menu">
-                                <li>
-                                  <a href="../intermediacion/editar_hv.html" >             
-                                  Actualizar
+                                  <li>
+                                    <a href="../intermediacion/editar_hv.html" > 
+                                     <i class="icon-edit icon-white"></i>           
+                                    Actualizar
+                                    </a>
+                                  </li>
+                                  <li>
+                                  <a href="../intermediacion/hv.html" >
+                                  <i class="icon-list-alt icon-white"></i>            
+                                  Ver hoja de vida
                                   </a>
-                                </li>
-                                <li>
-                                <a href="#" >Imprimir o Descargar</a>
-                                </li>
-                                <li>
-                                <a href="#" >Estadisticas</a>
-                                </li>
-                                <li>
-                                <a href="../intermediacion/bloquear_cuenta_egresado.html" >Opciones de configuración  (bloqueos)</a>
-                                </li>                      
+                                  </li>  
+                                  <li>
+                                  <a href="#" >
+                                    <i class="icon-print icon-white"></i>
+                                    Imprimir o Descargar
+                                  </a>
+                                  </li> 
+                                  <li>
+                                    <a href="../intermediacion/mis_aplicaciones.html">
+                                      <i class="icon-comment icon-white"></i>
+                                      Mis aplicaciones</a>
+                                  </li>
+                                             
                                 </ul>
               </li>
               <li class="dropdown">
@@ -109,21 +119,36 @@
                               </a>
                                 <ul class="dropdown-menu">
                                 <li>
-                                <a href="../intermediacion/buscar_empleo.html" >Buscar</a>
+                                <a href="../intermediacion/buscar_empleo.html" >
+                                  <i class="icon-search  icon-white"></i>Buscar
+                                </a>
                                 </li>
                                 <li>
-                                <a href="../intermediacion/busqueda_avanzada.html" >Busqueda Avanzadaa</a>
+                                <a href="../intermediacion/busqueda_avanzada.html" >
+                                  <i class="icon-search  icon-white"></i>
+                                  Busqueda Avanzadaa
+                                </a>
                                 </li>
                                 <li>
-                                <a href="../intermediacion/buscar_empresa.html" >Empresas</a>
+                                <a href="../intermediacion/buscar_empresa.html">
+                                  <i class="icon-search  icon-white"></i>
+                                  Empresas
+                                </a>
                                 </li>
                                 </ul>
               </li>
               
               <li>
-                <a href="../intermediacion/mis_aplicaciones.html">
-                  <i class="icon-comment icon-white"></i>
-                  Mis aplicaciones</a>
+                <a class="notificaciones_egresado">
+                  <i class="icon-comment notificacion icon-white">99</i>
+                  Notificaciones</a>
+
+              </li>
+              <li>
+                <a class="configurar_cuenta">
+                  <i class="icon-cog icon-white"></i>
+                  Configurar Cuenta
+                </a>
               </li>
               <li>
                 <a href="">
@@ -137,60 +162,160 @@
 
   <hr>
   
-  <section class="body">
+  <section id="contenedor" class="body">
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span12">
 
           <span class="titulo">Administrar aplicaciones a ofertas de empleo</span>
             <br><br>
-
             
-                              <div class="alert alert-error titulos2">Estas son tus postulaciones de los ultimos meses. Por el momento no estás postulado a ninguna búsqueda.</div>
-
-                                <table class="table table-striped table-bordered table-condensed">
-                                  <thead>
-
-                                    <tr>
-                                      <th><a id="" href="">Titulo de la oferta</a></th>
-                                      <th><a id="" href="">Estado</a></th>
-                                      <th><a id="" href="">Nombre de la empresa</a></th>
-                                      <th><a id="" href="">Ciudad</a></th>
-                                      <th><a id="" href="">Fecha Publicación</a></th>
-                                      <th><a id="" href="">Fecha de aplicación</a></th>
-                                      <th><a id="" href="">Acciones</a></th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td><a href="">ANALISTA PROGRAMADOR</a></td>
-                                      <td>Publicada</td>
-                                      <td>Confidencial</td>
-                                      <td>Bogotá</td>
-                                      <td>24-mar-2012</td>
-                                      <td>21-may-2012</td>
-                                      <td>
-                                        <div class="centrar">
- 
-                                          <a class="btn btn-mini btn-danger" title="Eliminar">
-                                            <i class="icon-remove icon-white"></i>
-                                          </a>
-
-                                        </div>
-                                      </td>
-
-                                    </tr>
-                                    
-                                  </tbody>
-                                </table>
+              <div class="alert alert-error titulos2">Estas son tus postulaciones de los ultimos meses. Por el momento no estás postulado a ninguna búsqueda.</div>
 
 
-<!--
-        <div class="derecha">  
-          <a class="btn btn-danger" href="../intermediacion/editar_hv.html">Realizar una Busqueda</a>
-        </div>
-     -->   
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ANALISTA PROGRAMADOR</div>
+                            <div class="letra_notificacion listar">Empresa: </div>
+                            <div class="titulos2 listar">Confidencial</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Aviso Publicado:</div></b>
+                            <div class="titulos2 listar">20/06/2012</div>
+                            <b><div class="letra_notificacion listar">Fecha Postulación:</div></b>
+                            <div class="titulos2 listar">22/06/2012</div>
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini elminiar_postulacion" title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
 
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ANALISTA PROGRAMADOR</div>
+                            <div class="letra_notificacion listar">Empresa: </div>
+                            <div class="titulos2 listar">Confidencial</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Aviso Publicado:</div></b>
+                            <div class="titulos2 listar">20/06/2012</div>
+                            <b><div class="letra_notificacion listar">Fecha Postulación:</div></b>
+                            <div class="titulos2 listar">22/06/2012</div>
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini elminiar_postulacion" title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ANALISTA PROGRAMADOR</div>
+                            <div class="letra_notificacion listar">Empresa: </div>
+                            <div class="titulos2 listar">Confidencial</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Aviso Publicado:</div></b>
+                            <div class="titulos2 listar">20/06/2012</div>
+                            <b><div class="letra_notificacion listar">Fecha Postulación:</div></b>
+                            <div class="titulos2 listar">22/06/2012</div>
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini elminiar_postulacion" data-toggle="modal" href="#myModal2" title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ANALISTA PROGRAMADOR</div>
+                            <div class="letra_notificacion listar">Empresa: </div>
+                            <div class="titulos2 listar">Confidencial</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Aviso Publicado:</div></b>
+                            <div class="titulos2 listar">20/06/2012</div>
+                            <b><div class="letra_notificacion listar">Fecha Postulación:</div></b>
+                            <div class="titulos2 listar">22/06/2012</div>
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini elminiar_postulacion" title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ANALISTA PROGRAMADOR</div>
+                            <div class="letra_notificacion listar">Empresa: </div>
+                            <div class="titulos2 listar">Confidencial</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Aviso Publicado:</div></b>
+                            <div class="titulos2 listar">20/06/2012</div>
+                            <b><div class="letra_notificacion listar">Fecha Postulación:</div></b>
+                            <div class="titulos2 listar">22/06/2012</div>
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini elminiar_postulacion" title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+                                        <section id="modal">
+                                          <div id="myModal_misaplicaciones" class="modal show"  style="display: none;"  >
+                                            <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">×</button>
+                                              <form class="form-horizontal">
+                                                <fieldset>
+                                                <legend class="titulo centrar">¿Estás seguro de que no quieres reconsiderarlo? </legend>
+                                                <div class="control-group centrar
+                                                ">
+                                                 Tu postulacion sera removida de esta oferta de empleo 
+
+                                                </div> 
+                                                </fieldset>
+                                              </form>
+                                              <form class="form-inline centrar">
+                                                     <a class="btn btn-large btn-danger" data-dismiss="modal" href="#"><i class="icon-remove icon-white"></i> Cancelar</a>
+                                                     <a class="btn btn-large btn-danger"  href=" "  ><i class="icon-ok-circle icon-white"></i>Aceptar</a>
+                                              </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                          </div>
+                                        </section>
         </div>
       </div>
     </div>

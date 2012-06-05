@@ -89,25 +89,30 @@
                                 <b class="caret"></b>
                               </a>
                                 <ul class="dropdown-menu">
-                                <li>
-                                  <a href="../intermediacion/hv.html" >             
+                                  <li>
+                                    <a href="../intermediacion/editar_hv.html" > 
+                                     <i class="icon-edit icon-white"></i>           
+                                    Actualizar
+                                    </a>
+                                  </li>
+                                  <li>
+                                  <a href="../intermediacion/hv.html" >
+                                  <i class="icon-list-alt icon-white"></i>            
                                   Ver hoja de vida
                                   </a>
-                                </li>
-                                <li>
-                                  <a href="../intermediacion/editar_hv.html" >             
-                                  Actualizar
+                                  </li>  
+                                  <li>
+                                  <a href="#" >
+                                    <i class="icon-print icon-white"></i>
+                                    Imprimir o Descargar
                                   </a>
-                                </li>
-                                <li>
-                                <a href="#" >Imprimir o Descargar</a>
-                                </li>
-                                <li>
-                                <a href="#" >Estadisticas</a>
-                                </li>
-                                <li>
-                                <a href="../intermediacion/bloquear_cuenta_egresado.html" >Opciones de configuración  (bloqueos)</a>
-                                </li>                      
+                                  </li> 
+                                  <li>
+                                    <a href="../intermediacion/mis_aplicaciones.html">
+                                      <i class="icon-comment icon-white"></i>
+                                      Mis aplicaciones</a>
+                                  </li>
+                                             
                                 </ul>
               </li>
               <li class="dropdown">
@@ -118,20 +123,37 @@
                               </a>
                                 <ul class="dropdown-menu">
                                 <li>
-                                <a href="../intermediacion/buscar_empleo.html" >Buscar</a>
+                                <a href="../intermediacion/buscar_empleo.html" >
+                                  <i class="icon-search  icon-white"></i>Buscar
+                                </a>
                                 </li>
                                 <li>
-                                <a href="../intermediacion/busqueda_avanzada.html" >Busqueda Avanzadaa</a>
+                                <a href="../intermediacion/busqueda_avanzada.html" >
+                                  <i class="icon-search  icon-white"></i>
+                                  Busqueda Avanzadaa
+                                </a>
                                 </li>
                                 <li>
-                                <a href="../intermediacion/buscar_empresa.html" >Empresas</a>
+                                <a href="../intermediacion/buscar_empresa.html">
+                                  <i class="icon-search  icon-white"></i>
+                                  Empresas
+                                </a>
                                 </li>
                                 </ul>
               </li>
+              
               <li>
-                <a href="../intermediacion/mis_aplicaciones.html">
-                  <i class="icon-comment icon-white"></i>
-                  Mis aplicaciones</a>
+                <a class="notificaciones_egresado">
+                  <i class="icon-comment notificacion icon-white">99</i>
+                  Notificaciones
+                </a>
+
+              </li>
+              <li>
+                <a class="configurar_cuenta">
+                  <i class="icon-cog icon-white"></i>
+                  Configurar Cuenta
+                </a>
               </li>
               <li>
                 <a href="">
@@ -143,10 +165,8 @@
     </section>
   </header>
   <hr>
-
-
     
-    <section class="body">   <!--section-body -->  
+    <section id="contenedor" class="body">   <!--section-body -->  
       <div class="container-fluid"> <!--container-fluid -->      
         <div class="row-fluid">  <!--row-fluid -->
           <div class="tabbable span12"> <!--tabbable -->      
@@ -155,7 +175,7 @@
                   <li class="active"><a href="#información" data-toggle="tab">Información personal</a></li>
                   <li><a href="#experiencia" data-toggle="tab">Experiencia laboral</a></li>
                   <li><a href="#formal" data-toggle="tab">Educación formal</a></li>
-                  <li><a href="#noformal" data-toggle="tab">Educación no Formal</a></li>
+                  <li><a href="#noformal" data-toggle="tab">Educación Informal</a></li>
                   <li><a href="#publicaciones" data-toggle="tab">Publicaciones</a></li>
                 </ul>
 
@@ -571,6 +591,7 @@
                             <legend><span class="titulos">Experiencia Laboral</span></legend>
 <!--...............................................TABLA DATOS.........................................................-->
 
+<!--
                                 <table class="table table-striped table-bordered table-condensed">
                                   <thead>
 
@@ -619,8 +640,100 @@
 
                                     </tr> 
                                   </tbody>
-                                </table>   
-                      <a class="btn boton_expandir" title=".. ">Agregar experiencia</a>                                                       
+                                </table>  
+-->
+
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ANALISTA-PROGRAMADOR</div>
+                            <div class="letra_notificacion listar">Empresa: </div>
+                            <div class="titulos2 listar">Cooperativa del meta</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Ingreso:</div></b>
+                            <div class="titulos2 listar">20/06/2009</div>
+                            <b><div class="letra_notificacion listar">Finalización:</div></b>
+                            <div class="titulos2 listar">22/08/2011</div>
+                            <br>
+                            <div style="display:none">
+                              <div class="letra_notificacion listar">Nivel del cargo: </div>
+                              <div class="titulos2 listar">Profesional senior</div>
+                              <div class="letra_notificacion listar">Área o departamento del cargo: </div>
+                              <div class="titulos2 listar">Produccion</div>
+                              <b><div class="letra_notificacion listar">Teléfono de la empresa:</div></b>
+                            <div class="titulos2 listar">6662094</div>
+                            </div>
+
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini expandir_laboral" title="Editar">
+                              <i class="icon-edit"></i>
+                            </a> 
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                            <!--
+                            <a class="btn btn-mini " title="Mas informacion">
+                              <i class="icon-eject"></i>
+                            </a>
+                          -->
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ANALISTA-PROGRAMADOR</div>
+                            <div class="letra_notificacion listar">Empresa: </div>
+                            <div class="titulos2 listar">Cooperativa del meta</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Ingreso:</div></b>
+                            <div class="titulos2 listar">20/06/2009</div>
+                            <b><div class="letra_notificacion listar">Finalización:</div></b>
+                            <div class="titulos2 listar">22/08/2011</div>
+                            <br>
+                            <div style="display:none">
+                              <div class="letra_notificacion listar">Nivel del cargo: </div>
+                              <div class="titulos2 listar">Profesional senior</div>
+                              <div class="letra_notificacion listar">Área o departamento del cargo: </div>
+                              <div class="titulos2 listar">Produccion</div>
+                              <b><div class="letra_notificacion listar">Teléfono de la empresa:</div></b>
+                            <div class="titulos2 listar">6662094</div>
+                            </div>
+
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini expandir_laboral" title="Editar">
+                              <i class="icon-edit"></i>
+                            </a> 
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                            <!--
+                            <a class="btn btn-mini " title="Mas informacion">
+                              <i class="icon-eject"></i>
+                            </a>
+                          -->
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+
+
+
+
+                <br><br>
+                <a class="btn boton_expandir_laboral" title="Agregar experiencia">Agregar experiencia</a>
+
 <!--......................................................................................................................-->
 
                               <div id="formularioexperiencia" class="centrar"  style="display:none">
@@ -1011,8 +1124,8 @@
                                     </div>
 
                                     <div class="form-actions">
-                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
-                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
+                                      <button class="btn btn-danger agregar_experiencia" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
+                                      <a class="btn cencelar_experiencia"><i class="icon-remove-sign "></i>Cancelar</a>
                                     </div>
 
                                 </div> <!--cierra span6--> 
@@ -1053,6 +1166,7 @@
                             <legend><span class="titulos">Educación Formal</span></legend>
 <!--...............................................TABLA DATOS.........................................................-->
 
+<!--
                                 <table class="table table-striped table-bordered table-condensed">
                                   <thead>
                                     <tr>
@@ -1099,12 +1213,41 @@
 
                                     </tr> 
                                   </tbody>
-                                </table>   
-                      <a class="btn boton_expandir" title=".. ">Agregar otro estudio</a>                                                       
+                                </table>                                 
+-->
+
+
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">ingeniero de sistemas</div>
+                            <div class="letra_notificacion listar">Institución: </div>
+                            <div class="titulos2 listar">Universidad de los Llanos</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Nivel:</div></b>
+                            <div class="titulos2 listar">Profesional</div>
+                            <b><div class="letra_notificacion listar">Finalización:</div></b>
+                            <div class="titulos2 listar">12/2011</div>
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini expandir_formal" title="Editar">
+                              <i class="icon-edit"></i>
+                            </a> 
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+                <br><br>
+                      <a class="btn boton_expandir_formal" title="Agregar otro estudio">Agregar otro estudio</a>                                                       
 <!--......................................................................................................................-->
-
-
-                              <div id="formularioformal" class="centrar"  style="display:none">
+                          <div id="formularioformal" class="centrar"  style="display:none">
 
                               <form class="">
                                 <fieldset>
@@ -1405,8 +1548,8 @@
                                     </div>
 
                                     <div class="form-actions">
-                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
-                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
+                                      <button class="btn btn-danger agregar_formal" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
+                                      <a class="btn cencelar_formal"><i class="icon-remove-sign "></i>Cancelar</a>
                                     </div>
 
 
@@ -1447,6 +1590,7 @@
                             <legend><span class="titulos">Idiomas</span></legend>
 <!--...............................................TABLA DATOS.........................................................-->
 
+<!--
                                 <table class="table table-striped table-bordered table-condensed">
                                   <thead>
                                     <tr>
@@ -1485,8 +1629,32 @@
                                     </tr> 
                                   </tbody>
                                 </table>  
+-->
 
-                      <a class="btn boton_expandir" title=".. ">Agregar otro idioma</a>                                                       
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">Ingles</div>
+                            <b><div class="letra_notificacion listar">Dominio:</div></b>
+                            <div class="titulos2 listar">50</div>
+
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini expandir_idioma" title="Editar">
+                              <i class="icon-edit"></i>
+                            </a> 
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+
+                      <br><br>
+                      <a class="btn boton_expandir_idioma" title="Agregar otro idioma">Agregar otro idioma</a>                                                       
 <!--......................................................................................................................-->
 
 
@@ -1526,7 +1694,7 @@
 
                                     <div class="form-actions">
                                       <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
-                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
+                                      <a class="btn cencelar_idioma"><i class="icon-remove-sign "></i>Cancelar</a>
                                     </div>
 
 
@@ -1582,13 +1750,14 @@
                           <div class="row-fluid">
                           <div class="span12">
 
-                            <legend><span class="titulos">Educación no formal</span></legend>
+                            <legend><span class="titulos">Educación Informal</span></legend>
 
                             <p>
                               Nota: incluya diplomados, seminarios, talleres, cursos u otro tipo estudios no formales que haya terminado o esté cursando
                             </p>
 <!--...............................................TABLA DATOS.........................................................-->
 
+<!--
                                 <table class="table table-striped table-bordered table-condensed">
                                   <thead>
                                     <tr>
@@ -1602,11 +1771,10 @@
 
                                   <tbody>
                                     <tr>
-                                      <td>seminaro de la verdad</td>
+                                      <td>Seminaro tendencias de las TI en colombia</td>
                                       <td>06/1998</td>
-                                      <td>06/2009</td>
-                                      <td>Planeta Rica</td>
-                                      <td>uniminuto</td>                                                                        
+                                      <td>villavicencio</td>
+                                      <td>Ideas</td>                                                                      
                                       <td>
                                         <div class="centrar">
                                           <a class="btn btn-mini btn-danger editarformulario" title="Editar"><i class="icon-pencil icon-white"></i></a>
@@ -1619,8 +1787,38 @@
                                     </tr>
                                   </tbody>
                                 </table>  
+-->
 
-                      <a class="btn boton_expandir" title=".. ">Agregar Educacion no formal</a>   
+                <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                            <div id="mensaje_titulo_oferta" class="titulo_padind">Seminaro tendencias de las TI en colombia</div>
+                            <div class="letra_notificacion listar">Institución: </div>
+                            <div class="titulos2 listar">Universidad Nacional</div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">Villavicencio</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Finalización:</div></b>
+                            <div class="titulos2 listar">06/1998</div>
+                        </div> 
+                        <div class="span3 derecha">
+                            <a class="btn btn-mini expandir_informal" title="Editar">
+                              <i class="icon-edit"></i>
+                            </a> 
+
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-remove"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>                     
+                </div>
+
+
+
+                    <br><br>
+                      <a class="btn boton_expandir_informal" title="Agregar Educación informal">Agregar Educación informal</a>   
 
 <!--......................................................................................................................-->
 
@@ -1707,7 +1905,7 @@
 
                                     <div class="form-actions">
                                       <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
-                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
+                                      <a class="btn cencelar_informal"><i class="icon-remove-sign "></i>Cancelar</a>
                                     </div>
                                 </div> <!--cierra span6--> 
 
@@ -1750,6 +1948,7 @@
                             <legend><span class="titulos">Publicaciones y Actividades Académicas, de Investigacion, Proyección Social</span></legend>
 <!--...............................................TABLA DATOS.........................................................-->
 
+<!--
                                 <table class="table table-striped table-bordered table-condensed">
                                   <thead>
                                     <tr>
@@ -1760,7 +1959,7 @@
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td>Trabajo hacerca de encriptacion de señales</td>
+                                      <td>Trabajo de encriptacion de señales</td>
                                       <td>dsfsdf sd sdf dsf sd sdfs  dsfsd dsfsdf</td>
                                       <td>
                                         <div class="centrar">
@@ -1775,8 +1974,29 @@
       
                                   </tbody>
                                 </table>  
+-->
+                                <div class="body mis_aplicaciones" >      
+                                  <div class="container-fluid"> <!--container-fluid -->      
+                                    <div class="row-fluid">  <!--row-fluid -->    
+                                      <div class="span8">
+                                          <div id="mensaje_titulo_oferta" class="titulo_padind">Trabajo de encriptacion de señales</div>
+                                          <div class="letra_notificacion listar">Descripcion: </div>
+                                          <div class="titulos2 listar">dsfsdf sd sdf dsf sd sdfs  dsfsd dsfsdf </div>
+                                      </div> 
+                                      <div class="span3 derecha">
+                                          <a class="btn btn-mini expandir_publicaciones" title="Editar">
+                                            <i class="icon-edit"></i>
+                                          </a> 
+                                          <a class="btn btn-mini " title="Eliminar">
+                                            <i class="icon-remove"></i>
+                                          </a>
+                                      </div>
+                                    </div>
+                                  </div>                     
+                              </div>
 
-                      <a class="btn boton_expandir" title=".. ">Agregar Publicacion</a>                                                       
+                      <br><br>
+                      <a class="btn boton_expandir_publicaciones" title="Agregar Publicación">Agregar Publicación</a>                                                       
 <!--............................................................................................................-->
 
                             <div id="formulariopublicacion" class="centrar"  style="display:none">
@@ -1813,7 +2033,7 @@
 
                                     <div class="form-actions">
                                       <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Agregar</button>
-                                      <button class="btn ocultar"><i class="icon-remove-sign "></i>Cancelar</button>
+                                      <button class="btn cencelar_publicaciones"><i class="icon-remove-sign "></i>Cancelar</button>
                                     </div>
 
                                 </div> <!--cierra span6--> 
@@ -1913,7 +2133,6 @@
 <script src="js/libs/bootstrap/tab.js"></script>
 <script src="js/libs/bootstrap/tooltip.js"></script>
 <script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/plugins/prefixfree.dynamic-dom.min.js"></script>
-
 
 <!--
 <script>

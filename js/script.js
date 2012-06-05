@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     
 
-   $(".boton_expandir,.ocultar,.agregar").click(function(evento){	
+   $(".boton_expandir_idioma,.boton_expandir_informal,.boton_expandir_publicaciones,.boton_expandir_formal,.boton_expandir_laboral,.agregar").click(function(evento){	
 		var formularioexperiencia = $("#formularioexperiencia");
 		var formularioformal = $("#formularioformal");
 		var formularioidioma = $("#formularioidioma");
@@ -15,48 +15,95 @@ $(document).ready(function(){
 
 		var text = $(this).text();
 
+
 		if (text == 'Agregar experiencia'){
 			formularioexperiencia.show(1000);
-			$(".boton_expandir").hide(1000);
+			$(".boton_expandir_laboral").hide(1000);
 		}
 
 		if (text == 'Agregar otro estudio'){
 			formularioformal.show(1000);
-			$(".boton_expandir").hide(1000);
+			$(".boton_expandir_formal").hide(1000);
 		}
 		if (text == 'Agregar otro idioma'){
 			formularioidioma.show(1000);
-			$(".boton_expandir").hide(1000);
+			$(".boton_expandir_idioma").hide(1000);
 		}			
-		if (text == 'Agregar Educacion no formal'){
-			formularionoformal.show(1000);
-			$(".boton_expandir").hide(1000);
+		if (text == 'Agregar Educación informal'){
+			formularionoformal.show(1000);			
+			$(".boton_expandir_informal").hide(1000);
 		}		
-		if (text == 'Agregar Publicacion'){
+		if (text == 'Agregar Publicación'){
 			formulariopublicacion.show(1000);
-			$(".boton_expandir").hide(1000);	
+			$(".boton_expandir_publicaciones").hide(1000);
 		}
 
-/*
-		if (text == 'Cancelar' && formularioexperiencia ){
-			formularioexperiencia.hide(1000);
-			formularioformal.hide(1000);
-			formularioidioma.hide(1000);
-			formularionoformal.hide(1000);
-			formulariopublicacion.hide(1000);
-			$(".boton_expandir").show(1000);
-		}
-
+		/*
 		if (text == 'Agregar'){
 			formularioexperiencia.hide(1000);
 			formularioformal.hide(1000);
 			formularioidioma.hide(1000);
 			formularionoformal.hide(1000);
 			formulariopublicacion.hide(1000);
-			$(".boton_expandir").show(1000);
-		}
-*/
+			$(".boton_expandir_idioma,.boton_expandir_informal,.boton_expandir_publicaciones,.boton_expandir_formal,.boton_expandir_laboral").show(1000);
+		}*/
    });
+
+/************************************************************************************************/
+   	$(".expandir_publicaciones").click(function(evento){	
+   		//alert("Has pulsado el enlace");
+		$("#formulariopublicacion").show(1000);
+		$(".expandir_publicaciones").hide(1000);
+	});
+   	$(".expandir_idioma").click(function(evento){	
+   		//alert("Has pulsado el enlace");
+		$("#formularioidioma").show(1000);
+		$(".expandir_idioma").hide(1000);
+	});
+	$(".expandir_informal").click(function(evento){	
+   		//alert("Has pulsado el enlace");
+		$("#formularionoformal").show(1000);
+		$(".expandir_informal").hide(1000);
+	});
+	$(".expandir_formal").click(function(evento){	
+   		//alert("Has pulsado el enlace");
+		$("#formularioformal").show(1000);
+		$(".expandir_formal").hide(1000);
+	});
+	$(".expandir_laboral").click(function(evento){	
+   		//alert("Has pulsado el enlace");
+		$("#formularioexperiencia").show(1000);
+		$(".expandir_laboral").hide(1000);
+	});
+/***************************************************************************************************/
+
+   	$(".cencelar_experiencia").click(function(evento){	
+		$("#formularioexperiencia").hide(1000);
+		$(".boton_expandir_laboral").show(1000);
+		$(".expandir_laboral").show(1000);
+	});
+   	$(".cencelar_formal").click(function(evento){	
+		$("#formularioformal").hide(1000);
+		$(".boton_expandir_formal").show(1000);
+		$(".expandir_formal").show(1000);
+	});
+   	$(".cencelar_idioma").click(function(evento){	
+		$("#formularioidioma").hide(1000);
+		$(".boton_expandir_idioma").show(1000);
+		$(".expandir_idioma").show(1000);
+	});
+	$(".cencelar_informal").click(function(evento){	
+		$("#formularionoformal").hide(1000);
+		$(".boton_expandir_informal").show(1000);
+		$(".expandir_informal").show(1000);
+	});
+	$(".cencelar_publicaciones").click(function(evento){	
+		$("#formulariopublicacion").hide(1000);
+		$(".boton_expandir_publicaciones").show(1000);
+		$(".expandir_publicaciones").show(1000);
+	});
+
+/*************************************************************************************************************/
 
 
    $(".inicializar").click(function(evento){	
@@ -64,25 +111,39 @@ $(document).ready(function(){
 	});
 
 
+
+    $(".elminiar_postulacion").click(function(evento){  
+      $('#myModal_misaplicaciones').modal('show');
+    });
+
    $(".oferta").click(function(evento){	
 		$('#contenedor').load('formulario_oferta.html');	
 	});
 
-      $(".configurar_cuenta").click(function(evento){	
+   $(".configurar_cuenta").click(function(evento){	
 		$('#contenedor').load('configurar_cuenta.html');	
 	});
+
+   $(".notificaciones_empleador").click(function(evento){	
+		$('#contenedor').load('notificaciones_empleador.html');	
+	});
+
+   $(".notificaciones_egresado").click(function(evento){	
+		$('#contenedor').load('notificaciones_egresado.html');	
+	});
+
+
+/********************************************************************************************************/
 
 /*
    $(".ofertas_empresa").click(function(evento){	
 		$('#contenedor').load('ofertas_empleo.html');
 	});
-
 */
 /*
    $(".formulario_oferta").click(function(evento){	
 		alert("hola mundo");
 	});
-
 */
 
     $(".mostrar_postulacion").click(function(evento){	
@@ -96,7 +157,6 @@ $(document).ready(function(){
 		$(".contenedor_postulaciones").css("display","none");
 		//formularioformal.show(1000);
 	});
-
 
 	$('#primer_tool').tooltip({
 
@@ -172,11 +232,25 @@ $(document).ready(function(){
     items: 8
     });
 
-
-
-
-
-
-
-
 });
+
+
+ /*********************************************************************************************************/
+
+     $(".ver_postulaciones").click(function(evento){  
+   		//alert("hola mundo");
+    	//$(".listado_aspirantes").css("display","inline");
+    	$(".listado_aspirantes").show(500);
+    	$(".ver_postulaciones").hide(500);
+    	$(".ocultar_postualacion").show(500);
+    });
+
+    $(".ocultar_postualacion").click(function(evento){  
+   		//alert("hola mundo");
+    	//$(".listado_aspirantes").css("display","inline");
+    	$(".listado_aspirantes").hide(500);
+    	$(".ver_postulaciones").show(500);
+    	$(".ocultar_postualacion").hide(500);
+    });
+
+/*************************************************************************************************************/
