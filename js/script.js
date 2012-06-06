@@ -128,9 +128,17 @@ $(document).ready(function(){
 		$('#contenedor').load('notificaciones_empleador.html');	
 	});
 
+
    $(".notificaciones_egresado").click(function(evento){	
 		$('#contenedor').load('notificaciones_egresado.html');	
 	});
+
+
+
+    $(".listar_empresas").click(function(evento){	
+		$('#listar_empresas').load('notificaciones_empleador.html');	
+	});
+
 
 
 /********************************************************************************************************/
@@ -254,3 +262,7 @@ $(document).ready(function(){
     });
 
 /*************************************************************************************************************/
+
+    $(".modal_enviar_correo").click(function(evento){  
+      $('#myModal3').modal('show');
+    });

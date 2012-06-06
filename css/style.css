@@ -47,7 +47,6 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
 .body{
     background:#fff;
     border-radius: 0.5em;
-    
     color: black;
     display: inline-block;
     width: 98%;
@@ -260,13 +259,25 @@ font-style: normal;
     text-align:right
 }
 
-.titulo_blanco_05em
+a.titulo_blanco_05em
 {
     font-size: 0.8em;
     font-weight: bold;
     color: #FFF;
     text-align:right
 }
+
+a.titulo_blanco_05em:hover{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #FFF;
+    text-align:right
+}
+
+a.titulo_blanco_05em:visited{
+    color: #FFF; 
+}
+
 
 .titulo_grande
 {
@@ -302,7 +313,6 @@ font-style: normal;
 }
 
 .centrar{
-
     text-align:center;
 }
 
@@ -424,6 +434,8 @@ div[class="body postulacion_mover"]{
 }
 
 
+
+
 div[class="body aspirante_hover"]{
     width:84%;
     margin-top: 1px;
@@ -455,4 +467,36 @@ div[class="body mis_aplicaciones"]{
     border-radius:20px;
 }
 
+.alert{
+    cursor:pointer;
+} 
 
+
+/********************************************************************************************************/
+
+.izquierda{
+    text-align:left;
+}
+
+
+form[class="well izquierda"]{
+    background: #FFFFFF;
+    width:30%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+}
+
+div[class="well administrador"]{
+    background: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+section[class="body admin"]{
+    width:60%;
+}
+
+article[class="container"]{
+    width:100%;
+}
