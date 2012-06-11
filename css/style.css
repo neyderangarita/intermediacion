@@ -7,8 +7,8 @@
  * GPL (GPL-LICENSE.txt) licenses.
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-    ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #FBDFDA; color: #000; text-shadow: none; }
+    ::selection { background: #FBDFDA; color: #000; text-shadow: none; }
 
 body{
 	color: #FF3030; 
@@ -475,7 +475,6 @@ div[class="body mis_aplicaciones"]{
     cursor:pointer;
 } 
 
-
 /********************************************************************************************************/
 
 .izquierda{
@@ -508,6 +507,11 @@ article[class="container"]{
 .pading_20px{
     padding-top: 20px;
     padding-bottom: 20px
+}
+
+.alinear{
+    margin-top: 77px;
+
 }
 /*******************************************   respinsive index   ********************************************************/
 #pagewrap {
