@@ -9,7 +9,7 @@
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
     ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
- 
+
 body{
 	color: #FF3030; 
     font-family: 'open sans',Arial,Sans-serif;
@@ -516,7 +516,7 @@ article[class="container"]{
 }
 #sidebar {
     width: 279px;
-    float: right;
+    float: left;
     /*margin: 30px 0 30px;*/
     background: white;
     padding: 3px;
@@ -526,7 +526,8 @@ article[class="container"]{
 #content {
     background: none;
     width: 837px;
-    float: left;
+    
+    float: right;
     margin: 0 auto;
     padding: 50px 3px 3px 3px;
 
