@@ -165,7 +165,7 @@ a:hover {
 .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 1144px;
 }
 .span12 {
   width: 940px;
@@ -4118,7 +4118,7 @@ footer {
     margin-bottom: 15px; }
 
 .navbar .container {
-  width: 940px; }
+  width: 1144px; }
 
 .navbar {
   position: absolute;

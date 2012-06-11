@@ -32,217 +32,197 @@
 
 </head>
 
-
 <body class="home" data-twttr-rendered="true">
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-<nav class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-    <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a>
-    <a class="brand" href="/">
-      <img width="310" height="30" alt="Ingermediacion Laboral" src="img/principal/logo.png">
-    </a>
-      <div class="nav-collapse">
-        <ul class="nav actions">
-          <li>
-            <a href="../intermediacion/index.html" style="display:none">Salir</a>
-          </li>
-        </ul>
 
-        <ul class="nav">
-          <li>
-            <a href="../intermediacion/index.html">INICIO</a>
-          </li>
-          <li>
-            <a href="../intermediacion/index.html">BUSCAR EMPLEO</a>
-          </li>
-          <li>
-            <a target="_blank" href="http://blog.kippt.com/">CONTACTO</a>
-          </li>
-        </ul>
+<div id="pagewrap">
+
+
+  <header id="header">
+
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">
+          <img width="310" height="30" alt="Ingermediacion Laboral" src="img/principal/logo.png">
+        </a>
+          <div class="nav-collapse">
+            <ul class="nav actions">
+              <li>
+                <a href="../intermediacion/index.html" style="display:none">Salir</a>
+              </li>
+            </ul>
+
+            <ul class="nav">
+              <li>
+                <a href="../intermediacion/index.html">INICIO</a>
+              </li>
+              <li>
+                <a href="../intermediacion/index.html">BUSCAR EMPLEO</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://blog.kippt.com/">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
-
-
-<div class="container">
-<article class="container">
-<!--
-  <header class="hero-unit">
--->
-
-<!--  
-      
-    <p class="intro"> Kippt makes it easy to save, search and read the information you find on the web. </p>
-    <p>
-      <a class="btn btn-green btn-large" href="/signup">Sign up, it's free</a>
-    </p>
+    </nav>
 
   </header>
--->
 
-<br><br><br><br><br><br><br>
-  <div class="fuente">Intermediación Laboral</div>
+  <!-- /#header -->
+  
+  <div id="content">
+    <br><br><br>
 
-  <section class="row screenshots"> 
+      <section id="websites">
+        <article>
 
+              <div id="ex5">  
+                <a  class="inicializar"  data-toggle="modal" href="#myModal" >
+                  <img class="imagen"  src="img/principal/sesion.png">
+                </a>  
+              </div>
+        </article>
 
-        <div class="span6">
+        <article>
+            <div >
+               <div id="ex5" >    
+                  <a  class=""  href="../intermediacion/registro_empresa.html" >
+                    <img class="imagen"  src="img/principal/empresa.png">
+                  </a>  
+                </div>
+            </div>
+        </article>
+      </section>
+    <!-- /.post -->
 
-          <div id="ex5">  
-            <a  class="inicializar"  data-toggle="modal" href="#myModal" >
-              <img class="imagen"  src="img/principal/sesion.png">
-            </a>  
-          </div>
+      <section class="buscador"> 
 
-          <section id="modal">
-            <div id="myModal" class="modal show"  style="display: none;"  >
-              <div class="modal-header">
-              <button class="close" data-dismiss="modal">×</button>
-              <h3>Iniciar Sesión en Intemediacion Laboral</h3>
-
-                <form class="form-horizontal" action="../intermediacion/index.html" method="post">
-                  <fieldset>
-                  <legend></legend>
-
-                  <div class="control-group">
-                    <label class="control-label" for="usuario">Usuario:</label>
-                    <div class="controls">
-                    <input type="text" class="input-xlarge" id="usuario" placeholder="Usuario" required>
-                    <p class="help-block "> </p>
-                    </div>
-                    <label class="control-label" for="Contraseña">Contraseña:</label>
-                    <div class="controls">
-                    <input type="text" class="input-xlarge" id="clave" placeholder="Contraseña" required>
-                    <p class="help-block"> </p>
-                    </div>
-                    <label class="control-label" for="tipo_usuario">Tipo de Usuario:</label>
-                    <div class="controls">
-                    <select id="tipo_usuario" required name="tipo_usuario" >
-                      <option>Seleccione una opción</option>
-                      <option>Egresado</option>
-                      <option>Empresa</option>
+                  <form class="well form-inline">
+                    <input type="text" class="input-mediun" placeholder="¿Qué empleo buscas?">
+                    <select id="Ciudad_empleo" name="Ciudad_empleo" class="span3" >
+                        <option value="" selected="selected" placeholder="¿Que empleo buscas?" >¿Dónde lo buscas?</option>
+                        <option value="1" >Villavicencio</option>
+                        <option value="2">Bogotá</option> 
                     </select>
-                    <p class="help-block"> </p>
-                    </div>
-
-                      <input class="btn btn-large btn-danger" type="submit"  value="Iniciar Sesión"/> 
-                      <input class="btn btn-large " type="submit" data-dismiss="modal" value="Cancelar"/> 
-
-                      <div class="controls">
-                      <label class="checkbox">
-                        <input type="checkbox" value="recuerdo_datos" id="optionsCheckboxList1" name="optionsCheckboxList1">
-                        <div class="content">Recuerda mis datos</div>
-                      </label>
-                      </div>
-
-                  </div> 
-                  </fieldset>
-
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                    <a class="titulo_blanco_05em" id="primer_tool"  href="../intermediacion/">neyder angarita osorio</a>
                 </form>
 
-              </div>
-              <div class="modal-footer">
-                ¿Necesitas ayuda? <a href="">olvidaste tu contraseña</a>
-              </div>
 
-            </div>
-          </section>
-        </div>
+      </section>
 
 
-
-      <div class="span6">
-         <div id="ex5" >    
-            <a  class=""  href="../intermediacion/registro_empresa.html" >
-              <img class="imagen"  src="img/principal/empresa.png">
-            </a>  
-          </div>
-
-      </div>
-
-  </section>
-
-
-  <section class="buscador"> 
-                  <form class="well form-inline" action="../intermediacion/listado_busqueda.html" method="post">
-                    <div class="row-fluid">
-
-                      <div class="span1">
-                      <label class="titulo_blanco">Buscar:</label>
-                      </div>
-
-                      <div class="span3">
-                      <input type="text" id="empleo_busqueda" name="empleo_busqueda" class="span3" placeholder="¿Qué empleo buscas?">
-                      </div>
-
-                      <div class="span3">
-                      <select id="Ciudad_empleo" name="Ciudad_empleo" class="span3" >
-                        <option value="" selected="selected" placeholder="¿Que empleo buscas?" >¿Dónde lo buscas?</option>
-                        <option value="1" ></option>
-                        <option value="2"></option> 
-                      </select>
-                      </div>
-
-                      <div class="span2">  
-                      <button type="submit" class="btn btn-primary">Buscar</button>
-                      </div>
-
-                      <div class="span3"> 
-                      <a class="titulo_blanco_05em" id="primer_tool"  href="../intermediacion/">neyder angarita osorio</a>
-
-                      </div>
-                    </div> 
-                  </form>
-  </section>
-
-<hr>
-<!--
-<section class="row testimonials">
-<section class="row beawesome">
-<section class="row screenshots">
-<section class="row features">
-  <div class="span4">
-    <blockquote>
-      <span>Kippt: a bookmarking app to watch</span>
-      <a href="http://www.readwriteweb.com/archives/kippt_a_bookmarking_app_to_watch.php">
-        <img alt="ReadWriteWeb" src="/static/img/readwriteweb.png">
-      </a>
-    </blockquote>
-  </div>
-  <div class="span4">
-    <blockquote>
-      <span>Kippt offers easy bookmarking, sharing and reading tools in one beautiful free app.</span>
-        <a class="appstorm" href="http://web.appstorm.net/reviews/data-management/get-the-most-out-of-your-bookmarks-with-kippt/#more-26916">Appstorm</a>
-    </blockquote>
-  </div>
-  <div class="span4">
-    <blockquote>
-      <span>Loving @kippt bookmark organizer! Simple, beautiful and easy to use. What else is needed?</span>
-        <a href="https://twitter.com/#!/nikosalonen/status/173766465781104640">@nikosalonen</a>
-    </blockquote>
-  </div>
-</section>
-<hr>
-<s
-ection class="row beawesome">
-  <h2>Be organized. Use Kippt.</h2>
-  <a class="btn btn-green btn-large" href="/signup">Sign up, it's free</a>
-</section>
---> 
-
-
-        <section class="body">
-          <div class="container-fluid">
+      <div class="container-fluid pading_20px">
             <div class="row-fluid">
-              <div class=" span3">  <!--Sidebar content-->
-                <br>
+              <div class=" span12">  <!--Sidebar content-->  
+
+                <div class="titulos">
+                  Ultimas ofertas de trabajo disponibles
+                </div>
+
+                <div id="" class="aviso destacado">
+                  <a title="Postulate a este empleo" href="">
+                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
+                    <span class="location">
+                      Sector:<em> Contabilidad. </em> | Antioquia
+                    </span>
+                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
+                    <span class="date">
+                    Aviso publicado:
+                    <b>20.04.2012</b>
+                    <em>» Ver oferta de trabajo/Postularte</em>
+                    </span>
+                  </a>
+                  <b class="bk-bottom"></b>
+                </div>
+
+                <div id="" class="aviso destacado">
+                  <a title="Postulate a este empleo" href="">
+                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
+                    <span class="location">
+                      Sector:<em> Contabilidad. </em> | Antioquia
+                    </span>
+                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
+                    <span class="date">
+                    Aviso publicado:
+                    <b>20.04.2012</b>
+                    <em>» Ver oferta de trabajo/Postularte</em>
+                    </span>
+                  </a>
+                  <b class="bk-bottom"></b>
+                </div>
+                <div id="" class="aviso destacado">
+                  <a title="Postulate a este empleo" href="">
+                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
+                    <span class="location">
+                      Sector:<em> Contabilidad. </em> | Antioquia
+                    </span>
+                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
+                    <span class="date">
+                    Aviso publicado:
+                    <b>20.04.2012</b>
+                    <em>» Ver oferta de trabajo/Postularte</em>
+                    </span>
+                  </a>
+                  <b class="bk-bottom"></b>
+                </div>
+                <div id="" class="aviso destacado">
+                  <a title="Postulate a este empleo" href="">
+                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
+                    <span class="location">
+                      Sector:<em> Contabilidad. </em> | Antioquia
+                    </span>
+                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
+                    <span class="date">
+                    Aviso publicado:
+                    <b>20.04.2012</b>
+                    <em>» Ver oferta de trabajo/Postularte</em>
+                    </span>
+                  </a>
+                  <b class="bk-bottom"></b>
+                </div>
+                <div id="" class="aviso destacado">
+                  <a title="Postulate a este empleo" href="">
+                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
+                    <span class="location">
+                      Sector:<em> Contabilidad. </em> | Antioquia
+                    </span>
+                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
+                    <span class="date">
+                    Aviso publicado:
+                    <b>20.04.2012</b>
+                    <em>» Ver oferta de trabajo/Postularte</em>
+                    </span>
+                  </a>
+                  <b class="bk-bottom"></b>
+                </div>
+
+              </div>
+            </div>
+          </div>
+     
+
+  </div>
+  <!-- /#content --> 
+
+  <aside id="sidebar">
+
+    <!-- /.widget -->
+        <br><br><br> <br><br><br>
+        <div class="pruebas">
+          <div class="container-fluid pading_20px">
+            <div class="row-fluid">
+              <div class=" span12">  <!--Sidebar content-->
+    
                 <article>  
                       <div class="titulo">
                         Encuesta
@@ -308,104 +288,101 @@ ection class="row beawesome">
 
 
                 </div>
-
-              <div class="span9">
-                  <div class="titulos">
-                    Ultimas ofertas de trabajo disponibles
-                  </div>
-
-
-                  <div id="" class="aviso destacado">
-                  <a title="Postulate a este empleo" href="">
-                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
-                    <span class="location">
-                      Sector:<em> Contabilidad. </em> | Antioquia
-                    </span>
-                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
-                    <span class="date">
-                    Aviso publicado:
-                    <b>20.04.2012</b>
-                    <em>» Ver oferta de trabajo/Postularte</em>
-                    </span>
-                  </a>
-                  <b class="bk-bottom"></b>
-                  </div>
-
-
-                  <div id="" class="aviso destacado">
-                  <a title="Postulate a este empleo" href="">
-                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
-                    <span class="location">
-                      Sector:<em> Contabilidad. </em> | Antioquia
-                    </span>
-                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
-                    <span class="date">
-                    Aviso publicado:
-                    <b>20.04.2012</b>
-                    <em>» Ver oferta de trabajo/Postularte</em>
-                    </span>
-                  </a>
-                  <b class="bk-bottom"></b>
-                  </div>
-
-
-                                    <div id="" class="aviso destacado">
-                  <a title="Postulate a este empleo" href="">
-                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
-                    <span class="location">
-                      Sector:<em> Contabilidad. </em> | Antioquia
-                    </span>
-                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
-                    <span class="date">
-                    Aviso publicado:
-                    <b>20.04.2012</b>
-                    <em>» Ver oferta de trabajo/Postularte</em>
-                    </span>
-                  </a>
-                  <b class="bk-bottom"></b>
-                  </div>
-
-
-                                    <div id="" class="aviso destacado">
-                  <a title="Postulate a este empleo" href="">
-                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
-                    <span class="location">
-                      Sector:<em> Contabilidad. </em> | Antioquia
-                    </span>
-                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
-                    <span class="date">
-                    Aviso publicado:
-                    <b>20.04.2012</b>
-                    <em>» Ver oferta de trabajo/Postularte</em>
-                    </span>
-                  </a>
-                  <b class="bk-bottom"></b>
-                  </div>
-
-
-                                    <div id="" class="aviso destacado">
-                  <a title="Postulate a este empleo" href="">
-                    <strong>Auxiliar de Cartera </strong> | Topleader S.A.
-                    <span class="location">
-                      Sector:<em> Contabilidad. </em> | Antioquia
-                    </span>
-                    <span class="description">Reconocida empresa, requiere Auxiliar de Cartera. Educación: Técnicos o tecnólogos auxiliares contables. Experiencia: De dos años en adelante, manejo y cobro de cartera, preferibl...</span>
-                    <span class="date">
-                    Aviso publicado:
-                    <b>20.04.2012</b>
-                    <em>» Ver oferta de trabajo/Postularte</em>
-                    </span>
-                  </a>
-                  <b class="bk-bottom"></b>
-                  </div>
               </div>
-              
             </div>
           </div>
-        </section>
 
-        <section>
-          <footer>
+<!--
+        <div class="pruebas">
+          <div class="container-fluid pading_20px">
+            <div class="row-fluid">
+              <div class=" span12">  <!--Sidebar content-->
+ <!--   
+                <article>  
+                      <div class="titulo">
+                        Noticias
+                      </div>
+
+                </article>
+                <br><br>
+                <article>  
+                      <div class="titulo">
+                       Calendario
+                      </div>
+
+                </article>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+-->
+
+    <!-- /.widget -->  
+
+  </aside>
+  <!-- /#sidebar -->
+            <section id="modal">
+              <div id="myModal" class="modal show"  style="display: none;"  >
+                <div class="modal-header">
+                <button class="close" data-dismiss="modal">×</button>
+                <h3>Iniciar Sesión en Intemediacion Laboral</h3>
+
+                  <form class="form-horizontal" action="../intermediacion/index.html" method="post">
+                    <fieldset>
+                    <legend></legend>
+
+                    <div class="control-group">
+                      <label class="control-label" for="usuario">Usuario:</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" id="usuario" placeholder="Usuario" required>
+                      <p class="help-block "> </p>
+                      </div>
+                      <label class="control-label" for="Contraseña">Contraseña:</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" id="clave" placeholder="Contraseña" required>
+                      <p class="help-block"> </p>
+                      </div>
+                      <label class="control-label" for="tipo_usuario">Tipo de Usuario:</label>
+                      <div class="controls">
+                      <select id="tipo_usuario" required name="tipo_usuario" >
+                        <option>Seleccione una opción</option>
+                        <option>Egresado</option>
+                        <option>Empresa</option>
+                      </select>
+                      <p class="help-block"> </p>
+                      </div>
+
+                        <input class="btn btn-large btn-danger" type="submit"  value="Iniciar Sesión"/> 
+                        <input class="btn btn-large " type="submit" data-dismiss="modal" value="Cancelar"/> 
+
+                        <div class="controls">
+                        <label class="checkbox">
+                          <input type="checkbox" value="recuerdo_datos" id="optionsCheckboxList1" name="optionsCheckboxList1">
+                          <div class="content">Recuerda mis datos</div>
+                        </label>
+                        </div>
+
+                    </div> 
+                    </fieldset>
+
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  ¿Necesitas ayuda? <a href="">olvidaste tu contraseña</a>
+                </div>
+
+              </div>
+            </section>
+
+
+
+  
+    
+    <section>
+      <footer id="footer">
 
           <div class="container-fluid">
             <div class="row-fluid">
@@ -455,10 +432,11 @@ ection class="row beawesome">
           </p>
           <p>&copy; 2012 Universidad de los Llanos</p>
 
-          </footer>
-        </section>   
-</article> <!-- /container -->
+      </footer>
+    </section> 
+  <!-- /#footer --> 
 </div>
+<!-- /#pagewrap -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
 <script src="js/libs/bootstrap/bootstrap.min.js"></script>
@@ -468,7 +446,6 @@ ection class="row beawesome">
 <script src="js/libs/bootstrap/modal.js"></script>
 <script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/plugins/prefixfree.dynamic-dom.min.js"></script>
 <script src="js/libs/bootstrap/tooltip.js"></script>
-
 <!--
 <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -478,4 +455,5 @@ ection class="row beawesome">
 </script>
 -->
 </body>
+
 </html>
