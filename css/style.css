@@ -6,6 +6,10 @@
  * Copyright (c) 2012  Neyder Angarita Osorio
  * GPL (GPL-LICENSE.txt) licenses.
  */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+    ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ 
 body{
 	color: #FF3030; 
     font-family: 'open sans',Arial,Sans-serif;
