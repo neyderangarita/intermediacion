@@ -563,12 +563,15 @@ article{
 #websites article{
     background:none;
 
-    border-radius:5px;
-    color: black;
+
+    /*border-radius:0px;
+    color: black;*/
     /*
     font-size:15px;
     margin:5px;
-    padding:10px;
+    */
+    padding: 0 50px 0 0;
+    /*
     width:37%;*/
 }
 .pruebas{
