@@ -138,6 +138,11 @@ $(document).ready(function(){
 	});
 
 
+   $(".ver_hoja_vida").click(function(evento){  
+   		$('#contenedor').load('vista_hv_empleador.html');
+    });
+
+
 /*
     $(".listar_empresas").click(function(evento){	
 		$('#listar_empresas').load('notificaciones_empleador.html');	
@@ -280,6 +285,15 @@ $(document).ready(function(){
 
 /*************************************************************************************************************/
 
-    $(".modal_enviar_correo").click(function(evento){  
-      $('#myModal3').modal('show');
+
+   $(".modal_enviar_correo").click(function(evento){  
+
+   		/*alert("hola mundo");*/
+         /*$('#myModal3').modal({
+            show: true
+          })*/
     });
+
+
+
+   
