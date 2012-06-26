@@ -290,6 +290,9 @@ $(document).ready(function(){
           })*/
     });
 	$(".mensaje_desactivada").html("<span class='titulos'><br><b>Oferta Desactivada!</b></span>");
-	
+	$(".nueva_notificacion").addClass("btn-info");
+	$(".nueva_notificacion1").addClass("icon-white");
+
+
 });
 
