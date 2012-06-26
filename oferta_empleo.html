@@ -1,13 +1,15 @@
 <script>
 $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
-  $(".formulario_oferta").click(function(){
-        $('#contenedor').load('formulario_oferta.html');
-  });
-  $('#mensaje_titulo_oferta').tooltip ('<p id="b1">Nota: Describa de forma breve el nombre del cargo vacante e incluya palabras claves que le permitan a los candidatos conocer de qu&eacute; se trata la oferta. Entre m&aacute;s claro sea el titulo, m&aacute;s ajustados ser&aacute;n los perfiles de los aspirantes que apliquen a la oferta</p>', { width: 200 });
+
 
    $(".alert_confirmar_publicar").click(function(evento){  
-    $('#myModal2').modal('show');
-    });
+
+
+         $('#myModal').modal({
+            show: true
+          })
+      });
+
 });
 </script>
 
@@ -37,7 +39,7 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                       <li>
                         <div class="fb-like" data-href="http://tuagendaonline.co.cc/empleo2/public/" data-send="true" data-width="500" data-show-faces="true" data-font="verdana"></div>
                       </li>
-                      <<li>
+                      <li>
                         <!-- Coloca esta etiqueta donde quieras que se muestre el botón +1. -->
                         <g:plusone size="medium" annotation="inline" width="250"></g:plusone>
 
@@ -56,7 +58,7 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
                   </div>
  
                 </div>
-                <div class="btn btn-large  btn-primary">Aplicar a Esta Oferta</div>
+                <a  data-toggle="modal" href="#myModal" class="btn btn-large  btn-primary alert_confirmar_publicar">Aplicar a Esta Oferta</a>
             </div>
           </div>
         </div> 
@@ -179,30 +181,61 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
   <div class="body">
     <div class="container-fluid derecha">
         <div class="row-fluid">
-            <div class="btn btn-large  btn-primary">Aplicar a Esta Oferta</div>
+            <div class="btn btn-large btn-primary">Aplicar a Esta Oferta</div>
         </div>
     </div>
   </div> 
 
-          <section id="modal">
-            <div id="myModal2" class="modal show"  style="display: none;"  >
-              <div class="modal-header">
-              <button class="close" data-dismiss="modal">×</button>
-                <form class="form-horizontal">
-                  <fieldset>
-                  <legend class="titulo centrar">¿Desea publicar la oferta de empleo? </legend>
-                  <div class="control-group centrar
-                  ">
-                            Si acepta la vacante empezará a salir en nuestro portal de empleo.
-                  </div> 
-                  </fieldset>
-                </form>
-                <form class="form-inline centrar">
-                       <a class="btn btn-large btn-danger" data-dismiss="modal" href="#"><i class="icon-remove icon-white"></i>  No</a>
-                       <a class="btn btn-large btn-danger"  href=" "  ><i class="icon-ok-circle icon-white"></i>Si</a>
-                </form>
+            <section id="modal">
+              <div id="myModal" class="modal show"  style="display: none;"  >
+                <div class="modal-header">
+                <button class="close" data-dismiss="modal">×</button>
+                <h3>Iniciar Sesión en Intemediacion Laboral</h3>
+
+                  <form class="form-horizontal" action="../intermediacion/index.html" method="post">
+                    <fieldset>
+                    <legend></legend>
+
+                    <div class="control-group">
+                      <label class="control-label" for="usuario">Usuario:</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" id="usuario" placeholder="Usuario" required>
+                      <p class="help-block "> </p>
+                      </div>
+                      <label class="control-label" for="Contraseña">Contraseña:</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" id="clave" placeholder="Contraseña" required>
+                      <p class="help-block"> </p>
+                      </div>
+                      <label class="control-label" for="tipo_usuario">Tipo de Usuario:</label>
+                      <div class="controls">
+                      <select id="tipo_usuario" required name="tipo_usuario" >
+                        <option>Seleccione una opción</option>
+                        <option>Egresado</option>
+                        <option>Empresa</option>
+                      </select>
+                      <p class="help-block"> </p>
+                      </div>
+
+                        <input class="btn btn-large btn-danger" type="submit"  value="Iniciar Sesión"/> 
+                        <input class="btn btn-large " type="submit" data-dismiss="modal" value="Cancelar"/> 
+
+                        <div class="controls">
+                        <label class="checkbox">
+                          <input type="checkbox" value="recuerdo_datos" id="optionsCheckboxList1" name="optionsCheckboxList1">
+                          <div class="content">Recuerda mis datos</div>
+                        </label>
+                        </div>
+
+                    </div> 
+                    </fieldset>
+
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  ¿Necesitas ayuda? <a href="">olvidaste tu contraseña</a>
+                </div>
+
               </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </section>
+            </section>
