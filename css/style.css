@@ -55,14 +55,17 @@ article, aside,div, details, figcaption, figure, footer, header, hgroup, menu, n
     display: inline-block;
     width: 98%;
     height:auto;
-    padding: 1em;
+    /*padding: 16px;*/
     margin:2em 10px 4em;
-    margin-top: 10px;
+    margin-top: 1px;
     margin-left: 3px; 
     margin-right: 3px; 
     padding-left: 5px;
     padding-right: 5px;
-    margin-bottom: 1em;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+
     box-shadow:0 15px 10px rgba(0, 0, 0, 0.08)
 }
 div[class="body"]{
@@ -440,14 +443,6 @@ div[class="body postulacion_mover"]{
 
 
 
-div[class="body aspirante_hover"]{
-    width:84%;
-    margin-top: 1px;
-    margin-bottom: 0.005em;
-    padding-top: 5px;
-    padding-bottom: 5px
-
-}
 
 .aspirante_hover:hover{
     background: #9DD;
@@ -465,6 +460,18 @@ div[class="body mis_aplicaciones"]{
     margin-top: 3px;
     margin-bottom: 0.005em
 }
+
+
+div[class="body aspirante_hover"]{
+    width:84%;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-top: 5px;
+    padding-bottom: 5px; 
+    margin-bottom: 0px;
+}
+
+
 
 .mis_aplicaciones:hover{
     background: #eee;
