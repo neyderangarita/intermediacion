@@ -187,13 +187,30 @@ font-style: normal;
 }
 
 /***********************************ELEMENTOS DEL FOOTER*****************************************/
+
+a{
+    color: #FF3030;  /****rojo****/
+}
+
 a:visited {
-color: #5F5F5F;  /****gis****/
+    color: #5F5F5F;  /****gis****/
+    text-decoration:none;
 }
-a 
-{
-color: #FF3030;  /****rojo****/
+
+a:link {
+    /*color: #FF3030;  ***rojo****/
 }
+
+a:active {
+    color: #FF3030;  /****rojo****/
+    text-decoration:none;
+}
+
+a:hover {
+    color: #FF3030;  /****rojo****/
+
+}
+
 /************************************titulos****************************************/
 .listar{
     display: inline-block;

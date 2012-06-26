@@ -5421,3 +5421,32 @@ section {
     margin-left: 30px;
   }
 }*/
+
+
+a{
+    color: #FF3030;  /****rojo****/
+}
+
+a:visited {
+    color: #5F5F5F;  /****gis****/
+    text-decoration:none;
+}
+
+a:link {
+    /*color: #FF3030;  ***rojo****/
+}
+
+a:active {
+    color: #FF3030;  /****rojo****/
+    text-decoration:none;
+}
+
+a:hover {
+    color: #FF3030;  /****rojo****/
+
+}
+
+a.btn.btn-large.btn-danger{
+
+  color: #fff; 
+}
