@@ -262,8 +262,6 @@ $(document).ready(function(){
     items: 8
     });
 
-});
-
 
  /*********************************************************************************************************/
 
@@ -284,8 +282,6 @@ $(document).ready(function(){
     });
 
 /*************************************************************************************************************/
-
-
    $(".modal_enviar_correo").click(function(evento){  
 
    		/*alert("hola mundo");*/
@@ -293,7 +289,7 @@ $(document).ready(function(){
             show: true
           })*/
     });
+	$(".mensaje_desactivada").html("<span class='titulos'><br><b>Oferta Desactivada!</b></span>");
+	
+});
 
-
-
-   
