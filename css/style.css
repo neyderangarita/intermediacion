@@ -475,7 +475,18 @@ div[class="body mis_aplicaciones"]{
     cursor:pointer;
 } 
 
-/********************************************************************************************************/
+
+#navi{
+    list-style:none;
+        margin:0;
+    padding:0;
+}
+
+#navi li {
+
+    float:left; //para eliminar el comportamiento de elemento de bloque(salto de linea)
+}
+/*****************************************ADMINISTRADOR*****************************************/
 
 .izquierda{
     text-align:left;
@@ -513,6 +524,9 @@ article[class="container"]{
     margin-top: 77px;
 
 }
+
+
+
 /*******************************************   respinsive index   ********************************************************/
 #pagewrap {
     width: 1144px;
@@ -520,7 +534,7 @@ article[class="container"]{
 }
 #sidebar {
     width: 279px;
-    float: left;
+    float: right;
     /*margin: 30px 0 30px;*/
     background: white;
     padding: 3px;
@@ -530,8 +544,8 @@ article[class="container"]{
 #content {
     background: none;
     width: 837px;
+    float: left;
     
-    float: right;
     margin: 0 auto;
     padding: 50px 3px 3px 3px;
 

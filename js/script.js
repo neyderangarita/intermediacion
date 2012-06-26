@@ -120,6 +120,10 @@ $(document).ready(function(){
 		$('#contenedor').load('formulario_oferta.html');	
 	});
 
+      $(".vista_oferta").click(function(evento){	
+		$('#contenedor').load('oferta_empleo.html');	
+	});
+
    $(".configurar_cuenta").click(function(evento){	
 		$('#contenedor').load('configurar_cuenta.html');	
 	});
@@ -134,11 +138,20 @@ $(document).ready(function(){
 	});
 
 
-
+/*
     $(".listar_empresas").click(function(evento){	
 		$('#listar_empresas').load('notificaciones_empleador.html');	
 	});
 
+*/
+
+/**************************************ADMINISTRADOR*****************************************/
+
+
+    $(".listar_empresas_administrador").click(function(evento){	
+		$('#listar_empresas').load('listar_empresas_administrador.html');	
+	});
+	
 
 
 /********************************************************************************************************/
@@ -189,7 +202,11 @@ $(document).ready(function(){
 
     $("input#ubicacion_empleo").typeahead({
 
-   	source: ["Colombia", "Alemania", "Argentina", "Aruba", "Australia", "Austria", "Bélgica" , "Bolivia", "Brasil", "Canadá", "Chile", "China", "Amazonas",	"Antioquia", "Arauca", "Atlántico",	
+   	source: [
+   	"Amazonas",
+   	"Antioquia", 
+   	"Arauca", 
+   	"Atlántico",	
 	"Bolívar",	
 	"Boyacá",	
 	"Caldas",	
