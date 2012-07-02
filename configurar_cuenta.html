@@ -30,6 +30,14 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
       //formularioformal.show(1000);
     });
 
+    $(".mostrar_usuario").click(function(evento){  
+        //alert("hola mundo");
+      $(".mostrar_cambiar_usurio").show(1000);
+      //formularioformal.show(1000);
+    });
+
+    
+
     $(".inicializar3").click(function(evento){  
       $('#myModal2').modal('show');
     });
@@ -46,6 +54,11 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
       //formularioformal.show(1000);
     });
 
+    $(".ocultar_usuario").click(function(evento){  
+        //alert("hola mundo");
+      $(".mostrar_cambiar_usurio").hide(1000);
+      //formularioformal.show(1000);
+    });
 
 });
 </script>
@@ -60,7 +73,7 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
               <div class="row-fluid">
                     <div class="span6">
                              <ul class="nav nav-tabs nav-stacked">
-                              <li >
+                              <li>
                                 
                                 <a class="mostrar_cuenta">
                                   <div class="btn">
@@ -69,8 +82,8 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                                   Cuenta
                                 </a>
                               </li>
-                              <li>
 
+                              <li>
                                 <a class="mostrar_contrasena">
                                 <div class="btn">
                                   <i class="icon-cog "></i>
@@ -78,6 +91,16 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                                   Contraseña
                                 </a>
                               </li>
+
+                              <li>
+                                <a class="mostrar_usuario">
+                                <div class="btn">
+                                  <i class="icon-cog "></i>
+                                </div>
+                                  Usuario
+                                </a>
+                              </li>
+
                             </ul>
                       </div>
 
@@ -141,6 +164,48 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                             </div>
                           </div>           
                         </div>
+
+                        <div class="well container-fluid modificado mostrar_cambiar_usurio" style="display:none">
+                          <div class="container-fluid">
+                            <div class="row-fluid">  
+                              <div class="span12"> <!--tabbable --> 
+                                <form class="form-horizontal" action="../intermediacion/empleador.html" method="post">
+                                    <fieldset>
+                                    <span class="titulos">Usuario</span>
+                                    <br><br>       
+                                    Cambia tu contraseña, o recupera la actual.
+                                    <hr>
+                                    <div class="control-group">
+
+                                      <label class="control-label" for="usuario_empresa">*Usuario (correo electrónico):</label>
+                                      <div class="controls">
+                                      <input type="text" class="input" required id="usuario_empresa" placeholder="Usuario Actual">
+                                      <p class="help-block"></p>
+                                      </div>
+                                      <br>
+                                      <label class="control-label" for="usuario_empresa">*Nuevo Usuario (correo electrónico):</label>
+                                      <div class="controls">
+                                      <input type="text" class="input" required id="nuevo_usuario_empresa" placeholder="Nuevo Usuario">
+                                      <p class="help-block"></p>
+                                      </div>
+
+                                    </div>   
+                                    <hr>
+                                    <input class="btn btn-large btn-danger" type="submit"  value="Guardar cambios"/> 
+                                    <div class="derecha">
+                                      <a class="btn btn-mini ocultar_usuario" title="Volver">
+                                          <i class="icon-share-alt"></i>
+                                      </a>
+                                    </div>
+                                    </fieldset>
+                                </form>
+                              </div>
+                            </div>
+                          </div>           
+                        </div>
+
+
+
                     </div>
               </div>
             </div>

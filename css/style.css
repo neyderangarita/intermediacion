@@ -702,3 +702,8 @@ smaller than 560
     }
 
 }
+
+
+input#confirmacion_clave.alinear_izquierda{
+    margin-right: 70px;
+}
