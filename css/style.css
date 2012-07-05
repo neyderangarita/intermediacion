@@ -189,7 +189,7 @@ font-style: normal;
 /***********************************ELEMENTOS DEL FOOTER*****************************************/
 
 a{
-    color: #FF3030;  /****rojo****/
+    color: #5F5F5F;  /****rojo****/
 }
 
 a:visited {
@@ -199,16 +199,16 @@ a:visited {
 
 a:link {
     /*color: #FF3030;  ***rojo****/
+
 }
 
 a:active {
-    color: #FF3030;  /****rojo****/
+    color: #5F5F5F;  /****rojo****/
     text-decoration:none;
 }
 
 a:hover {
-    color: #FF3030;  /****rojo****/
-
+    color: #5F5F5F;  /****rojo****/
 }
 
 /************************************titulos****************************************/
@@ -282,6 +282,34 @@ font-style: normal;
     color: #FFF;
     text-align:right
 }
+
+
+
+a.color_titulo_blanco{
+    color: #FFF;
+}
+
+a.color_titulo_blanco:visited {
+    color: #FFF;
+    text-decoration:none;
+}
+
+a.color_titulo_blanco:link {
+   color: #FFF;
+
+}
+
+a.color_titulo_blanco:active {
+    color: #FFF;
+    text-decoration:none;
+}
+
+a.color_titulo_blanco:hover {
+    color: #FFF;
+    text-decoration:none;
+}
+
+
 
 a.titulo_blanco_05em
 {
@@ -547,6 +575,12 @@ article[class="container"]{
 .alinear{
     margin-top: 77px;
 
+}
+
+.juntar{
+    display: inline-block;
+    padding-left: 5px;
+    margin: 0;
 }
 
 

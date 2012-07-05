@@ -133,13 +133,17 @@ $(document).ready(function(){
 	});
 
 
-   $(".notificaciones_egresado").click(function(evento){	
-		$('#contenedor').load('notificaciones_egresado.html');	
+   $(".postulaciones").click(function(evento){	
+		$('#contenedor').load('postulaciones.html');	
 	});
 
 
    $(".ver_hoja_vida").click(function(evento){  
    		$('#contenedor').load('vista_hv_empleador.html');
+    });
+
+   $(".actualizar_empresa").click(function(evento){  
+   		$('#contenedor').load('modificar_oferta.html');
     });
 
 
@@ -171,6 +175,14 @@ $(document).ready(function(){
 		alert("hola mundo");
 	});
 */
+	$(".ver").click(function(evento){	
+
+		$(".ver").css("display","none");
+		//formularioformal.show(1000);
+	});
+
+
+
 
     $(".mostrar_postulacion").click(function(evento){	
     	//alert("hola mundo");

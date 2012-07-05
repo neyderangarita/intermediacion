@@ -1,0 +1,371 @@
+
+      <div class="container-fluid"> <!--container-fluid -->      
+        <div class="row-fluid">  <!--row-fluid -->
+
+                      <div class="body">
+                        <div class="container-fluid">
+                          <div class="row-fluid">
+                          <div class="span12">
+
+                            
+                            <legend><span class="titulos">Actualizar Datos de la Empresa</span></legend>
+                              <div class="centrar">
+                              <form class=""  action="../intermediacion/mensaje__registro_exitoso.html" method="post">
+                                <fieldset>
+                            <div class="row-fluid">
+
+                                <div class="span6"><!--abre span6-->
+
+
+                                    <div class="titulos content">Datos de la Empresa:</div>
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="empresa"><span class="titulos">*Empresa: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="empresa" id="empresa" size="25" required placeholder="Empresa"/>
+                                      </div> 
+                                      <p class="help-block" for="empresa" style="display:none">Supporting help text</p> 
+                                    </div>
+
+                                    <div class="control-group">      
+                                      <label  class="control-label"  for="id_empresa">
+                                        <span class="titulos">*Tipo de identificación: </span>
+                                        <a href="#" id="example" rel="tooltip" title="Elija el sector y subsecor que mas se aproxime al que pertenece la empresa">
+                                        <i id="" class="icon-question-sign"></i>  </a>
+                                      </label>
+
+                                      <div class="controls">
+                                        <select id="id_empresa" name="id_empresa" required>
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1">NIT</option>
+                                        <option value="2">Otra identificacion</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="id_empresa" style="display:none">help text</p>
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label  class="control-label"  for="sector">
+                                        <span class="titulos">*Sector de la Empresa: </span>
+                                        <a href="#" id="example" rel="tooltip" title="Elija el sector y subsecor que mas se aproxime al que pertenece la empresa">
+                                        <i id="" class="icon-question-sign"></i>  </a>
+                                      </label>
+
+                                      <div class="controls">
+                                      <select id="sector" name="sector" required>
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="101">Agropecuario</option>
+                                          <option value="102">Alimentos</option>
+                                          <option value="103">Asegurador</option>
+                                          <option value="104">Bebidas y tabaco</option>
+                                          <option value="105">Comercio al por menor - retail</option>
+                                          <option value="106">Construcción</option>
+                                          <option value="107">Consultorías / Asesorías</option>
+                                          <option value="130">Consumo masivo</option>
+                                          <option value="108">Cuero y calzado</option>
+                                          <option value="109">Editorial e impresión</option>
+                                          <option value="110">Educativo</option>
+                                          <option value="111">Energético</option>
+                                          <option value="112">Entretenimiento</option>
+                                          <option value="113">Estatal y relacionados</option>
+                                          <option value="114">Financiero</option>
+                                          <option value="115">Manufactura</option>
+                                          <option value="116">Medios</option>
+                                          <option value="117">Minería, hierro, acero y otros materiales</option>
+                                          <option value="131">Naval</option>
+                                          <option value="132">Organizaciones No Gubernamentales</option>
+                                          <option value="134">Otros</option>
+                                          <option value="118">Plástico y caucho</option>
+                                          <option value="119">Productos de vidrio</option>
+                                          <option value="120">Publicidad y mercadeo</option>
+                                          <option value="121">Pulpa, papel y cartón</option>
+                                          <option value="122">Químicos</option>
+                                          <option value="123">Salud</option>
+                                          <option value="124">Servicios</option>
+                                          <option value="125">Tecnología</option>
+                                          <option value="126">Telecomunicaciones</option>
+                                          <option value="127">Textiles, prendas de vestir y calzado</option>
+                                          <option value="128">Transporte</option>
+                                          <option value="129">Vehículos y partes</option>
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="sector" style="display:none">help text</p>
+                                    </div>
+
+
+                                      <div class="control-group">      
+                                        <label class="control-label"  for="pais_empresa"><span class="titulos">*País:</span></label>
+                                        <div class="controls">
+                                        <select id="pais_empresa" name="pais_empresa" required>
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="12">Colombia</option>
+                                          <option value="17">Alemania</option>
+                                          <option value="2">Argentina</option>
+                                          <option value="101184083">Aruba</option>
+                                          <option value="3">Australia</option>
+                                          <option value="4">Austria</option>
+                                          <option value="5">Bélgica</option>
+                                          <option value="6">Bolivia</option>
+                                          <option value="7">Brasil</option>
+                                          <option value="9">Canadá</option>
+                                          <option value="10">Chile</option>
+                                          <option value="11">China</option>
+                                          <option value="14">Corea del Sur</option>
+                                          <option value="13">Costa Rica</option>
+                                          <option value="15">Cuba</option>
+                                          <option value="16">Curacao</option>
+                                          <option value="101123022">Dinamarca</option>
+                                          <option value="19">Ecuador</option>
+                                          <option value="46">El Salvador</option>
+                                          <option value="101124026">Escocia</option>
+                                          <option value="101231130">Eslovenia</option>
+                                          <option value="20">España</option>
+                                          <option value="53">Estados Unidos</option>
+                                          <option value="21">Francia</option>
+                                          <option value="24">Guatemala</option>
+                                          <option value="23">Guinea-Ecuatorial</option>
+                                          <option value="28">Haití</option>
+                                          <option value="27">Holanda</option>
+                                          <option value="26">Honduras</option>
+                                          <option value="25">Hong Kong</option>
+                                          <option value="29">Hungría</option>
+                                          <option value="31">India</option>
+                                          <option value="22">Inglaterra</option>
+                                          <option value="32">Irlanda</option>
+                                          <option value="30">Islas Comores</option>
+                                          <option value="33">Israel</option>
+                                          <option value="34">Italia</option>
+                                          <option value="35">Jamaica</option>
+                                          <option value="36">Japón</option>
+                                          <option value="101231131">Lituania</option>
+                                          <option value="37">México</option>
+                                          <option value="38">Nicaragua</option>
+                                          <option value="39">Noruega</option>
+                                          <option value="101124024">Nueva Zelanda</option>
+                                          <option value="40">Panamá</option>
+                                          <option value="45">Paraguay</option>
+                                          <option value="41">Perú</option>
+                                          <option value="42">Polonia</option>
+                                          <option value="44">Portugal</option>
+                                          <option value="43">Puerto Rico</option>
+                                          <option value="18">República Dominicana</option>
+                                          <option value="101124025">Rusia</option>
+                                          <option value="47">Suecia</option>
+                                          <option value="48">Suiza</option>
+                                          <option value="49">Trinidad y Tobago</option>
+                                          <option value="50">Turquía</option>
+                                          <option value="51">Ucrania</option>
+                                          <option value="52">Uruguay</option>
+                                          <option value="54">Venezuela</option>
+                                        </select>
+                                        </div>
+                                        <p class="help-block" for="pais_empresa" style="display:none">help text</p>
+                                      </div>
+
+                                      <div class="control-group">      
+                                        <label class="control-label"  for="departamento_empesa"><span class="titulos">*Departamento:</span></label>
+                                        <div class="controls">
+                                        <select id="departamento_empesa" name="departamento_empesa" required>
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="12">Meta</option>
+                                          <option value="17">Cundinamarca</option>
+                                          <option value="2">Antioquia</option>
+                                        </select>
+                                        </div>
+                                        <p class="help-block" for="departamento_empesa" style="display:none">help text</p>
+                                      </div>
+
+
+                                      <div class="control-group">      
+                                        <label class="control-label"  for="ciudad_empresa"><span class="titulos">*Ciudad:</span></label>
+                                        <div class="controls">
+                                        <select id="ciudad_empresa" name="ciudad_empresa" required>
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="12">villavicencio</option>
+                                          <option value="17"></option>
+                                          <option value="2"></option>
+                                        </select>
+                                        </div>
+                                        <p class="help-block" for="ciudad_empresa" style="display:none">help text</p>
+                                      </div>
+
+                                      <div class="control-group">
+                                        <label class="control-label" for="direccion_empresa"><span class="titulos">*Dirección de la empresa:  </span></label>
+                                        <div class="controls">
+                                          <input type="text" class="input" name="direccion_empresa" id="direccion_empresa" size="25" required placeholder="Direccion de la empresa"/>
+                                        </div>
+                                          <p class="help-block" for="direccion_empresa" style="display:none"> help text</p>
+                                      </div>
+                                      <hr>
+
+                                    <div class="titulos content">Datos de Contacto:</div>
+
+<br>
+                                      <div class="control-group">
+                                        <label class="control-label" for="user"><span class="titulos">*Nombres:</span></label>
+                                        <div class="controls">
+                                          <input value="neyder" type="text" class="input" name="nombres"  id="user" size="25" required placeholder="Nombres" disabled/>
+                                        </div>
+                                        <p class="help-block" for="user" style="display:none"> help text</p>
+                                      </div>
+
+                                      <div class="control-group">      
+                                        <label class="control-label"  for="identificacion"><span class="titulos">*Tipo de identificación:</span></label>
+                                        <div class="controls">
+                                        <select id="identificacion" name="identificacion" required>
+                                          <option value="">Por favor seleccione</option>
+                                          <option value="1" selected="selected">Cédula</option>
+                                          <option value="2">Cédula extranjería</option>
+                                          <option value="3">Pasaporte</option>
+                                          <option value="4">Tarjeta de Identidad</option>
+                                        </select>
+                                        </div>
+                                        <p class="help-block" for="identificacion" style="display:none">help text</p>
+                                      </div> 
+
+                                      <div class="control-group">
+                                        <label class="control-label" for="email"><span class="titulos">*Correo Electrónico: </span></label>
+                                        <div class="controls">
+                                          <div class="input-prepend">
+                                          <span class="add-on" style="margin-right: -5px;">
+                                            <i class="icon-envelope "></i>
+                                          </span>
+                                          <input type="text" class="input" name="email" id="inputIcon" style="margin-bottom: 0px; width: 186px;" size="25" required placeholder="Correo Electrónico"/>
+                                          </div>
+
+                                          <p class="help-block" for="email" style="display:none"> help text</p>
+                                        </div>
+                                      </div>
+
+
+                                      <div class="control-group">
+                                        <label class="control-label" for="celular"><span class="titulos">*Número Célular: </span></label>
+                                        <div class="controls">
+                                          <input type="text" class="input" name="celular" id="celular" size="25" required placeholder="Número Célular"/>
+                                        </div>
+                                          <p class="help-block" for="celular" style="display:none"> help text</p>
+                                      </div>
+
+                                </div>  <!--cierra span6-->
+
+                                <div class="span6">  <!--abre span6-->
+
+<br><br>                          <div class="control-group">
+                                      <label class="control-label" for="razon_social"><span class="titulos">*Razon social: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="razon_social" id="razon_social" size="25" required placeholder="Razon social"/>
+                                      </div> 
+                                      <p class="help-block" for="razon_social" style="display:none">Supporting help text</p> 
+                                    </div>
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="numero_id_empresa"><span class="titulos">*Numero de identificación: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="numero_id_empresa" id="numero_id_empresa" size="25" required placeholder="Numero de identificación"/>
+                                      </div> 
+                                      <p class="help-block" for="numero_id_empresa" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+                                    <div class="control-group">      
+                                      <label id="a10" class="control-label"  for="Subsector"><span class="titulos"> *Subsector de la empresa: </span></label>
+                                      <div class="controls">
+                                      <select id="Subsector" name="Subsector" required>
+
+                                        <option value="" selected="selected">Por favor seleccione</option>
+                                        <option value="1" ></option>
+                                        <option value="2"></option> 
+
+                                      </select>
+                                      </div>
+                                      <p class="help-block" for="Subsector" style="display:none">help text</p>
+                                    </div>
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="telefono_empresa"><span class="titulos">*Teléfono de la empresa: </span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="telefono_empresa" id="telefono_empresa" size="25" required placeholder="Teléfono Empresa"/>
+                                      </div> 
+                                      <p class="help-block" for="telefono_empresa" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+                                    <div class="control-group">
+                                      <label class="control-label"  for="descripcion_empresa">
+                                        <span class="titulos">*Descripcion de la empresa:</span>
+                                        <i id="descripcion_empresa" class="icon-question-sign"></i> 
+                                      </label>
+                                      <div class="controls">
+                                        <textarea id="textarea" class="input" cols="60" rows="7"></textarea>
+                                      </div>
+                                    </div>
+                                    
+                                    <hr style="margin-top: 20px;">
+
+                                    <br><br><br>
+
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="apellido">Apellidos:</label>
+                                      <div class="controls">
+                                      <input type="text" class="input" name="apell" value="angarita osorio" id="apellido" size="25" required placeholder="Apellido" disabled/>
+                                      </div> 
+                                      <p class="help-block" for="apellido" style="display:none">Supporting help text</p>
+                                    </div>
+
+                                    <div class="control-group">
+                                      <label class="control-label" for="num_document"><span class="titulos">*Documento de identificación:</span> </label> 
+                                      <div class="controls">              
+                                      <input type="text" class="input" name="num_document" value="01101000 01101001 " id="num_document" size="25" required placeholder="Identificación" disabled/>
+                                      </div> 
+                                      <p class="help-block" for="num_document" style="display:none">Supporting help text</p> 
+                                    </div>
+
+
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="email1">Correo Electrónico alterno: </label>
+                                        <div class="controls">
+                                          <div class="input-prepend">
+                                          <span class="add-on" style="margin-right: -5px;">
+                                            <i class="icon-envelope "></i>
+                                          </span>
+                                          <input type="text" class="input" name="email1" id="inputIcon" style="margin-bottom: 0px; width: 186px;" size="25"  placeholder="Correo Electrónico alterno"/>
+                                          </div>
+
+                                          <p class="help-block" for="email" style="display:none"> help text</p>
+                                        </div>
+                                    </div>
+
+
+                                      <div class="control-group">
+                                        <label class="control-label" for="telefono2">Teléfono oficina: </label>
+                                        <div class="controls">
+                                          <input type="text" class="input" name="telefono2" id="telefono2" size="25" placeholder="Teléfono oficina"/>
+                                        </div>
+                                          <p class="help-block" for="telefono2" style="display:none"> help text</p>
+                                      </div>
+
+                                    <div class="form-actions">
+                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Actualizar</button>
+
+                                      <a class="btn" href="../intermediacion/empleador.html"><i class="icon-remove-sign "></i>Cancelar</a>
+                                    </div>
+
+                                </div> <!--cierra span6--> 
+                            </div><!--cierra row-fluid-->
+
+                              </fieldset>
+                            </form>
+                            </div>
+
+                          </div><!--cierra span12-->
+                          </div><!--cierra row-fluid-->
+                        </div><!--cierra container-fluid-->
+                      </div><!--cierra body-->
+                      
+
+
+        </div>   <!--row-fluid -->
+      </div> <!--container-fluid -->
