@@ -9,19 +9,42 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
 $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
     
 
-/*
-	$(".notificaciones").click(function(evento){  
-     //alert("hola mundo");
+    $(".activar_empresa").click(function(evento){ 
 
-    $(".notificaciones").css("display","none");
-    $(".notificaciones_nuevas").css("display","inline");
+       $(".desactivar_empresa").show(500);
+       $(".activar_empresa").hide(500);
     });
-*/
 
-   	$(".desactivar_oferta").click(function(evento){  
-   		//alert("hola mundo");
-    	$(".oferta_inactiva").css("display","inline");
+
+    $(".desactivar_empresa").click(function(evento){ 
+       $(".activar_empresa").show(500);
+       $(".desactivar_empresa").hide(500);
     });
+
+
+
+    $(".ver_ofertas").click(function(evento){ 
+      $(".listado_ofertas").show(500);
+      $(".ocultar_ofertas").show(500);
+      $(".ver_ofertas").hide(500);
+    });
+
+    $(".ocultar_ofertas").click(function(evento){ 
+      $(".listado_ofertas").hide(500);
+      $(".ocultar_ofertas").hide(500);
+      $(".ver_ofertas").show(500);
+    });
+
+
+
+
+
+/************************************************************************************/
+    $(".desactivar_oferta").click(function(evento){  
+      //alert("hola mundo");
+      $(".oferta_inactiva").css("display","inline");
+    });
+
 
     $(".activar_oferta").click(function(evento){  
    		//alert("hola mundo");
@@ -34,7 +57,7 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
     	//$(".listado_aspirantes").css("display","inline");
     	$(".listado_aspirantes").show(500);
     	$(".ver_postulaciones").hide(500);
-    	$(".ocultar_postualacion").show(500);
+
     });
 
     $(".ocultar_postualacion").click(function(evento){  
@@ -75,188 +98,159 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
 
 
                         <div class="body mis_aplicaciones" >      
-                            <div class="container-fluid"> <!--container-fluid -->      
-                              <div class="row-fluid">  <!--row-fluid -->    
-                                <div class="span9">
-                                      <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
-                                      <div class="letra_notificacion listar">Ciudad: </div>
-                                      <div class="titulos2 listar">     Villavicencio</div>
-                                      <div class="letra_notificacion listar">sector: </div>
-                                      <div class="titulos2 listar"> Financiero</div>
-                                      <div class="letra_notificacion listar">NIT: </div>
-                                      <div class="titulos2 listar"> 860030380-2</div>
-                                      <br>
-                                      <br>
-                                      <b><div class="letra_notificacion listar">Aviso Publicado: </div></b>
-                                      <div class="titulos2 listar">20/06/2009</div>
-                                      <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
-                                      <div class="titulos2 listar">2</div>
+                          <div class="container-fluid"> <!--container-fluid -->      
+                            <div class="row-fluid">  <!--row-fluid -->    
+                              <div class="span9">
+                                <a href="">
+                                  <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
+                                </a>
+                                <div class="letra_notificacion listar">Ciudad: </div>
+                                  <div class="titulos2 listar">     Villavicencio</div>
+                                  <div class="letra_notificacion listar">sector: </div>
+                                  <div class="titulos2 listar"> Financiero</div>
+                                  <div class="letra_notificacion listar">NIT: </div>
+                                  <div class="titulos2 listar"> 860030380-2</div>
+                                  <br>
+                                  <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
+                                <div class="titulos2 listar">2</div>
+                              </div> 
 
-
-                                      <div style="display:none">
-                                        <div class="letra_notificacion listar">Nivel del cargo: </div>
-                                        <div class="titulos2 listar">Profesional senior</div>
-                                        <div class="letra_notificacion listar">Área o departamento del cargo: </div>
-                                        <div class="titulos2 listar">Produccion</div>
-                                        <b><div class="letra_notificacion listar">Teléfono de la empresa:</div></b>
-                                      <div class="titulos2 listar">6662094</div>
-                                      </div>
-                                </div> 
-                                <div class="span2 derecha">
-
-                                  <a class="btn btn-mini ver_postulaciones" title="Ver Postulaciones">
-                                  <i class="icon-user"></i>
-                                  </a>
-                                  <a class="btn btn-mini oferta" title="Modificar">
-                                  <i class="icon-edit"></i>
-                                  </a>
-
-                                  <a class="btn btn-mini desactivar_oferta" title="Eliminar">
-                                  <i class="icon-trash"></i>
-                                  <a class="btn btn-mini ocultar_postualacion" title="ocultar postulaciones" style="display:none">
+                              <div class="span2 derecha">
+                                <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
+                                  <i class="icon-eye-open"></i>
+                                </a>
+                                <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                                  <i class="icon-ok icon-white  "></i>
+                                </a> 
+                                <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                                  <i class="icon-remove"></i>
+                                </a>
+                                <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
                                   <i class=" icon-eject"></i>
-                                  </a>
-
-                                  <br><br><br>
-                                  <div class="titulos2"><a href="#">Ver oferta..</a></div>
-                                </div>
+                                </a>
+                                <br><br>
+                                <div class="titulos2"><a href="#">Ver oferta..</a></div>
                               </div>
-                            </div>                     
+                            </div>
+                          </div>                     
                         </div>
 
                         <div class="body mis_aplicaciones" >      
-                            <div class="container-fluid"> <!--container-fluid -->      
-                              <div class="row-fluid">  <!--row-fluid -->    
-                                <div class="span9">
-                                      <div id="mensaje_titulo_oferta" class="titulo_padind">ALQUERIA</div>
-                                      <div class="letra_notificacion listar">Ciudad: </div>
-                                      <div class="titulos2 listar">     Villavicencio</div>
-                                      <div class="letra_notificacion listar">sector: </div>
-                                      <div class="titulos2 listar"> Financiero</div>
-                                      <br>
-                                      <div class="titulos2 listar"> Reconocida empresa require analista programador con experiencia en desarrollo web y certificacion oracle</div>
-                                      <br>
-                                      <b><div class="letra_notificacion listar">Aviso Publicado:</div></b>
-                                      <div class="titulos2 listar">20/06/2009</div>
-                                      <b><div class="letra_notificacion listar">Cantidad de Postulaciones:</div></b>
-                                      <div class="titulos2 listar">2</div>
+                          <div class="container-fluid"> <!--container-fluid -->      
+                            <div class="row-fluid">  <!--row-fluid -->    
+                              <div class="span9">
+                                <a href="">
+                                  <div id="mensaje_titulo_oferta" class="titulo_padind">Samsung</div>
+                                </a>
+                                <div class="letra_notificacion listar">Ciudad: </div>
+                                  <div class="titulos2 listar">Bogotá</div>
+                                  <div class="letra_notificacion listar">sector: </div>
+                                  <div class="titulos2 listar"> Financiero</div>
+                                  <div class="letra_notificacion listar">NIT: </div>
+                                  <div class="titulos2 listar"> 860030380-2</div>
+                                  <br>
+                                  <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
+                                <div class="titulos2 listar">2</div>
+                              </div> 
 
-
-                                      <div style="display:none">
-                                        <div class="letra_notificacion listar">Nivel del cargo: </div>
-                                        <div class="titulos2 listar">Profesional senior</div>
-                                        <div class="letra_notificacion listar">Área o departamento del cargo: </div>
-                                        <div class="titulos2 listar">Produccion</div>
-                                        <b><div class="letra_notificacion listar">Teléfono de la empresa:</div></b>
-                                      <div class="titulos2 listar">6662094</div>
-                                      </div>
-                                </div> 
-                                <div class="span2 derecha">
-
-                                  <a class="btn btn-mini ver_postulaciones" title="Ver Postulaciones">
-                                  <i class="icon-user"></i>
-                                  </a>
-                                  <a class="btn btn-mini oferta" title="Modificar">
-                                  <i class="icon-edit"></i>
-                                  </a>
-
-                                  <a class="btn btn-mini desactivar_oferta" title="Eliminar">
-                                  <i class="icon-trash"></i>
-                                  <a class="btn btn-mini ocultar_postualacion" title="ocultar postulaciones" style="display:none">
+                              <div class="span2 derecha">
+                                <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
+                                  <i class="icon-eye-open"></i>
+                                </a>
+                                <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                                  <i class="icon-ok icon-white  "></i>
+                                </a> 
+                                <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                                  <i class="icon-remove"></i>
+                                </a>
+                                <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
                                   <i class=" icon-eject"></i>
-                                  </a>
-
-                                  <br><br><br>
-                                  <div class="titulos2"><a href="#">Ver oferta..</a></div>
-                                </div>
+                                </a>
+                                <br><br>
+                                <div class="titulos2"><a href="#">Ver oferta..</a></div>
                               </div>
-                            </div>                     
-                        </div>
-
-                        <div class="body mis_aplicaciones" >      
-                            <div class="container-fluid"> <!--container-fluid -->      
-                              <div class="row-fluid">  <!--row-fluid -->    
-                                <div class="span9">
-                                      <div id="mensaje_titulo_oferta" class="titulo_padind">SERDAN S.A</div>
-                                      <div class="letra_notificacion listar">Ciudad: </div>
-                                      <div class="titulos2 listar">     Villavicencio</div>
-                                      <div class="letra_notificacion listar">sector: </div>
-                                      <div class="titulos2 listar"> Financiero</div>
-                                      <br>
-                                      <div class="titulos2 listar"> Reconocida empresa require analista programador con experiencia en desarrollo web y certificacion oracle</div>
-                                      <br>
-                                      <b><div class="letra_notificacion listar">Aviso Publicado:</div></b>
-                                      <div class="titulos2 listar">20/06/2009</div>
-                                      <b><div class="letra_notificacion listar">Cantidad de Postulaciones:</div></b>
-                                      <div class="titulos2 listar">2</div>
-
-
-                                      <div style="display:none">
-                                        <div class="letra_notificacion listar">Nivel del cargo: </div>
-                                        <div class="titulos2 listar">Profesional senior</div>
-                                        <div class="letra_notificacion listar">Área o departamento del cargo: </div>
-                                        <div class="titulos2 listar">Produccion</div>
-                                        <b><div class="letra_notificacion listar">Teléfono de la empresa:</div></b>
-                                      <div class="titulos2 listar">6662094</div>
-                                      </div>
-                                </div> 
-                                <div class="span2 derecha">
-
-                                  <a class="btn btn-mini ver_postulaciones" title="Ver Postulaciones">
-                                  <i class="icon-user"></i>
-                                  </a>
-                                  <a class="btn btn-mini oferta" title="Modificar">
-                                  <i class="icon-edit"></i>
-                                  </a>
-
-                                  <a class="btn btn-mini desactivar_oferta" title="Eliminar">
-                                  <i class="icon-trash"></i>
-                                  <a class="btn btn-mini ocultar_postualacion" title="ocultar postulaciones" style="display:none">
-                                  <i class=" icon-eject"></i>
-                                  </a>
-
-                                  <br><br><br>
-                                  <div class="titulos2"><a href="#">Ver oferta..</a></div>
-                                </div>
-                              </div>
-                            </div>                     
+                            </div>
+                          </div>                     
                         </div>
 
 
 
-<!--
-                        <div class=" listado_aspirantes" style="display:none">
 
-                              <div class="body aspirante_hover">
-                                <div class="container-fluid"> <!--container-fluid -->   
-<!--                                  
-                                  <div class="row-fluid">  <!--row-fluid -->    
- <!--                                                   
-                                  <div class="span9 content">
-                                    <div class="titulos2 listar">         
-                                      <a href="">NEYDER ANGARITA OSORIO</a> 
+
+
+                        <div class="listado_ofertas" style="display:none">
+
+                              <div class="body aspirante_hover ">
+                                  <div class="container-fluid"> <!--container-fluid -->      
+                                    <div class="row-fluid">  <!--row-fluid -->              
+                                      <div class="span9 content ver_hoja_vida">
+                                        <div class="titulos2 listar">         
+                                          <b>
+                                            <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                                          </b>
+                                        </div>
+                                        <div class="letra_notificacion listar">Ciudad: </div>
+                                        <div class="titulos2 listar">     Villavicencio</div>
+                                        <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                                        <div class="titulos2 listar">20/06/2012</div>
+
+                                      </div>
+                                      <div class="span2 derecha" style="display:none">
+                                        <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
+                                        <i class=" icon-ok-circle "></i>
+                                        </a>
+                                        <a class="btn btn-mini" title="descartar">
+                                        <i class="icon-remove-circle"></i>
+                                        </a>
+                                      </div>
+                                                        
                                     </div>
-                                    <div class="letra_notificacion listar">Profesion: </div>
-                                    <div class="titulos2 listar">Ingeniero de sistemas</div>
-                                    <div class="letra_notificacion listar">Ciudad: </div>
-                                    <div class="titulos2 listar">     Villavicencio</div>
-                                    <b><div class="letra_notificacion listar">Fecha Aplicacion:</div></b>
-                                    <div class="titulos2 listar">20/06/2009</div>
+                                  </div>  
+                              </div>
 
+                              <div class="body aspirante_hover ">
+                                <div class="container-fluid"> <!--container-fluid -->      
+                                  <div class="row-fluid">  <!--row-fluid -->              
+                                      <div class="span9 content ver_hoja_vida">
+                                        <div class="titulos2 listar">         
+                                          <b>
+                                            <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                                          </b>
+                                        </div>
+                                        <div class="letra_notificacion listar">Ciudad: </div>
+                                        <div class="titulos2 listar">     Villavicencio</div>
+                                        <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                                        <div class="titulos2 listar">20/06/2012</div>
+
+                                      </div>
+                                      <div class="span2 derecha" style="display:none">
+                                        <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
+                                        <i class=" icon-ok-circle "></i>
+                                        </a>
+                                        <a class="btn btn-mini" title="descartar">
+                                        <i class="icon-remove-circle"></i>
+                                        </a>
+                                      </div>                        
                                   </div>
-                                  <div class="span2 derecha">
-                                    <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
-                                    <i class=" icon-ok-circle "></i>
-                                    </a>
-                                    <a class="btn btn-mini" title="descartar">
-                                    <i class="icon-remove-circle"></i>
-                                    </a>
-                                  </div>
-                                </div>
                                 </div>  
                               </div>
+
                         </div>
--->                                  
+
+                        <div class="centrar">                       
+                          <div class="pagination">
+                            <ul>
+                              <li><a href="#">Prev</a></li>
+                              <li class="active">
+                                <a href="#">1</a>
+                              </li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">Next</a></li>
+                            </ul>
+                          </div>
+                        </div>
 
                                        <section id="modal">
                                           <div id="myModal3" class="modal show"  style="display: none;"  >
