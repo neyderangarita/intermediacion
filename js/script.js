@@ -110,6 +110,10 @@ $(document).ready(function(){
 		$('#myModal').modal('show');
 	});
 
+    $(".registrar").click(function(evento){
+		$('#myModal1').modal('show');
+	});
+
 
 
     $(".elminiar_postulacion").click(function(evento){  
