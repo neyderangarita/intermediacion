@@ -18,163 +18,157 @@
 
 
   <script>
-      var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
-      for(var i = 0; i < e.length; i++) {
-        document.createElement(e[i]);
-      }
+  var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(',');
+  for(var i = 0; i < e.length; i++) {
+    document.createElement(e[i]);
+  }
   </script>
 
 
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script type="text/javascript" src="js/selectivizr-min.js"></script>
   <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
-<![endif]-->
+  <![endif]-->
 
 </head>
 
 <body class="home" data-twttr-rendered="true">
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 
-<nav class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-    <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
 
-    <a class="brand" href="/">
-      <img width="310" height="30" alt="Ingermediacion Laboral" src="img/principal/logo.png">
-    </a>
-      <div class="nav-collapse">
-        <ul class="nav actions">
-          <li>
-            <a href="/login/">Entrar</a>
-          </li>
-          <li>
-            <a href="/signup/">Salir</a>
-          </li>
-        </ul>
+        <a class="brand" href="/">
+          <img width="310" height="30" alt="Ingermediacion Laboral" src="img/principal/logo.png">
+        </a>
+        <div class="nav-collapse">
+          <ul class="nav actions">
+            <li>
+              <a href="/login/">Entrar</a>
+            </li>
+            <li>
+              <a href="/signup/">Salir</a>
+            </li>
+          </ul>
 
-        <ul class="nav">
-          <li>
-            <a href="../intermediacion/index.html">INICIO</a>
-          </li>
-          <li>
-            <a href="../intermediacion/index.html">BUSCAR EMPLEO</a>
-          </li>
-          <li>
-            <a target="_blank" href="http://blog.kippt.com/">CONTACTO</a>
-          </li>
-        </ul>
+          <ul class="nav">
+            <li>
+              <a href="../intermediacion/index.html">INICIO</a>
+            </li>
+            <li>
+              <a href="../intermediacion/index.html">BUSCAR EMPLEO</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://blog.kippt.com/">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="container">
-<article class="container">
-<br><br><br><br><br>
-      
-  <header>
-<div class="fuente">Registro Egresado</div>
-<br><br>
-  </header>
+  <div class="container">
+    <article class="container">
+      <br><br><br><br><br>
+
+      <header>
+        <div class="fuente">Registro Egresado</div>
+        <br><br>
+      </header>
 
 
-    <section class="body">   <!--section-body -->  
-      <div class="container-fluid"> <!--container-fluid -->      
-        <div class="row-fluid">  <!--row-fluid -->
+      <section class="body">   <!--section-body -->  
+        <div class="container-fluid"> <!--container-fluid -->      
+          <div class="row-fluid">  <!--row-fluid -->
 
-                      
-                      <div class="body">
-                        <div class="container-fluid">
+
+            <div class="body">
+              <div class="container-fluid">
+                <div class="row-fluid">
+                  Al finalizar la carga de tus datos presioná el botón "Registrarse". Los ítems destacados en <span class="titulos">rojo</span> son obligatorios.
+                </div>
+              </div>
+            </div>    
+
+
+            <div class="body">
+              <div class="container-fluid">
+                <div class="row-fluid">
+                  <div class="span12">
+
+
+                    <legend><span class="titulos">Registro Egresado</span></legend>
+                    <div class="centrar">
+                      <form class=""  action="../intermediacion/registro_datos_egresado.html" method="post">
+                        <fieldset>
                           <div class="row-fluid">
-                             Al finalizar la carga de tus datos presioná el botón "Registrarse". Los ítems destacados en <span class="titulos">rojo</span> son obligatorios.
-                          </div>
-                        </div>
-                      </div>    
+
+                            <div class="span6"><!--abre span6-->
+
+                              <div class="control-group">
+                                <div class="titulos content">Datos de usuario:</div>
+
+                                <label class="control-label" for="usuario_empresa"><span class="titulos">*(Codigo Universidad):</span></label>
+                                <div class="controls">
+                                  <input type="text" class="input" required id="usuario_empresa" placeholder="Codigo Universidad">
+                                  <p class="help-block"></p>
+                                </div>
+                              </div>
+                            </div>  <!--cierra span6-->
+
+                            <div class="span6">  <!--abre span6-->
+                              <br><br>                  
+                              <label class="control-label" for="confirmacion_clave"><span class="titulos">*Usuario:</span></label>
+                              <div class="controls">
+                                <input type="text" class="input" required id="confirmacion_clave" placeholder="Usuario">
+                                <p class="help-block"></p>
+                              </div>
+
+                              <label class="control-label" for="clave_empresa"><span class="titulos">*Contraseña:</span></label>
+                              <div class="controls">
+                                <input type="password" class="input" required id="clave_empresa" placeholder="Contraseña">
+                                <p class="help-block"></p>
+                              </div>
+                              <div class="alinear">
+                              </div>
 
 
-                      <div class="body">
-                        <div class="container-fluid">
-                          <div class="row-fluid">
-                          <div class="span12">
+                              <div class="form-actions">
+                                <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Registrarse</button>
+                                <a class="btn" href="../intermediacion/index.html"><i class="icon-remove-sign "></i>Cancelar</a>
+                              </div>
 
-                            
-                            <legend><span class="titulos">Registro Egresado</span></legend>
-                              <div class="centrar">
-                              <form class=""  action="../intermediacion/index.html" method="post">
-                                <fieldset>
-                            <div class="row-fluid">
-
-                                <div class="span6"><!--abre span6-->
-
-                                  <div class="control-group">
-                                    <div class="titulos content">Datos de usuario:</div>
-
-                                    <label class="control-label" for="usuario_empresa"><span class="titulos">*(Codigo Universidad):</span></label>
-                                    <div class="controls">
-                                    <input type="text" class="input" required id="usuario_empresa" placeholder="Codigo Universidad">
-                                    <p class="help-block"></p>
-                                    </div>
-
-
-
-
-                                  </div>
-
-                                </div>  <!--cierra span6-->
-
-                                <div class="span6">  <!--abre span6-->
-<br><br>                  
-
-                                    <label class="control-label" for="confirmacion_clave"><span class="titulos">*Usuario:</span></label>
-                                    <div class="controls">
-                                    <input type="text" class="input" required id="confirmacion_clave" placeholder="Usuario">
-                                    <p class="help-block"></p>
-                                    </div>
-
-                                   <label class="control-label" for="clave_empresa"><span class="titulos">*Contraseña:</span></label>
-                                    <div class="controls">
-                                    <input type="password" class="input" required id="clave_empresa" placeholder="Contraseña">
-                                    <p class="help-block"></p>
-                                    </div>
-                                    <div class="alinear">
-                                    </div>
-
-
-                                    <div class="form-actions">
-                                      <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Registrarse</button>
-                                      <a class="btn" href="../intermediacion/index.html"><i class="icon-remove-sign "></i>Cancelar</a>
-                                    </div>
-
-                                </div> <!--cierra span6--> 
-                            </div><!--cierra row-fluid-->
-
-                              </fieldset>
-                            </form>
-                            </div>
-
-                          </div><!--cierra span12-->
+                            </div> <!--cierra span6--> 
                           </div><!--cierra row-fluid-->
-                        </div><!--cierra container-fluid-->
-                      </div><!--cierra body-->
-                      
+
+                        </fieldset>
+                      </form>
+                    </div>
+
+                  </div><!--cierra span12-->
+                </div><!--cierra row-fluid-->
+              </div><!--cierra container-fluid-->
+            </div><!--cierra body-->
 
 
-        </div>   <!--row-fluid -->
-      </div> <!--container-fluid -->
-    </section>  <!--section-body -->  
+
+          </div>   <!--row-fluid -->
+        </div> <!--container-fluid -->
+      </section>  <!--section-body -->  
 
 
-<!---------------------------------------------------------------------------------------------------------------------------------------- -->
+      <!---------------------------------------------------------------------------------------------------------------------------------------- -->
 
       <hr>
-        <section>
-          <footer>
+      <section>
+        <footer>
 
           <div class="container-fluid">
             <div class="row-fluid">
@@ -216,30 +210,30 @@
           </div>
 
           <p>
-              <a href="/about">Conocenos</a>
-              |
-              <a href="http://egresados.unillanos.edu.co/">Programa Egresados</a>
-              |
-              <a href="http://www.unillanos.edu.co/">Universidad de los Llanos</a>
+            <a href="/about">Conocenos</a>
+            |
+            <a href="http://egresados.unillanos.edu.co/">Programa Egresados</a>
+            |
+            <a href="http://www.unillanos.edu.co/">Universidad de los Llanos</a>
           </p>
           <p>&copy; 2012 Universidad de los Llanos</p>
 
-            <div class="follow-buttons">
-              <div style="vertical-align:middle; margin-right:20px"> </div>
-            </div>
-          </footer>
-        </section>   
-</article> <!-- /container -->
-</div>
+          <div class="follow-buttons">
+            <div style="vertical-align:middle; margin-right:20px"> </div>
+          </div>
+        </footer>
+      </section>   
+    </article> <!-- /container -->
+  </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
-<script src="js/libs/bootstrap/bootstrap.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
-<script src="js/libs/bootstrap/tab.js"></script>
-<script src="js/libs/bootstrap/tooltip.js"></script>
-<script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/plugins/prefixfree.dynamic-dom.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')</script>
+  <script src="js/libs/bootstrap/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/libs/bootstrap/tab.js"></script>
+  <script src="js/libs/bootstrap/tooltip.js"></script>
+  <script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/plugins/prefixfree.dynamic-dom.min.js"></script>
 
 
 <!--

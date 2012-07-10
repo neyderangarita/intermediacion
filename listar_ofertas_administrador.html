@@ -7,18 +7,18 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
 
 <script>
 $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
-    
 
-    $(".activar_empresa").click(function(evento){ 
 
-       $(".desactivar_empresa").show(500);
-       $(".activar_empresa").hide(500);
+    $(".activar_egresado").click(function(evento){ 
+
+       $(".desactivar_egresado").show(500);
+       $(".activar_egresado").hide(500);
     });
 
 
-    $(".desactivar_empresa").click(function(evento){ 
-       $(".activar_empresa").show(500);
-       $(".desactivar_empresa").hide(500);
+    $(".desactivar_egresado").click(function(evento){ 
+       $(".activar_egresado").show(500);
+       $(".desactivar_egresado  ").hide(500);
     });
 
 
@@ -58,11 +58,11 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
 	                    <div class="notificaciones_nuevas">
 
 
-            			<legend><span class="titulos">Listado de Empresas</span></legend>
+            			<legend><span class="titulos">Listado de Ofertas</span></legend>
 
-                      Ingresa un dato para realizar la busqueda.
-                      <br>
-                      El sistema buscara por el siguiente criterio: Nombre empresa, Documento identificacion, Responsable, Email.
+                        Ingresa un dato para realizar la busqueda.
+                        <br>
+                        El sistema buscara por el siguiente criterio: nombre
 
                       <br><br>
 
@@ -114,29 +114,51 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                         </div>
                       </div>
 
-                      <div class="alert alert-error titulos2 centrar notificaciones">Encontrados <span class="titulo ">1500</span> que cumplen con los criterios de busqueda. </div>
-                      
-                      <hr>
+
+                      <div class="container-fluid">
+                        <div class="row-fluid">
+                          <div class="span12">
+                            <div class="container-fluid">
+                              <div class="row-fluid">
+                                <button type="submit" class="btn btn-danger">Activas</button>
+                                <button type="submit" class="btn btn-danger">Desactivadas</button>
+                                <button type="submit" class="btn btn-danger">Eliminadas</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+
+                      <div class="alert alert-error titulos2 centrar">Encontrados <span class="titulo ">1500</span> que cumplen con los criterios de busqueda. </div>
+                      <br>
+
                         <div class="body mis_aplicaciones" >      
                           <div class="container-fluid"> <!--container-fluid -->      
                             <div class="row-fluid">  <!--row-fluid -->    
-                              <div class="span8">
+                              <div class="span7">
                                 <a href="">
-                                  <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
+                                  <div id="nombre" class="titulo_padind">Neyder Angarita Osorio</div>
                                 </a>
-                                <div class="letra_notificacion listar">Ciudad: </div>
-                                  <div class="titulos2 listar">     Villavicencio</div>
-                                  <div class="letra_notificacion listar">sector: </div>
-                                  <div class="titulos2 listar"> Financiero</div>
-                                  <div class="letra_notificacion listar">NIT: </div>
-                                  <div class="titulos2 listar"> 860030380-2</div>
+                                  <b><div class="letra_notificacion listar">Profesion: </div></b>
+                                  <div class="titulos2 listar">     Ingeniería de sistemas</div>
+                                  <b><div class="letra_notificacion listar">Ciudad: </div></b>
+                                  <div class="titulos2 listar"> Villavicencio</div>
+                                  <b><div class="letra_notificacion listar">Cédula: </div></b>
+                                  <div class="titulos2 listar"> 1121836677</div>
                                   <br>
-                                  <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
-                                <div class="titulos2 listar">2</div>
+                                  <b><div class="letra_notificacion listar">Usuario:</div></b>
+                                  <div class="titulos2 listar">miusuario</div>
+                                  <b><div class="letra_notificacion listar">Email:</div></b>
+                                  <div class="titulos2 listar">neyder6101@hotmail.com</div>
                               </div> 
 
-                              <div class="span3 derecha">
-                                <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
+                              <div class="span4 derecha">
+
+                                
+                                <input type="checkbox" value="">
+
+                                <a class="btn btn-mini ver_ofertas" title="Ver Postulaciones">
                                   <i class="icon-eye-open"></i>
                                 </a>
 
@@ -145,7 +167,7 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                                 </a>
 
 
-                                <a class="btn btn-mini " title="Ver Todos los datos">
+                                <a class="btn btn-mini " title="Ver HV">
                                   <i class="icon-list-alt"></i>
                                 </a>
 
@@ -158,103 +180,32 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                                 </a>
 
 
-
-
-                                <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                                <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
                                   <i class="icon-ok icon-white  "></i>
                                 </a> 
 
 
-                                <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                                <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
                                   <i class="icon-remove"></i>
                                 </a>
+
                                 <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
                                   <i class=" icon-eject"></i>
                                 </a>
-                                <br><br>
-                                <div class="titulos2"><a href="#">Ver oferta..</a></div>
+
                               </div>
+
                             </div>
                           </div>                     
                         </div>
-
-                        
-
-
-                        <div class="body mis_aplicaciones" >      
-                          <div class="container-fluid"> <!--container-fluid -->      
-                            <div class="row-fluid">  <!--row-fluid -->    
-                              <div class="span8">
-                                <a href="">
-                                  <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
-                                </a>
-                                <div class="letra_notificacion listar">Ciudad: </div>
-                                  <div class="titulos2 listar">     Villavicencio</div>
-                                  <div class="letra_notificacion listar">sector: </div>
-                                  <div class="titulos2 listar"> Financiero</div>
-                                  <div class="letra_notificacion listar">NIT: </div>
-                                  <div class="titulos2 listar"> 860030380-2</div>
-                                  <br>
-                                  <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
-                                <div class="titulos2 listar">2</div>
-                              </div> 
-
-                              <div class="span3 derecha">
-                                <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
-                                  <i class="icon-eye-open"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Modificar">
-                                  <i class="icon-pencil"></i>
-                                </a>
-
-
-                                <a class="btn btn-mini " title="Ver Todos los datos">
-                                  <i class="icon-list-alt"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Eliminar">
-                                  <i class="icon-trash"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Recordar Contraseña">
-                                  <i class="icon-barcode"></i>
-                                </a>
-
-
-
-
-                                <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
-                                  <i class="icon-ok icon-white  "></i>
-                                </a> 
-
-
-                                <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
-                                  <i class="icon-remove"></i>
-                                </a>
-                                <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
-                                  <i class=" icon-eject"></i>
-                                </a>
-                                <br><br>
-                                <div class="titulos2"><a href="#">Ver oferta..</a></div>
-                              </div>
-                            </div>
-                          </div>                     
-                        </div>
-
-
-
-
-
-
-
+      
 
                         <div class="listado_ofertas" style="display:none">
 
                               <div class="body aspirante_hover ">
                                   <div class="container-fluid"> <!--container-fluid -->      
                                     <div class="row-fluid">  <!--row-fluid -->              
-                                      <div class="span9 content ver_hoja_vida">
+                                      <div class="span12 content">
                                         <div class="titulos2 listar">         
                                           <b>
                                             <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
@@ -262,17 +213,10 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                                         </div>
                                         <div class="letra_notificacion listar">Ciudad: </div>
                                         <div class="titulos2 listar">     Villavicencio</div>
-                                        <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                                        <b><div class="letra_notificacion listar">Fecha de Postulacion:</div></b>
                                         <div class="titulos2 listar">20/06/2012</div>
 
-                                      </div>
-                                      <div class="span2 derecha" style="display:none">
-                                        <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
-                                        <i class=" icon-ok-circle "></i>
-                                        </a>
-                                        <a class="btn btn-mini" title="descartar">
-                                        <i class="icon-remove-circle"></i>
-                                        </a>
+
                                       </div>
                                                         
                                     </div>
@@ -280,9 +224,9 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                               </div>
 
                               <div class="body aspirante_hover ">
-                                <div class="container-fluid"> <!--container-fluid -->      
-                                  <div class="row-fluid">  <!--row-fluid -->              
-                                      <div class="span9 content ver_hoja_vida">
+                                  <div class="container-fluid"> <!--container-fluid -->      
+                                    <div class="row-fluid">  <!--row-fluid -->              
+                                      <div class="span12 content">
                                         <div class="titulos2 listar">         
                                           <b>
                                             <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
@@ -290,20 +234,13 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                                         </div>
                                         <div class="letra_notificacion listar">Ciudad: </div>
                                         <div class="titulos2 listar">     Villavicencio</div>
-                                        <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                                        <b><div class="letra_notificacion listar">Fecha de Postulacion:</div></b>
                                         <div class="titulos2 listar">20/06/2012</div>
 
                                       </div>
-                                      <div class="span2 derecha" style="display:none">
-                                        <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
-                                        <i class=" icon-ok-circle "></i>
-                                        </a>
-                                        <a class="btn btn-mini" title="descartar">
-                                        <i class="icon-remove-circle"></i>
-                                        </a>
-                                      </div>                        
-                                  </div>
-                                </div>  
+                                                        
+                                    </div>
+                                  </div>  
                               </div>
 
                         </div>

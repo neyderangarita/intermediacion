@@ -165,7 +165,13 @@ $(document).ready(function(){
 		$('#listar_empresas').load('listar_empresas_administrador.html');	
 	});
 	
+    $(".listar_egresados_administrador").click(function(evento){	
+		$('#listar_empresas').load('listar_egresados_administrador.html');	
+	});
 
+	$(".listar_ofertas_administrador").click(function(evento){	
+		$('#listar_empresas').load('listar_ofertas_administrador.html');	
+	});
 
 
 

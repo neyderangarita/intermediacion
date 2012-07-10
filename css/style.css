@@ -349,7 +349,8 @@ a.titulo_blanco_05em:visited{
     color: #FFF;
     text-align:right;
     margin-top: 10px;
-    margin-right:10px
+    margin-right:10px;
+    padding-left: 50px;
 }
 
 /**********************************************************************************/
