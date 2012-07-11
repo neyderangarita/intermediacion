@@ -491,7 +491,7 @@ div[class="body postulacion_mover"]{
 
 
 .aspirante_hover:hover{
-    background: #9DD;
+    background: #E2F1F1;
     border-radius:50px;
 
 }
@@ -769,4 +769,10 @@ width: 64px;
 height: 64px;
 background: url(../img/result.png);
 background-position: 0px -148px;
+}
+
+
+.imagen_cool{
+    border-radius:10px;
+    text-shadow:10px;
 }

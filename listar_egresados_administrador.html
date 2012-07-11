@@ -9,31 +9,36 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
 $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
 
 
-    $(".activar_egresado").click(function(evento){ 
+  $(".activar_egresado").click(function(evento){ 
 
-       $(".desactivar_egresado").show(500);
-       $(".activar_egresado").hide(500);
+   $(".desactivar_egresado").show(500);
+   $(".activar_egresado").hide(500);
+ });
+
+
+  $(".desactivar_egresado").click(function(evento){ 
+   $(".activar_egresado").show(500);
+   $(".desactivar_egresado  ").hide(500);
+ });
+
+
+
+  $(".ver_ofertas").click(function(evento){ 
+    $(".listado_ofertas").show(500);
+    $(".ocultar_ofertas").show(500);
+    $(".ver_ofertas").hide(500);
+  });
+
+  $(".ocultar_ofertas").click(function(evento){ 
+    $(".listado_ofertas").hide(500);
+    $(".ocultar_ofertas").hide(500);
+    $(".ver_ofertas").show(500);
+  });
+
+   $(".ver_hv").click(function(evento){  
+      $('.administrador').load('vista_hv_empleador.html');
     });
-
-
-    $(".desactivar_egresado").click(function(evento){ 
-       $(".activar_egresado").show(500);
-       $(".desactivar_egresado  ").hide(500);
-    });
-
-
-
-    $(".ver_ofertas").click(function(evento){ 
-      $(".listado_ofertas").show(500);
-      $(".ocultar_ofertas").show(500);
-      $(".ver_ofertas").hide(500);
-    });
-
-    $(".ocultar_ofertas").click(function(evento){ 
-      $(".listado_ofertas").hide(500);
-      $(".ocultar_ofertas").hide(500);
-      $(".ver_ofertas").show(500);
-    });
+  
 
 
 
@@ -42,224 +47,412 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
 
 
 <div class="container-fluid"> <!--container-fluid -->      
-    <div class="row-fluid">  <!--row-fluid -->
-        <div class="span12"> <!--tabbable -->      
-	        <div class="body">
-	        	<div class="container-fluid">
-	            	<div class="row-fluid">
-				    <div class="span12 "> <!--tabbable -->      
+  <div class="row-fluid">  <!--row-fluid -->
+    <div class="span12"> <!--tabbable -->      
+     <div class="body">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span12 "> <!--tabbable -->      
 
 
 <!--
 	                    <div class="alert alert-error titulos2 centrar notificaciones">Tiene <span class="titulo ">99</span> nuevas postulaciones nuevas</div>
--->                      
-	                    <br>
+                    -->                      
+                    <br>
 
-	                    <div class="notificaciones_nuevas">
+                    <div class="notificaciones_nuevas">
 
 
-            			<legend><span class="titulos">Listado de Egresados</span></legend>
+                     <legend><span class="titulos">Listado de Egresados</span></legend>
 
-                        Ingresa un dato para realizar la busqueda.
-                        <br>
-                        El sistema buscara por el siguiente criterio: Documento identificacion, Nombre, Apellidos, Email.
+                     Ingresa un dato para realizar la busqueda.
+                     <br>
+                     El sistema buscara por el siguiente criterio: Documento identificacion, Nombre, Apellidos, Email.
 
-                      <br><br>
+                     <br><br>
 
-                      <span class="titulos">Busqueda</span>
-                      <br>
-                      <br>
+                     <span class="titulos">Busqueda</span>
+                     <br>
+                     <br>
 
-                      <div class="container-fluid">
-                        <div class="row-fluid">
-                          <div class="span12">
-                            <div class="container-fluid">
-                              <div class="row-fluid">
-                                <form action="../intermediacion/listado_busqueda.html" method="post">
-                                        <div class="span4">
-                                              <div class="control-group">
-                                                  <label class="control-label" for="busqueda_empleo">
-                                                  <span class="titulos">Palabras clave</span>
-                                                  <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
-                                                  </label>
-                                                  <div class="controls">
-                                                  <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
-                                                  </div>
-                                                   <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
-                                              </div>
-                                        </div>  
-                                        <div class="span4">
-                                              <div class="control-group">
-                                                  <label class="control-label" for="busqueda_empleo">
-                                                  <span class="titulos">Ubicación</span>
-                                                  <!--<i id="mensaje_titulo_oferta" class="icon-question-sign"></i>  -->  
-                                                  </label>
+                     <div class="container-fluid">
+                      <div class="row-fluid">
+                        <div class="span12">
+                          <div class="container-fluid">
+                            <div class="row-fluid">
+                              <form action="../intermediacion/listado_busqueda.html" method="post">
+                                <div class="span3">
+                                  <div class="control-group">
+                                    <label class="control-label" for="busqueda_empleo">
+                                      <span class="titulos">Palabras clave</span>
+                                      <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                                    </label>
+                                    <div class="controls">
+                                      <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
+                                    </div>
+                                    <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                                  </div>
+                                </div>  
 
-                                                  <div class="controls">
-                                                  <input id="ubicacion_empleo" type="text" data-provide="typeahead" placeholder="¿Dónde lo buscas?"/>
-                                                  </div>
-                                                  <p class="help-block" for="ubicacion_empleo" style="display:none"> help text</p>
-                                              </div>
-                                        </div>
-
-                                        <div class="span2">  
-                                          <span class="titulos"></span>
-                                            <br>
-                                          <button type="submit" class="btn btn-danger">Buscar</button>
-                                        </div>
-                                </form>    
-                              </div>
+                                <div class="span2">  
+                                  <span class="titulos"></span>
+                                  <br>
+                                  <button type="submit" class="btn btn-danger">Buscar</button>
+                                </div>
+                              </form>    
                             </div>
                           </div>
                         </div>
                       </div>
+                    </div>
 
 
-                      <div class="alert alert-error titulos2 centrar notificaciones">Encontrados <span class="titulo ">1500</span> que cumplen con los criterios de busqueda. </div>
-                      <br>
+                    <div class="alert alert-error titulos2 centrar notificaciones">Encontrados <span class="titulo ">1500</span> que cumplen con los criterios de busqueda. </div>
+                    <br>
 
-                        <div class="body mis_aplicaciones" >      
-                          <div class="container-fluid"> <!--container-fluid -->      
-                            <div class="row-fluid">  <!--row-fluid -->    
-                              <div class="span7">
-                                <a href="">
-                                  <div id="nombre" class="titulo_padind">Neyder Angarita Osorio</div>
-                                </a>
-                                  <b><div class="letra_notificacion listar">Profesion: </div></b>
-                                  <div class="titulos2 listar">     Ingeniería de sistemas</div>
-                                  <b><div class="letra_notificacion listar">Ciudad: </div></b>
-                                  <div class="titulos2 listar"> Villavicencio</div>
-                                  <b><div class="letra_notificacion listar">Cédula: </div></b>
-                                  <div class="titulos2 listar"> 1121836677</div>
-                                  <br>
-                                  <b><div class="letra_notificacion listar">Usuario:</div></b>
-                                  <div class="titulos2 listar">miusuario</div>
-                                  <b><div class="letra_notificacion listar">Email:</div></b>
-                                  <div class="titulos2 listar">neyder6101@hotmail.com</div>
-                              </div> 
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span1">
+                            <img class="imagen_cool" src="img/dcfm.jpg" alt="perfil" width="50" height="50" title="perfil">
+                          </div>
+                          <div class="span7">
+                            <div class="juntar_sociales">
+                              <a href="">
+                                <div id="nombre" class="titulo_padind"> Diana Franco Mora</div>
+                              </a>
+                              <b><div class="letra_notificacion listar">Profesion: </div></b>
+                              <div class="titulos2 listar">     Ingeniería de sistemas</div>
+                              <b><div class="letra_notificacion listar">Ciudad: </div></b>
+                              <div class="titulos2 listar"> Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Cédula: </div></b>
+                              <div class="titulos2 listar"> 1121836677</div>
+                              <br>
+                              <b><div class="letra_notificacion listar">Usuario:</div></b>
+                              <div class="titulos2 listar">miusuario</div>
+                              <b><div class="letra_notificacion listar">Email:</div></b>
+                              <div class="titulos2 listar">neyder6101@hotmail.com</div>
+                            </div>
+                          </div> 
 
-                              <div class="span4 derecha">
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini ver_ofertas" title="Ver Postulaciones">
+                              <i class="icon-eye-open"></i>
+                            </a>
 
-                                
-                                <input type="checkbox" value="">
-
-                                <a class="btn btn-mini ver_ofertas" title="Ver Postulaciones">
-                                  <i class="icon-eye-open"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Modificar">
-                                  <i class="icon-pencil"></i>
-                                </a>
-
-
-                                <a class="btn btn-mini " title="Ver HV">
-                                  <i class="icon-list-alt"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Eliminar">
-                                  <i class="icon-trash"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Recordar Contraseña">
-                                  <i class="icon-barcode"></i>
-                                </a>
+                            <a class="btn btn-mini " title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
 
 
-                                <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
-                                  <i class="icon-ok icon-white  "></i>
-                                </a> 
+                            <a class="btn btn-mini ver_hv" title="Ver HV">
+                              <i class="icon-list-alt"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
 
 
-                                <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
-                                  <i class="icon-remove"></i>
-                                </a>
+                            <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
 
-                                <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
-                                  <i class=" icon-eject"></i>
-                                </a>
 
+                            <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+
+                          </div>
+
+                        </div>
+                      </div>                     
+                    </div>
+
+
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span1">
+                            <img class="imagen_cool" src="img/leito.jpg" alt="perfil" width="50" height="50" title="perfil">
+                          </div>
+                          <div class="span7">
+                            <div class="juntar_sociales">
+                              <a href="">
+                                <div id="nombre" class="titulo_padind">Leonardo Reina celeita</div>
+                              </a>
+                              <b><div class="letra_notificacion listar">Profesion: </div></b>
+                              <div class="titulos2 listar">     Ingeniería de sistemas</div>
+                              <b><div class="letra_notificacion listar">Ciudad: </div></b>
+                              <div class="titulos2 listar"> Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Cédula: </div></b>
+                              <div class="titulos2 listar"> 1121836677</div>
+                              <br>
+                              <b><div class="letra_notificacion listar">Usuario:</div></b>
+                              <div class="titulos2 listar">miusuario</div>
+                              <b><div class="letra_notificacion listar">Email:</div></b>
+                              <div class="titulos2 listar">neyder6101@hotmail.com</div>
+                            </div>
+                          </div> 
+
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini ver_ofertas" title="Ver Postulaciones">
+                              <i class="icon-eye-open"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
+
+
+                            <a class="btn btn-mini ver_hv" title="Ver HV">
+                              <i class="icon-list-alt"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
+
+
+                            <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
+
+
+                            <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+
+                          </div>
+
+                        </div>
+                      </div>                     
+                    </div>
+
+
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span1">
+                            <img class="imagen_cool" src="img/cesar_diaz.jpg" alt="perfil" width="50" height="50" title="perfil">
+                          </div>
+                          <div class="span7">
+                            <div class="juntar_sociales">
+                              <a href="">
+                                <div id="nombre" class="titulo_padind">Cesar Diaz</div>
+                              </a>
+                              <b><div class="letra_notificacion listar">Profesion: </div></b>
+                              <div class="titulos2 listar">     Ingeniería de sistemas</div>
+                              <b><div class="letra_notificacion listar">Ciudad: </div></b>
+                              <div class="titulos2 listar"> Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Cédula: </div></b>
+                              <div class="titulos2 listar"> 1121836677</div>
+                              <br>
+                              <b><div class="letra_notificacion listar">Usuario:</div></b>
+                              <div class="titulos2 listar">miusuario</div>
+                              <b><div class="letra_notificacion listar">Email:</div></b>
+                              <div class="titulos2 listar">neyder6101@hotmail.com</div>
+                            </div>
+                          </div> 
+
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini ver_ofertas" title="Ver Postulaciones">
+                              <i class="icon-eye-open"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
+
+
+                            <a class="btn btn-mini ver_hv" title="Ver HV">
+                              <i class="icon-list-alt"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
+
+
+                            <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
+
+
+                            <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+
+                          </div>
+
+                        </div>
+                      </div>                     
+                    </div>
+
+                                        <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span1">
+                            <img class="imagen_cool" src="img/richy.jpg" alt="perfil" width="50" height="50" title="perfil">
+                          </div>
+                          <div class="span7">
+                            <div class="juntar_sociales">
+                              <a href="">
+                                <div id="nombre" class="titulo_padind">Richard Morales Cespedez</div>
+                              </a>
+                              <b><div class="letra_notificacion listar">Profesion: </div></b>
+                              <div class="titulos2 listar">     Ingeniería de sistemas</div>
+                              <b><div class="letra_notificacion listar">Ciudad: </div></b>
+                              <div class="titulos2 listar"> Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Cédula: </div></b>
+                              <div class="titulos2 listar"> 1121836677</div>
+                              <br>
+                              <b><div class="letra_notificacion listar">Usuario:</div></b>
+                              <div class="titulos2 listar">miusuario</div>
+                              <b><div class="letra_notificacion listar">Email:</div></b>
+                              <div class="titulos2 listar">neyder6101@hotmail.com</div>
+                            </div>
+                          </div> 
+
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini ver_ofertas" title="Ver Postulaciones">
+                              <i class="icon-eye-open"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
+
+
+                            <a class="btn btn-mini ver_hv" title="Ver HV">
+                              <i class="icon-list-alt"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
+
+
+                            <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
+
+
+                            <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+
+                          </div>
+
+                        </div>
+                      </div>                     
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="listado_ofertas" style="display:none">
+
+                      <div class="body aspirante_hover ">
+                        <div class="container-fluid"> <!--container-fluid -->      
+                          <div class="row-fluid">  <!--row-fluid -->              
+                            <div class="span12 content">
+                              <div class="titulos2 listar">         
+                                <b>
+                                  <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                                </b>
                               </div>
+                              <div class="letra_notificacion listar">Ciudad: </div>
+                              <div class="titulos2 listar">     Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Fecha de Postulacion:</div></b>
+                              <div class="titulos2 listar">20/06/2012</div>
+
 
                             </div>
-                          </div>                     
-                        </div>
 
-                        
-
-
-
-
-
-
-
-
-
-                        <div class="listado_ofertas" style="display:none">
-
-                              <div class="body aspirante_hover ">
-                                  <div class="container-fluid"> <!--container-fluid -->      
-                                    <div class="row-fluid">  <!--row-fluid -->              
-                                      <div class="span12 content">
-                                        <div class="titulos2 listar">         
-                                          <b>
-                                            <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
-                                          </b>
-                                        </div>
-                                        <div class="letra_notificacion listar">Ciudad: </div>
-                                        <div class="titulos2 listar">     Villavicencio</div>
-                                        <b><div class="letra_notificacion listar">Fecha de Postulacion:</div></b>
-                                        <div class="titulos2 listar">20/06/2012</div>
-
-
-                                      </div>
-                                                        
-                                    </div>
-                                  </div>  
-                              </div>
-
-                              <div class="body aspirante_hover ">
-                                  <div class="container-fluid"> <!--container-fluid -->      
-                                    <div class="row-fluid">  <!--row-fluid -->              
-                                      <div class="span12 content">
-                                        <div class="titulos2 listar">         
-                                          <b>
-                                            <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
-                                          </b>
-                                        </div>
-                                        <div class="letra_notificacion listar">Ciudad: </div>
-                                        <div class="titulos2 listar">     Villavicencio</div>
-                                        <b><div class="letra_notificacion listar">Fecha de Postulacion:</div></b>
-                                        <div class="titulos2 listar">20/06/2012</div>
-
-                                      </div>
-                                                        
-                                    </div>
-                                  </div>  
-                              </div>
-
-                        </div>
-
-                        <div class="centrar">                       
-                          <div class="pagination">
-                            <ul>
-                              <li><a href="#">Prev</a></li>
-                              <li class="active">
-                                <a href="#">1</a>
-                              </li>
-                              <li><a href="#">2</a></li>
-                              <li><a href="#">3</a></li>
-                              <li><a href="#">4</a></li>
-                              <li><a href="#">Next</a></li>
-                            </ul>
                           </div>
-                        </div>
+                        </div>  
+                      </div>
 
-	                    </div> 
+                      <div class="body aspirante_hover ">
+                        <div class="container-fluid"> <!--container-fluid -->      
+                          <div class="row-fluid">  <!--row-fluid -->              
+                            <div class="span12 content">
+                              <div class="titulos2 listar">         
+                                <b>
+                                  <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                                </b>
+                              </div>
+                              <div class="letra_notificacion listar">Ciudad: </div>
+                              <div class="titulos2 listar">     Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Fecha de Postulacion:</div></b>
+                              <div class="titulos2 listar">20/06/2012</div>
 
-              		</div>
-            		</div>
-          		</div>
-          	</div> <!--tabbable -->      
+                            </div>
+
+                          </div>
+                        </div>  
+                      </div>
+
+                    </div>
+
+                    <div class="centrar">                       
+                      <div class="pagination">
+                        <ul>
+                          <li><a href="#">Prev</a></li>
+                          <li class="active">
+                            <a href="#">1</a>
+                          </li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">Next</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div> 
+
+                </div>
+              </div>
+            </div>
+          </div> <!--tabbable -->      
         </div>   <!--row-fluid -->
-    </div> <!--container-fluid -->
+      </div> <!--container-fluid -->
 </div> <!--container-fluid -->
