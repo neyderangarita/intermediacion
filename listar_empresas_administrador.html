@@ -7,33 +7,43 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
 
 <script>
 $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
-    
 
-    $(".activar_empresa").click(function(evento){ 
 
-       $(".desactivar_empresa").show(500);
-       $(".activar_empresa").hide(500);
+  $(".activar_empresa").click(function(evento){ 
+
+   $(".desactivar_empresa").show(500);
+   $(".activar_empresa").hide(500);
+ });
+
+
+  $(".desactivar_empresa").click(function(evento){ 
+   $(".activar_empresa").show(500);
+   $(".desactivar_empresa").hide(500);
+ });
+
+  $(".ver_ofertas").click(function(evento){ 
+    $(".listado_ofertas").show(500);
+    $(".ocultar_ofertas").show(500);
+    $(".ver_ofertas").hide(500);
+  });
+
+  $(".ocultar_ofertas").click(function(evento){ 
+    $(".listado_ofertas").hide(500);
+    $(".ocultar_ofertas").hide(500);
+    $(".ver_ofertas").show(500);
+  });
+
+
+   $(".actualizar_empresa").click(function(evento){  
+      $('.administrador').load('modificar_oferta.html');
     });
 
 
-    $(".desactivar_empresa").click(function(evento){ 
-       $(".activar_empresa").show(500);
-       $(".desactivar_empresa").hide(500);
+   $(".datos_empresa").click(function(evento){  
+      $('.administrador').load('datos_empresa.html');
     });
 
 
-
-    $(".ver_ofertas").click(function(evento){ 
-      $(".listado_ofertas").show(500);
-      $(".ocultar_ofertas").show(500);
-      $(".ver_ofertas").hide(500);
-    });
-
-    $(".ocultar_ofertas").click(function(evento){ 
-      $(".listado_ofertas").hide(500);
-      $(".ocultar_ofertas").hide(500);
-      $(".ver_ofertas").show(500);
-    });
 
 
 
@@ -42,293 +52,285 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
 
 
 <div class="container-fluid"> <!--container-fluid -->      
-    <div class="row-fluid">  <!--row-fluid -->
-        <div class="span12"> <!--tabbable -->      
-	        <div class="body">
-	        	<div class="container-fluid">
-	            	<div class="row-fluid">
-				    <div class="span12 "> <!--tabbable -->      
+  <div class="row-fluid">  <!--row-fluid -->
+    <div class="span12"> <!--tabbable -->      
+     <div class="body">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span12 "> <!--tabbable -->      
 
 
 <!--
 	                    <div class="alert alert-error titulos2 centrar notificaciones">Tiene <span class="titulo ">99</span> nuevas postulaciones nuevas</div>
--->                      
-	                    <br>
+                    -->                      
+                    <br>
 
-	                    <div class="notificaciones_nuevas">
+                    <div class="notificaciones_nuevas">
 
 
-            			<legend><span class="titulos">Listado de Empresas</span></legend>
+                     <legend><span class="titulos">Listado de Empresas</span></legend>
 
-                      Ingresa un dato para realizar la busqueda.
-                      <br>
-                      El sistema buscara por el siguiente criterio: Nombre empresa, Documento identificacion, Responsable, Email.
+                     Ingresa un dato para realizar la busqueda.
+                     <br>
+                     El sistema buscara por el siguiente criterio: Nombre empresa, Documento identificacion, Responsable, Email.
 
-                      <br><br>
+                     <br><br>
 
-                      <span class="titulos">Busqueda</span>
-                      <br>
-                      <br>
+                     <span class="titulos">Búsqueda</span>
+                     <br>
+                     <br>
 
-                      <div class="container-fluid">
-                        <div class="row-fluid">
-                          <div class="span12">
-                            <div class="container-fluid">
-                              <div class="row-fluid">
-                                <form action="../intermediacion/listado_busqueda.html" method="post">
-                                        <div class="span4">
-                                              <div class="control-group">
-                                                  <label class="control-label" for="busqueda_empleo">
-                                                  <span class="titulos">Palabras clave</span>
-                                                  <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
-                                                  </label>
-                                                  <div class="controls">
-                                                  <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
-                                                  </div>
-                                                   <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
-                                              </div>
-                                        </div>  
-                                        <div class="span4">
-                                              <div class="control-group">
-                                                  <label class="control-label" for="busqueda_empleo">
-                                                  <span class="titulos">Ubicación</span>
-                                                  <!--<i id="mensaje_titulo_oferta" class="icon-question-sign"></i>  -->  
-                                                  </label>
-
-                                                  <div class="controls">
-                                                  <input id="ubicacion_empleo" type="text" data-provide="typeahead" placeholder="¿Dónde lo buscas?"/>
-                                                  </div>
-                                                  <p class="help-block" for="ubicacion_empleo" style="display:none"> help text</p>
-                                              </div>
-                                        </div>
-
-                                        <div class="span2">  
-                                          <span class="titulos"></span>
-                                            <br>
-                                          <button type="submit" class="btn btn-danger">Buscar</button>
-                                        </div>
-                                </form>    
-                              </div>
+                     <div class="row-fluid">
+                      <form action="../intermediacion/listado_busqueda.html" method="post">
+                        <div class="span3">
+                          <div class="control-group">
+                            <label class="control-label" for="busqueda_empleo">
+                              <span class="titulos">Palabras clave</span>
+                              <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                            </label>
+                            <div class="controls">
+                              <input id="autocomplete" type="text" data-provide="typeahead" placeholder="ingresa su busqueda"/>
                             </div>
+                            <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                          </div>
+                        </div>  
+
+                        <div class="span2">  
+                          <span class="titulos"></span>
+                          <br>
+                          <button type="submit" class="btn btn-danger">Buscar</button>
+                        </div>
+                      </form>    
+                    </div>
+
+                    <div class="row-fluid">
+                      <div class="span12">
+                        <div class="container-fluid">
+                          <div class="row-fluid">
+                            <button type="submit" class="btn btn-danger">Activas</button>
+                            <button type="submit" class="btn btn-danger">Desactivadas</button>
                           </div>
                         </div>
                       </div>
+                    </div>
 
-                      <div class="alert alert-error titulos2 centrar notificaciones">Encontrados <span class="titulo ">1500</span> que cumplen con los criterios de busqueda. </div>
-                      
-                      <hr>
-                        <div class="body mis_aplicaciones" >      
-                          <div class="container-fluid"> <!--container-fluid -->      
-                            <div class="row-fluid">  <!--row-fluid -->    
-                              <div class="span8">
-                                <a href="">
-                                  <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
-                                </a>
-                                <div class="letra_notificacion listar">Ciudad: </div>
-                                  <div class="titulos2 listar">     Villavicencio</div>
-                                  <div class="letra_notificacion listar">sector: </div>
-                                  <div class="titulos2 listar"> Financiero</div>
-                                  <div class="letra_notificacion listar">NIT: </div>
-                                  <div class="titulos2 listar"> 860030380-2</div>
-                                  <br>
-                                  <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
-                                <div class="titulos2 listar">2</div>
-                              </div> 
+                    <br>
 
-                              <div class="span3 derecha">
-                                <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
-                                  <i class="icon-eye-open"></i>
-                                </a>
+                    <div class="alert alert-error titulos2 centrar notificaciones">Encontrados <span class="titulo ">1500</span> que cumplen con los criterios de busqueda. </div>
 
-                                <a class="btn btn-mini " title="Modificar">
-                                  <i class="icon-pencil"></i>
-                                </a>
+                    <hr>
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid -->    
+                          <div class="span8">
+                            <a href="">
+                              <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
+                            </a>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <div class="letra_notificacion listar">sector: </div>
+                            <div class="titulos2 listar"> Financiero</div>
+                            <div class="letra_notificacion listar">NIT: </div>
+                            <div class="titulos2 listar"> 860030380-2</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
+                            <div class="titulos2 listar">2</div>
+                          </div> 
 
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
+                              <i class="icon-eye-open"></i>
+                            </a>
 
-                                <a class="btn btn-mini " title="Ver Todos los datos">
-                                  <i class="icon-list-alt"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Eliminar">
-                                  <i class="icon-trash"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Recordar Contraseña">
-                                  <i class="icon-barcode"></i>
-                                </a>
+                            <a class="btn btn-mini actualizar_empresa" title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
 
 
+                            <a class="btn btn-mini datos_empresa" title="Ver Todos los datos">
+                              <i class="icon-list-alt"></i>
+                            </a>
 
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
 
-                                <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
-                                  <i class="icon-ok icon-white  "></i>
-                                </a> 
-
-
-                                <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
-                                  <i class="icon-remove"></i>
-                                </a>
-                                <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
-                                  <i class=" icon-eject"></i>
-                                </a>
-                                <br><br>
-                                <div class="titulos2"><a href="#">Ver oferta..</a></div>
-                              </div>
-                            </div>
-                          </div>                     
-                        </div>
-
-                        
-
-
-                        <div class="body mis_aplicaciones" >      
-                          <div class="container-fluid"> <!--container-fluid -->      
-                            <div class="row-fluid">  <!--row-fluid -->    
-                              <div class="span8">
-                                <a href="">
-                                  <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
-                                </a>
-                                <div class="letra_notificacion listar">Ciudad: </div>
-                                  <div class="titulos2 listar">     Villavicencio</div>
-                                  <div class="letra_notificacion listar">sector: </div>
-                                  <div class="titulos2 listar"> Financiero</div>
-                                  <div class="letra_notificacion listar">NIT: </div>
-                                  <div class="titulos2 listar"> 860030380-2</div>
-                                  <br>
-                                  <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
-                                <div class="titulos2 listar">2</div>
-                              </div> 
-
-                              <div class="span3 derecha">
-                                <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
-                                  <i class="icon-eye-open"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Modificar">
-                                  <i class="icon-pencil"></i>
-                                </a>
-
-
-                                <a class="btn btn-mini " title="Ver Todos los datos">
-                                  <i class="icon-list-alt"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Eliminar">
-                                  <i class="icon-trash"></i>
-                                </a>
-
-                                <a class="btn btn-mini " title="Recordar Contraseña">
-                                  <i class="icon-barcode"></i>
-                                </a>
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
 
 
 
 
-                                <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
-                                  <i class="icon-ok icon-white  "></i>
-                                </a> 
+                            <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
 
 
-                                <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
-                                  <i class="icon-remove"></i>
-                                </a>
-                                <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
-                                  <i class=" icon-eject"></i>
-                                </a>
-                                <br><br>
-                                <div class="titulos2"><a href="#">Ver oferta..</a></div>
-                              </div>
-                            </div>
-                          </div>                     
-                        </div>
-
-
-
-
-
-
-
-
-                        <div class="listado_ofertas" style="display:none">
-
-                              <div class="body aspirante_hover ">
-                                  <div class="container-fluid"> <!--container-fluid -->      
-                                    <div class="row-fluid">  <!--row-fluid -->              
-                                      <div class="span9 content ver_hoja_vida">
-                                        <div class="titulos2 listar">         
-                                          <b>
-                                            <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
-                                          </b>
-                                        </div>
-                                        <div class="letra_notificacion listar">Ciudad: </div>
-                                        <div class="titulos2 listar">     Villavicencio</div>
-                                        <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
-                                        <div class="titulos2 listar">20/06/2012</div>
-
-                                      </div>
-                                      <div class="span2 derecha" style="display:none">
-                                        <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
-                                        <i class=" icon-ok-circle "></i>
-                                        </a>
-                                        <a class="btn btn-mini" title="descartar">
-                                        <i class="icon-remove-circle"></i>
-                                        </a>
-                                      </div>
-                                                        
-                                    </div>
-                                  </div>  
-                              </div>
-
-                              <div class="body aspirante_hover ">
-                                <div class="container-fluid"> <!--container-fluid -->      
-                                  <div class="row-fluid">  <!--row-fluid -->              
-                                      <div class="span9 content ver_hoja_vida">
-                                        <div class="titulos2 listar">         
-                                          <b>
-                                            <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
-                                          </b>
-                                        </div>
-                                        <div class="letra_notificacion listar">Ciudad: </div>
-                                        <div class="titulos2 listar">     Villavicencio</div>
-                                        <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
-                                        <div class="titulos2 listar">20/06/2012</div>
-
-                                      </div>
-                                      <div class="span2 derecha" style="display:none">
-                                        <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
-                                        <i class=" icon-ok-circle "></i>
-                                        </a>
-                                        <a class="btn btn-mini" title="descartar">
-                                        <i class="icon-remove-circle"></i>
-                                        </a>
-                                      </div>                        
-                                  </div>
-                                </div>  
-                              </div>
-
-                        </div>
-
-                        <div class="centrar">                       
-                          <div class="pagination">
-                            <ul>
-                              <li><a href="#">Prev</a></li>
-                              <li class="active">
-                                <a href="#">1</a>
-                              </li>
-                              <li><a href="#">2</a></li>
-                              <li><a href="#">3</a></li>
-                              <li><a href="#">4</a></li>
-                              <li><a href="#">Next</a></li>
-                            </ul>
+                            <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+                            <br><br>
+                            <div class="titulos2"><a href="#">Ver oferta..</a></div>
                           </div>
                         </div>
+                      </div>                     
+                    </div>
 
-	                    </div> 
 
-              		</div>
-            		</div>
-          		</div>
-          	</div> <!--tabbable -->      
+
+
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid -->    
+                          <div class="span8">
+                            <a href="">
+                              <div id="mensaje_titulo_oferta" class="titulo_padind">Confidencial</div>
+                            </a>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <div class="letra_notificacion listar">sector: </div>
+                            <div class="titulos2 listar"> Financiero</div>
+                            <div class="letra_notificacion listar">NIT: </div>
+                            <div class="titulos2 listar"> 860030380-2</div>
+                            <br>
+                            <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
+                            <div class="titulos2 listar">2</div>
+                          </div> 
+
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
+                              <i class="icon-eye-open"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
+
+
+                            <a class="btn btn-mini " title="Ver Todos los datos">
+                              <i class="icon-list-alt"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
+
+
+
+
+                            <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
+
+
+                            <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+                            <br><br>
+                            <div class="titulos2"><a href="#">Ver oferta..</a></div>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="listado_ofertas" style="display:none">
+
+                      <div class="body aspirante_hover ">
+                        <div class="container-fluid"> <!--container-fluid -->      
+                          <div class="row-fluid">  <!--row-fluid -->              
+                            <div class="span9 content ver_hoja_vida">
+                              <div class="titulos2 listar">         
+                                <b>
+                                  <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                                </b>
+                              </div>
+                              <div class="letra_notificacion listar">Ciudad: </div>
+                              <div class="titulos2 listar">     Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                              <div class="titulos2 listar">20/06/2012</div>
+
+                            </div>
+                            <div class="span2 derecha" style="display:none">
+                              <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
+                                <i class=" icon-ok-circle "></i>
+                              </a>
+                              <a class="btn btn-mini" title="descartar">
+                                <i class="icon-remove-circle"></i>
+                              </a>
+                            </div>
+
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="body aspirante_hover ">
+                        <div class="container-fluid"> <!--container-fluid -->      
+                          <div class="row-fluid">  <!--row-fluid -->              
+                            <div class="span9 content ver_hoja_vida">
+                              <div class="titulos2 listar">         
+                                <b>
+                                  <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                                </b>
+                              </div>
+                              <div class="letra_notificacion listar">Ciudad: </div>
+                              <div class="titulos2 listar">     Villavicencio</div>
+                              <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                              <div class="titulos2 listar">20/06/2012</div>
+
+                            </div>
+                            <div class="span2 derecha" style="display:none">
+                              <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
+                                <i class=" icon-ok-circle "></i>
+                              </a>
+                              <a class="btn btn-mini" title="descartar">
+                                <i class="icon-remove-circle"></i>
+                              </a>
+                            </div>                        
+                          </div>
+                        </div>  
+                      </div>
+
+                    </div>
+
+                    <div class="centrar">                       
+                      <div class="pagination">
+                        <ul>
+                          <li><a href="#">Prev</a></li>
+                          <li class="active">
+                            <a href="#">1</a>
+                          </li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">Next</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div> 
+
+                </div>
+              </div>
+            </div>
+          </div> <!--tabbable -->      
         </div>   <!--row-fluid -->
-    </div> <!--container-fluid -->
+      </div> <!--container-fluid -->
 </div> <!--container-fluid -->

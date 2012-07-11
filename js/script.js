@@ -175,6 +175,10 @@ $(document).ready(function(){
 
 
 
+   $(".oferta").click(function(evento){	
+		/*$('#contenedor').load('formulario_oferta.html');	*/
+	});
+
 
 
 

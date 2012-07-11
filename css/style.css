@@ -584,6 +584,12 @@ article[class="container"]{
     margin: 0;
 }
 
+.juntar_sociales{
+    display: inline-block;
+    padding-left: 3px;
+
+}
+
 
 
 /*******************************************   respinsive index   ********************************************************/
@@ -739,3 +745,28 @@ smaller than 560
 }
 
 
+
+/***********************sprites*********************************************************/
+
+
+.twitter{
+
+width: 64px; 
+height: 64px;
+background: url(../img/result.png);
+background-position: 0px -74px;
+}
+
+.facebook{
+width: 64px; 
+height: 64px;
+background: url(../img/result.png);
+background-position: 0px 0px;
+}
+
+.youtube{
+width: 64px; 
+height: 64px;
+background: url(../img/result.png);
+background-position: 0px -148px;
+}
