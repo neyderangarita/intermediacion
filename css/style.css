@@ -373,6 +373,14 @@ a.titulo_blanco_05em:visited{
     padding-left: 80px;
 }
 
+.alinear_10px{
+    margin-top: 10px;
+}
+
+.alinear_18px{
+    margin-top: 18px;
+}
+
 /***********************************************************************************************/
 
 .box{
@@ -773,9 +781,9 @@ background-position: 0px -148px;
 
 
 .imagen_cool{
-    margin-top: 10px;
     border-radius:10px;
     text-shadow:10px;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
+
