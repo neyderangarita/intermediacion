@@ -509,11 +509,11 @@ div[class="body mis_aplicaciones"]{
 
 
 div[class="body aspirante_hover"]{
-    width:84%;
-    padding-top: 5px;
-    padding-bottom: 5px; 
-    margin-top: 5px;
-    padding-bottom: 5px; 
+    width:80%;
+    padding-top: 3px;
+    padding-bottom: 3px; 
+    margin-top: 3px;
+    padding-bottom: 3px; 
     margin-bottom: 0px;
 }
 
@@ -773,9 +773,9 @@ background-position: 0px -148px;
 
 
 .imagen_cool{
+    margin-top: 10px;
     border-radius:10px;
     text-shadow:10px;
-    width: 50px;
-    height: 50px;
-
+    width: 40px;
+    height: 40px;
 }
