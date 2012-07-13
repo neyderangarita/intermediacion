@@ -761,24 +761,24 @@ smaller than 560
 
 width: 64px; 
 height: 64px;
-background: url(../img/result.png);
-background-position: 0px -74px;
+background: url(../img/sprites.png);
+background-position: 0px -95px;
 }
 
 .facebook{
 width: 64px; 
 height: 64px;
-background: url(../img/result.png);
+background: url(../img/sprites.png);
 background-position: 0px 0px;
 }
 
-.youtube{
-width: 64px; 
-height: 64px;
-background: url(../img/result.png);
-background-position: 0px -148px;
+.gplus{
+width: 50px;
+height: 50px;
+background: url(../img/sprites.png);
+background-position: -5px -201px; 
+margin-bottom: 10px;
 }
-
 
 .imagen_cool{
     border-radius:10px;
@@ -786,4 +786,5 @@ background-position: 0px -148px;
     width: 35px;
     height: 35px;
 }
+
 
