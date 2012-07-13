@@ -381,6 +381,8 @@ a.titulo_blanco_05em:visited{
     margin-top: 18px;
 }
 
+
+
 /***********************************************************************************************/
 
 .box{
@@ -516,17 +518,6 @@ div[class="body mis_aplicaciones"]{
 }
 
 
-div[class="body aspirante_hover"]{
-    width:80%;
-    padding-top: 3px;
-    padding-bottom: 3px; 
-    margin-top: 3px;
-    padding-bottom: 3px; 
-    margin-bottom: 0px;
-}
-
-
-
 .mis_aplicaciones:hover{
     background: #eee;
     border-radius:20px;
@@ -574,6 +565,11 @@ section[class="body admin"]{
 
 article[class="container"]{
     width:100%;
+}
+
+
+div[class="body contacto"]{
+    width:80%;
 }
 
 .pading_20px{
@@ -788,3 +784,41 @@ margin-bottom: 10px;
 }
 
 
+
+
+.alinear_miniaturas{
+    margin-bottom: 10px;
+    margin-right: -5px;
+}
+
+
+
+fieldset { border: none; }
+
+
+.grande{
+    padding: 8px; 
+    margin: 4px 0 20px 0; 
+    background: #fff; 
+    width: 220px; 
+    font-size: 14px; 
+    color: #555; 
+    border: 1px #ddd solid;
+    border-radius: 10px;
+}
+
+
+.grande2{
+    font-size: 14px; 
+    width: 250px; 
+    height: 35px;
+    border-radius: 10px;   
+    color: #555; 
+    background: #fff; 
+    border: 1px #ddd solid; 
+}
+textarea.grande{
+    width: 390px; 
+    height: 175px;
+    border-radius: 10px;
+}
