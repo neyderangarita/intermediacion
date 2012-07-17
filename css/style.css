@@ -189,7 +189,7 @@ font-style: normal;
 /***********************************ELEMENTOS DEL FOOTER*****************************************/
 
 a{
-    color: #5F5F5F;  /****rojo****/
+    color: #333;  /****rojo****/
 }
 
 a:visited {
@@ -241,6 +241,7 @@ font-style: normal;
 a.titulo:visited {
     color: #FF3030;  /****gis****/
 }
+
 
 a.titulo:link {
     /*color: #FF3030; /***rojo****/
@@ -355,6 +356,7 @@ a.titulo_blanco_05em:hover{
 a.titulo_blanco_05em:visited{
     color: #FFF; 
 }
+
 
 
 .titulo_grande
@@ -499,7 +501,6 @@ a.titulo_blanco_05em:visited{
     display: none;
 }
 
-
 .notificacion{
 
     display: inline-block;
@@ -538,17 +539,11 @@ div[class="body login margen_izquierda_margin_280px"]{
 .postulacion_mover:hover{
     background: #eee;
     border-radius:20px;
-
 }
-
-
-
-
 
 .aspirante_hover:hover{
     background: #E2F1F1;
     border-radius:50px;
-
 }
 
 div[class="body mis_aplicaciones"]{
@@ -816,6 +811,11 @@ smaller than 560
         -webkit-text-size-adjust: none;
     }
 
+    .fuente{
+        font-size: 45px;
+
+    }
+
 }
 
 
@@ -890,3 +890,6 @@ textarea.grande{
     border-radius: 10px;
 }
 
+.justificar_texto{
+    text-align:justify;
+}
