@@ -193,7 +193,7 @@ a{
 }
 
 a:visited {
-    color: #5F5F5F;  /****gis****/
+    color: #333;  /****gis****/
     text-decoration:none;
 }
 
@@ -203,12 +203,12 @@ a:link {
 }
 
 a:active {
-    color: #5F5F5F;  /****rojo****/
+    color: #333;  /****rojo****/
     text-decoration:none;
 }
 
 a:hover {
-    color: #5F5F5F;  /****rojo****/
+    color: #333;  /****rojo****/
 }
 
 /************************************titulos****************************************/
@@ -223,6 +223,9 @@ color: #666;
 font-style: normal;
 }
 
+
+
+
 .titulo
 {
     color: #FF3030; 
@@ -232,6 +235,28 @@ font-style: normal;
     padding-bottom: 1em;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.2)
 }
+
+
+
+a.titulo:visited {
+    color: #FF3030;  /****gis****/
+}
+
+a.titulo:link {
+    /*color: #FF3030; /***rojo****/
+    color: #FF3030;  /****gis****/
+}
+
+a.titulo:active {
+    color: #FF3030;  /****gis****/
+    text-decoration:none;
+}
+
+a.titulo:hover {
+    color: #FF3030;  /****gis****/
+}
+
+
 
 .titulo_padind
 {
@@ -243,6 +268,7 @@ font-style: normal;
     /*padding-left: 20px;*/
     text-shadow: 5px 5px 10px rgba(0,0,0,0.2)
 }
+
 
 
 
@@ -369,6 +395,12 @@ a.titulo_blanco_05em:visited{
     text-align:center;
 }
 
+.centrar_izquierda{
+    text-align:left;
+}
+
+
+
 .alinear_80px{
     padding-left: 80px;
 }
@@ -490,6 +522,19 @@ div[class="body postulacion_mover"]{
     margin-bottom: 0.005em
 }
 
+div[class="body login margen_izquierda_margin_280px"]{
+    width:50%;
+    margin-top: 3px;
+    margin-bottom: 0.005em;
+    text-align:center;
+}
+
+
+.margen_izquierda_margin_280px{
+    margin-left: 18em;
+    margin-right:18em;
+}
+
 .postulacion_mover:hover{
     background: #eee;
     border-radius:20px;
@@ -517,6 +562,31 @@ div[class="body mis_aplicaciones"]{
     margin-bottom: 0.005em
 }
 
+div[class="body principal"]{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px; 
+    padding-top: 7px; 
+    padding-bottom: 3px;
+    width:100%;
+    margin-top: 3px;
+    margin-bottom: 0.005em;
+    border-radius:0px;
+    margin:1px  ; 
+    border: 1px solid rgb(230, 255, 255);
+
+}
+
+.principal:hover{
+    background: #F4FAF9;
+    border-radius:1px;
+    border: 1px solid rgb(157, 193, 192);
+    background: -webkit-linear-gradient(#fff, #A9DDDD);
+   background: -moz-linear-gradient(#ffffff, #A9DDDD);
+   background: -o-linear-gradient(#ffffff, #A9DDDD);
+}
+
+
 
 .mis_aplicaciones:hover{
     background: #eee;
@@ -530,7 +600,7 @@ div[class="body mis_aplicaciones"]{
 
 #navi{
     list-style:none;
-        margin:0;
+    margin:0;
     padding:0;
 }
 
@@ -783,9 +853,6 @@ margin-bottom: 10px;
     height: 35px;
 }
 
-
-
-
 .alinear_miniaturas{
     margin-bottom: 10px;
     margin-right: -5px;
@@ -822,3 +889,4 @@ textarea.grande{
     height: 175px;
     border-radius: 10px;
 }
+
