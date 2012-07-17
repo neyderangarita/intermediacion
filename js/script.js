@@ -173,6 +173,9 @@ $(document).ready(function(){
 		$('#listar_empresas').load('listar_ofertas_administrador.html');	
 	});
 
+	$(".encuesta").click(function(evento){	
+		$('#listar_empresas').load('encuesta.html');	
+	});
 
 
 

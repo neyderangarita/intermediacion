@@ -1,0 +1,202 @@
+<script>
+$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
+
+
+});
+</script>
+
+<script>
+$.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
+
+
+  $(".crear_encuesta").click(function(evento){ 
+   $(".buscar_encuestas").hide(500);
+   $(".mostrar_crear_oferta").show(500);
+ });
+
+
+});
+</script>
+
+
+<div class="container-fluid"> <!--container-fluid -->      
+  <div class="row-fluid">  <!--row-fluid -->
+    <div class="span12"> <!--tabbable -->      
+      <div class="body">
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12 "> <!--tabbable -->    
+
+              <div class="buscar_encuestas">
+
+                <br>
+                <legend><span class="titulos">Listado de Encuestas</span></legend>
+                <br>
+                <span class="titulos">Busqueda Encuesta</span>
+                <br>
+                <br>
+                <div class="row-fluid">
+                  <form action="../intermediacion/listado_busqueda.html" method="post">
+                    <div class="span3">
+                      <div class="control-group">
+                        <label class="control-label" for="busqueda_empleo">
+                          <span class="titulos">Palabras a Buscar</span>
+                          <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                        </label>
+                        <div class="controls">
+                          <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
+                        </div>
+                        <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                      </div>
+                    </div>  
+                    <div class="span2">  
+                      <span class="titulos"></span>
+                      <br>
+                      <button type="submit" class="btn btn-danger">Buscar</button>
+                    </div>
+                  </form>    
+                </div>
+
+                <a class="btn btn-danger crear_encuesta">Crear Encuesta</a>
+                <br>
+                <br>
+
+                <div class="listado_encuestas">
+                  <div class="alert alert-error titulos2 centrar">Encontrados <span class="titulo ">3</span> que cumplen con los criterios de busqueda. </div>
+                  <br>
+                  <div class="body mis_aplicaciones" > 
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span9">
+                          <div id="mensaje_titulo_oferta" class="titulo_padind">Pregunta 1</div>
+                          <div class="letra_notificacion listar">¿Te interesaria seguir estudiando una vez termines tu carrera?</div>
+                          <div class="letra_notificacion listar">Total de votos:</div> <div class="titulos2 listar">5</div>
+                        </div> 
+
+                        <div class="span2 derecha">
+
+                          <a class="btn btn-mini oferta" title="Modificar">
+                            <i class="icon-edit"></i>
+                          </a>
+                          <a class="btn btn-mini desactivar_oferta" title="Eliminar"> 
+                            <i class="icon-trash"></i>
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>                     
+                  </div>
+
+                  <div class="body mis_aplicaciones" > 
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span12">
+                          <div id="mensaje_titulo_oferta" class="titulo_padind">Pregunta 2</div>
+                          <div class="letra_notificacion listar">¿Cómo calificarías el servicio prestado por el programa de Egresados?</div>
+                        </div> 
+                      </div>
+                    </div>                     
+                  </div>
+                  <div class="body mis_aplicaciones" > 
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span12">
+                          <div id="mensaje_titulo_oferta" class="titulo_padind">Pregunta 2</div>
+                          <div class="letra_notificacion listar">¿Conoce los beneficios que brinda el carnet de egresado?</div>
+                        </div> 
+                      </div>
+                    </div>                     
+                  </div>
+                  <div class="centrar">                       
+                    <div class="pagination">
+                      <ul>
+                        <li><a href="#">Prev</a></li>
+                        <li class="active">
+                          <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+
+              </div>
+
+              <div class="mostrar_crear_oferta" style="display:none">
+
+                <div class="container-fluid"> <!--container-fluid -->      
+                  <div class="row-fluid">  <!--row-fluid -->    
+                    <div class="span12">
+
+                      <form class="form-horizontal" action="/intermediacion/administrador.html">
+                        <fieldset>
+                          <legend>Crear Encuesta</legend>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">Pregunta</label>
+                            <div class="controls">
+                              <input type="text" class="input-xlarge" id="input01" required>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">alternativa 1</label>
+                            <div class="controls">
+                              <input type="text" class="input-xlarge" id="input02" required>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">alternativa 2</label>
+                            <div class="controls">
+                              <input type="text" class="input-xlarge" id="input03" required>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">alternativa 3</label>
+                            <div class="controls">
+                              <input type="text" class="input-xlarge" id="input04">
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">alternativa 4</label>
+                            <div class="controls">
+                              <input type="text" class="input-xlarge" id="input05">
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">alternativa 5</label>
+                            <div class="controls">
+                              <input type="text" class="input-xlarge" id="input06">
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">Estado</label>
+                            <div class="controls">
+                              <select id="sector" name="sector" required>
+                                <option value="">Por favor seleccione</option>
+                                <option value="1">activa</option>
+                                <option value="2">inactiva</option>
+                              </select>
+                            </div>
+                          </div>  
+                          <div class="span5 derecha">
+                            <button class="btn btn-danger" type="submit">
+                              Crear
+                            </button>
+                          </div>
+                        </fieldset>
+                      </form>  
+
+                    </div> 
+                  </div>
+                </div>                     
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div> <!--tabbable -->      
+    </div>   <!--row-fluid -->
+  </div> <!--container-fluid -->
+</div> <!--container-fluid -->
