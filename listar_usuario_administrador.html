@@ -1,0 +1,258 @@
+<script>
+$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
+
+
+});
+</script>
+
+<script>
+$.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
+
+
+  $(".activar_egresado").click(function(evento){ 
+   $(".desactivar_egresado").show(500);
+   $(".activar_egresado").hide(500);
+ });
+
+
+  $(".desactivar_egresado").click(function(evento){ 
+   $(".activar_egresado").show(500);
+   $(".desactivar_egresado  ").hide(500);
+ });
+
+  $(".modificar_datos").click(function(evento){ 
+   $(".modificar_datos_administrador").show(500);
+   /*$(".desactivar_egresado  ").hide(500);*/
+ });
+
+
+
+
+
+
+
+});
+</script>
+
+
+<div class="container-fluid"> <!--container-fluid -->      
+  <div class="row-fluid">  <!--row-fluid -->
+    <div class="span12"> <!--tabbable -->      
+     <div class="body">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span12 "> <!--tabbable -->      
+
+<!--
+	                    <div class="alert alert-error titulos2 centrar notificaciones">Tiene <span class="titulo ">99</span> nuevas postulaciones nuevas</div>
+                    -->                      
+                    <br>
+
+                    <div class="notificaciones_nuevas">
+
+
+                     <legend><span class="titulos">Listado de Usuarios Administrador</span></legend>
+
+                     Ingresa un dato para realizar la busqueda.
+                     <br>
+                     El sistema buscara por el siguiente criterio: Documento identificacion, Nombre, Apellidos, Email.
+
+                     <br><br>
+
+                     <span class="titulos">Busqueda</span>
+                     <br>
+                     <br>
+
+                     <div class="container-fluid">
+                      <div class="row-fluid">
+                        <div class="span12">
+                          <div class="container-fluid">
+                            <div class="row-fluid">
+                              <form action="../intermediacion/listado_busqueda.html" method="post">
+                                <div class="span3">
+                                  <div class="control-group">
+                                    <label class="control-label" for="busqueda_empleo">
+                                      <span class="titulos">Palabras clave</span>
+                                      <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                                    </label>
+                                    <div class="controls">
+                                      <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
+                                    </div>
+                                    <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                                  </div>
+                                </div>  
+
+                                <div class="span2">  
+                                  <span class="titulos"></span>
+                                  <br>
+                                  <button type="submit" class="btn btn-danger">Buscar</button>
+                                </div>
+                              </form>    
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="alert alert-error titulos2 centrar notificaciones">Encontrados <span class="titulo ">5</span> que cumplen con los criterios de busqueda. </div>
+                    <br>
+
+
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span1">
+                            <img class="imagen_cool" src="img/no-photo-men.jpg" alt="perfil" width="50" height="50" title="perfil">
+                          </div>
+                          <div class="span7">
+                            <div class="juntar_sociales">
+                              <a href="">
+                                <div id="nombre" class="titulo_padind">Administrador</div>
+                              </a>
+                              <b><div class="letra_notificacion listar">Contraseña: </div></b>
+                              <div class="titulos2 listar">***********</div>
+                              <b><div class="letra_notificacion listar">Vigente: </div></b>
+                              <div class="titulos2 listar"> si</div>
+                              <br>
+                            </div>
+                          </div> 
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini modificar_datos" title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
+                            <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
+                            <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span1">
+                            <img class="imagen_cool" src="img/no-photo-men.jpg" alt="perfil" width="50" height="50" title="perfil">
+                          </div>
+                          <div class="span7">
+                            <div class="juntar_sociales">
+                              <a href="">
+                                <div id="nombre" class="titulo_padind">pasante</div>
+                              </a>
+                              <b><div class="letra_notificacion listar">Contraseña: </div></b>
+                              <div class="titulos2 listar">***********</div>
+                              <b><div class="letra_notificacion listar">Vigente: </div></b>
+                              <div class="titulos2 listar"> si</div>
+                              <br>
+                            </div>
+                          </div> 
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini modificar_datos" title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
+                            <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
+                            <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+
+                    <div class="body mis_aplicaciones" >      
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span1">
+                            <img class="imagen_cool" src="img/no-photo-men.jpg" alt="perfil" width="50" height="50" title="perfil">
+                          </div>
+                          <div class="span7">
+                            <div class="juntar_sociales">
+                              <a href="">
+                                <div id="nombre" class="titulo_padind">auxiliar</div>
+                              </a>
+                              <b><div class="letra_notificacion listar">Contraseña: </div></b>
+                              <div class="titulos2 listar">***********</div>
+                              <b><div class="letra_notificacion listar">Vigente: </div></b>
+                              <div class="titulos2 listar">no</div>
+                              <br>
+                            </div>
+                          </div> 
+                          <div class="span3 derecha">
+                            <a class="btn btn-mini modificar_datos" title="Modificar">
+                              <i class="icon-pencil"></i>
+                            </a>
+                            <a class="btn btn-mini " title="Eliminar">
+                              <i class="icon-trash"></i>
+                            </a>
+                            <a class="btn btn-mini " title="Recordar Contraseña">
+                              <i class="icon-barcode"></i>
+                            </a>
+                            <a class="btn btn-mini btn-danger activar_egresado" title="Activar">
+                              <i class="icon-ok icon-white  "></i>
+                            </a> 
+                            <a class="btn btn-mini desactivar_egresado" title="Desactivar" style="display:none">
+                              <i class="icon-remove"></i>
+                            </a>
+                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                              <i class=" icon-eject"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>                     
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="centrar">                       
+                      <div class="pagination">
+                        <ul>
+                          <li><a href="#">Prev</a></li>
+                          <li class="active">
+                            <a href="#">1</a>
+                          </li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">Next</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div> 
+
+                </div>
+              </div>
+            </div>
+          </div> <!--tabbable -->      
+        </div>   <!--row-fluid -->
+      </div> <!--container-fluid -->
+</div> <!--container-fluid -->

@@ -177,9 +177,18 @@ $(document).ready(function(){
 		$('#listar_empresas').load('encuesta.html');	
 	});
 
+	$(".carreras").click(function(evento){	
+		$('#listar_empresas').load('agregar_carreras.html');	
+	});
+
+	$(".contacto").click(function(evento){	
+		$('#listar_empresas').load('administrar_formulario_contacto.html');	
+	});
 
 
-
+	$(".listar_usuarios_administrador").click(function(evento){	
+		$('#listar_empresas').load('listar_usuario_administrador.html');	
+	});
 
 
 
