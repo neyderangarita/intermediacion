@@ -1,0 +1,77 @@
+<script>
+$.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", function() {
+
+
+});
+</script>
+
+<script>
+$.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
+
+
+  $(".activar_egresado").click(function(evento){ 
+   $(".desactivar_egresado").show(500);
+   $(".activar_egresado").hide(500);
+ });
+
+});
+</script>
+
+
+<div class="container-fluid"> <!--container-fluid -->      
+  <div class="row-fluid">  <!--row-fluid -->
+    <div class="tabbable span12">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span4">  
+
+            <legend><span class="titulos">Reporte Ofertas</span></legend>
+            <br><br>
+  
+  
+            <div class="control-group">
+              <label class="control-label" for="input01">Desde:</label>
+              <div class="controls">
+                <input id="input01" class="input-xlarge" type="text">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="input01">Hasta:</label>
+              <div class="controls">
+                <input id="input01" class="input-xlarge" type="text">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label titulo">Tipo de Reporte</label>
+              <div class="controls">
+                <label class="radio">
+                  <input id="optionsRadios1" type="radio" checked="" value="option1" name="optionsRadios">
+                  Reporte Mensual
+                </label>
+                <label class="radio">
+                  <input id="optionsRadios2" type="radio" value="option2" name="optionsRadios">
+                  Reporte Trimestral
+                </label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-danger" type="submit">Desplegar</button>
+              <button class="btn">Cancelar</button>
+              <button class="btn btn-info"><i class="icon-print icon-white"></i></button>
+            </div>
+
+          </div>
+
+          <div class="span8">
+            <img src="../intermediacion/img/reporte.png" alt="">
+          </div>
+
+
+        </div>    
+      </div> <!--tabbable -->      
+    </div>   <!--row-fluid -->
+  </div> <!--container-fluid -->
+</div> <!--container-fluid -->

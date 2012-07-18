@@ -198,6 +198,19 @@ $(document).ready(function(){
 		$('#listar_empresas').load('noticias.html');	
 	});
 
+	$(".reporte_egresados_consultan").click(function(evento){	
+		$('#listar_empresas').load('reporte_egresados_consultan.html');	
+	});
+
+	$(".reporte_empresas_consultan").click(function(evento){	
+		$('#listar_empresas').load('reporte_empresas_consultan.html');	
+	});
+
+	$(".reporte_ofertas_sectores_carreras").click(function(evento){	
+		$('#listar_empresas').load('reporte_ofertas_sectores_carreras.html');	
+	});
+
+
 
 
 
