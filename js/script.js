@@ -190,6 +190,15 @@ $(document).ready(function(){
 		$('#listar_empresas').load('listar_usuario_administrador.html');	
 	});
 
+	$(".cambiar_contraseña_administrador").click(function(evento){	
+		$('#listar_empresas').load('cambiar_contraseña_administrador.html');	
+	});
+
+	$(".noticias").click(function(evento){	
+		$('#listar_empresas').load('noticias.html');	
+	});
+
+
 
 
 /********************************************************************************************************/

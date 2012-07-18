@@ -15,6 +15,9 @@
   <section type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js">
   </section>
 
+  <script type="text/javascript" src="../intermediacion/ckeditor/ckeditor.js"></script>
+
+
   <link rel="stylesheet" href="css/ca7368fa967d.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
@@ -26,7 +29,11 @@
     document.createElement(e[i]);
   }
   </script>
-  
+
+  <script type="text/javascript">
+    CKEDITOR.replace( 'comentarios' );
+  </script>
+
   <script type="text/javascript" src="[JS library]"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script type="text/javascript" src="js/selectivizr-min.js"></script>
@@ -101,8 +108,6 @@
               </a>
             </li>
 
-
-
             <li class="dropdown" id="menu1">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
                 <i class="icon-lock icon-white"></i>
@@ -117,6 +122,7 @@
                 <li><a class="encuesta"><i class="icon-file icon-white"></i> Encuestas</a></li>
                 <li><a class="carreras"><i class="icon-flag icon-white"></i> Carreras</a></li>
                 <li><a class="contacto"><i class="icon-list-alt icon-white"></i> Contacto</a></li>
+                <li><a class="noticias"><i class="icon-list-alt icon-white"></i> Noticias</a></li>
               </ul>
             </li>
 
@@ -135,6 +141,23 @@
               </ul>
             </li>
 
+            <li class="dropdown" id="menu6">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu6">
+                <i class="icon-user icon-white"></i>
+                Cuenta
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class ="cambiar_contraseña_administrador">
+                    Cambiar contraseña
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+
 
             <li class="dropdown" id="menu3">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#menu3">
@@ -148,6 +171,7 @@
                 <li><a href="#">Egresados Consultan</a></li>  <!-- discriminados por profesión. reportes mensual y trimestral  -->
                 <li><a href="#">Egresados Utilizan</a></li>    <!-- Reportes mensual y trimestral  -->
                 <li><a href="#">Empresas Utilizan</a></li><!--discriminadas por sectores productivos Reportes mensual y trimestral    -->
+              
               </ul>
             </li>
 

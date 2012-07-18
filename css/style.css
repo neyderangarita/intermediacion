@@ -114,6 +114,7 @@ div.aviso a:hover{
     line-height: 0px;
     font: 11px/14px Tahoma, Arial, sans-serif
 }
+
 .destacado {
 background-image: url(http://static.zonajobs.com.co/imgs/listado/bk-destacado.jpg);
 background-repeat-x: repeat;
@@ -271,16 +272,14 @@ a.titulo:hover {
 }
 
 
-
-
 .titulo6
 {
     color: #FF3030; 
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold; 
- /*   margin-left: 27px;*/
+    padding-top: 18px;
     padding-bottom: 1em;
-    padding-left: 10px;
+    padding-left: 18px;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.2)
 }
 .titulos{
@@ -384,11 +383,19 @@ a.titulo_blanco_05em:visited{
 /**********************************************************************************/
 .listado li
 {
-    padding-bottom: 5px;
+    margin-right: 20px; 
+    margin-left: 20px;
+    padding-bottom: 3px;
     margin: 0 0 6px 9px;
     padding: 0;    
     list-style:none
 }
+
+ul.listado{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 .body ul{
     padding-top:5px;
 }
@@ -655,14 +662,14 @@ div[class="body contacto"]{
 
 .juntar_sociales{
     display: inline-block;
-    padding-left: 3px;
-
+    padding-left: 10px;
 }
+
+
 
 .alinear_izquierda{
     margin-left: 65px;
 }
-
 
 /*******************************************   respinsive index   ********************************************************/
 #pagewrap {
@@ -827,27 +834,47 @@ smaller than 560
 /***********************sprites*********************************************************/
 
 
-.twitter{
-width: 64px; 
-height: 64px;
-background: url(../img/sprites.png);
-background-position: 0px -95px;
+.facebook, .twitter, .google, .facebook1, .twitter1, .google1{
+    background: url(../img/sprites.png) no-repeat;
 }
 
 .facebook{
-width: 64px; 
-height: 64px;
-background: url(../img/sprites.png);
-background-position: 0px 0px;
+    background-position: 0 0;
+    width: 64px;
+    height: 64px;
 }
 
-.gplus{
-width: 50px;
-height: 50px;
-background: url(../img/sprites.png);
-background-position: -5px -201px; 
-margin-bottom: 10px;
+.twitter{
+    background-position: 0 -90px ;
+    width: 64px;
+    height: 64px;
 }
+
+.google{
+    background-position: 0 -200px ;
+    width: 64px;
+    height: 64px;
+}
+
+.facebook1{
+    background-position: -103px -14px ;
+    width: 38px;
+    height: 38px;
+}
+
+.twitter1{
+    background-position: -103px -110px ;
+    width: 38px;
+    height: 38px;
+}
+
+.google1{
+    background-position: -105px -211px ;
+    width: 38px;
+    height: 38px;
+}
+
+
 
 .imagen_cool{
     border-radius:10px;

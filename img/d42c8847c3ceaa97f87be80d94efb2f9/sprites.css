@@ -1,0 +1,40 @@
+.facebook, .twitter, .google+, .facebook1, .twitter1, .google1{
+	background: url(sprites.png) no-repeat;
+}
+
+.facebook{
+	background-position: 0 0;
+	width: 64px;
+	height: 64px;
+}
+
+.twitter{
+	background-position: 0 -90px ;
+	width: 64px;
+	height: 64px;
+}
+
+.google+{
+	background-position: 0 -200px ;
+	width: 64px;
+	height: 64px;
+}
+
+.facebook1{
+	background-position: -103px -14px ;
+	width: 38px;
+	height: 38px;
+}
+
+.twitter1{
+	background-position: -103px -110px ;
+	width: 38px;
+	height: 38px;
+}
+
+.google1{
+	background-position: -105px -211px ;
+	width: 38px;
+	height: 38px;
+}
+
