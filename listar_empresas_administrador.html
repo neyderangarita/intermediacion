@@ -82,24 +82,26 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
 
                      <div class="row-fluid">
                       <form action="../intermediacion/listado_busqueda.html" method="post">
-                        <div class="span3">
+                        <div class="span12">
                           <div class="control-group">
                             <label class="control-label" for="busqueda_empleo">
                               <span class="titulos">Palabras clave</span>
                               <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
                             </label>
+
                             <div class="controls">
-                              <input id="autocomplete" type="text" data-provide="typeahead" placeholder="ingresa su busqueda"/>
+
+                              <div class="input-append">
+                                <input id="autocomplete" type="text" data-provide="typeahead" placeholder="ingresa su busqueda"/>
+                                <button type="submit" class="btn boton_derecha capa2"><i class="icon-search"></i></button>
+                              </div>
+                              
                             </div>
                             <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
                           </div>
                         </div>  
+ 
 
-                        <div class="span2">  
-                          <span class="titulos"></span>
-                          <br>
-                          <button type="submit" class="btn btn-danger">Buscar</button>
-                        </div>
                       </form>    
                     </div>
 
@@ -107,8 +109,9 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                       <div class="span12">
                         <div class="container-fluid">
                           <div class="row-fluid">
-                            <button type="submit" class="btn btn-danger">Activas</button>
-                            <button type="submit" class="btn btn-danger">Desactivadas</button>
+                            <a type="submit" class="btn btn-danger">Activas</a>
+                            <a href="" class="btn btn-danger">Activas</a>
+                            <a href="" class="btn btn-danger">Desactivadas</a>
                           </div>
                         </div>
                       </div>
@@ -146,17 +149,16 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                               <i class="icon-pencil"></i>
                             </a>
 
-
-                            <a class="btn btn-mini datos_empresa" title="Ver Todos los datos">
-                              <i class="icon-list-alt"></i>
-                            </a>
-
                             <a class="btn btn-mini " title="Eliminar">
                               <i class="icon-trash"></i>
                             </a>
 
                             <a class="btn btn-mini " title="Recordar Contraseña">
                               <i class="icon-barcode"></i>
+                            </a>
+
+                            <a class="btn btn-mini btn-danger" title="Oferta Nueva">
+                              <i class="icon-star icon-white"></i>
                             </a>
 
 
@@ -179,8 +181,6 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                         </div>
                       </div>                     
                     </div>
-
-
 
 
                     <div class="body mis_aplicaciones" >      
@@ -206,13 +206,8 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                               <i class="icon-eye-open"></i>
                             </a>
 
-                            <a class="btn btn-mini " title="Modificar">
+                            <a class="btn btn-mini actualizar_empresa" title="Modificar">
                               <i class="icon-pencil"></i>
-                            </a>
-
-
-                            <a class="btn btn-mini " title="Ver Todos los datos">
-                              <i class="icon-list-alt"></i>
                             </a>
 
                             <a class="btn btn-mini " title="Eliminar">
@@ -221,6 +216,10 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
 
                             <a class="btn btn-mini " title="Recordar Contraseña">
                               <i class="icon-barcode"></i>
+                            </a>
+
+                            <a class="btn btn-mini btn-danger" title="Oferta Nueva">
+                              <i class="icon-star icon-white"></i>
                             </a>
 
 
@@ -243,7 +242,6 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                         </div>
                       </div>                     
                     </div>
-
 
 
 

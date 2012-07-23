@@ -7,6 +7,22 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+*{
+    behavior:url(PIE.htc);
+}
+
+
+.box{
+    background: #88BF48;
+    margin: 0 15px 6px 0;
+    width: 200px;
+    height: 200px;
+    border-radius:35px;
+    margin-left: 150px;
+    float: left;
+    display: block;    
+}
+
 article,
 aside,
 details,
@@ -1891,7 +1907,8 @@ table .span24 {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.well {
+.well { 
+  behavior: url(PIE.htc);
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -1901,7 +1918,8 @@ table .span24 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background: #FF4040;
+  /*background: #FF4040;*/
+  background: peru;
   -webkit-box-shadow: 0 1px 4px 
   rgba(0, 0, 0, 0.3), 0 0 40px 
   rgba(0, 0, 0, 0.1) inset;
@@ -1909,7 +1927,6 @@ table .span24 {
   box-shadow: 0 1px 4px 
   rgba(0, 0, 0, 0.4), 0 0 40px 
   rgba(0, 0, 0, 0.1) inset;
-
   -webkit-box-shadow: 5px 2px 10px  rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 5px 2px 10px  rgba(0, 0, 0, 0.6);
   box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.6);
@@ -5422,42 +5439,31 @@ section {
   }
 }*/
 
-/*
+
 a{
     color: #FF3030;  /****rojo****/
-/*
 }
 
-*/
 a:visited {
-  color: white;  /****gis****/
-  text-decoration:none;
+    color: #5F5F5F;  /****gis****/
+    text-decoration:none;
 }
 
-a.btn.btn-danger{
-  color: white;  /****gis****/
-  text-decoration:none;
-}
-/*
 a:link {
     /*color: #FF3030;  ***rojo****/
-/*
 }
 
 a:active {
     color: #FF3030;  /****rojo****/
-/*
     text-decoration:none;
 }
 
 a:hover {
     color: #FF3030;  /****rojo****/
-/*
+
 }
 
 a.btn.btn-large.btn-danger{
 
   color: #fff; 
 }
-
-*/
