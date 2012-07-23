@@ -34,14 +34,14 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
   });
 
 
-   $(".actualizar_empresa").click(function(evento){  
-      $('.administrador').load('modificar_oferta.html');
-    });
+  $(".actualizar_empresa").click(function(evento){  
+    $('.administrador').load('modificar_oferta.html');
+  });
 
 
-   $(".datos_empresa").click(function(evento){  
-      $('.administrador').load('datos_empresa.html');
-    });
+  $(".datos_empresa").click(function(evento){  
+    $('.administrador').load('datos_empresa.html');
+  });
 
 
 
@@ -136,9 +136,11 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                             <br>
                             <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
                             <div class="titulos2 listar">2</div>
+                            <b><div class="letra_notificacion listar">Estado:</div></b>
+                            <div class="titulos2 listar">Nuevo</div>
                           </div> 
 
-                          <div class="span3 derecha">
+                          <div class="span3 btn-toolbar derecha">
                             <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
                               <i class="icon-eye-open"></i>
                             </a>
@@ -155,37 +157,61 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                               <i class="icon-barcode"></i>
                             </a>
 
+                            <!--
                             <a class="btn btn-mini btn-danger" title="Oferta Nueva">
                               <i class="icon-star icon-white"></i>
-                            </a>
+                            </a>-->
 
-
-
-
-                            <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
-                              <i class="icon-ok icon-white  "></i>
-                            </a> 
-
-
-                            <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
-                              <i class="icon-remove"></i>
-                            </a>
-                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
-                              <i class=" icon-eject"></i>
-                            </a>
-                            <br><br>
-                            <div class="titulos2"><a href="#">Ver oferta..</a></div>
+                          <div class="btn-group" style="top: 6px;">  
+                            <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+                              <i class="icon-star"></i>
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="centrar_izquierda">Activo</a>
+                              </li>
+                              <li>
+                                <a class="centrar_izquierda">Desactivado por el usuario</a>
+                              </li>
+                              <li>
+                                <a class="centrar_izquierda">Desactivado por la empresa</a>
+                              </li>
+                              <li>
+                                <a class="centrar_izquierda">Nuevo</a>
+                              </li>
+                            </ul>
                           </div>
+
+
+                          <!--
+
+                          <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                            <i class="icon-ok icon-white  "></i>
+                          </a> 
+
+
+                          <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                            <i class="icon-remove"></i>
+                          </a>
+                          <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                            <i class=" icon-eject"></i>
+                          </a>
+                          -->
+                          <br><br>
+                          <div class="titulos2"><a href="#">Ver oferta..</a></div>
                         </div>
-                      </div>                     
-                    </div>
+
+                      </div>
+                    </div>                     
+                  </div>
 
 
-                    <div class="body mis_aplicaciones" >      
+                                      <div class="body mis_aplicaciones" >      
                       <div class="container-fluid"> <!--container-fluid -->      
                         <div class="row-fluid">  <!--row-fluid -->    
                           <div class="span8">
-                            <a>  
+                            <a>
                               <div id="mensaje_titulo_oferta" class="titulo_padind datos_empresa">Confidencial</div>
                             </a>
                             <div class="letra_notificacion listar">Ciudad: </div>
@@ -197,9 +223,11 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                             <br>
                             <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
                             <div class="titulos2 listar">2</div>
+                            <b><div class="letra_notificacion listar">Estado:</div></b>
+                            <div class="titulos2 listar">Nuevo</div>
                           </div> 
 
-                          <div class="span3 derecha">
+                          <div class="span3 btn-toolbar derecha">
                             <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
                               <i class="icon-eye-open"></i>
                             </a>
@@ -216,30 +244,115 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                               <i class="icon-barcode"></i>
                             </a>
 
+                            <!--
                             <a class="btn btn-mini btn-danger" title="Oferta Nueva">
                               <i class="icon-star icon-white"></i>
-                            </a>
+                            </a>-->
 
-
-
-
-                            <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
-                              <i class="icon-ok icon-white  "></i>
-                            </a> 
-
-
-                            <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
-                              <i class="icon-remove"></i>
-                            </a>
-                            <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
-                              <i class=" icon-eject"></i>
-                            </a>
-                            <br><br>
-                            <div class="titulos2"><a href="#">Ver oferta..</a></div>
+                          <div class="btn-group" style="top: 6px;">  
+                            <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+                              <i class="icon-star"></i>
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="centrar_izquierda">Activo</a>
+                              </li>
+                              <li>
+                                <a class="centrar_izquierda">Desactivado por el usuario</a>
+                              </li>
+                              <li>
+                                <a class="centrar_izquierda">Desactivado por la empresa</a>
+                              </li>
+                              <li>
+                                <a class="centrar_izquierda">Nuevo</a>
+                              </li>
+                            </ul>
                           </div>
+
+
+                          <!--
+
+                          <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                            <i class="icon-ok icon-white  "></i>
+                          </a> 
+
+
+                          <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                            <i class="icon-remove"></i>
+                          </a>
+                          <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                            <i class=" icon-eject"></i>
+                          </a>
+                          -->
+                          <br><br>
+                          <div class="titulos2"><a href="#">Ver oferta..</a></div>
                         </div>
-                      </div>                     
-                    </div>
+
+                      </div>
+                    </div>                     
+                  </div>
+
+
+                  <div class="body mis_aplicaciones" >      
+                    <div class="container-fluid"> <!--container-fluid -->      
+                      <div class="row-fluid">  <!--row-fluid -->    
+                        <div class="span8">
+                          <a>  
+                            <div id="mensaje_titulo_oferta" class="titulo_padind datos_empresa">Confidencial</div>
+                          </a>
+                          <div class="letra_notificacion listar">Ciudad: </div>
+                          <div class="titulos2 listar">     Villavicencio</div>
+                          <div class="letra_notificacion listar">sector: </div>
+                          <div class="titulos2 listar"> Financiero</div>
+                          <div class="letra_notificacion listar">NIT: </div>
+                          <div class="titulos2 listar"> 860030380-2</div>
+                          <br>
+                          <b><div class="letra_notificacion listar">Cantidad de OFertas Publicadas:</div></b>
+                          <div class="titulos2 listar">2</div>
+                        </div> 
+
+                        <div class="span3 derecha">
+                          <a class="btn btn-mini ver_ofertas" title="Ver Ofertas">
+                            <i class="icon-eye-open"></i>
+                          </a>
+
+                          <a class="btn btn-mini actualizar_empresa" title="Modificar">
+                            <i class="icon-pencil"></i>
+                          </a>
+
+                          <a class="btn btn-mini " title="Eliminar">
+                            <i class="icon-trash"></i>
+                          </a>
+
+                          <a class="btn btn-mini " title="Recordar Contraseña">
+                            <i class="icon-barcode"></i>
+                          </a>
+
+                          <a class="btn btn-mini btn-danger" title="Oferta Nueva">
+                            <i class="icon-star icon-white"></i>
+                          </a>
+
+
+
+
+                          <a class="btn btn-mini btn-danger activar_empresa" title="Activar">
+                            <i class="icon-ok icon-white  "></i>
+                          </a> 
+
+
+                          <a class="btn btn-mini desactivar_empresa" title="Desactivar" style="display:none">
+                            <i class="icon-remove"></i>
+                          </a>
+                          <a class="btn btn-mini ocultar_ofertas" title="Ocultar Ofertas" style="display:none">
+                            <i class=" icon-eject"></i>
+                          </a>
+                          <br><br>
+                          <div class="titulos2"><a href="#">Ver oferta..</a></div>
+                        </div>
+                      </div>
+                    </div>                     
+                  </div>
 
 
 
@@ -247,86 +360,86 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
 
 
 
-                    <div class="listado_ofertas" style="display:none">
+                  <div class="listado_ofertas" style="display:none">
 
-                      <div class="body aspirante_hover ">
-                        <div class="container-fluid"> <!--container-fluid -->      
-                          <div class="row-fluid">  <!--row-fluid -->              
-                            <div class="span9 content ver_hoja_vida">
-                              <div class="titulos2 listar">         
-                                <b>
-                                  <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
-                                </b>
-                              </div>
-                              <div class="letra_notificacion listar">Ciudad: </div>
-                              <div class="titulos2 listar">     Villavicencio</div>
-                              <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
-                              <div class="titulos2 listar">20/06/2012</div>
-
+                    <div class="body aspirante_hover ">
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid -->              
+                          <div class="span9 content ver_hoja_vida">
+                            <div class="titulos2 listar">         
+                              <b>
+                                <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                              </b>
                             </div>
-                            <div class="span2 derecha" style="display:none">
-                              <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
-                                <i class=" icon-ok-circle "></i>
-                              </a>
-                              <a class="btn btn-mini" title="descartar">
-                                <i class="icon-remove-circle"></i>
-                              </a>
-                            </div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                            <div class="titulos2 listar">20/06/2012</div>
 
                           </div>
-                        </div>  
-                      </div>
-
-                      <div class="body aspirante_hover ">
-                        <div class="container-fluid"> <!--container-fluid -->      
-                          <div class="row-fluid">  <!--row-fluid -->              
-                            <div class="span9 content ver_hoja_vida">
-                              <div class="titulos2 listar">         
-                                <b>
-                                  <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
-                                </b>
-                              </div>
-                              <div class="letra_notificacion listar">Ciudad: </div>
-                              <div class="titulos2 listar">     Villavicencio</div>
-                              <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
-                              <div class="titulos2 listar">20/06/2012</div>
-
-                            </div>
-                            <div class="span2 derecha" style="display:none">
-                              <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
-                                <i class=" icon-ok-circle "></i>
-                              </a>
-                              <a class="btn btn-mini" title="descartar">
-                                <i class="icon-remove-circle"></i>
-                              </a>
-                            </div>                        
+                          <div class="span2 derecha" style="display:none">
+                            <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
+                              <i class=" icon-ok-circle "></i>
+                            </a>
+                            <a class="btn btn-mini" title="descartar">
+                              <i class="icon-remove-circle"></i>
+                            </a>
                           </div>
-                        </div>  
-                      </div>
 
+                        </div>
+                      </div>  
                     </div>
 
-                    <div class="centrar">                       
-                      <div class="pagination">
-                        <ul>
-                          <li><a href="#">Prev</a></li>
-                          <li class="active">
-                            <a href="#">1</a>
-                          </li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">Next</a></li>
-                        </ul>
-                      </div>
+                    <div class="body aspirante_hover ">
+                      <div class="container-fluid"> <!--container-fluid -->      
+                        <div class="row-fluid">  <!--row-fluid -->              
+                          <div class="span9 content ver_hoja_vida">
+                            <div class="titulos2 listar">         
+                              <b>
+                                <a href="">Analista Lider de Proyectos Ingeniero de Sistemas</a> 
+                              </b>
+                            </div>
+                            <div class="letra_notificacion listar">Ciudad: </div>
+                            <div class="titulos2 listar">     Villavicencio</div>
+                            <b><div class="letra_notificacion listar">Fecha de publicación:</div></b>
+                            <div class="titulos2 listar">20/06/2012</div>
+
+                          </div>
+                          <div class="span2 derecha" style="display:none">
+                            <a class="btn btn-mini modal_enviar_correo" data-toggle="modal" href="#myModal3" title="seleccionar">
+                              <i class=" icon-ok-circle "></i>
+                            </a>
+                            <a class="btn btn-mini" title="descartar">
+                              <i class="icon-remove-circle"></i>
+                            </a>
+                          </div>                        
+                        </div>
+                      </div>  
                     </div>
 
-                  </div> 
+                  </div>
 
-                </div>
+                  <div class="centrar">                       
+                    <div class="pagination">
+                      <ul>
+                        <li><a href="#">Prev</a></li>
+                        <li class="active">
+                          <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div> 
+
               </div>
             </div>
-          </div> <!--tabbable -->      
-        </div>   <!--row-fluid -->
-      </div> <!--container-fluid -->
+          </div>
+        </div> <!--tabbable -->      
+      </div>   <!--row-fluid -->
+    </div> <!--container-fluid -->
 </div> <!--container-fluid -->
