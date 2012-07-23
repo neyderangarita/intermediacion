@@ -74,35 +74,26 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                      <br>
                      <br>
 
-                     <div class="container-fluid">
-                      <div class="row-fluid">
+                     <div class="row-fluid">
+                      <form action="../intermediacion/listado_busqueda.html" method="post">
                         <div class="span12">
-                          <div class="container-fluid">
-                            <div class="row-fluid">
-                              <form action="../intermediacion/listado_busqueda.html" method="post">
-                                <div class="span3">
-                                  <div class="control-group">
-                                    <label class="control-label" for="busqueda_empleo">
-                                      <span class="titulos">Palabras clave</span>
-                                      <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
-                                    </label>
-                                    <div class="controls">
-                                      <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
-                                    </div>
-                                    <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
-                                  </div>
-                                </div>  
+                          <div class="control-group">
+                            <label class="control-label" for="busqueda_empleo">
+                              <span class="titulos">Palabras clave</span>
+                              <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                            </label>
 
-                                <div class="span2">  
-                                  <span class="titulos"></span>
-                                  <br>
-                                  <button type="submit" class="btn btn-danger">Buscar</button>
-                                </div>
-                              </form>    
+                            <div class="controls">
+
+                              <div class="input-append">
+                                <input id="autocomplete" type="text" data-provide="typeahead" placeholder="ingresa su busqueda"/>
+                                <button type="submit" class="btn boton_derecha capa2"><i class="icon-search"></i></button>
+                              </div>
                             </div>
+                            <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
                           </div>
-                        </div>
-                      </div>
+                        </div>  
+                      </form>    
                     </div>
 
 

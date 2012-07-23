@@ -113,6 +113,28 @@
                                 <div class="span6"><!--abre span6-->
 
 
+
+                                  <div class="control-group">
+
+                                    <div class="titulos content">Datos de usuario:</div>
+
+                                    <label class="control-label" for="usuario_empresa">*Usuario (correo electrónico):</label>
+                                    <div class="controls">
+                                    <input type="text" class="input" required id="usuario_empresa" placeholder="Usuario">
+                                    <p class="help-block"></p>
+                                    </div>
+
+
+                                    <label class="control-label" for="confirmacion_clave">*Confirmacion Clave:</label>
+                                    <div class="controls">
+                                    <input type="text" class="input" required id="confirmacion_clave" placeholder="Contraseña">
+                                    <p class="help-block"></p>
+                                    </div>
+
+                                  </div>
+
+                                  <hr>
+
                                     <div class="titulos content">Datos de la Empresa:</div>
 
                                     <div class="control-group">
@@ -293,34 +315,19 @@
                                         </div>
                                           <p class="help-block" for="direccion_empresa" style="display:none"> help text</p>
                                       </div>
+
+                                      <div class="control-group">
+                                        <label class="control-label" for="sitio_web"><span class="">*Sitio Web:</span></label>
+                                        <div class="controls">
+                                          <input type="text" class="input" name="sitio_web" id="sitio_web" size="25" required placeholder="http://www.tusitioweb.com"/>
+                                        </div>
+                                          <p class="help-block" for="sitio_web" style="display:none"> help text</p>
+                                      </div>
                                       <hr>
 
-
-
-                                  <div class="control-group">
-
-                                    <div class="titulos content">Datos de usuario:</div>
-
-                                    <label class="control-label" for="usuario_empresa">*Usuario (correo electrónico):</label>
-                                    <div class="controls">
-                                    <input type="text" class="input" required id="usuario_empresa" placeholder="Usuario">
-                                    <p class="help-block"></p>
-                                    </div>
-
-
-                                    <label class="control-label" for="confirmacion_clave">*Confirmacion Clave:</label>
-                                    <div class="controls">
-                                    <input type="text" class="input" required id="confirmacion_clave" placeholder="Contraseña">
-                                    <p class="help-block"></p>
-                                    </div>
-
-                                  </div>
-
-<hr>
-
                                     <div class="titulos content">Datos de Contacto:</div>
+                                    <br>
 
-<br>
                                       <div class="control-group">
                                         <label class="control-label" for="user"><span class="titulos">*Nombres:</span></label>
                                         <div class="controls">
@@ -370,7 +377,20 @@
 
                                 <div class="span6">  <!--abre span6-->
 
-<br><br>                          <div class="control-group">
+                                <br><br> 
+
+                                    <label class="control-label" for="clave_empresa">*Clave (mínimo 6 caracteres):</label>
+                                    <div class="controls">
+                                    <input type="text" class="input" required id="clave_empresa" placeholder="Contraseña">
+                                    <p class="help-block"></p>
+                                    </div>
+
+                                    <div class="alinear">
+                                    </div>
+                                    <hr>
+                                    <br/><br/>
+
+                                    <div class="control-group">
                                       <label class="control-label" for="razon_social"><span class="titulos">*Razon social: </span> </label> 
                                       <div class="controls">              
                                       <input type="text" class="input" name="razon_social" id="razon_social" size="25" required placeholder="Razon social"/>
@@ -416,26 +436,12 @@
                                         <i id="descripcion_empresa" class="icon-question-sign"></i> 
                                       </label>
                                       <div class="controls">
-                                        <textarea id="textarea" class="input" cols="60" rows="7"></textarea>
+                                        <textarea id="textarea" class="input" rows="11" cols="50" style="width: 270px; "></textarea>
                                       </div>
                                     </div>
 
-                                    <hr style="margin-top: 20px;">
-<br><br>   
-
-
-                                    <label class="control-label" for="clave_empresa">*Clave (mínimo 6 caracteres):</label>
-                                    <div class="controls">
-                                    <input type="text" class="input" required id="clave_empresa" placeholder="Contraseña">
-                                    <p class="help-block"></p>
-                                    </div>
-
-                                    <div class="alinear">
-                                    </div>
-<hr>
-
-                                    <br><br><br>
-
+                                    <hr style="margin-top: 38px;">
+                                    <br><br>
 
                                     <div class="control-group">
                                       <label class="control-label" for="apellido">Apellidos:</label>
@@ -452,8 +458,6 @@
                                       </div> 
                                       <p class="help-block" for="num_document" style="display:none">Supporting help text</p> 
                                     </div>
-
-
 
                                     <div class="control-group">
                                         <label class="control-label" for="email1">Correo Electrónico alterno: </label>
@@ -478,26 +482,19 @@
                                           <p class="help-block" for="telefono2" style="display:none"> help text</p>
                                       </div>
 
-
                                     <div class="alinear_80px">
-                                    <div class="control-group">
-                                      <label class="checkbox">
-                                        <input type="checkbox" value="0" id="optionsCheckboxList1" name="optionsCheckboxList1">
-                                        <div class="content">Acepto los <a class="titulos" href="../intermediacion/terminos_condiciones.html" target="_blank">términos y condiciones</a></div>
-                                      </label>
+                                      <div class="control-group">
+                                        <label class="checkbox">
+                                          <input type="checkbox" value="0" id="optionsCheckboxList1" name="optionsCheckboxList1">
+                                          <div class="content">Acepto los <a class="titulos" href="../intermediacion/terminos_condiciones.html" target="_blank">términos y condiciones</a></div>
+                                        </label>
+                                      </div>
                                     </div>
-
-                                    </div>
-
 
                                     <div class="form-actions">
                                       <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Registrarse</button>
-
                                       <a class="btn" href="../intermediacion/index.html"><i class="icon-remove-sign "></i>Cancelar</a>
                                     </div>
-
-
-
 
                                 </div> <!--cierra span6--> 
                             </div><!--cierra row-fluid-->
