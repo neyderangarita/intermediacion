@@ -8,7 +8,6 @@ $.getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js", funct
 <script>
 $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function() {
 
-
   $(".activar_egresado").click(function(evento){ 
    $(".desactivar_egresado").show(500);
    $(".activar_egresado").hide(500);
@@ -26,7 +25,20 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
  });
 
 
+  $(".nuevo_usuario").click(function(evento){  
+        //alert("hola mundo");
+      $(".agregar_usuario").show(1000);
+      $(".nuevo_usuario").hide(1000);
+      
+      //formularioformal.show(1000);
+  });
 
+  $(".ocultar_usuario").click(function(evento){  
+        //alert("hola mundo");
+      $(".agregar_usuario").hide(1000);
+      $(".nuevo_usuario").show(1000);
+      //formularioformal.show(1000);
+  });
 
 
 
@@ -63,37 +75,84 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                      <br>
                      <br>
 
-                     <div class="container-fluid">
-                      <div class="row-fluid">
+                     <div class="row-fluid">
+                      <form action="../intermediacion/listado_busqueda.html" method="post">
                         <div class="span12">
-                          <div class="container-fluid">
-                            <div class="row-fluid">
-                              <form action="../intermediacion/listado_busqueda.html" method="post">
-                                <div class="span3">
-                                  <div class="control-group">
-                                    <label class="control-label" for="busqueda_empleo">
-                                      <span class="titulos">Palabras clave</span>
-                                      <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
-                                    </label>
-                                    <div class="controls">
-                                      <input id="autocomplete" type="text" data-provide="typeahead" placeholder="¿Qué empleo buscas?"/>
-                                    </div>
-                                    <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
-                                  </div>
-                                </div>  
+                          <div class="control-group">
+                            <label class="control-label" for="busqueda_empleo">
+                              <span class="titulos">Palabras clave</span>
+                              <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                            </label>
 
-                                <div class="span2">  
-                                  <span class="titulos"></span>
-                                  <br>
-                                  <button type="submit" class="btn btn-danger">Buscar</button>
-                                </div>
-                              </form>    
+                            <div class="controls">
+
+                              <div class="input-append">
+                                <input id="autocomplete" type="text" data-provide="typeahead" placeholder="ingresa su busqueda"/>
+                                <button type="submit" class="btn boton_derecha capa2"><i class="icon-search"></i></button>
+                              </div>
+                              
                             </div>
+                            <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
                           </div>
-                        </div>
-                      </div>
+                        </div>  
+                      </form>    
                     </div>
 
+                    <br><br>
+
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+
+                          <div class="span4">
+                            <a class="btn btn-danger nuevo_usuario" title="Nuevo Usuario">Nuevo Usuario</a>
+                          </div>
+                          
+                          <div class="span6">
+
+                            <div class="agregar_usuario" style="display:none">
+                              <div class="container-fluid">
+                                <div class="row-fluid">  
+                                  <div class="span12"> <!--tabbable --> 
+
+                                    <form class="form-horizontal" action="../intermediacion/empleador.html" method="post">
+                                      <fieldset>
+                                        <span class="titulos">Agregar Nuevo Usuario</span>
+                                        <hr>
+                                        <div class="control-group">
+
+                                          <label class="control-label" for="usuario">*Nombre Usuario:</label>
+                                          <div class="controls">
+                                            <input type="text" class="input" required id="usuario" placeholder="Usuario Actual">
+                                            <p class="help-block"></p>
+                                          </div>
+                                          <br>
+                                          <label class="control-label" for="contraseña">*Contraseña:</label>
+                                          <div class="controls">
+                                            <input type="text" class="input" required id="contraseña" placeholder="Nuevo Usuario">
+                                            <p class="help-block"></p>
+                                          </div>
+
+                                        </div>   
+                                        <hr>
+                                        <input class="btn btn-large btn-danger ocultar_usuario" type="submit"  value="Agregar"/> 
+                                        <div class="derecha">
+                                          <a class="btn btn-mini ocultar_usuario" title="Volver">
+                                            <i class="icon-eject"></i>
+                                          </a>
+                                        </div>
+                                      </fieldset>
+                                    </form>
+
+                                  </div>
+                                </div>
+                              </div>           
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    <br>
 
                     <div class="alert alert-error titulos2 centrar notificaciones">Encontrados <span class="titulo ">5</span> que cumplen con los criterios de busqueda. </div>
                     <br>
