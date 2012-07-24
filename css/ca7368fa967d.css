@@ -5041,6 +5041,7 @@ section {
     padding: 0;
   }
 }
+
 @media (min-width: 768px) and (max-width: 980px) {
   
   .row {
@@ -5224,6 +5225,10 @@ section {
     padding: 0;
   } 
 }
+
+
+
+
 @media (max-width: 980px) {
   body {
     padding-top: 0;

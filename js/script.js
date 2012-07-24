@@ -110,6 +110,10 @@ $(document).ready(function(){
 		$('#myModal').modal('show');
 	});
 
+   $(".recordar_contrasena1").click(function(evento){	
+		$('#myModal').css('show');
+	});
+
     $(".registrar").click(function(evento){
 		$('#myModal1').modal('show');
 	});
