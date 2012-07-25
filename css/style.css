@@ -302,6 +302,14 @@ a.titulo:hover {
     text-shadow: 5px 5px 10px rgba(0,0,0,0.3) 
 }
 
+.titulos4
+{
+    color: #666666;
+    margin-right: 20px;
+    font-size:0.8em
+}
+
+
 .titulo_blanco
 {
     font-weight: bold;
@@ -657,6 +665,11 @@ div[class="body contacto"]{
 .pading_20px{
     padding-top: 20px;
     padding-bottom: 20px
+}
+
+
+a.centrar_izquierda.pading_33px{
+    padding-left: 33px;
 }
 
 .alinear{
