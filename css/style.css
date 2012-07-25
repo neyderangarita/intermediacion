@@ -537,11 +537,21 @@ div[class="body login margen_izquierda_margin_280px"]{
     text-align:center;
 }
 
+div[class="body login margen_izquierda_margin_100px"]{
+    width:55%;
+    margin-top: 3px;
+    margin-bottom: 0.005em;
+    text-align:center;
+        margin-left: 5em;
+    margin-right:5em;
+}
+
 
 .margen_izquierda_margin_280px{
     margin-left: 18em;
     margin-right:18em;
 }
+
 
 .postulacion_mover:hover{
     background: #eee;
