@@ -123,40 +123,6 @@
                               </div>    
                               <br>
 
-                              <section id="modal">
-                                <div id="myModal" class="modal show" style="display:none;">
-                                  <div class="modal-header">
-                                    <button class="close" data-dismiss="modal">×</button>
-                                    <h3>Recordar Usuario y Contraseña</h3>
-
-                                    <form class="form-horizontal" action="../intermediacion/index.html" method="post">
-                                      <fieldset>
-                                        <legend></legend>
-                                        <div class="control-group">
-                                          <div class="justificar">
-                                            Si no recuerdas el <div class="titulos listar">Usuario</div> y <div class="titulos listar">Contraseña</div> que usabas en la universidad. Puedes enviarle un  correo a la oficina de sistemas de la universidad, ellos en cierto lapso de tiempo te recordaran tu usuario y contraseña al correo que tienes registrado en la universidad.
-                                          </div>
-                                          <div class="control-group">
-                                            <br>
-                                            <label class="control-label" for="usuario_empresa"><span class="titulos">*(Codigo Universidad):</span></label>
-                                            <div class="controls">
-                                              <input type="text" class="input" required id="usuario_empresa" placeholder="Codigo Universidad">
-                                              <a class="btn subir" href="../intermediacion/index.html">Enviar</a>
-                                            </div> 
-                                          </div>
-                                          <div class="controls">
-                                            <label class="checkbox">
-                                            </label>
-                                          </div>
-                                        </div> 
-                                      </fieldset>
-                                    </form>
-                                  </div>   
-                                  <div class="modal-footer">
-
-                                  </div>
-                                </div>
-                              </section>
 
                             </div>  <!--cierra span6-->
 
@@ -174,10 +140,10 @@
                                 <p class="help-block"></p>
                               </div>
 
-                                <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Registrarse</button>
-                                <a class="btn" href="../intermediacion/index.html"><i class="icon-remove-sign "></i>Cancelar</a>
-                                <br><br>
-                                <a class="recordar_contrasena1 titulos4" data-toggle="modal" href="#myModal">Recordar usuario y contraseña</a>
+                              <button class="btn btn-danger agregar" type="submit"><i class="icon-ok-circle icon-white"></i>Registrarse</button>
+                              <a class="btn" href="../intermediacion/index.html"><i class="icon-remove-sign "></i>Cancelar</a>
+                              <br><br>
+                              <a class="recordar_contrasena1 titulos4" data-toggle="modal" href="#myModal">Recordar usuario y contraseña</a>
                             </div> <!--cierra span6--> 
                           </div><!--cierra row-fluid-->
 
@@ -194,7 +160,50 @@
 
           </div>   <!--row-fluid -->
         </div> <!--container-fluid -->
-      </section>  <!--section-body -->  
+      </section>  <!--section-body -->
+
+
+      
+      <section id="modal">
+        <div id="myModal" class="modal show" style="display:none;">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">×</button>
+            <center>
+              <h3>Recordar Usuario y Contraseña</h3>
+            </center>
+              <form class="form-horizontal" action="../intermediacion/index.html" method="post">
+                <fieldset>
+                  <legend></legend>
+                  <div class="control-group">
+                    <div class="titulo_negro justificar_texto">
+                      Si no recuerdas el <div class="titulos listar">Usuario</div> y <div class="titulos listar">Contraseña</div> que usabas en la universidad. Puedes enviarle un  correo a la oficina de sistemas de la universidad, ellos en cierto lapso de tiempo te recordaran tu usuario y contraseña al correo que tienes registrado en la universidad.
+                    </div>
+                    <br>
+                      <label class="centrar" for="usuario_empresa"><span class="titulos">*(Codigo Universidad):</span>
+                      </label>
+
+                    <div class="control-group">
+                      <br>
+                      <div class="controls">
+                        <input type="text" class="input" required id="usuario_empresa" placeholder="Codigo Universidad">
+                        <a class="btn" href="../intermediacion/index.html">Enviar</a>
+                      </div> 
+                    </div>
+                    <div class="controls">
+                      <label class="checkbox">
+                      </label>
+                    </div>
+                  </div> 
+                </fieldset>
+              </form>
+          </div>   
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </section> 
+
+
 
 
       <!---------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -279,3 +288,4 @@
 -->
 </body>
 </html>
+
