@@ -14,6 +14,19 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
    $(".mostrar_crear_oferta").show(500);
  });
 
+$(".ver_opciones").click(function(evento){ 
+   $(".ver_opciones").hide(500);
+   $(".ocultar_opciones").show(500);
+   $(".opciones_encuesta").show(500);   
+});
+
+$(".ocultar_opciones").click(function(evento){ 
+   $(".ver_opciones").show(500);
+   $(".ocultar_opciones").hide(500);
+   $(".opciones_encuesta").hide(500);   
+});
+
+
 
 });
 </script>
@@ -36,28 +49,28 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                 <br>
                 <br>
                 
-                     <div class="row-fluid">
-                      <form action="../intermediacion/listado_busqueda.html" method="post">
-                        <div class="span12">
-                          <div class="control-group">
-                            <label class="control-label" for="busqueda_empleo">
-                              <span class="titulos">Palabras clave</span>
-                              <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
-                            </label>
+                <div class="row-fluid">
+                  <form action="../intermediacion/listado_busqueda.html" method="post">
+                    <div class="span12">
+                      <div class="control-group">
+                        <label class="control-label" for="busqueda_empleo">
+                          <span class="titulos">Palabras clave</span>
+                          <!-- <i id="mensaje_titulo_oferta" class="icon-question-sign"></i> --> 
+                        </label>
 
-                            <div class="controls">
+                        <div class="controls">
 
-                              <div class="input-append">
-                                <input id="autocomplete" type="text" data-provide="typeahead" placeholder="ingresa su busqueda"/>
-                                <button type="submit" class="btn boton_derecha capa2"><i class="icon-search"></i></button>
-                              </div>
-                              
-                            </div>
-                            <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                          <div class="input-append">
+                            <input id="autocomplete" type="text" data-provide="typeahead" placeholder="ingresa su busqueda"/>
+                            <button type="submit" class="btn boton_derecha capa2"><i class="icon-search"></i></button>
                           </div>
-                        </div>  
-                      </form>    
-                    </div>
+
+                        </div>
+                        <p class="help-block" for="busqueda_empleo" style="display:none"> help text</p>
+                      </div>
+                    </div>  
+                  </form>    
+                </div>
 
                 <a class="btn btn-danger crear_encuesta">Crear Encuesta</a>
                 <br>
@@ -66,24 +79,30 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                 <div class="listado_encuestas">
                   <div class="alert alert-error titulos2 centrar">Encontrados <span class="titulo ">3</span> que cumplen con los criterios de busqueda. </div>
                   <br>
+
                   <div class="body mis_aplicaciones" > 
                     <div class="container-fluid"> <!--container-fluid -->      
                       <div class="row-fluid">  <!--row-fluid -->    
                         <div class="span9">
-                          <div id="mensaje_titulo_oferta" class="titulo_padind">Pregunta 1</div>
-                          <div class="letra_notificacion listar">¿Te interesaria seguir estudiando una vez termines tu carrera?</div>
-                          <div class="titulos2 listar">Total de votos:</div> <div class="titulos2 listar">5</div>
+                          <div id="mensaje_titulo_oferta" class="titulo_padind">¿Te interesaria seguir estudiando una vez termines tu carrera?</div>
+                          <b><div class="letra_notificacion listar">Fecha Creacion:</div></b>
+                          <div class="titulos2 listar">20/06/2009</div>
+                          <b><div class="letra_notificacion listar">Total de votos:</div></b>
+                          <div class="titulos2 listar">5</div>
                         </div> 
-
                         <div class="span2 derecha">
-
                           <a class="btn btn-mini oferta" title="Modificar">
                             <i class="icon-edit"></i>
+                          </a>
+                          <a class="btn btn-mini ver_opciones" title="Ver opciones"> 
+                            <i class="icon-arrow-down"></i>
+                          </a>
+                          <a class="btn btn-mini ocultar_opciones" title="Ocultar opciones" style="display:none"> 
+                            <i class="icon-arrow-up"></i>
                           </a>
                           <a class="btn btn-mini desactivar_oferta" title="Eliminar"> 
                             <i class="icon-trash"></i>
                           </a>
-
                         </div>
                       </div>
                     </div>                     
@@ -92,23 +111,58 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
                   <div class="body mis_aplicaciones" > 
                     <div class="container-fluid"> <!--container-fluid -->      
                       <div class="row-fluid">  <!--row-fluid -->    
-                        <div class="span12">
-                          <div id="mensaje_titulo_oferta" class="titulo_padind">Pregunta 2</div>
-                          <div class="letra_notificacion listar">¿Cómo calificarías el servicio prestado por el programa de Egresados?</div>
+                        <div class="span9">
+                          <div id="mensaje_titulo_oferta" class="titulo_padind">¿Te interesaria seguir estudiando una vez termines tu carrera?</div>
+                          <b><div class="letra_notificacion listar">Fecha Creacion:</div></b>
+                          <div class="titulos2 listar">20/06/2009</div>
+                          <b><div class="letra_notificacion listar">Total de votos:</div></b>
+                          <div class="titulos2 listar">5</div>
                         </div> 
+                        <div class="span2 derecha">
+                          <a class="btn btn-mini oferta" title="Modificar">
+                            <i class="icon-edit"></i>
+                          </a>
+                          <a class="btn btn-mini ver_opciones" title="Ver opciones"> 
+                            <i class="icon-arrow-down"></i>
+                          </a>
+                          <a class="btn btn-mini ocultar_opciones" title="Ocultar opciones" style="display:none"> 
+                            <i class="icon-arrow-up"></i>
+                          </a>
+                          <a class="btn btn-mini desactivar_oferta" title="Eliminar"> 
+                            <i class="icon-trash"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>                     
                   </div>
-                  <div class="body mis_aplicaciones" > 
-                    <div class="container-fluid"> <!--container-fluid -->      
-                      <div class="row-fluid">  <!--row-fluid -->    
+
+
+
+                  <div class="body opciones_encuesta" style="display:none">
+                    <div class="container-fluid"> <!--container-fluid -->  
+                      <div class="row-fluid">  <!--row-fluid --> 
                         <div class="span12">
-                          <div id="mensaje_titulo_oferta" class="titulo_padind">Pregunta 2</div>
-                          <div class="letra_notificacion listar">¿Conoce los beneficios que brinda el carnet de egresado?</div>
-                        </div> 
+
+                          <div class="control-group">
+                            <label class="control-label"><div class="titulo">Opciones</div></label>
+                            <div class="controls">
+                              <label class="radio">
+                                <input id="optionsRadios1" type="radio" checked="" value="option1" name="optionsRadios">
+                                Si
+                              </label>
+                              <label class="radio">
+                                <input id="optionsRadios2" type="radio" value="option2" name="optionsRadios">
+                                No
+                              </label>
+                            </div>                            
+                          </div>
+
+                        </div>
                       </div>
-                    </div>                     
-                  </div>
+                    </div>  
+                  </div> 
+
+
                   <div class="centrar">                       
                     <div class="pagination">
                       <ul>
