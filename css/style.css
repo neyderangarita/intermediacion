@@ -564,6 +564,9 @@ div[class="body login margen_izquierda_margin_100px"]{
     margin-right:18em;
 }
 
+.margen{
+    margin-left: 10px;
+}
 
 .postulacion_mover:hover{
     background: #eee;
@@ -979,3 +982,4 @@ textarea.grande{
 .justificar_texto{
     text-align:justify;
 }
+

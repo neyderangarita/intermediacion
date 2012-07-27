@@ -14,18 +14,50 @@ $.getScript("http://127.0.0.1/intermediacion/js/libs/jquery-1.7.2.js", function(
    $(".mostrar_crear_oferta").show(500);
  });
 
-$(".ver_opciones").click(function(evento){ 
+
+  $(".oferta").click(function(evento){ 
+   $(".buscar_encuestas").hide(500);
+   $(".mostrar_crear_oferta").show(500);
+ });
+
+  $(".ver_opciones").click(function(evento){ 
    $(".ver_opciones").hide(500);
    $(".ocultar_opciones").show(500);
    $(".opciones_encuesta").show(500);   
-});
+ });
 
-$(".ocultar_opciones").click(function(evento){ 
+  $(".ocultar_opciones").click(function(evento){ 
    $(".ver_opciones").show(500);
    $(".ocultar_opciones").hide(500);
    $(".opciones_encuesta").hide(500);   
-});
+ });
 
+
+  $(".agregar_alternativa").click(function(evento){ 
+    /*alert("hola mundo"); */
+
+   var nuevoElemento = $('<div class="nuevo_elemento"><div class="control-group"><label class="control-label" for="input01">alternativa</label><div class="controls"><input type="text" class="input-xlarge" id="input02" required><div class="btn btn-mini btn-danger margen remover" title="Eliminar"><i class="icon-remove icon-white"></i></div></div></div></div>');
+   nuevoElemento.appendTo($(".nuevas_opciones"));
+ });
+
+
+$(".remover").live("click", function(e){
+
+   var elem = $(this).html();
+   var elem1 = $(this).is(".remover");
+   var index = $("div").index(this);
+   var pepe = $('.nuevo_elemento').html();
+   var domEl = $(this).get(0);
+
+   alert(elem);
+
+   if ( $(this).is(".remover")){
+      $('.nuevo_elemento').css("display","none");
+   }
+   else{
+      /*elem.html("Hiciste de nuevo clic!!");*/
+   }
+});
 
 
 });
@@ -136,32 +168,32 @@ $(".ocultar_opciones").click(function(evento){
                     </div>                     
                   </div>
 
-
-
-                  <div class="body opciones_encuesta" style="display:none">
-                    <div class="container-fluid"> <!--container-fluid -->  
-                      <div class="row-fluid">  <!--row-fluid --> 
-                        <div class="span12">
-
-                          <div class="control-group">
-                            <label class="control-label"><div class="titulo">Opciones</div></label>
-                            <div class="controls">
-                              <label class="radio">
-                                <input id="optionsRadios1" type="radio" checked="" value="option1" name="optionsRadios">
-                                Si
-                              </label>
-                              <label class="radio">
-                                <input id="optionsRadios2" type="radio" value="option2" name="optionsRadios">
-                                No
-                              </label>
-                            </div>                            
+                  <div class="opciones_encuesta" style="display:none">
+                    <div class="body aspirante_hover">
+                      <div class="container-fluid"> <!--container-fluid -->  
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span12">
+                            <b><div class="letra_notificacion listar">Si</div></b>
+                            <div class="titulos2 listar"> </div>
+                            <b><div class="letra_notificacion listar">Total de votos:</div></b>
+                            <div class="titulos2 listar">5</div>
                           </div>
-
                         </div>
                       </div>
-                    </div>  
-                  </div> 
-
+                    </div>
+                    <div class="body aspirante_hover">
+                      <div class="container-fluid"> <!--container-fluid -->  
+                        <div class="row-fluid">  <!--row-fluid --> 
+                          <div class="span12">
+                            <b><div class="letra_notificacion listar">No</div></b>
+                            <div class="titulos2 listar"> </div>
+                            <b><div class="letra_notificacion listar">Total de votos:</div></b>
+                            <div class="titulos2 listar">18</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                   <div class="centrar">                       
                     <div class="pagination">
@@ -177,9 +209,11 @@ $(".ocultar_opciones").click(function(evento){
                       </ul>
                     </div>
                   </div>
+
                 </div> 
 
               </div>
+
 
               <div class="mostrar_crear_oferta" style="display:none">
 
@@ -196,36 +230,27 @@ $(".ocultar_opciones").click(function(evento){
                               <input type="text" class="input-xlarge" id="input01" required>
                             </div>
                           </div>
+
                           <div class="control-group">
-                            <label class="control-label" for="input01">alternativa 1</label>
+                            <label class="control-label" for="input01">alternativa</label>
                             <div class="controls">
                               <input type="text" class="input-xlarge" id="input02" required>
                             </div>
                           </div>
+
                           <div class="control-group">
-                            <label class="control-label" for="input01">alternativa 2</label>
+                            <label class="control-label" for="input01">alternativa</label>
                             <div class="controls">
-                              <input type="text" class="input-xlarge" id="input03" required>
+                              <input type="text" class="input-xlarge" id="input02" required>
                             </div>
                           </div>
-                          <div class="control-group">
-                            <label class="control-label" for="input01">alternativa 3</label>
-                            <div class="controls">
-                              <input type="text" class="input-xlarge" id="input04">
-                            </div>
+
+
+
+                          <div class="nuevas_opciones">
+                                
                           </div>
-                          <div class="control-group">
-                            <label class="control-label" for="input01">alternativa 4</label>
-                            <div class="controls">
-                              <input type="text" class="input-xlarge" id="input05">
-                            </div>
-                          </div>
-                          <div class="control-group">
-                            <label class="control-label" for="input01">alternativa 5</label>
-                            <div class="controls">
-                              <input type="text" class="input-xlarge" id="input06">
-                            </div>
-                          </div>
+
                           <div class="control-group">
                             <label class="control-label" for="input01">Estado</label>
                             <div class="controls">
@@ -240,6 +265,7 @@ $(".ocultar_opciones").click(function(evento){
                             <button class="btn btn-danger" type="submit">
                               Crear
                             </button>
+                            <div class="btn agregar_alternativa">Nueva Alternativa</div>
                           </div>
                         </fieldset>
                       </form>  
